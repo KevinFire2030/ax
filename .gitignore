@@ -1,0 +1,29 @@
+# Secrets
+.env
+**/.env
+
+# Data / logs (potentially sensitive)
+*.xlsx
+*.xls
+*.csv
+*.jsonl
+
+# Caches / Python artifacts
+__pycache__/
+**/__pycache__/
+*.pyc
+.cache/
+cache_*/
+**/cache_*/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Tooling logs
+.specstory/
+
+# Node
+node_modules/
