@@ -8,21 +8,21 @@ $root = $PSScriptRoot
 $statePath = Join-Path $root $StateFile
 
 function Kill-PidTree {
-  param([int]$Pid)
+  param([int]$ProcId)
 
   # Best-effort: kill children first (Windows)
   try {
-    $children = Get-CimInstance Win32_Process -Filter "ParentProcessId=$Pid" -ErrorAction SilentlyContinue
+    $children = Get-CimInstance Win32_Process -Filter "ParentProcessId=$ProcId" -ErrorAction SilentlyContinue
     foreach ($c in ($children | Where-Object { $_ -and $_.ProcessId })) {
-      Kill-PidTree -Pid ([int]$c.ProcessId)
+      Kill-PidTree -ProcId ([int]$c.ProcessId)
     }
   } catch {}
 
   try {
-    $proc = Get-Process -Id $Pid -ErrorAction SilentlyContinue
+    $proc = Get-Process -Id $ProcId -ErrorAction SilentlyContinue
     if ($proc) {
-      Write-Host "  - Killing PID $Pid ($($proc.ProcessName))" -ForegroundColor Yellow
-      Stop-Process -Id $Pid -Force -ErrorAction SilentlyContinue
+      Write-Host "  - Killing PID $ProcId ($($proc.ProcessName))" -ForegroundColor Yellow
+      Stop-Process -Id $ProcId -Force -ErrorAction SilentlyContinue
     }
   } catch {}
 }
@@ -34,8 +34,8 @@ function Get-PidsListeningOnPort {
   foreach ($ln in $lines) {
     $parts = ($ln.ToString() -split "\s+") | Where-Object { $_ -ne "" }
     if ($parts.Length -ge 5) {
-      $pid = $parts[-1]
-      if ($pid -match '^\d+$') { $pids += [int]$pid }
+      $procId = $parts[-1]
+      if ($procId -match '^\d+$') { $pids += [int]$procId }
     }
   }
   $pids | Sort-Object -Unique
@@ -52,7 +52,7 @@ if (Test-Path -LiteralPath $statePath) {
     foreach ($it in $items) {
       if ($it.pid -and ($it.pid -as [int])) {
         Write-Host "- $($it.name)" -ForegroundColor Cyan
-        Kill-PidTree -Pid ([int]$it.pid)
+        Kill-PidTree -ProcId ([int]$it.pid)
       }
     }
 
@@ -72,8 +72,8 @@ foreach ($p in $Ports) {
     continue
   }
 
-  foreach ($pid in $pids) {
-    Kill-PidTree -Pid $pid
+  foreach ($procId in $pids) {
+    Kill-PidTree -ProcId $procId
   }
 }
 
