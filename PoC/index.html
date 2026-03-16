@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AX PoC Demo Landing</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin: 24px; color:#111; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+    .card { border:1px solid #ddd; border-radius: 12px; padding: 16px; }
+    .tag { display:inline-block; font-size: 12px; padding: 4px 8px; border-radius: 999px; border:1px solid #eee; background:#fafafa; margin-right: 6px; }
+    a.btn { display:inline-block; margin-top: 10px; padding: 10px 12px; border-radius: 10px; background:#111; color:#fff; text-decoration:none; font-weight: 700; }
+    .muted { color:#555; font-size: 13px; line-height: 1.5; }
+    code { background:#f6f6f6; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>AX PoC 데모 랜딩</h1>
+  <div class="muted">
+    <div>로컬 노트북에서 실행되는 데모입니다. 아래 링크는 각각의 웹 UI로 이동합니다.</div>
+    <div>권장 포트: <code>8000</code>(keyword) / <code>8010</code>(context) / <code>8020</code>(prevention-external) / <code>8030</code>(prevention-internal)</div>
+  </div>
+
+  <div style="height: 14px;"></div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="tag">사후 탐지</div><div class="tag">Keyword-based</div>
+      <h2 style="margin:10px 0;">키워드 기반 탐지</h2>
+      <div class="muted">엑셀 업로드 → 키워드 탐지 → 탐지된 행 미리보기 + 결과 엑셀 다운로드(부서별 시트/부서별 zip 포함)</div>
+      <a class="btn" href="http://127.0.0.1:8000/" target="_blank" rel="noreferrer">열기 (8000)</a>
+    </div>
+
+    <div class="card">
+      <div class="tag">사후 탐지</div><div class="tag">Context-based</div>
+      <h2 style="margin:10px 0;">문맥 기반 탐지</h2>
+      <div class="muted">후보군만 LLM 분석 → HIT(임계값 이상) 미리보기 + 결과 다운로드. (고급 설정에서 ratio/임계값/동시성 조절)</div>
+      <a class="btn" href="http://127.0.0.1:8010/" target="_blank" rel="noreferrer">열기 (8010)</a>
+    </div>
+
+    <div class="card">
+      <div class="tag">사전 차단</div><div class="tag">External webhook</div>
+      <h2 style="margin:10px 0;">외부 훅/에이전트 서버</h2>
+      <div class="muted">/check로 allow/warn/block 반환 + 승인 라우팅 UX. (UI 데모 페이지 포함)</div>
+      <a class="btn" href="http://127.0.0.1:8020/ui" target="_blank" rel="noreferrer">열기 (8020)</a>
+    </div>
+
+    <div class="card">
+      <div class="tag">사전 차단</div><div class="tag">Internal call</div>
+      <h2 style="margin:10px 0;">내부 호출(CPCex 내부)</h2>
+      <div class="muted">전송 직전 내부 precheck 호출 구조 + 내부 UI 서버 데모</div>
+      <a class="btn" href="http://127.0.0.1:8030/" target="_blank" rel="noreferrer">열기 (8030)</a>
+    </div>
+  </div>
+
+  <div style="margin-top: 18px;" class="muted">
+    <b>팁</b>
+    <ul>
+      <li>윈도우: <code>start_all.ps1</code> 실행 → 4개 서버 + 랜딩(<code>http://127.0.0.1:7999</code>)</li>
+      <li>리눅스/맥: <code>./start_all.sh</code> (best-effort)</li>
+    </ul>
+  </div>
+</body>
+</html>

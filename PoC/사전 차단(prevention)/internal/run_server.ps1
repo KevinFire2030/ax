@@ -22,4 +22,5 @@ if (!(Test-Path .\.env)) {
   exit 1
 }
 
+if (-not $env:PORT) { $env:PORT = "8030" }
 python .\internal_ui_server.py

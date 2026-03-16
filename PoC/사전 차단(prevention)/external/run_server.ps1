@@ -15,4 +15,5 @@ if (!(Test-Path .\.env)) {
   exit 1
 }
 
+if (-not $env:PORT) { $env:PORT = "8020" }
 python .\detection_agent_webhook.py
