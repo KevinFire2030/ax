@@ -11,12 +11,17 @@ kill_if_pidfile() {
   local pidfile="$LOG_DIR/${name}.pid"
   if [[ -f "$pidfile" ]]; then
     local pid
-    pid=$(cat "$pidfile" || true)
+    pid=$(cat "$pidfile" 2>/dev/null || true)
     if [[ -n "${pid:-}" ]]; then
-      echo "Killing $name (PID $pid)"
-      kill "$pid" 2>/dev/null || true
-      sleep 0.5
-      kill -9 "$pid" 2>/dev/null || true
+      if kill -0 "$pid" 2>/dev/null; then
+        echo "Killing $name (PID $pid)"
+        kill "$pid" 2>/dev/null || true
+        # give it a moment
+        sleep 0.5
+        kill -9 "$pid" 2>/dev/null || true
+      else
+        echo "$name: PID $pid not running (stale pidfile)"
+      fi
     fi
     rm -f "$pidfile"
   else

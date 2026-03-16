@@ -9,14 +9,23 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_DIR="$ROOT_DIR/logs"
 mkdir -p "$LOG_DIR"
 
+ensure_dir() {
+  local dir="$1"
+  if [[ ! -d "$dir" ]]; then
+    echo "[PoC] ERROR: directory not found: $dir" >&2
+    exit 1
+  fi
+}
+
 start_uvicorn() {
   local dir="$1"; local app="$2"; local port="$3"; local name="$4"
-  ( 
+  ensure_dir "$dir"
+  (
     cd "$dir"
     python3 -m venv .venv >/dev/null 2>&1 || true
     # shellcheck disable=SC1091
     source .venv/bin/activate
-    pip install -r requirements.txt >/dev/null
+    python -m pip install -r requirements.txt >/dev/null
     nohup python -m uvicorn "$app" --host 127.0.0.1 --port "$port" >"$LOG_DIR/${name}.log" 2>&1 &
     echo $! >"$LOG_DIR/${name}.pid"
   )
@@ -24,12 +33,13 @@ start_uvicorn() {
 
 start_py() {
   local dir="$1"; local script="$2"; local port="$3"; local name="$4"
+  ensure_dir "$dir"
   (
     cd "$dir"
     python3 -m venv .venv >/dev/null 2>&1 || true
     # shellcheck disable=SC1091
     source .venv/bin/activate
-    pip install -r requirements.txt >/dev/null
+    python -m pip install -r requirements.txt >/dev/null
     PORT="$port" nohup python "$script" >"$LOG_DIR/${name}.log" 2>&1 &
     echo $! >"$LOG_DIR/${name}.pid"
   )
@@ -57,3 +67,11 @@ start_py "$ROOT_DIR/사전 차단(prevention)/internal" "internal_ui_server.py" 
 )
 
 echo "[Landing] http://127.0.0.1:${LANDING_PORT}/index.html"
+
+echo "[PoC] PIDs:" 
+for f in "$LOG_DIR"/*.pid; do
+  [[ -f "$f" ]] || continue
+  echo "- $(basename "$f" .pid): $(cat "$f")"
+done
+
+echo "[PoC] Logs: $LOG_DIR (tail -f <name>.log)"
