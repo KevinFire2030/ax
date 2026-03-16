@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>사후 탐지 PoC - Keyword-based</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin: 20px; color:#111; }
+    .box { border:1px solid #ddd; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+    .row { display:flex; gap:12px; flex-wrap: wrap; align-items: flex-start; }
+    .col { flex: 1 1 320px; min-width: 320px; }
+    label { font-weight: 600; display:block; margin: 6px 0 6px; }
+    input[type=text], textarea, input[type=number] { width:100%; padding:8px 10px; border:1px solid #ccc; border-radius:8px; }
+    textarea { min-height: 170px; max-height: 320px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+    .btn { background:#111; color:#fff; border:0; padding:10px 14px; border-radius: 10px; font-weight: 700; cursor:pointer; }
+    .hint { color:#555; font-size: 13px; margin-top: 4px; }
+    .error { background:#fff3f3; border:1px solid #ffcccc; padding: 12px; border-radius: 10px; color:#a40000; margin-bottom: 14px; }
+  </style>
+</head>
+<body>
+  <h1>사후 탐지 PoC (Keyword-based)</h1>
+  <div class="hint">엑셀(xlsx)을 업로드하면 키워드 탐지 후 <b>탐지된 행만</b> 미리보기로 보여주고, 결과 파일을 다운로드할 수 있습니다.</div>
+
+  {% if error %}
+  <div class="error">{{ error }}</div>
+  {% endif %}
+
+  <form class="box" action="/run" method="post" enctype="multipart/form-data">
+    <div class="row">
+      <div class="col">
+        <label>입력 파일(xlsx)</label>
+        <input type="file" name="input_xlsx" accept=".xlsx" required />
+
+        <label>결과 파일명(기본값 제공, 수정 가능)</label>
+        <input type="text" name="output_basename" placeholder="예: mail_log_keyword_detection_20260316_142000" />
+        <div class="hint">확장자 .xlsx 는 자동으로 붙습니다.</div>
+
+        <div class="row">
+          <div class="col">
+            <label>미리보기 행 수(탐지된 행 중)</label>
+            <input type="number" name="preview_rows" value="200" min="1" max="2000" />
+          </div>
+          <div class="col">
+            <label>Top N (요약 통계)</label>
+            <input type="number" name="topn" value="10" min="3" max="50" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <label>키워드(한 줄 1키워드)</label>
+        <textarea name="keywords_text" placeholder="키워드를 한 줄에 하나씩 입력하세요.">{{ kw_text }}</textarea>
+        <div class="hint">기본값은 detection_keywords.md 에서 로드됩니다(가능한 경우).</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 16px;">
+      <button class="btn" type="submit">검사 실행</button>
+    </div>
+  </form>
+
+  <div class="box">
+    <b>출력 정책</b>
+    <ul>
+      <li>통합 엑셀 1개: 전체 결과 + (추가) 부서별 시트(탐지 행만)</li>
+      <li>부서별 개별 파일 zip: 부서별로 탐지 행만 들어있는 엑셀을 묶어서 제공</li>
+    </ul>
+  </div>
+</body>
+</html>

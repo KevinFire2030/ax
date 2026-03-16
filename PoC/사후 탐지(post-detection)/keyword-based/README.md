@@ -12,7 +12,7 @@
 - Python 3
 - 패키지:
 ```bash
-pip install pandas openpyxl python-dotenv
+pip install -r requirements.txt
 ```
 
 - 키워드 파일(한 줄 1키워드): `detection_keywords.md`
@@ -21,12 +21,24 @@ pip install pandas openpyxl python-dotenv
 
 ## 2) 실행
 
-### A) PowerShell(추천: run.ps1)
+### A) 웹 UI 데모(추천)
+```powershell
+.\run_web.ps1
+# (첫 실행은 패키지 설치로 1~3분 정도 걸릴 수 있습니다)
+# 브라우저에서 http://127.0.0.1:8000 접속
+```
+
+(포트 변경)
+```powershell
+.\run_web.ps1 -Port 8010
+```
+
+### B) CLI(PowerShell: run.ps1)
 ```powershell
 .\run.ps1 -InputXlsx .\sample.xlsx
 ```
 
-### B) Python 직접 실행
+### C) CLI(Python 직접 실행)
 예)
 ```bash
 python keyword-based_detection.py sample.xlsx
@@ -53,6 +65,15 @@ python keyword-based_detection.py sample.xlsx detection_keywords.md
 ---
 
 ## 4) 출력
+
+### 웹 UI
+- 통합 엑셀 1개 다운로드
+  - `Sheet1`: 전체 결과
+  - (추가) `발신자부서명`별 시트: 히트된 행만 분리(검토 편의)
+- 부서별 개별 파일 zip 다운로드
+  - 부서별로 `HITS` 시트 1개(탐지 행만)
+
+### CLI
 - 기본 출력 파일명: `keyword_based_detection_by_dept.xlsx`
 - Sheet 구성:
   - `Sheet1`: 전체 결과
