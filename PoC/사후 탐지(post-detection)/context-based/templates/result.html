@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>결과 - Context-based</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin: 20px; color:#111; }
+    .box { border:1px solid #ddd; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+    .row { display:flex; gap:12px; flex-wrap: wrap; }
+    .card { border:1px solid #eee; border-radius: 10px; padding: 12px; min-width: 220px; }
+    .btn { background:#111; color:#fff; border:0; padding:10px 14px; border-radius: 10px; font-weight: 700; cursor:pointer; text-decoration:none; display:inline-block; }
+    .btn.secondary { background:#444; }
+    table { border-collapse: collapse; width:100%; }
+    th, td { border:1px solid #eee; padding:8px; font-size: 13px; vertical-align: top; }
+    th { background:#fafafa; position: sticky; top:0; }
+    .hint { color:#555; font-size: 13px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+  </style>
+</head>
+<body>
+  <h1>검사 결과</h1>
+
+  <div class="box">
+    <div class="row">
+      <div class="card">
+        <div class="hint">처리 시간</div>
+        <div><b>{{ '%.2f'|format(elapsed) }}초</b></div>
+      </div>
+      <div class="card">
+        <div class="hint">총 행 수</div>
+        <div><b>{{ stats.total_rows }}</b></div>
+      </div>
+      <div class="card">
+        <div class="hint">후보군(LLM 처리)</div>
+        <div><b>{{ stats.candidate_rows }}</b></div>
+      </div>
+      <div class="card">
+        <div class="hint">HIT 행 수 (risk_level ≥ {{ stats.threshold }})</div>
+        <div><b>{{ stats.hit_rows }}</b> ({{ '%.2f'|format(stats.hit_rate*100) }}%)</div>
+      </div>
+      <div class="card">
+        <div class="hint">모델</div>
+        <div class="mono">{{ stats.model }}</div>
+      </div>
+      <div class="card">
+        <div class="hint">결과 파일명</div>
+        <div class="mono">{{ output_basename }}.xlsx</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 12px;">
+      <a class="btn" href="/download/combined/{{ job_id }}">통합 엑셀 다운로드</a>
+      <a class="btn secondary" href="/download/deptzip/{{ job_id }}">부서별 파일(zip) 다운로드</a>
+      <a class="btn secondary" href="/">다시 실행</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3 style="margin-top:0;">요약 통계</h3>
+    <div class="row">
+      <div class="card" style="flex:1 1 360px;">
+        <div><b>부서별 HIT Top</b></div>
+        <ol>
+          {% for dept, cnt in dept_top %}
+            <li>{{ dept }}: <b>{{ cnt }}</b></li>
+          {% endfor %}
+          {% if dept_top|length == 0 %}
+            <div class="hint">부서 컬럼이 없거나 HIT 행이 없습니다.</div>
+          {% endif %}
+        </ol>
+      </div>
+      <div class="card" style="flex:1 1 360px;">
+        <div><b>의도(intent) Top</b></div>
+        <ol>
+          {% for intent, cnt in intent_top %}
+            <li>{{ intent }}: <b>{{ cnt }}</b></li>
+          {% endfor %}
+          {% if intent_top|length == 0 %}
+            <div class="hint">HIT가 없습니다.</div>
+          {% endif %}
+        </ol>
+      </div>
+      <div class="card" style="flex:1 1 360px;">
+        <div><b>자료유형(artifact) Top</b></div>
+        <ol>
+          {% for at, cnt in artifact_top %}
+            <li>{{ at }}: <b>{{ cnt }}</b></li>
+          {% endfor %}
+          {% if artifact_top|length == 0 %}
+            <div class="hint">HIT가 없습니다.</div>
+          {% endif %}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3 style="margin-top:0;">HIT 행 미리보기 (일부)</h3>
+    <div class="hint">결과 화면에는 <b>HIT(임계값 이상)</b> 행만 표시합니다.</div>
+    <div style="overflow:auto; max-height: 520px; margin-top: 10px;">
+      <table>
+        <thead>
+          <tr>
+            {% for c in columns %}<th>{{ c }}</th>{% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in preview_rows %}
+            <tr>
+              {% for c in columns %}
+                <td>{{ row.get(c, '') }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+          {% if preview_rows|length == 0 %}
+            <tr><td colspan="{{ columns|length }}" class="hint">HIT 행이 없습니다.</td></tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

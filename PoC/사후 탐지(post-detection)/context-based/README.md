@@ -12,7 +12,7 @@
 - Python 3
 - 패키지:
 ```bash
-pip install pandas openpyxl python-dotenv openai
+pip install -r requirements.txt
 ```
 
 - 설정 파일: `.env`
@@ -38,14 +38,26 @@ pip install pandas openpyxl python-dotenv openai
 
 ## 3) 실행
 
-### A) PowerShell(추천: run.ps1)
+### A) 웹 UI 데모(추천)
+```powershell
+.\run_web.ps1
+# (첫 실행은 패키지 설치로 1~3분 정도 걸릴 수 있습니다)
+# 브라우저에서 http://127.0.0.1:8000 접속
+```
+
+(포트 변경)
+```powershell
+.\run_web.ps1 -Port 8010
+```
+
+### B) PowerShell(기존 CLI: run.ps1)
 ```powershell
 .\run.ps1 -InputXlsx .\sample.xlsx
 ```
 
 - 최초 1회는 `.env`가 없으면 `.env.template`에서 만들어주고, 메모장을 열어 API Key 입력을 유도합니다.
 
-### B) Python 직접 실행
+### C) Python 직접 실행
 예)
 ```bash
 python context-based_detection.py sample.xlsx
@@ -66,6 +78,15 @@ python context-based_detection.py sample.xlsx
 ---
 
 ## 5) 출력
+
+### 웹 UI
+- 통합 엑셀 1개 다운로드
+  - `Sheet1`: 전체 결과
+  - (추가) `발신자부서명`별 HIT 시트
+- 부서별 개별 파일 zip 다운로드
+  - 부서별 `HITS` 시트 1개(=HIT 행만)
+
+### CLI
 - 출력 파일명은 기본적으로 `.env`의 `OUTPUT_XLSX_NAME`을 따르며,
   덮어쓰기를 방지하기 위해 실행 시점 timestamp가 붙도록 구현되어 있을 수 있습니다.
 
