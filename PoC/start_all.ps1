@@ -45,14 +45,14 @@ Start-Process powershell -WorkingDirectory $contextDir -ArgumentList @(
 Start-Process powershell -WorkingDirectory $externalDir -ArgumentList @(
   "-NoExit",
   "-Command",
-  "$env:PORT='8020'; .\\run_server.ps1"
+  "`$env:PORT='8020'; .\\run_server.ps1"
 )
 
 # 4) prevention internal (8030)
 Start-Process powershell -WorkingDirectory $internalDir -ArgumentList @(
   "-NoExit",
   "-Command",
-  "$env:PORT='8030'; .\\run_server.ps1"
+  "`$env:PORT='8030'; .\\run_server.ps1"
 )
 
 # Landing page server (simple static)
