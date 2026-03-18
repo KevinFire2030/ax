@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>사후 탐지 PoC - Context-based</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin: 20px; color:#111; }
+    .box { border:1px solid #ddd; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+    .row { display:flex; gap:12px; flex-wrap: wrap; align-items: flex-start; }
+    .col { flex: 1 1 340px; min-width: 340px; }
+    label { font-weight: 600; display:block; margin: 6px 0 6px; }
+    input[type=text], input[type=password], textarea, input[type=number] { width:100%; padding:8px 10px; border:1px solid #ccc; border-radius:8px; }
+    textarea { min-height: 160px; max-height: 340px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+    .btn { background:#111; color:#fff; border:0; padding:10px 14px; border-radius: 10px; font-weight: 700; cursor:pointer; }
+    .hint { color:#555; font-size: 13px; margin-top: 4px; }
+    .error { background:#fff3f3; border:1px solid #ffcccc; padding: 12px; border-radius: 10px; color:#a40000; margin-bottom: 14px; }
+    details { border:1px dashed #ddd; border-radius: 10px; padding: 10px 12px; }
+    summary { cursor:pointer; font-weight:700; }
+  </style>
+</head>
+<body>
+  <h1>사후 탐지 PoC (Context-based)</h1>
+  <div class="hint">전수에서 후보군만 뽑아 LLM으로 문맥 판정합니다. 결과 화면에는 <b>HIT(임계값 이상)</b> 행만 표시합니다.</div>
+
+  {% if error %}
+  <div class="error">{{ error }}</div>
+  {% endif %}
+
+  <form class="box" action="/run" method="post" enctype="multipart/form-data">
+    <div class="row">
+      <div class="col">
+        <label>입력 파일(xlsx)</label>
+        <input type="file" name="input_xlsx" accept=".xlsx" required />
+
+        <label>결과 파일명(기본값 제공, 수정 가능)</label>
+        <input type="text" name="output_basename" placeholder="예: mail_log_context_detection_20260316_150000" />
+        <div class="hint">확장자 .xlsx 는 자동으로 붙습니다.</div>
+
+        <details style="margin-top:10px;">
+          <summary>고급 설정(LLM/후보군/임계값)</summary>
+          <div class="row" style="margin-top:10px;">
+            <div class="col">
+              <label>OpenAI API Key (비우면 .env 사용)</label>
+              <input type="password" name="openai_api_key" placeholder="sk-..." />
+              <div class="hint">로컬 데모라 브라우저에 저장되지 않습니다(서버 메모리로만 처리).</div>
+            </div>
+            <div class="col">
+              <label>모델</label>
+              <input type="text" name="openai_model" value="{{ defaults.openai_model }}" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label>후보군 ratio</label>
+              <input type="number" step="0.01" min="0" max="1" name="candidate_ratio" value="{{ defaults.candidate_ratio }}" />
+            </div>
+            <div class="col">
+              <label>후보군 min rows</label>
+              <input type="number" min="1" name="candidate_min_rows" value="{{ defaults.candidate_min_rows }}" />
+            </div>
+            <div class="col">
+              <label>후보군 max rows</label>
+              <input type="number" min="1" name="candidate_max_rows" value="{{ defaults.candidate_max_rows }}" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label>HIT 임계값 (risk_level)</label>
+              <input type="number" min="0" max="5" name="hit_risk_level_threshold" value="{{ defaults.hit_risk_level_threshold }}" />
+            </div>
+            <div class="col">
+              <label>동시 호출(concurrency)</label>
+              <input type="number" min="1" max="50" name="concurrency" value="{{ defaults.openai_concurrency }}" />
+            </div>
+            <div class="col">
+              <label>미리보기 행 수(HIT 중)</label>
+              <input type="number" min="1" max="2000" name="preview_rows" value="200" />
+            </div>
+            <div class="col">
+              <label>Top N(요약 통계)</label>
+              <input type="number" min="3" max="50" name="topn" value="10" />
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="col">
+        <label>키워드(후보군 생성용, 한 줄 1키워드)</label>
+        <textarea name="keywords_text" placeholder="키워드를 한 줄에 하나씩 입력하세요.">{{ keywords_text }}</textarea>
+        <div class="hint">기본값은 detection_keywords.md (.env의 KEYWORD_FILE_PATH)에서 로드됩니다.</div>
+
+        <label style="margin-top:10px;">프롬프트(JSON 출력 규칙)</label>
+        <textarea name="prompt_text" placeholder="prompt_context_detection.md 내용을 수정할 수 있습니다.">{{ prompt_text }}</textarea>
+        <div class="hint">기본값은 prompt_context_detection.md (.env의 PROMPT_FILE_PATH)입니다.</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 14px;">
+      <button class="btn" type="submit">검사 실행</button>
+    </div>
+  </form>
+
+  <div class="box">
+    <b>출력 정책</b>
+    <ul>
+      <li>통합 엑셀 1개: 전체 결과 + (추가) 부서별 HIT 시트(탐지 행만)</li>
+      <li>부서별 개별 파일 zip: 부서별로 HIT 행만 들어있는 엑셀을 묶어서 제공</li>
+    </ul>
+  </div>
+</body>
+</html>

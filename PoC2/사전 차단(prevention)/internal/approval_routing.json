@@ -1,0 +1,15 @@
+{
+  "_comment": "PoC용 승인 라우팅 매핑. sender_dept(발신자부서명) 값으로 3단계 승인자를 결정합니다.",
+  "default": {
+    "stage1_team_compliance": "(팀별 준법담당) TBD",
+    "stage2_biz_compliance": "(사업부 준법담당) TBD",
+    "stage3_dept_head": "(부서장) TBD"
+  },
+  "by_sender_dept": {
+    "부품품질그룹(MX)": {
+      "stage1_team_compliance": "부품품질그룹 준법담당 (TBD)",
+      "stage2_biz_compliance": "MX 사업부 준법담당 (TBD)",
+      "stage3_dept_head": "부품품질그룹장 (TBD)"
+    }
+  }
+}
