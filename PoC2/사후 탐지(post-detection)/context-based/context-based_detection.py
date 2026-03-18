@@ -20,12 +20,13 @@ from typing import Any, Dict, Optional, Tuple
 import pandas as pd
 from dotenv import load_dotenv
 
+# OpenAI SDK is optional when using GAUSS provider
 try:
-    from openai import AsyncOpenAI
-except Exception as e:
-    raise RuntimeError(
-        "Missing dependency 'openai'. Install with: pip install openai python-dotenv pandas openpyxl"
-    ) from e
+    from openai import AsyncOpenAI  # type: ignore
+except Exception:
+    AsyncOpenAI = None  # type: ignore
+
+import requests
 
 
 # -----------------------------
@@ -191,11 +192,13 @@ def build_prompt(template: str, title: str, body: str, attachments: str, meta: D
     return prompt.strip()
 
 
-async def call_llm(client: AsyncOpenAI, cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
+async def call_openai_llm(client: Any, cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
+    if AsyncOpenAI is None:
+        raise RuntimeError("OpenAI SDK is not installed, but LLM_PROVIDER=openai. Install: pip install openai")
+
     last_err = None
     for attempt in range(cfg.max_retries + 1):
         try:
-            # Using Responses API style via openai python
             resp = await client.responses.create(
                 model=cfg.model,
                 input=prompt,
@@ -209,7 +212,83 @@ async def call_llm(client: AsyncOpenAI, cfg: LLMConfig, prompt: str) -> Dict[str
             if attempt >= cfg.max_retries:
                 break
             await asyncio.sleep(cfg.retry_backoff_seconds * (attempt + 1))
-    raise RuntimeError(f"LLM call failed after retries: {last_err}")
+    raise RuntimeError(f"OpenAI LLM call failed after retries: {last_err}")
+
+
+def _gauss_headers() -> Dict[str, str]:
+    h = {
+        "x-generative-ai-client": env_str("x-generative-ai-client", "").strip(),
+        "x-openapi-token": env_str("x-openapi-token", "").strip(),
+    }
+    email = env_str("x-generative-ai-user-email", "").strip()
+    if email:
+        h["x-generative-ai-user-email"] = email
+
+    missing = [k for k, v in h.items() if not v]
+    if missing:
+        raise RuntimeError(f"Missing GAUSS header env(s): {', '.join(missing)}")
+
+    return h
+
+
+def _gauss_endpoint(path: str) -> str:
+    base = env_str("ENDPOINT_URL", "").strip().rstrip("/")
+    if not base:
+        raise RuntimeError("Missing ENDPOINT_URL for GAUSS in .env")
+    return f"{base}{path}"
+
+
+def _gauss_model_id() -> str:
+    mid = env_str("GAUSS_TEXT_MODEL_ID", "").strip()
+    if not mid:
+        raise RuntimeError("Missing GAUSS_TEXT_MODEL_ID in .env")
+    return mid
+
+
+def _gauss_system_prompt() -> str:
+    return env_str("GAUSS_SYSTEM_PROMPT", "").strip()
+
+
+async def call_gauss_llm(cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
+    """Call GAUSS Chat API (non-stream) and parse JSON from response.content."""
+
+    url = _gauss_endpoint("/openapi/chat/v1/messages")
+    payload: Dict[str, Any] = {
+        "modelIds": [_gauss_model_id()],
+        "contents": [prompt],
+        "isStream": False,
+    }
+
+    sp = _gauss_system_prompt()
+    if sp:
+        payload["systemPrompt"] = sp
+
+    last_err: Exception | None = None
+
+    def _do_post() -> Dict[str, Any]:
+        r = requests.post(url, headers={**_gauss_headers(), "Content-Type": "application/json"}, json=payload, timeout=cfg.timeout_seconds)
+        r.raise_for_status()
+        return r.json()
+
+    for attempt in range(cfg.max_retries + 1):
+        try:
+            resp = await asyncio.to_thread(_do_post)
+            # API returns JSON object with "content" holding model answer text
+            content = resp.get("content", "")
+            if not isinstance(content, str):
+                content = str(content)
+            parsed = json.loads(content)
+            parsed["llm_model"] = "gauss"  # tag
+            parsed["gauss_responseCode"] = resp.get("responseCode")
+            parsed["gauss_status"] = resp.get("status")
+            return parsed
+        except Exception as e:
+            last_err = e
+            if attempt >= cfg.max_retries:
+                break
+            await asyncio.sleep(cfg.retry_backoff_seconds * (attempt + 1))
+
+    raise RuntimeError(f"GAUSS LLM call failed after retries: {last_err}")
 
 
 # -----------------------------
@@ -221,9 +300,10 @@ async def run(input_path: Path) -> None:
     load_dotenv()  # loads .env from cwd
 
     # LLM config
+    provider = env_str("LLM_PROVIDER", "gauss").strip().lower()
+
+    # OpenAI envs (only required when provider=openai)
     api_key = env_str("OPENAI_API_KEY", "")
-    if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is empty. Please set it in .env")
 
     llm_cfg = LLMConfig(
         api_key=api_key,
@@ -235,6 +315,12 @@ async def run(input_path: Path) -> None:
         retry_backoff_seconds=env_float("OPENAI_RETRY_BACKOFF_SECONDS", 2.0),
         concurrency=env_int("OPENAI_CONCURRENCY", 5),
     )
+
+    if provider == "openai":
+        if not api_key:
+            raise RuntimeError("OPENAI_API_KEY is empty. Please set it in .env")
+        if AsyncOpenAI is None:
+            raise RuntimeError("LLM_PROVIDER=openai but openai SDK is missing. Install: pip install openai")
 
     # Prompt template
     prompt_path = Path(env_str("PROMPT_FILE_PATH", "./prompt_context_detection.md"))
@@ -349,8 +435,10 @@ async def run(input_path: Path) -> None:
     candidates = df.sort_values("candidate_score", ascending=False).head(k).copy()
     print(f"후보군: {k}행 (ratio={candidate_ratio})")
 
-    # LLM client
-    client = AsyncOpenAI(api_key=llm_cfg.api_key, timeout=llm_cfg.timeout_seconds)
+    # LLM client (only for openai provider)
+    client = None
+    if provider == "openai":
+        client = AsyncOpenAI(api_key=llm_cfg.api_key, timeout=llm_cfg.timeout_seconds)
 
     sem = asyncio.Semaphore(max(1, llm_cfg.concurrency))
 
@@ -383,10 +471,12 @@ async def run(input_path: Path) -> None:
         prompt = build_prompt(template=prompt_template, title=title, body=body, attachments=attach, meta=meta)
 
         async with sem:
-            result = await call_llm(client, llm_cfg, prompt)
-
-        # add model tag
-        result["llm_model"] = llm_cfg.model
+            if provider == "openai":
+                result = await call_openai_llm(client, llm_cfg, prompt)
+                result["llm_model"] = llm_cfg.model
+            else:
+                # GAUSS: prompt should output JSON only
+                result = await call_gauss_llm(llm_cfg, prompt)
 
         if cache_enabled:
             p = cache_path(cache_dir, key)
