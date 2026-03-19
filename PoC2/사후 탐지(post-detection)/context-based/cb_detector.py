@@ -24,12 +24,13 @@ from typing import Any, Dict, Iterable
 import pandas as pd
 from dotenv import load_dotenv
 
+# OpenAI SDK is optional when using GAUSS provider
 try:
-    from openai import AsyncOpenAI
-except Exception as e:
-    raise RuntimeError(
-        "Missing dependency 'openai'. Install with: pip install openai python-dotenv pandas openpyxl"
-    ) from e
+    from openai import AsyncOpenAI  # type: ignore
+except Exception:
+    AsyncOpenAI = None  # type: ignore
+
+import requests
 
 
 # -----------------------------
@@ -220,7 +221,10 @@ def build_prompt(template: str, title: str, body: str, attachments: str, meta: D
     return prompt.strip()
 
 
-async def call_llm(client: AsyncOpenAI, cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
+async def call_openai_llm(client: Any, cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
+    if AsyncOpenAI is None:
+        raise RuntimeError("OpenAI SDK is not installed, but LLM_PROVIDER=openai. Install: pip install openai")
+
     last_err = None
     for attempt in range(cfg.max_retries + 1):
         try:
@@ -237,7 +241,81 @@ async def call_llm(client: AsyncOpenAI, cfg: LLMConfig, prompt: str) -> Dict[str
             if attempt >= cfg.max_retries:
                 break
             await asyncio.sleep(cfg.retry_backoff_seconds * (attempt + 1))
-    raise RuntimeError(f"LLM call failed after retries: {last_err}")
+    raise RuntimeError(f"OpenAI LLM call failed after retries: {last_err}")
+
+
+def _gauss_headers() -> Dict[str, str]:
+    h = {
+        "x-generative-ai-client": env_str("x-generative-ai-client", "").strip(),
+        "x-openapi-token": env_str("x-openapi-token", "").strip(),
+    }
+    email = env_str("x-generative-ai-user-email", "").strip()
+    if email:
+        h["x-generative-ai-user-email"] = email
+
+    missing = [k for k, v in h.items() if not v]
+    if missing:
+        raise RuntimeError(f"Missing GAUSS header env(s): {', '.join(missing)}")
+
+    return h
+
+
+def _gauss_endpoint(path: str) -> str:
+    base = env_str("ENDPOINT_URL", "").strip().rstrip("/")
+    if not base:
+        raise RuntimeError("Missing ENDPOINT_URL for GAUSS in .env")
+    return f"{base}{path}"
+
+
+def _gauss_model_id() -> str:
+    mid = env_str("GAUSS_TEXT_MODEL_ID", "").strip()
+    if not mid:
+        raise RuntimeError("Missing GAUSS_TEXT_MODEL_ID in .env")
+    return mid
+
+
+def _gauss_system_prompt() -> str:
+    return env_str("GAUSS_SYSTEM_PROMPT", "").strip()
+
+
+async def call_gauss_llm(cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
+    """Call GAUSS Chat API (non-stream) and parse JSON from response.content."""
+
+    url = _gauss_endpoint("/openapi/chat/v1/messages")
+    payload: Dict[str, Any] = {
+        "modelIds": [_gauss_model_id()],
+        "contents": [prompt],
+        "isStream": False,
+    }
+
+    sp = _gauss_system_prompt()
+    if sp:
+        payload["systemPrompt"] = sp
+
+    last_err: Exception | None = None
+
+    def _do_post() -> Dict[str, Any]:
+        r = requests.post(url, headers={**_gauss_headers(), "Content-Type": "application/json"}, json=payload, timeout=cfg.timeout_seconds)
+        r.raise_for_status()
+        return r.json()
+
+    for attempt in range(cfg.max_retries + 1):
+        try:
+            resp = await asyncio.to_thread(_do_post)
+            content = resp.get("content", "")
+            if not isinstance(content, str):
+                content = str(content)
+            parsed = json.loads(content)
+            parsed["gauss_responseCode"] = resp.get("responseCode")
+            parsed["gauss_status"] = resp.get("status")
+            return parsed
+        except Exception as e:
+            last_err = e
+            if attempt >= cfg.max_retries:
+                break
+            await asyncio.sleep(cfg.retry_backoff_seconds * (attempt + 1))
+
+    raise RuntimeError(f"GAUSS LLM call failed after retries: {last_err}")
 
 
 # -----------------------------
@@ -246,8 +324,11 @@ async def call_llm(client: AsyncOpenAI, cfg: LLMConfig, prompt: str) -> Dict[str
 
 @dataclass
 class ContextDetectionSettings:
-    # LLM
-    openai_api_key: str
+    # LLM provider: gauss | openai
+    llm_provider: str = "gauss"
+
+    # OpenAI (only if provider=openai)
+    openai_api_key: str = ""
     openai_model: str = "gpt-5.2"
     openai_temperature: float = 0.1
     openai_max_output_tokens: int = 1200
@@ -255,6 +336,14 @@ class ContextDetectionSettings:
     openai_max_retries: int = 3
     openai_retry_backoff_seconds: float = 2.0
     openai_concurrency: int = 5
+
+    # GAUSS Chat APIs(OpenAPI) (only if provider=gauss)
+    gauss_endpoint_url: str = ""  # ENDPOINT_URL
+    gauss_client_header: str = ""  # x-generative-ai-client
+    gauss_token_header: str = ""  # x-openapi-token
+    gauss_user_email: str = ""  # x-generative-ai-user-email
+    gauss_text_model_id: str = ""  # GAUSS_TEXT_MODEL_ID
+    gauss_system_prompt: str = ""  # GAUSS_SYSTEM_PROMPT
 
     # Candidate selection
     candidate_ratio: float = 0.05
@@ -313,9 +402,12 @@ def load_defaults_from_env(env_path_dir: Path | None = None) -> ContextDetection
     else:
         load_dotenv(dotenv_path=str(env_path_dir / ".env"), override=False)
 
+    provider = env_str("LLM_PROVIDER", "gauss").strip().lower()
+
     api_key = env_str("OPENAI_API_KEY", "")
 
     s = ContextDetectionSettings(
+        llm_provider=provider,
         openai_api_key=api_key,
         openai_model=env_str("OPENAI_MODEL", "gpt-5.2"),
         openai_temperature=env_float("OPENAI_TEMPERATURE", 0.1),
@@ -324,6 +416,12 @@ def load_defaults_from_env(env_path_dir: Path | None = None) -> ContextDetection
         openai_max_retries=env_int("OPENAI_MAX_RETRIES", 3),
         openai_retry_backoff_seconds=env_float("OPENAI_RETRY_BACKOFF_SECONDS", 2.0),
         openai_concurrency=env_int("OPENAI_CONCURRENCY", 5),
+        gauss_endpoint_url=env_str("ENDPOINT_URL", ""),
+        gauss_client_header=env_str("x-generative-ai-client", ""),
+        gauss_token_header=env_str("x-openapi-token", ""),
+        gauss_user_email=env_str("x-generative-ai-user-email", ""),
+        gauss_text_model_id=env_str("GAUSS_TEXT_MODEL_ID", ""),
+        gauss_system_prompt=env_str("GAUSS_SYSTEM_PROMPT", ""),
         candidate_ratio=env_float("CANDIDATE_RATIO", 0.05),
         candidate_min_rows=env_int("CANDIDATE_MIN_ROWS", 200),
         candidate_max_rows=env_int("CANDIDATE_MAX_ROWS", 10000),
@@ -378,8 +476,34 @@ def _sanitize_sheet(name: str) -> str:
 
 
 async def detect_context_async(df: pd.DataFrame, settings: ContextDetectionSettings) -> ContextDetectionResult:
-    if not settings.openai_api_key:
-        raise RuntimeError("OPENAI_API_KEY is empty. Please set it in .env (or provide in Web UI)")
+    provider = (settings.llm_provider or "gauss").strip().lower()
+
+    if provider == "openai":
+        if not settings.openai_api_key:
+            raise RuntimeError("OPENAI_API_KEY is empty. Please set it in .env (or provide in Web UI)")
+        if AsyncOpenAI is None:
+            raise RuntimeError("LLM_PROVIDER=openai but openai SDK is missing. Install: pip install openai")
+    else:
+        # GAUSS required
+        if not (settings.gauss_endpoint_url or "").strip():
+            raise RuntimeError("ENDPOINT_URL is empty. Please set it in .env")
+        if not (settings.gauss_client_header or "").strip():
+            raise RuntimeError("x-generative-ai-client is empty. Please set it in .env")
+        if not (settings.gauss_token_header or "").strip():
+            raise RuntimeError("x-openapi-token is empty. Please set it in .env")
+        if not (settings.gauss_text_model_id or "").strip():
+            raise RuntimeError("GAUSS_TEXT_MODEL_ID is empty. Please set it in .env")
+
+        # bridge: set env values for call_gauss_llm helpers
+        os.environ["ENDPOINT_URL"] = settings.gauss_endpoint_url
+        os.environ["x-generative-ai-client"] = settings.gauss_client_header
+        os.environ["x-openapi-token"] = settings.gauss_token_header
+        if settings.gauss_user_email:
+            os.environ["x-generative-ai-user-email"] = settings.gauss_user_email
+        os.environ["GAUSS_TEXT_MODEL_ID"] = settings.gauss_text_model_id
+        if settings.gauss_system_prompt:
+            os.environ["GAUSS_SYSTEM_PROMPT"] = settings.gauss_system_prompt
+
     if not settings.prompt_template:
         raise RuntimeError("Prompt template is empty. Check prompt_context_detection.md")
     if not settings.keywords:
@@ -455,7 +579,10 @@ async def detect_context_async(df: pd.DataFrame, settings: ContextDetectionSetti
         concurrency=settings.openai_concurrency,
     )
 
-    client = AsyncOpenAI(api_key=llm_cfg.api_key, timeout=llm_cfg.timeout_seconds)
+    client = None
+    if provider == "openai":
+        client = AsyncOpenAI(api_key=llm_cfg.api_key, timeout=llm_cfg.timeout_seconds)
+
     sem = asyncio.Semaphore(max(1, llm_cfg.concurrency))
 
     async def process_one(idx: int, row: pd.Series):
@@ -500,9 +627,12 @@ async def detect_context_async(df: pd.DataFrame, settings: ContextDetectionSetti
         )
 
         async with sem:
-            res = await call_llm(client, llm_cfg, prompt)
-
-        res["llm_model"] = llm_cfg.model
+            if provider == "openai":
+                res = await call_openai_llm(client, llm_cfg, prompt)
+                res["llm_model"] = llm_cfg.model
+            else:
+                res = await call_gauss_llm(llm_cfg, prompt)
+                res["llm_model"] = "gauss"
 
         if settings.cache_enabled:
             p = cache_path(settings.cache_dir, key)
@@ -595,7 +725,7 @@ async def detect_context_async(df: pd.DataFrame, settings: ContextDetectionSetti
         "dept_counts": dept_counts,
         "intent_counts": dict(intent_counts.most_common()),
         "artifact_counts": dict(artifact_counts.most_common()),
-        "model": settings.openai_model,
+        "model": settings.openai_model if provider == "openai" else "gauss",
         "threshold": settings.hit_risk_level_threshold,
     }
 
