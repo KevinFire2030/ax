@@ -558,27 +558,35 @@ async def run(input_path: Path) -> None:
         idx, res = await fut
         results[idx] = res
 
-    # Fill outputs (default empty)
-    df[col_out_score] = ""
-    df[col_out_level] = ""
-    df[col_out_intent] = ""
-    df[col_out_artifact] = ""
-    df[col_out_evidence] = ""
-    df[col_out_reason] = ""
-    df["llm_model"] = ""
+    # Fill outputs
+    # Pandas 3.x may infer strict string dtype when assigning ""; then ints cannot be assigned.
+    # Use explicit dtypes.
+    df[col_out_score] = pd.Series([pd.NA] * len(df), dtype="Int64")
+    df[col_out_level] = pd.Series([pd.NA] * len(df), dtype="Int64")
+
+    for col in [col_out_intent, col_out_artifact, col_out_evidence, col_out_reason, "llm_model"]:
+        df[col] = pd.Series([None] * len(df), dtype="object")
+
+    def _to_int(v):
+        try:
+            if v is None or v == "":
+                return pd.NA
+            return int(v)
+        except Exception:
+            return pd.NA
 
     for idx, res in results.items():
-        df.at[idx, col_out_score] = res.get("risk_score", "")
-        df.at[idx, col_out_level] = res.get("risk_level", "")
-        df.at[idx, col_out_intent] = res.get("intent", "")
-        df.at[idx, col_out_artifact] = res.get("artifact_type", "")
+        df.at[idx, col_out_score] = _to_int(res.get("risk_score", ""))
+        df.at[idx, col_out_level] = _to_int(res.get("risk_level", ""))
+        df.at[idx, col_out_intent] = str(res.get("intent", "") or "")
+        df.at[idx, col_out_artifact] = str(res.get("artifact_type", "") or "")
         ev = res.get("evidence", [])
         if isinstance(ev, list):
             df.at[idx, col_out_evidence] = " | ".join([str(x) for x in ev if x])
         else:
-            df.at[idx, col_out_evidence] = str(ev)
-        df.at[idx, col_out_reason] = res.get("reason", "")
-        df.at[idx, "llm_model"] = res.get("llm_model", llm_cfg.model)
+            df.at[idx, col_out_evidence] = str(ev or "")
+        df.at[idx, col_out_reason] = str(res.get("reason", "") or "")
+        df.at[idx, "llm_model"] = str(res.get("llm_model", llm_cfg.model) or llm_cfg.model)
 
     # Hit rows defined by risk level threshold
     def is_hit(v) -> bool:
