@@ -332,13 +332,35 @@ async def call_gauss_llm(cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
                     f"status={status} responseCode={response_code} filterBlockReason={filter_reason}"
                 )
 
+            def _extract_json_text(s: str) -> str:
+                t = (s or "").strip()
+                if t.lower().startswith("json"):
+                    t = t[4:].lstrip()
+                if t.startswith("```"):
+                    lines = t.splitlines()
+                    if lines:
+                        lines = lines[1:]
+                    if lines and lines[-1].strip().startswith("```"):
+                        lines = lines[:-1]
+                    t = "\n".join(lines).strip()
+                    if t.lower().startswith("json"):
+                        t = t[4:].lstrip()
+                if "{" in t and "}" in t:
+                    a = t.find("{")
+                    b = t.rfind("}")
+                    if 0 <= a < b:
+                        t = t[a : b + 1]
+                return t
+
+            cleaned = _extract_json_text(content)
+
             try:
-                parsed = json.loads(content)
+                parsed = json.loads(cleaned)
             except Exception as je:
                 raise RuntimeError(
                     "GAUSS content is not valid JSON. "
                     f"status={status} responseCode={response_code} "
-                    f"content_preview={_preview(content)} err={je}"
+                    f"content_preview={_preview(content)} cleaned_preview={_preview(cleaned)} err={je}"
                 )
 
             parsed["gauss_responseCode"] = response_code
