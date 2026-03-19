@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>전체 검사 결과</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin: 20px; color:#111; }
+    .box { border:1px solid #ddd; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+    .row { display:flex; gap:12px; flex-wrap: wrap; }
+    .card { border:1px solid #eee; border-radius: 10px; padding: 12px; min-width: 220px; }
+    .btn { background:#111; color:#fff; border:0; padding:10px 14px; border-radius: 10px; font-weight: 700; cursor:pointer; text-decoration:none; display:inline-block; }
+    .btn.secondary { background:#444; }
+  </style>
+</head>
+<body>
+  <h1>전체 검사 결과</h1>
+
+  <div class="box">
+    <div class="row">
+      <div class="card"><div>후보군</div><b>{{ cand }}</b></div>
+      <div class="card"><div>LLM 처리</div><b>{{ processed }}</b></div>
+      <div class="card"><div>HIT</div><b>{{ hit }}</b></div>
+      <div class="card"><div>처리 시간</div><b>{{ '%.2f'|format(elapsed) }}s</b></div>
+    </div>
+    <div style="margin-top: 10px;">
+      <a class="btn" href="/download/xlsx/{{ job_id }}">전체 결과 xlsx 다운로드</a>
+      <a class="btn secondary" href="/download/deptzip/{{ job_id }}">부서별 zip 다운로드</a>
+      <a class="btn secondary" href="/">돌아가기</a>
+    </div>
+  </div>
+</body>
+</html>

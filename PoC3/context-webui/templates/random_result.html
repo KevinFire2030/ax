@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>랜덤 검사 결과</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin: 20px; color:#111; }
+    .box { border:1px solid #ddd; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+    .btn { background:#111; color:#fff; border:0; padding:10px 14px; border-radius: 10px; font-weight: 700; cursor:pointer; text-decoration:none; display:inline-block; }
+    pre { background:#f6f6f6; padding: 12px; border-radius: 10px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <h1>랜덤 검사 결과</h1>
+  <div class="box">
+    <div><b>llm_model</b>: {{ result.get('llm_model','') }}</div>
+    <div><b>risk_score</b>: {{ result.get('risk_score','') }} / <b>risk_level</b>: {{ result.get('risk_level','') }}</div>
+    <div><b>intent</b>: {{ result.get('intent','') }} / <b>artifact_type</b>: {{ result.get('artifact_type','') }}</div>
+    <div><b>reason</b>: {{ result.get('reason','') }}</div>
+    <div><b>evidence</b>: {{ result.get('evidence','') }}</div>
+    <div><b>elapsed</b>: {{ '%.2f'|format(result.get('elapsed_sec',0)) }}s</div>
+  </div>
+
+  <div class="box">
+    <b>RAW JSON</b>
+    <pre>{{ result | tojson(indent=2, ensure_ascii=False) }}</pre>
+  </div>
+
+  <a class="btn" href="/">돌아가기</a>
+</body>
+</html>

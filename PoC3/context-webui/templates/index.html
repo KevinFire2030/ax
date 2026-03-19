@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PoC3 문맥 검출 WebUI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif; margin: 20px; color:#111; }
+    .box { border:1px solid #ddd; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+    .row { display:flex; gap:12px; flex-wrap: wrap; align-items: flex-start; }
+    .col { flex: 1 1 360px; min-width: 360px; }
+    label { font-weight: 600; display:block; margin: 6px 0 6px; }
+    input[type=text], input[type=number], textarea { width:100%; padding:8px 10px; border:1px solid #ccc; border-radius:8px; }
+    textarea { min-height: 150px; max-height: 320px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+    .btn { background:#111; color:#fff; border:0; padding:10px 14px; border-radius: 10px; font-weight: 700; cursor:pointer; }
+    .btn.secondary { background:#444; }
+    .hint { color:#555; font-size: 13px; margin-top: 4px; }
+    .error { background:#fff3f3; border:1px solid #ffcccc; padding: 12px; border-radius: 10px; color:#a40000; margin-bottom: 14px; }
+    details { border:1px dashed #ddd; border-radius: 10px; padding: 10px 12px; }
+    summary { cursor:pointer; font-weight:700; }
+  </style>
+</head>
+<body>
+  <h1>문맥 검출 PoC (PoC3)</h1>
+
+  <div class="box">
+    <div class="hint">DRM 이슈로 업로드 없이 서버가 로컬 경로의 샘플 엑셀을 읽습니다.</div>
+    <div class="hint">샘플: <b>{{ sample_path }}</b> / 행 수: <b>{{ df_rows }}</b></div>
+  </div>
+
+  {% if error %}
+  <div class="error">{{ error }}</div>
+  {% endif %}
+
+  <div class="row">
+    <div class="col">
+      <form class="box" method="post" action="/run_random">
+        <h3 style="margin-top:0;">1) 랜덤 1행 검사</h3>
+        <div class="hint">랜덤으로 1행을 뽑아 LLM 1회 호출 후 결과를 팝업으로 보여줍니다(엑셀 저장 X).</div>
+
+        <label>제목</label>
+        <textarea name="title">{{ row.get(cols.title,'') if row else '' }}</textarea>
+
+        <label>본문</label>
+        <textarea name="body">{{ row.get(cols.body,'') if row else '' }}</textarea>
+
+        <label>첨부파일명(삼성/협력사 합쳐서)</label>
+        <input type="text" name="attachments" value="{% if row %}{{ (row.get(cols.a1,'') ~ ' ' ~ row.get(cols.a2,''))|trim }}{% endif %}" />
+
+        <label>발신자부서명</label>
+        <input type="text" name="dept" value="{{ row.get(cols.dept,'') if row else '' }}" />
+
+        <label>키워드(한 줄 1개)</label>
+        <textarea name="keywords_text">{{ keywords_text }}</textarea>
+
+        <label>프롬프트</label>
+        <textarea name="prompt_text">{{ prompt_text }}</textarea>
+
+        <div style="margin-top: 10px;" class="row">
+          <button class="btn" type="submit">랜덤 검사 실행</button>
+          <button class="btn secondary" type="submit" formaction="/random">다시 랜덤</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col">
+      <form class="box" method="post" action="/run_all">
+        <h3 style="margin-top:0;">2) 전체 검사(후보군만 LLM 호출)</h3>
+        <div class="hint">RPM 제한(예: trial 3/min)을 고려하여 후보군만 호출합니다.</div>
+
+        <label>후보 ratio</label>
+        <input type="number" step="0.01" min="0" max="1" name="candidate_ratio" value="{{ settings.candidate_ratio }}" />
+
+        <div class="row">
+          <div class="col">
+            <label>후보 min</label>
+            <input type="number" min="1" name="candidate_min_rows" value="{{ settings.candidate_min_rows }}" />
+          </div>
+          <div class="col">
+            <label>후보 max</label>
+            <input type="number" min="1" name="candidate_max_rows" value="{{ settings.candidate_max_rows }}" />
+          </div>
+        </div>
+
+        <label>HIT 임계값(risk_level)</label>
+        <input type="number" min="0" max="5" name="hit_level_threshold" value="{{ settings.hit_level_threshold }}" />
+
+        <label>키워드(한 줄 1개)</label>
+        <textarea name="keywords_text">{{ keywords_text }}</textarea>
+
+        <label>프롬프트</label>
+        <textarea name="prompt_text">{{ prompt_text }}</textarea>
+
+        <div style="margin-top: 10px;">
+          <button class="btn" type="submit">전체 검사 실행</button>
+        </div>
+      </form>
+
+      <div class="box">
+        <b>접속 안내</b>
+        <div class="hint">서버는 <b>10.246.72.83:8000</b>에서 실행 후, 다른 사내 NPC에서 <b>http://10.246.72.83:8000</b> 로 접속합니다.</div>
+        <div class="hint">방화벽/보안정책에 따라 포트 접근이 막힐 수 있습니다.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
