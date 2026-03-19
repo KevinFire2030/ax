@@ -250,7 +250,12 @@ def _gauss_system_prompt() -> str:
 
 
 async def call_gauss_llm(cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
-    """Call GAUSS Chat API (non-stream) and parse JSON from response.content."""
+    """Call GAUSS Chat API (non-stream) and parse JSON from response.content.
+
+    Robustness:
+    - If API returns non-JSON content, raise with a short preview.
+    - If API returns empty content, raise with responseCode/status/filterBlockReason.
+    """
 
     url = _gauss_endpoint("/openapi/chat/v1/messages")
     payload: Dict[str, Any] = {
@@ -266,22 +271,52 @@ async def call_gauss_llm(cfg: LLMConfig, prompt: str) -> Dict[str, Any]:
     last_err: Exception | None = None
 
     def _do_post() -> Dict[str, Any]:
-        r = requests.post(url, headers={**_gauss_headers(), "Content-Type": "application/json"}, json=payload, timeout=cfg.timeout_seconds)
+        r = requests.post(
+            url,
+            headers={**_gauss_headers(), "Content-Type": "application/json"},
+            json=payload,
+            timeout=cfg.timeout_seconds,
+        )
         r.raise_for_status()
         return r.json()
+
+    def _preview(s: str, n: int = 800) -> str:
+        s = s.replace("\r", "")
+        return s[:n] + ("...<TRUNCATED>" if len(s) > n else "")
 
     for attempt in range(cfg.max_retries + 1):
         try:
             resp = await asyncio.to_thread(_do_post)
-            # API returns JSON object with "content" holding model answer text
             content = resp.get("content", "")
+            if content is None:
+                content = ""
             if not isinstance(content, str):
                 content = str(content)
-            parsed = json.loads(content)
-            parsed["llm_model"] = "gauss"  # tag
-            parsed["gauss_responseCode"] = resp.get("responseCode")
-            parsed["gauss_status"] = resp.get("status")
+
+            status = resp.get("status")
+            response_code = resp.get("responseCode")
+            filter_reason = resp.get("filterBlockReason")
+
+            if not content.strip():
+                raise RuntimeError(
+                    "GAUSS returned empty content. "
+                    f"status={status} responseCode={response_code} filterBlockReason={filter_reason}"
+                )
+
+            try:
+                parsed = json.loads(content)
+            except Exception as je:
+                raise RuntimeError(
+                    "GAUSS content is not valid JSON. "
+                    f"status={status} responseCode={response_code} "
+                    f"content_preview={_preview(content)} err={je}"
+                )
+
+            parsed["llm_model"] = "gauss"
+            parsed["gauss_responseCode"] = response_code
+            parsed["gauss_status"] = status
             return parsed
+
         except Exception as e:
             last_err = e
             if attempt >= cfg.max_retries:
