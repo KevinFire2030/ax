@@ -9,26 +9,53 @@
 <body>
   <main>
     <h1>Security LLM Gateway MVP</h1>
-    <textarea id="text" placeholder="분석할 텍스트를 입력하세요"></textarea>
-    <div class="row">
-      <label>모드
-        <select id="mode">
-          <option value="auto">auto</option>
-          <option value="internal">internal</option>
-          <option value="external">external</option>
-          <option value="hybrid">hybrid</option>
-        </select>
-      </label>
-      <button id="randomExample">랜덤 예시 불러오기</button>
-      <button id="run">분석(라우팅) 실행</button>
-      <button id="loadLogs">로그 조회</button>
-    </div>
 
-    <h2>결과</h2>
-    <pre id="result"></pre>
+    <section class="layout3">
+      <div class="panel">
+        <h2>입력</h2>
+        <textarea id="text" placeholder="분석할 텍스트를 입력하세요"></textarea>
+        <div class="row">
+          <label>모드
+            <select id="mode">
+              <option value="auto">auto</option>
+              <option value="internal">internal</option>
+              <option value="external">external</option>
+              <option value="hybrid">hybrid</option>
+            </select>
+          </label>
+        </div>
 
-    <h2>최근 로그</h2>
-    <pre id="logs"></pre>
+        <div class="summary">
+          <b>모드 설명</b><br/>
+          - <b>auto</b>: 위험도 점수에 따라 internal/external/hybrid를 자동 선택<br/>
+          - <b>internal</b>: 내부 모델만 사용 (고위험/기밀 데이터 권장)<br/>
+          - <b>external</b>: 외부 모델만 사용 (저위험/공개 데이터 권장)<br/>
+          - <b>hybrid</b>: 문장 단위로 내부/외부를 혼합 라우팅
+        </div>
+        <div class="row">
+          <button id="randomExample">랜덤 예시 불러오기</button>
+          <button id="run">분석(라우팅) 실행</button>
+          <button id="loadLogs">로그 조회</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>처리 과정</h2>
+        <ul id="process"></ul>
+      </div>
+
+      <div class="panel">
+        <h2>출력</h2>
+        <h3>결과 요약</h3>
+        <div id="summary" class="summary">아직 실행 전입니다.</div>
+
+        <h3>결과 원문(JSON)</h3>
+        <pre id="result"></pre>
+
+        <h3>최근 로그</h3>
+        <pre id="logs"></pre>
+      </div>
+    </section>
   </main>
   <script src="/web/app.js"></script>
 </body>
