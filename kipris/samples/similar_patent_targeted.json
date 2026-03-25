@@ -1,0 +1,379 @@
+{
+  "개인정보+비식별": {
+    "params": {
+      "ServiceKey": "upxKvGdDirMlssGPLz2NzR8J43zrgwKBeRoy9LjbPdo=",
+      "pageNo": 1,
+      "numOfRows": 10,
+      "sortSpec": "PD",
+      "descSort": "true",
+      "patent": "true",
+      "utility": "true",
+      "word": "개인정보",
+      "inventionTitle": "비식별"
+    },
+    "totalCount": "233",
+    "items": [
+      {
+        "title": "이미지 내 개인정보를 비식별화하는 방법, 장치 및 시스템",
+        "applicationNumber": "1020250032272",
+        "applicationDate": "20250312",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "타깃 특성을 유지하면서 데이터를 비식별화하는 방법 및 데이터처리장치",
+        "applicationNumber": "1020230167085",
+        "applicationDate": "20231127",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "개인정보 비식별화 장치 및 방법",
+        "applicationNumber": "1020240138689",
+        "applicationDate": "20241011",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "얼굴 비식별화 시스템",
+        "applicationNumber": "1020230127682",
+        "applicationDate": "20230925",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "클라우드기반 생체데이터의 개인정보 비식별화 방법",
+        "applicationNumber": "1020220047162",
+        "applicationDate": "20220415",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "개인정보 비식별화 기반 부동산 담보대출 중개서비스 제공방법 및 제공장치",
+        "applicationNumber": "1020220078559",
+        "applicationDate": "20220628",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "비식별화된 음성 신호를 학습하는 인공 지능 기기 및 그 방법",
+        "applicationNumber": "1020190090429",
+        "applicationDate": "20190725",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "타겟팅 서버, 타겟팅 서버의 동작 방법 및 타겟팅 광고를 위한 비식별 매핑키 기반의 매핑 시스템",
+        "applicationNumber": "1020210007563",
+        "applicationDate": "20210119",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "이미지 내 개인 식별 결과에 따라 구분되어 비식별처리를 수행하는 전자 장치의 비식별화 방법",
+        "applicationNumber": "1020220071972",
+        "applicationDate": "20220614",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "비식별 데이터를 이용한 딥러닝 기반 이상행동 탐지 방법",
+        "applicationNumber": "1020240118527",
+        "applicationDate": "20240902",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "가명처리": {
+    "params": {
+      "ServiceKey": "upxKvGdDirMlssGPLz2NzR8J43zrgwKBeRoy9LjbPdo=",
+      "pageNo": 1,
+      "numOfRows": 10,
+      "sortSpec": "PD",
+      "descSort": "true",
+      "patent": "true",
+      "utility": "true",
+      "word": "가명처리"
+    },
+    "totalCount": "2353",
+    "items": [
+      {
+        "title": "해외 인플루언서 기반 브랜드 기획 및 수출 판매 프로세스 운영 방법, 장치 및 시스템",
+        "applicationNumber": "1020250116301",
+        "applicationDate": "20250821",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "다중 인증 기반 출입 통제 및 실시간 활동, 위치 추적 플랫폼 시스템",
+        "applicationNumber": "1020250093596",
+        "applicationDate": "20250711",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "사카로마이세스 세레비지애 F332YSGS3 균주 및 이를 이용하여 제조된 전통주",
+        "applicationNumber": "1020230024516",
+        "applicationDate": "20230223",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "분산 원장에서의 익명성 취소를 통한 안전하고 추적 가능하며 개인 정보를 보호하는 디지털 통화 송금 방법",
+        "applicationNumber": "1020237011528",
+        "applicationDate": "20210727",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "비영리 임의 단체 등록 대행 방법 및 이를 수행하는 전자 장치",
+        "applicationNumber": "1020250054368",
+        "applicationDate": "20250425",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "MBTI를 이용한 IoT제어 조명시스템",
+        "applicationNumber": "1020230049014",
+        "applicationDate": "20230413",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "AI 기반의 전시·이벤트 추천 및 예매를 수행하는 서버",
+        "applicationNumber": "1020250118617",
+        "applicationDate": "20250825",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "메타인지 기반 의식 재구성형 초융합 트레이닝 시스템 및 그 제어 방법",
+        "applicationNumber": "1020250167221",
+        "applicationDate": "20251107",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "도시 열환경에서의 녹화시설 효과검증을 위한 생체신호 기반 반응분석 시스템",
+        "applicationNumber": "1020250151230",
+        "applicationDate": "20251020",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "비-3GPP 액세스 인증을 위한 방법, 엔티티 및 컴퓨터 판독 가능한 매체",
+        "applicationNumber": "1020237023293",
+        "applicationDate": "20211214",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "데이터 비식별": {
+    "params": {
+      "ServiceKey": "upxKvGdDirMlssGPLz2NzR8J43zrgwKBeRoy9LjbPdo=",
+      "pageNo": 1,
+      "numOfRows": 10,
+      "sortSpec": "PD",
+      "descSort": "true",
+      "patent": "true",
+      "utility": "true",
+      "word": "데이터 비식별"
+    },
+    "totalCount": "30",
+    "items": [
+      {
+        "title": "영상통화를 이용한 여행 가이드 서비스 제공 시스템",
+        "applicationNumber": "1020220157473",
+        "applicationDate": "20221122",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "부트롬 선택장치",
+        "applicationNumber": "2020050013314",
+        "applicationDate": "20050512",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "비트스트림의멀티앵글접속엔코드방법및그장치",
+        "applicationNumber": "1019980702367",
+        "applicationDate": "19960927",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "어레이셀이다수의데이터비트를저장하기위해형성될때AMGEPROM또는플래쉬메모리를프로그램하는방법",
+        "applicationNumber": "1019960706933",
+        "applicationDate": "19960408",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "다중전송장치",
+        "applicationNumber": "1019950002870",
+        "applicationDate": "19950216",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "파괴된콘볼루셔널코드를구비한트렐리스코딩을이용하여디지탈데이터를통신하기위한장치및방법",
+        "applicationNumber": "1019940009965",
+        "applicationDate": "19940504",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "잔류측파대(VSB)수신기용데이터비교자동이득제어(AGC)시스템",
+        "applicationNumber": "1019980703213",
+        "applicationDate": "19971003",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "디지털 데이터 전송용 장치 및 방법",
+        "applicationNumber": "1019980701437",
+        "applicationDate": "19960725",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "디지털신호기록 및 재생장치 및 기록매체",
+        "applicationNumber": "1019980014227",
+        "applicationDate": "19980421",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "비휘발성강유전체메모리장치및데이터비트판독방법",
+        "applicationNumber": "1019960043803",
+        "applicationDate": "19960930",
+        "registerStatus": "소멸"
+      }
+    ]
+  },
+  "토큰+보안통신": {
+    "params": {
+      "ServiceKey": "upxKvGdDirMlssGPLz2NzR8J43zrgwKBeRoy9LjbPdo=",
+      "pageNo": 1,
+      "numOfRows": 10,
+      "sortSpec": "PD",
+      "descSort": "true",
+      "patent": "true",
+      "utility": "true",
+      "word": "토큰",
+      "inventionTitle": "보안 통신"
+    },
+    "totalCount": "123",
+    "items": [
+      {
+        "title": "전화번호 비노출 기반의 텍스트 식별자 통신 아이덴티티를 제공하는 보안 통신 시스템 및 그 방법",
+        "applicationNumber": "1020260014512",
+        "applicationDate": "20260125",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "자동차 통신 시스템을 위한 데이터 링크 계층 인증성 및 보안",
+        "applicationNumber": "1020227031964",
+        "applicationDate": "20210319",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "RDP 가상채널을 통한 보안정보를 공유하여 보안 로깅 및 접근 제어에 활용하는 데이터 통신 방법과 시스템",
+        "applicationNumber": "1020250021020",
+        "applicationDate": "20250218",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "정보 액세스를 제한하는 보안 네트워크 통신",
+        "applicationNumber": "1020227037685",
+        "applicationDate": "20211215",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "NFT 거래 환경의 분산 ID 기반 보안 통신 방법 및 장치",
+        "applicationNumber": "1020230149961",
+        "applicationDate": "20231102",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "그룹 중의 보안 디지털 통신을 가능하게 하기 위한 방법 및 장치",
+        "applicationNumber": "1020247042421",
+        "applicationDate": "20230519",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "양자 보안 통신 서비스 제공 방법 및 이를 수행하는 서버, 시스템",
+        "applicationNumber": "1020240176769",
+        "applicationDate": "20241202",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "이동통신 시스템에서 다중 연결을 사용한 핸드오버 시 보안 키를 처리하는 방법 및 장치",
+        "applicationNumber": "1020170015783",
+        "applicationDate": "20170203",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "네트워크 통신 보안을 위한 타임기반 실시간 데이터 암호화 키 생성 시스템",
+        "applicationNumber": "1020240017359",
+        "applicationDate": "20240205",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "플래닛을 이용한 보안 통신 방법 및 이를 이용한 엔티티 단말",
+        "applicationNumber": "1020230182110",
+        "applicationDate": "20231214",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "프라이버시 보호 암호화": {
+    "params": {
+      "ServiceKey": "upxKvGdDirMlssGPLz2NzR8J43zrgwKBeRoy9LjbPdo=",
+      "pageNo": 1,
+      "numOfRows": 10,
+      "sortSpec": "PD",
+      "descSort": "true",
+      "patent": "true",
+      "utility": "true",
+      "word": "프라이버시 보호 암호화 전송"
+    },
+    "totalCount": "5171",
+    "items": [
+      {
+        "title": "차등 프라이버시를 고려한 신호 송수신 방법 및 상기 방법을 이용하는 장치",
+        "applicationNumber": "1020237015600",
+        "applicationDate": "20210114",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "문맥 흐름 기반 외부 복원 및 전이 시스템",
+        "applicationNumber": "1020250063805",
+        "applicationDate": "20250516",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "블록체인 기반 시분할 해시 데이터 처리 방법",
+        "applicationNumber": "1020250098196",
+        "applicationDate": "20250721",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "객체 식별 기반 시설 내 프라이버시 보호 및 암호화 전송 시스템",
+        "applicationNumber": "1020250094941",
+        "applicationDate": "20250715",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "공중전화통신서버를 통해 모바일기기의 통신을 중계하는 통신 중계시스템 및 동작 방법",
+        "applicationNumber": "1020240040791",
+        "applicationDate": "20240326",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "무설치 인증 및 블록체인 기반 검증을 이용한 다중 보안 요청 승인 시스템 및 방법",
+        "applicationNumber": "1020230098689",
+        "applicationDate": "20230728",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "블록체인과 연관된 서비스들의 플랫폼을 위한 컴퓨팅 서비스들",
+        "applicationNumber": "1020227031820",
+        "applicationDate": "20210215",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "동형암호상에서 유전자 분석을 통한 개인 질병 진단 장치 및 방법",
+        "applicationNumber": "1020220107925",
+        "applicationDate": "20220826",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "다자간 컴퓨팅 및 확률적 데이터 구조를 이용한 정보에 대한 액세스 보호",
+        "applicationNumber": "1020227040280",
+        "applicationDate": "20211213",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "분산 원장에서의 익명성 취소를 통한 안전하고 추적 가능하며 개인 정보를 보호하는 디지털 통화 송금 방법",
+        "applicationNumber": "1020237011528",
+        "applicationDate": "20210727",
+        "registerStatus": "등록"
+      }
+    ]
+  }
+}

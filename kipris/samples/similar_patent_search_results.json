@@ -1,0 +1,602 @@
+{
+  "데이터 유출 방지": {
+    "totalCount": "56322",
+    "items": [
+      {
+        "title": "IT 자산 관리 시스템에서의 서버 관리 방법",
+        "applicationNumber": "1020230053117",
+        "applicationDate": "20230424",
+        "registerNumber": "1029436410000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "핵산들 및 단백질들의 모바일 디바이스 분석을 위한 시스템들 및 방법들",
+        "applicationNumber": "1020237014602",
+        "applicationDate": "20140314",
+        "registerNumber": "1029432080000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "축합환 화합물을 포함한 발광 소자, 상기 발광 소자를 포함한 전자 장치 및 상기 축합환 화합물",
+        "applicationNumber": "1020210022599",
+        "applicationDate": "20210219",
+        "registerNumber": "1029431790000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "배터리 조립체 및 배터리 팩",
+        "applicationNumber": "1020250160390",
+        "applicationDate": "20251030",
+        "registerNumber": "1029431920000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "선담지형 정화볼을 이용한 복합오염토 정화 시스템",
+        "applicationNumber": "1020250050705",
+        "applicationDate": "20250418",
+        "registerNumber": "1029434310000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "AI를 이용한 서버 관리 시스템",
+        "applicationNumber": "1020230053119",
+        "applicationDate": "20230424",
+        "registerNumber": "1029436420000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "인공지능 모델의 예측 주기 이상을 탐지하는 장치 및 방법",
+        "applicationNumber": "1020230135785",
+        "applicationDate": "20231012",
+        "registerNumber": "1029436060000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "시각장애인용 서식 작성 지원 시스템",
+        "applicationNumber": "1020220190666",
+        "applicationDate": "20221230",
+        "registerNumber": "1029437010000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "케이블 절연용 폴리프로필렌 조성물",
+        "applicationNumber": "1020237034599",
+        "applicationDate": "20220323",
+        "registerNumber": "1029431410000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "IoT를 지원하는 스마트 RTU를 활용한 상하수도 지능형 통합 원격감시 제어 시스템",
+        "applicationNumber": "1020240196493",
+        "applicationDate": "20241226",
+        "registerNumber": "1029434230000",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "정보 유출 방지": {
+    "totalCount": "58474",
+    "items": [
+      {
+        "title": "IT 자산 관리 시스템에서의 서버 관리 방법",
+        "applicationNumber": "1020230053117",
+        "applicationDate": "20230424",
+        "registerNumber": "1029436410000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "핵산들 및 단백질들의 모바일 디바이스 분석을 위한 시스템들 및 방법들",
+        "applicationNumber": "1020237014602",
+        "applicationDate": "20140314",
+        "registerNumber": "1029432080000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "축합환 화합물을 포함한 발광 소자, 상기 발광 소자를 포함한 전자 장치 및 상기 축합환 화합물",
+        "applicationNumber": "1020210022599",
+        "applicationDate": "20210219",
+        "registerNumber": "1029431790000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "자재 이송 및 생산 관리를 통합적으로 수행하는 물류 및 자재 통합관리시스템",
+        "applicationNumber": "1020250149856",
+        "applicationDate": "20251016",
+        "registerNumber": "1029439070000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "AI를 이용한 서버 관리 시스템",
+        "applicationNumber": "1020230053119",
+        "applicationDate": "20230424",
+        "registerNumber": "1029436420000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "발광 소자 및 상기 발광 소자를 포함한 전자 장치",
+        "applicationNumber": "1020210186588",
+        "applicationDate": "20211223",
+        "registerNumber": "1029431760000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "인공지능 모델의 예측 주기 이상을 탐지하는 장치 및 방법",
+        "applicationNumber": "1020230135785",
+        "applicationDate": "20231012",
+        "registerNumber": "1029436060000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "시각장애인용 서식 작성 지원 시스템",
+        "applicationNumber": "1020220190666",
+        "applicationDate": "20221230",
+        "registerNumber": "1029437010000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "IoT를 지원하는 스마트 RTU를 활용한 상하수도 지능형 통합 원격감시 제어 시스템",
+        "applicationNumber": "1020240196493",
+        "applicationDate": "20241226",
+        "registerNumber": "1029434230000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "에어로졸 발생 시스템 및 에어로졸 발생 시스템용 햅틱 출력 요소",
+        "applicationNumber": "1020217034040",
+        "applicationDate": "20200512",
+        "registerNumber": "1029429030000",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "토큰화": {
+    "totalCount": "3557",
+    "items": [
+      {
+        "title": "정보를 제공하는 전자 장치의 동작 방법 및 이를 지원하는 전자 장치",
+        "applicationNumber": "1020230042128",
+        "applicationDate": "20230330",
+        "registerNumber": "1029431080000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "아젠다의 취합된 선택 결과에 대한 교차 분석 시스템",
+        "applicationNumber": "1020230010220",
+        "applicationDate": "20230126",
+        "registerNumber": "1029445970000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "전화번호 비노출 기반의 텍스트 식별자 통신 아이덴티티를 제공하는 보안 통신 시스템 및 그 방법",
+        "applicationNumber": "1020260014512",
+        "applicationDate": "20260125",
+        "registerNumber": "1029434600000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "복수의 언어를 포함하는 음성을 인식하는 인공 지능 장치 및 그 방법",
+        "applicationNumber": "1020190173315",
+        "applicationDate": "20191223",
+        "registerNumber": "1029424560000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "스피치 애니메이션의 실시간 생성",
+        "applicationNumber": "1020217026491",
+        "applicationDate": "20200127",
+        "registerNumber": "1029433210000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "단백질 면역원성 예측 장치",
+        "applicationNumber": "1020250039959",
+        "applicationDate": "20250328",
+        "registerNumber": "1029417420000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "법령 기반의 업무 관리 방법 및 장치",
+        "applicationNumber": "1020250095073",
+        "applicationDate": "20250715",
+        "registerNumber": "1029425690000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "메신저 데이터, 사용패턴 데이터 및 건강기록 데이터를 이용한 우울증 진단 서비스 제공 시스템",
+        "applicationNumber": "1020230085536",
+        "applicationDate": "20230703",
+        "registerNumber": "1029420650000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "EpiAging; 건강 노화를 관리하기 위한 새로운 에코시스템",
+        "applicationNumber": "1020217043114",
+        "applicationDate": "20200529",
+        "registerNumber": "1029427630000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "기술 아이디어에 대응되는 시스템의 구성 및 설계 정보를 생성하는 전자 장치 및 이의 동작 방법",
+        "applicationNumber": "1020240126687",
+        "applicationDate": "20240919",
+        "registerNumber": "1029414480000",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "가명화": {
+    "totalCount": "233",
+    "items": [
+      {
+        "title": "해외 인플루언서 기반 브랜드 기획 및 수출 판매 프로세스 운영 방법, 장치 및 시스템",
+        "applicationNumber": "1020250116301",
+        "applicationDate": "20250821",
+        "registerNumber": "1029418310000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "비영리 임의 단체 등록 대행 방법 및 이를 수행하는 전자 장치",
+        "applicationNumber": "1020250054368",
+        "applicationDate": "20250425",
+        "registerNumber": "1029389300000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "도시 열환경에서의 녹화시설 효과검증을 위한 생체신호 기반 반응분석 시스템",
+        "applicationNumber": "1020250151230",
+        "applicationDate": "20251020",
+        "registerNumber": "1029371790000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "디지털 지도를 활용한 수요 공급 양방향 매칭 서비스 제공 시스템",
+        "applicationNumber": "1020230149328",
+        "applicationDate": "20231101",
+        "registerNumber": "1029342370000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "개인 맞춤형 건강 관리 정보 제공을 위한 사용자 인터페이스를 구비한 컴퓨터 장치",
+        "applicationNumber": "1020250074101",
+        "applicationDate": "20250605",
+        "registerNumber": "1029336840000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "농어촌 유용정보를 포함하는 스마트 달력 시스템",
+        "applicationNumber": "1020250128906",
+        "applicationDate": "20250910",
+        "registerNumber": "1029288490000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "의무기록의 결합 방법 및 그 장치",
+        "applicationNumber": "1020220103752",
+        "applicationDate": "20220819",
+        "registerNumber": "1029285360000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "바이러스 감염 위험도를 측정하는 휴대용 전자 장치 및 시스템",
+        "applicationNumber": "1020237005114",
+        "applicationDate": "20210920",
+        "registerNumber": "1029287990000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "환자들에 관하여 이식 가능하거나 사용 가능한 의료 디바이스들의 동작 및/또는 행동의 컴퓨터 모델링 및 시뮬레이션을 위한 방법 및 시스템",
+        "applicationNumber": "1020207031058",
+        "applicationDate": "20190326",
+        "registerNumber": "1029271670000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "이동 데이터 익명화 방법",
+        "applicationNumber": "1020237042706",
+        "applicationDate": "20220210",
+        "registerNumber": "1029259670000",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "비식별": {
+    "totalCount": "1391",
+    "items": [
+      {
+        "title": "객체 식별 기반 시설 내 프라이버시 보호 및 암호화 전송 시스템",
+        "applicationNumber": "1020250094941",
+        "applicationDate": "20250715",
+        "registerNumber": "1029409840000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "이상 상황 모니터링 시스템 및 방법",
+        "applicationNumber": "1020240150698",
+        "applicationDate": "20241030",
+        "registerNumber": "1029384520000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "비영리 임의 단체 등록 대행 방법 및 이를 수행하는 전자 장치",
+        "applicationNumber": "1020250054368",
+        "applicationDate": "20250425",
+        "registerNumber": "1029389300000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "재실 감지 및 침입 탐지를 위한 mmWave 레이더 기반 출입통제장치 및 그 제어 방법",
+        "applicationNumber": "1020250066939",
+        "applicationDate": "20250522",
+        "registerNumber": "1029376410000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "위치 추적을 위한 사용자 인터페이스들",
+        "applicationNumber": "1020237039343",
+        "applicationDate": "20220419",
+        "registerNumber": "1029364020000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "커뮤니티 플랫폼 서비스 제공 방법 및 장치",
+        "applicationNumber": "1020240179823",
+        "applicationDate": "20241205",
+        "registerNumber": "1029355380000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "개인정보를 이용하여 타겟 이벤트의 발생을 예측하기 위한 단말, 개인정보 관리 서버 및 이들을 포함하는 시스템",
+        "applicationNumber": "1020230049547",
+        "applicationDate": "20230414",
+        "registerNumber": "1029326630000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "전자 디바이스들에 대한 관리된 데이터 자산들",
+        "applicationNumber": "1020237036293",
+        "applicationDate": "20220405",
+        "registerNumber": "1029321300000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "뷰어 추적을 갖는 디스플레이",
+        "applicationNumber": "1020227039079",
+        "applicationDate": "20210504",
+        "registerNumber": "1029315220000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "구간 캡션 데이터를 활용한 인공지능 기반의 서비스 제공 장치 및 방법",
+        "applicationNumber": "1020250042037",
+        "applicationDate": "20250401",
+        "registerNumber": "1029316040000",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "개인정보 비식별": {
+    "totalCount": "29",
+    "items": [
+      {
+        "title": "리걸테크 기반 사건 검색 서비스 제공 시스템",
+        "applicationNumber": "1020240111201",
+        "applicationDate": "20240820",
+        "registerNumber": "1027859540000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "무선 통신 시스템에서 하향링크 제어정보 설정 방법 및 장치",
+        "applicationNumber": "1020180004074",
+        "applicationDate": "20180111",
+        "registerNumber": "1025323010000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "사용자의 생활패턴을 기초로 사용자의 우울감을 진단하고 케어하는 시스템 및 그 방법",
+        "applicationNumber": "1020210054426",
+        "applicationDate": "20210427",
+        "registerNumber": "1023367270000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "일용 근로자를 위한 일자리 매칭 및 관리 시스템",
+        "applicationNumber": "1020180133008",
+        "applicationDate": "20181101",
+        "registerNumber": "1021618940000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "무선접속시스템에서 채널품질제어정보 전송방법 및 장치",
+        "applicationNumber": "1020120001527",
+        "applicationDate": "20120105",
+        "registerNumber": "1019234400000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "분산 데이터 저장, 복원 시스템 및 방법",
+        "applicationNumber": "1020120121432",
+        "applicationDate": "20121030",
+        "registerNumber": "1015539860000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "모바일과 인터넷을 융합한 일용직 구인 또는 구직 정보등록 시스템 및 방법",
+        "applicationNumber": "1020070012758",
+        "applicationDate": "20070207",
+        "registerNumber": "1008763390000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "인터넷/인트라넷 기반하에서의 생체정보를 이용한 사용자 인증시스템 및 그 운용방법",
+        "applicationNumber": "1019990054955",
+        "applicationDate": "19991203",
+        "registerNumber": "1003411470000",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "비디오장치용편향회로",
+        "applicationNumber": "1019880005010",
+        "applicationDate": "19880430",
+        "registerNumber": "1001370370000",
+        "registerStatus": "소멸"
+      },
+      {
+        "title": "메모리 신호의 대역폭 증가 및 간섭 감소를 위한 회로부",
+        "applicationNumber": "1020227034613",
+        "applicationDate": "20210211",
+        "registerNumber": "",
+        "registerStatus": "공개"
+      }
+    ]
+  },
+  "데이터 마스킹": {
+    "totalCount": "30283",
+    "items": [
+      {
+        "title": "사용자 반응 기반 맞춤형 공포 콘텐츠 제공 방법",
+        "applicationNumber": "1020250179614",
+        "applicationDate": "20251124",
+        "registerNumber": "1029436690000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "비디오 시퀀스에 오버레이를 추가하기 위한 방법 및 이미지 처리 장치",
+        "applicationNumber": "1020230179296",
+        "applicationDate": "20231212",
+        "registerNumber": "1029428890000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "3차원 모델들을 위한 로우-폴리 메시 생성",
+        "applicationNumber": "1020247033205",
+        "applicationDate": "20220922",
+        "registerNumber": "1029432460000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "LLM을 이용한 디지털 치료제 콘텐츠 추천 방법 및 장치",
+        "applicationNumber": "1020230082041",
+        "applicationDate": "20230626",
+        "registerNumber": "1029431470000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "지능형 생성 컨텐츠 및 탠덤 컴퓨팅을 갖는 대화형 디스플레이를 위한 방법 및 시스템",
+        "applicationNumber": "1020230137211",
+        "applicationDate": "20231013",
+        "registerNumber": "1029436050000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "문자열 탐지를 위한 문자 탐지 방법 및 이를 수행하기 위한 장치",
+        "applicationNumber": "1020230005591",
+        "applicationDate": "20230113",
+        "registerNumber": "1029433340000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "문맥 흐름 기반 외부 복원 및 전이 시스템",
+        "applicationNumber": "1020250063805",
+        "applicationDate": "20250516",
+        "registerNumber": "1029427830000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "나노입자 증착 층을 갖는 광전자 디바이스",
+        "applicationNumber": "1020237018201",
+        "applicationDate": "20211029",
+        "registerNumber": "1029425780000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "어류 양식 환경의 다변량 시계열 사육데이터 기반 확률적 어류 성장 예측방법 및 장치",
+        "applicationNumber": "1020250121184",
+        "applicationDate": "20250828",
+        "registerNumber": "1029425190000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "XR 컨텐츠 제공 방법 및 XR 컨텐츠 제공 디바이스",
+        "applicationNumber": "1020190104862",
+        "applicationDate": "20190827",
+        "registerNumber": "1029418000000",
+        "registerStatus": "등록"
+      }
+    ]
+  },
+  "민감정보 마스킹": {
+    "totalCount": "6281",
+    "items": [
+      {
+        "title": "사용자 반응 기반 맞춤형 공포 콘텐츠 제공 방법",
+        "applicationNumber": "1020250179614",
+        "applicationDate": "20251124",
+        "registerNumber": "1029436690000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "LLM을 이용한 디지털 치료제 콘텐츠 추천 방법 및 장치",
+        "applicationNumber": "1020230082041",
+        "applicationDate": "20230626",
+        "registerNumber": "1029431470000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "지능형 생성 컨텐츠 및 탠덤 컴퓨팅을 갖는 대화형 디스플레이를 위한 방법 및 시스템",
+        "applicationNumber": "1020230137211",
+        "applicationDate": "20231013",
+        "registerNumber": "1029436050000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "문맥 흐름 기반 외부 복원 및 전이 시스템",
+        "applicationNumber": "1020250063805",
+        "applicationDate": "20250516",
+        "registerNumber": "1029427830000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "어류 양식 환경의 다변량 시계열 사육데이터 기반 확률적 어류 성장 예측방법 및 장치",
+        "applicationNumber": "1020250121184",
+        "applicationDate": "20250828",
+        "registerNumber": "1029425190000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "무선 통신 시스템에서 PUCCH를 송수신하는 방법 및 이를 위한 장치",
+        "applicationNumber": "1020237008188",
+        "applicationDate": "20220114",
+        "registerNumber": "1029418130000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "지향성 안테나와 무지향성 안테나를 병용하는 드론 운용 시스템 및 방법",
+        "applicationNumber": "1020250148284",
+        "applicationDate": "20251015",
+        "registerNumber": "1029418240000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "식생 예측 및 관리 장치 및 방법",
+        "applicationNumber": "1020240125633",
+        "applicationDate": "20240913",
+        "registerNumber": "1029423230000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "객체 식별 기반 시설 내 프라이버시 보호 및 암호화 전송 시스템",
+        "applicationNumber": "1020250094941",
+        "applicationDate": "20250715",
+        "registerNumber": "1029409840000",
+        "registerStatus": "등록"
+      },
+      {
+        "title": "프로세서, 프로세서의 동작 방법 및 이를 포함한 전자 장치",
+        "applicationNumber": "1020200098056",
+        "applicationDate": "20200805",
+        "registerNumber": "1029412790000",
+        "registerStatus": "등록"
+      }
+    ]
+  }
+}
