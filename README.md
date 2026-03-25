@@ -32,5 +32,12 @@
 3. 응답 파싱
    - `python parse_kipris_xml.py --input samples/advanced_search_xxx.xml`
 
+## PoC MVP 빠른 실행
+- 경로: `PoC/00_mvp`
+- 실행: `powershell -ExecutionPolicy Bypass -File .\run.ps1`
+- 접속: `http://127.0.0.1:8070`
+- 시나리오 캡처: `python run_cases.py`
+- 결과: `PoC/02_실시예_로그캡처/*/result.json`
+
 ## 비고
-- 본 브랜치는 기존 PoC 실행 폴더(`PoC/`)를 제거하고, KIPRIS/특허 산출물 중심으로 정리한 상태입니다.
+- 본 브랜치는 KIPRIS/특허 문서와 PoC MVP 검증 산출물을 중심으로 정리되어 있습니다.
