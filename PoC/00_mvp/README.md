@@ -2,7 +2,7 @@
 
 ## 1) 실행
 ```powershell
-cd PoC/00_mvp
+cd E:\ax\kipris\PoC\00_mvp
 powershell -ExecutionPolicy Bypass -File .\run.ps1
 ```
 
@@ -18,10 +18,10 @@ python run_cases.py
 ```
 
 생성 결과:
-- `PoC/02_실시예_로그캡처/정상/result.json`
-- `PoC/02_실시예_로그캡처/차단/result.json`
-- `PoC/02_실시예_로그캡처/폴백/result.json`
-- `PoC/02_실시예_로그캡처/혼합라우팅/result.json`
+- `E:\ax\kipris\PoC\02_실시예_로그캡처\정상\result.json`
+- `E:\ax\kipris\PoC\02_실시예_로그캡처\차단\result.json`
+- `E:\ax\kipris\PoC\02_실시예_로그캡처\폴백\result.json`
+- `E:\ax\kipris\PoC\02_실시예_로그캡처\혼합라우팅\result.json`
 
 ## 4) MVP 포함 기능
 - 규칙 기반 DLP + 위험도 점수

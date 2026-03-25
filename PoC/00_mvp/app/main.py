@@ -1,4 +1,5 @@
 import os
+import json
 import uuid
 from datetime import datetime
 
@@ -18,7 +19,9 @@ load_dotenv()
 
 app = FastAPI(title="Security LLM Gateway MVP")
 
-WEB_DIR = os.path.join(os.path.dirname(__file__), "..", "web")
+BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
+WEB_DIR = os.path.join(BASE_DIR, "web")
+SAMPLES_PATH = os.path.join(BASE_DIR, "samples", "input_examples.json")
 app.mount("/web", StaticFiles(directory=WEB_DIR), name="web")
 
 
@@ -79,3 +82,11 @@ def analyze(req: AnalyzeRequest):
 @app.get("/api/logs")
 def logs(limit: int = 20):
     return {"items": tail_logs(limit)}
+
+
+@app.get("/api/examples")
+def examples():
+    if not os.path.exists(SAMPLES_PATH):
+        return {"items": []}
+    with open(SAMPLES_PATH, "r", encoding="utf-8") as f:
+        return {"items": json.load(f)}
