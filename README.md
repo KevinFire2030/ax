@@ -1,11 +1,12 @@
 # AX / KIPRIS 작업 폴더
 
-이 브랜치는 **KIPRIS API 실험 + 특허 문서 작성 산출물** 중심으로 정리되어 있습니다.
+이 브랜치는 **KIPRIS API 실험 + 특허 문서 작성 + 보안 LLM Gateway PoC MVP** 중심으로 정리되어 있습니다.
 
 ## 주요 목적
 - KIPRIS Plus Open API 호출/검증
 - 특허 아이디어 선행검색 및 유사특허 스캔
 - 특허 제출용 문서(청구항/발표문/슬라이드 문안) 정리
+- 보안 LLM Gateway MVP 데모 및 실시예 로그 캡처
 
 ## 디렉터리/파일 구조
 - `samples/`  
@@ -24,13 +25,10 @@
   발표 멘트 통합본
 - `미팅용 1장 슬라이드 문안.md`  
   미팅용 슬라이드 1장 문안
-
-## 실행 가이드
-1. `.env`에 `KIPRIS_API_KEY` 설정
-2. 테스트 호출
-   - `python test_kipris.py --invention-title 센서 --astrt-cont 발명 --rows 20 --save`
-3. 응답 파싱
-   - `python parse_kipris_xml.py --input samples/advanced_search_xxx.xml`
+- `PoC/`
+  - `00_mvp/`: FastAPI+WebUI MVP 코드
+  - `01_구현흐름도/`: 도 1~7 정리
+  - `02_실시예_로그캡처/`: 정상/차단/폴백/혼합 로그
 
 ## PoC MVP 빠른 실행
 - 경로: `PoC/00_mvp`
@@ -38,6 +36,11 @@
 - 접속: `http://127.0.0.1:8070`
 - 시나리오 캡처: `python run_cases.py`
 - 결과: `PoC/02_실시예_로그캡처/*/result.json`
+
+## UI 구성(최신)
+- 왼쪽: 입력(모드 설명 포함)
+- 가운데: 처리 과정(동적 단계 표시)
+- 오른쪽: 출력(결과 요약, 결과 JSON, 최근 로그)
 
 ## 비고
 - 본 브랜치는 KIPRIS/특허 문서와 PoC MVP 검증 산출물을 중심으로 정리되어 있습니다.
