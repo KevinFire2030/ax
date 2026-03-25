@@ -1,0 +1,14 @@
+{
+  "request_id": "743ef3f4",
+  "risk_score": 20,
+  "findings": [],
+  "route": "external",
+  "fallback_used": false,
+  "blocked": false,
+  "output": "[EXTERNAL] 외부 전송 가능한 일반 뉴스 요약 요청입니다. 시장 동향만 정리해줘.",
+  "postcheck": {
+    "violations": [],
+    "blocked": false
+  },
+  "policy_version": "v0.1"
+}

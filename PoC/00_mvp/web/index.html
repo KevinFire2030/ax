@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security LLM Gateway MVP</title>
+  <link rel="stylesheet" href="/web/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Security LLM Gateway MVP</h1>
+    <textarea id="text" placeholder="분석할 텍스트를 입력하세요"></textarea>
+    <div class="row">
+      <label>모드
+        <select id="mode">
+          <option value="auto">auto</option>
+          <option value="internal">internal</option>
+          <option value="external">external</option>
+          <option value="hybrid">hybrid</option>
+        </select>
+      </label>
+      <button id="run">분석 실행</button>
+      <button id="loadLogs">로그 조회</button>
+    </div>
+
+    <h2>결과</h2>
+    <pre id="result"></pre>
+
+    <h2>최근 로그</h2>
+    <pre id="logs"></pre>
+  </main>
+  <script src="/web/app.js"></script>
+</body>
+</html>

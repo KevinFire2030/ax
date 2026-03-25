@@ -1,0 +1,14 @@
+{
+  "request_id": "ebe30da8",
+  "risk_score": 0,
+  "findings": [],
+  "route": "external",
+  "fallback_used": true,
+  "blocked": false,
+  "output": "[INTERNAL] FORCE_FALLBACK 외부 모델 실패를 강제로 재현합니다. 일반 요청입니다.",
+  "postcheck": {
+    "violations": [],
+    "blocked": false
+  },
+  "policy_version": "v0.1"
+}

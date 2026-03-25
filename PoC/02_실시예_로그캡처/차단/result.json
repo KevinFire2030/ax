@@ -1,0 +1,22 @@
+{
+  "request_id": "941c73d9",
+  "risk_score": 65,
+  "findings": [
+    "rrn_like",
+    "kw:기밀",
+    "kw:내부전용"
+  ],
+  "route": "hybrid",
+  "fallback_used": false,
+  "blocked": true,
+  "output": "[BLOCKED] 민감정보 또는 정책 위반 가능성이 탐지되었습니다.",
+  "postcheck": {
+    "violations": [
+      "rrn_like",
+      "kw:기밀",
+      "kw:내부전용"
+    ],
+    "blocked": true
+  },
+  "policy_version": "v0.1"
+}
