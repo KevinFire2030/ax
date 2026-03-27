@@ -314,6 +314,23 @@ def write_filtered_sheet(wb, src_ws, title: str, target_decision: str):
             out_r += 1
 
 
+def set_opinion_left_align(ws):
+    """과제 종합의견(H열)을 왼쪽 정렬로 고정"""
+    from openpyxl.styles import Alignment
+
+    for r in range(1, ws.max_row + 1):
+        cell = ws.cell(r, 8)
+        cur = cell.alignment
+        cell.alignment = Alignment(
+            horizontal="left",
+            vertical=(cur.vertical if cur else "center"),
+            wrap_text=(cur.wrap_text if cur else True),
+            text_rotation=(cur.text_rotation if cur else 0),
+            shrink_to_fit=(cur.shrink_to_fit if cur else False),
+            indent=(cur.indent if cur else 0),
+        )
+
+
 def run_evaluation(zip_file, provider: str, max_docs: int, ui: dict) -> tuple[Path, int, dict]:
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     run_dir = WORK_DIR / f"run_{ts}"
@@ -509,6 +526,13 @@ def run_evaluation(zip_file, provider: str, max_docs: int, ui: dict) -> tuple[Pa
     # 합격/불합격 시트 생성
     write_filtered_sheet(wb, ws, "합격", "합격")
     write_filtered_sheet(wb, ws, "불합격", "불합격")
+
+    # H열(과제 종합의견) 왼쪽 정렬 고정
+    set_opinion_left_align(ws)
+    if "합격" in wb.sheetnames:
+        set_opinion_left_align(wb["합격"])
+    if "불합격" in wb.sheetnames:
+        set_opinion_left_align(wb["불합격"])
 
     out_path = BASE_DIR / f"평가표_{ts}.xlsx"
     wb.save(out_path)
