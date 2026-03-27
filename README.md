@@ -21,7 +21,7 @@ FIRST_ROUND_X_PENALTY=8
 
 # OpenAI
 OPENAI_API_KEY=...
-OPENAI_MODEL=gpt-4o-mini
+OPENAI_MODEL=gpt-5
 OPENAI_BASE_URL=https://api.openai.com/v1
 
 # Gauss

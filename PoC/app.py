@@ -115,7 +115,7 @@ def read_docx_text(path: Path) -> str:
 
 def call_openai(user_prompt: str) -> tuple[str, dict]:
     api_key = os.getenv("OPENAI_API_KEY", "")
-    model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+    model = os.getenv("OPENAI_MODEL", "gpt-5")
     base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
     if not api_key:
         raise RuntimeError("OPENAI_API_KEY가 설정되지 않았습니다.")
@@ -181,7 +181,7 @@ def parse_result(raw: str) -> dict:
 def call_llm_text(provider: str, user_prompt: str) -> tuple[str, dict]:
     if provider == "openai":
         api_key = os.getenv("OPENAI_API_KEY", "")
-        model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+        model = os.getenv("OPENAI_MODEL", "gpt-5")
         base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY가 설정되지 않았습니다.")
