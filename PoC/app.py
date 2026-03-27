@@ -563,7 +563,7 @@ def main():
     with c1:
         st.subheader("입력")
         provider = st.selectbox("LLM 선택", ["openai", "gauss"])
-        max_docs = st.number_input("평가 문서 수", min_value=1, max_value=20, value=5, step=1)
+        max_docs = st.number_input("평가 문서 수", min_value=1, max_value=500, value=5, step=1)
         zip_file = st.file_uploader("제안서.zip 업로드", type=["zip"])
         run_btn = st.button("평가 시작", type="primary", use_container_width=True)
 
