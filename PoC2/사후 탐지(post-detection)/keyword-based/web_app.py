@@ -46,13 +46,11 @@ def index(request: Request):
     except Exception:
         kw_text = ""
 
-    return TEMPLATES.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-            "kw_text": kw_text,
-        },
-    )
+    context = {
+        "request": request,
+        "kw_text": kw_text,
+    }
+    return TEMPLATES.TemplateResponse(request, "index.html", context)
 
 
 @app.post("/run", response_class=HTMLResponse)
@@ -68,41 +66,32 @@ async def run_detection(
     try:
         keywords = parse_keywords_from_text(keywords_text)
     except Exception as e:
-        return TEMPLATES.TemplateResponse(
-            "index.html",
-            {
-                "request": request,
-                "kw_text": keywords_text,
-                "error": f"키워드 입력 오류: {e}",
-            },
-            status_code=400,
-        )
+        context = {
+            "request": request,
+            "kw_text": keywords_text,
+            "error": f"키워드 입력 오류: {e}",
+        }
+        return TEMPLATES.TemplateResponse(request, "index.html", context, status_code=400)
 
     # read excel bytes
     raw = await input_xlsx.read()
     if not raw:
-        return TEMPLATES.TemplateResponse(
-            "index.html",
-            {
-                "request": request,
-                "kw_text": keywords_text,
-                "error": "업로드된 파일이 비어있습니다.",
-            },
-            status_code=400,
-        )
+        context = {
+            "request": request,
+            "kw_text": keywords_text,
+            "error": "업로드된 파일이 비어있습니다.",
+        }
+        return TEMPLATES.TemplateResponse(request, "index.html", context, status_code=400)
 
     try:
         df = pd.read_excel(io.BytesIO(raw), sheet_name=0)
     except Exception as e:
-        return TEMPLATES.TemplateResponse(
-            "index.html",
-            {
-                "request": request,
-                "kw_text": keywords_text,
-                "error": f"엑셀 로드 실패: {e}",
-            },
-            status_code=400,
-        )
+        context = {
+            "request": request,
+            "kw_text": keywords_text,
+            "error": f"엑셀 로드 실패: {e}",
+        }
+        return TEMPLATES.TemplateResponse(request, "index.html", context, status_code=400)
 
     # output name
     output_basename = (output_basename or "").strip() or _default_output_basename(input_xlsx.filename or "input")
@@ -144,20 +133,18 @@ async def run_detection(
     dept_top = list(stats.get("dept_counts", {}).items())[: int(topn)]
     kw_top = list(stats.get("keyword_counts", {}).items())[: int(topn)]
 
-    return TEMPLATES.TemplateResponse(
-        "result.html",
-        {
-            "request": request,
-            "job_id": job_id,
-            "elapsed": result.elapsed_sec,
-            "stats": stats,
-            "dept_top": dept_top,
-            "kw_top": kw_top,
-            "preview_rows": JOBS[job_id]["preview"],
-            "columns": JOBS[job_id]["columns"],
-            "output_basename": output_basename,
-        },
-    )
+    context = {
+        "request": request,
+        "job_id": job_id,
+        "elapsed": result.elapsed_sec,
+        "stats": stats,
+        "dept_top": dept_top,
+        "kw_top": kw_top,
+        "preview_rows": JOBS[job_id]["preview"],
+        "columns": JOBS[job_id]["columns"],
+        "output_basename": output_basename,
+    }
+    return TEMPLATES.TemplateResponse(request, "result.html", context)
 
 
 @app.get("/download/combined/{job_id}")

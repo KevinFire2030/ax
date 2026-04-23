@@ -44,15 +44,13 @@ def _merge_settings(base: ContextDetectionSettings, overrides: dict) -> ContextD
 def index(request: Request):
     defaults = load_defaults_from_env(BASE_DIR)
 
-    return TEMPLATES.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-            "defaults": defaults,
-            "prompt_text": defaults.prompt_template or "",
-            "keywords_text": "\n".join(defaults.keywords or []),
-        },
-    )
+    context = {
+        "request": request,
+        "defaults": defaults,
+        "prompt_text": defaults.prompt_template or "",
+        "keywords_text": "\n".join(defaults.keywords or []),
+    }
+    return TEMPLATES.TemplateResponse(request, "index.html", context)
 
 
 @app.post("/run", response_class=HTMLResponse)
@@ -75,32 +73,26 @@ async def run_detection(
 ):
     raw = await input_xlsx.read()
     if not raw:
-        return TEMPLATES.TemplateResponse(
-            "index.html",
-            {
-                "request": request,
-                "defaults": load_defaults_from_env(BASE_DIR),
-                "error": "업로드된 파일이 비어있습니다.",
-                "prompt_text": prompt_text,
-                "keywords_text": keywords_text,
-            },
-            status_code=400,
-        )
+        context = {
+            "request": request,
+            "defaults": load_defaults_from_env(BASE_DIR),
+            "error": "업로드된 파일이 비어있습니다.",
+            "prompt_text": prompt_text,
+            "keywords_text": keywords_text,
+        }
+        return TEMPLATES.TemplateResponse(request, "index.html", context, status_code=400)
 
     try:
         df = pd.read_excel(io.BytesIO(raw), sheet_name=0)
     except Exception as e:
-        return TEMPLATES.TemplateResponse(
-            "index.html",
-            {
-                "request": request,
-                "defaults": load_defaults_from_env(BASE_DIR),
-                "error": f"엑셀 로드 실패: {e}",
-                "prompt_text": prompt_text,
-                "keywords_text": keywords_text,
-            },
-            status_code=400,
-        )
+        context = {
+            "request": request,
+            "defaults": load_defaults_from_env(BASE_DIR),
+            "error": f"엑셀 로드 실패: {e}",
+            "prompt_text": prompt_text,
+            "keywords_text": keywords_text,
+        }
+        return TEMPLATES.TemplateResponse(request, "index.html", context, status_code=400)
 
     defaults = load_defaults_from_env(BASE_DIR)
 
@@ -132,17 +124,14 @@ async def run_detection(
     try:
         result = await detect_context_async(df, s)
     except Exception as e:
-        return TEMPLATES.TemplateResponse(
-            "index.html",
-            {
-                "request": request,
-                "defaults": defaults,
-                "error": f"실행 실패: {e}",
-                "prompt_text": prompt_text,
-                "keywords_text": keywords_text,
-            },
-            status_code=400,
-        )
+        context = {
+            "request": request,
+            "defaults": defaults,
+            "error": f"실행 실패: {e}",
+            "prompt_text": prompt_text,
+            "keywords_text": keywords_text,
+        }
+        return TEMPLATES.TemplateResponse(request, "index.html", context, status_code=400)
 
     job_id = uuid.uuid4().hex
     job_dir = Path(tempfile.gettempdir()) / f"cb_post_detection_{job_id}"
@@ -185,21 +174,19 @@ async def run_detection(
     intent_top = list(stats.get("intent_counts", {}).items())[: int(topn)]
     artifact_top = list(stats.get("artifact_counts", {}).items())[: int(topn)]
 
-    return TEMPLATES.TemplateResponse(
-        "result.html",
-        {
-            "request": request,
-            "job_id": job_id,
-            "elapsed": result.elapsed_sec,
-            "stats": stats,
-            "dept_top": dept_top,
-            "intent_top": intent_top,
-            "artifact_top": artifact_top,
-            "preview_rows": JOBS[job_id]["preview"],
-            "columns": JOBS[job_id]["columns"],
-            "output_basename": output_basename,
-        },
-    )
+    context = {
+        "request": request,
+        "job_id": job_id,
+        "elapsed": result.elapsed_sec,
+        "stats": stats,
+        "dept_top": dept_top,
+        "intent_top": intent_top,
+        "artifact_top": artifact_top,
+        "preview_rows": JOBS[job_id]["preview"],
+        "columns": JOBS[job_id]["columns"],
+        "output_basename": output_basename,
+    }
+    return TEMPLATES.TemplateResponse(request, "result.html", context)
 
 
 @app.get("/download/combined/{job_id}")
