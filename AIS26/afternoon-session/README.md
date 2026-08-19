@@ -11,9 +11,22 @@ AI Summit Seoul 2026 오후 세션 기록 폴더입니다.
 | [`live-translation-afternoon.md`](./live-translation-afternoon.md) | 오후 세션 실시간 통역 전체 누적본 |
 | [`chunks/`](./chunks/) | 오후 통역 내용을 10분 단위로 나눈 조각 파일 |
 | [`chunks/latest-10min.md`](./chunks/latest-10min.md) | 오후 기준 최신 10분 구간 |
+| [`tracks/`](./tracks/) | 오후 세션 트랙 A/B/C/D별 정리 폴더 |
+
+## Tracks
+
+오후 세션은 4개 트랙으로 나누어 관리합니다.
+
+| 트랙 | 폴더 | 설명 |
+| --- | --- | --- |
+| A | [`tracks/A/`](./tracks/A/) | Track A 세션 정리 |
+| B | [`tracks/B/`](./tracks/B/) | Track B 세션 정리 |
+| C | [`tracks/C/`](./tracks/C/) | Track C 세션 정리 |
+| D | [`tracks/D/`](./tracks/D/) | Track D 세션 정리 |
 
 ## Notes
 
 - 기준 시간: 2026-08-19 13:00 KST 이후
 - 자동 푸시 주기: 10분
 - 이후 오후 세션 요약본도 이 폴더 안에 추가할 예정입니다.
+- 전하께서 참석한 세션은 해당 트랙 폴더에 별도로 정리할 예정입니다.
