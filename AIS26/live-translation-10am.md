@@ -1,9 +1,9 @@
 # LiveTR 180342
 
 - Title: Keynote & Track B
-- Saved at: 2026-08-19T02:26:12.087Z
+- Saved at: 2026-08-19T02:26:58.491Z
 - Language: ko
-- Messages: 988
+- Messages: 995
 - 2026-08-19T00:01:18.394Z [en->ko] AI 서밋 서울 2026에 오신 것을 환영합니다. 🤖
   Original: Welcome to AI Summit Seoul 2026.
 
@@ -2892,5 +2892,26 @@
 - 2026-08-19T02:26:06.140Z [en->ko] 그리고 나서 그들은...
   Original: Then they were using a coding agent, and they asked it to sign up for a gym. What happened was that the coding agent hacked the gym's website.
 
-- 2026-08-19T02:26:07.670Z [en->ko] 대기자 명단에 있는 사람 중 한 명을 삭제했다.
-  Original: deleted one of the people on the waitlist.
+- 2026-08-19T02:26:12.079Z [en->ko] 대기자 명단에 있는 사람 중 한 명을 삭제했다.
+  Original: deleted one of the people on the waitlist and made the applicant higher on the waitlist, right?
+
+- 2026-08-19T02:26:20.079Z [en->ko] 우리는 전 세계에 모두를 원하지 않는다.
+  Original: We don't want everyone in the world to have access to this capability, or obviously it's going to be chaos.
+
+- 2026-08-19T02:26:26.428Z [en->ko] 네, 그래서 저는 하다
+  Original: So I do think that we need to democratize these models,
+
+- 2026-08-19T02:26:31.442Z [en->ko] 우리는 또한 그것을 조심스럽게 해야 합니다.
+  Original: Also need to do it carefully, make sure that they're using it the right way.
+
+- 2026-08-19T02:26:35.764Z [en->ko] 앤드류가 우리에게 준다.
+  Original: Andrew gives us a fascinating example.
+
+- 2026-08-19T02:26:38.986Z [en->ko] 제프, 이게 어떻게 생각되는지 궁금하네.
+  Original: I wonder, Jeff Clune how you think about this issue?
+
+- 2026-08-19T02:26:46.331Z [en->ko] 네, 저도 동의해요.
+  Original: Yeah, I also agree that it's controversial and worthy of careful consideration.
+
+- 2026-08-19T02:26:54.457Z [en->ko] 내 자신을 대신해 말하는 거야, 아무도 아니야
+  Original: Speaking for myself, not any of the organizations that I work for. I personally think like Andrew that we want to democratize access.
