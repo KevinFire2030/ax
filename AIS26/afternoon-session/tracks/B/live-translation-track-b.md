@@ -1,10 +1,10 @@
 ﻿# LiveTR 180342 - Afternoon Session
 
 - Source room: 180342
-- Saved at: 2026-08-19T07:15:11Z
+- Saved at: 2026-08-19T07:18:19Z
 - Language: ko
 - Session start: 2026-08-19 15:00 KST
-- Messages: 338
+- Messages: 365
 
 - 2026-08-19T06:00:02.062Z [en->ko] 다음 주는 지금 저희 팀에게 아무런 도움이 되지 않습니다. 🤖
   Original: Next week doesn't help my team now.
@@ -1143,4 +1143,113 @@
   Original: But what we're actually seeing is companies releasing incredibly capable open-weight models.
 
 
-- 2026-08-19T07:15:10.877Z [en] You can download these, you can run them.
+- 2026-08-19T07:15:12.837Z [en->ko] 이것들을 다운로드할 수 있고, 실행할 수도 있습니다.
+  Original: You can download these and you can run them on your servers completely private.
+
+
+- 2026-08-19T07:15:16.881Z [en->ko] 완전히 사적인.
+  Original: This is putting incredible
+
+
+- 2026-08-19T07:15:23.916Z [en->ko] 개척지에 가해지는 비용 압박.
+  Original: cost pressure on the frontier labs, but it's very good for anyone who wants to use these models.
+
+
+- 2026-08-19T07:15:28.798Z [en->ko] 건축하기에 더 좋은 시간이었다.
+  Original: It's never been a better time to build and to ship.
+
+
+- 2026-08-19T07:15:38.928Z [en->ko] 그리고 그건 단지 한 순간만을 의미하는 것이 아니다.
+  Original: And that's not just one moment in time. You can see that these open-weight models are continuing to chase the true frontier.
+
+
+- 2026-08-19T07:15:45.048Z [en->ko] 그리고 성능 차이.
+  Original: And the difference in performance at any point in time has remained relatively small.
+
+
+- 2026-08-19T07:15:52.062Z [en->ko] 그리고 복귀 시간.
+  Original: And the duration back, you have to go to hit previous frontier performance is measured in months.
+
+
+- 2026-08-19T07:16:01.556Z [en->ko] 은 개월 수로 측정됩니다.
+  Original: You'll even see a similar distribution across model size.
+
+
+- 2026-08-19T07:16:09.606Z [en->ko] 그래서 여기 꼭대기에.
+  Original: So here in the top right, you can see that you get the best performance with the largest models.
+
+
+- 2026-08-19T07:16:15.384Z [en->ko] 3조 개의 매개변수를 밀어내다.
+  Original: pushing three trillion parameters, and I'm sure that number will continue to go up over time.
+
+
+- 2026-08-19T07:16:25.815Z [en->ko] 하지만 당신은 볼 수 있어요
+  Original: But you can see that even at 300 billion parameters, you get near-frontier performance.
+
+
+- 2026-08-19T07:16:36.215Z [en->ko] 다음 전체 모델 반.
+  Original: The next whole class of models, from 30 billion to 300 billion parameters, is very feasible for us to serve at a reasonable cost.
+
+
+- 2026-08-19T07:16:41.855Z [en->ko] 이것은 ~의 일종의 지능이다
+  Original: This is a type of intelligence that was unthinkable years ago.
+
+
+- 2026-08-19T07:16:46.329Z [en->ko] 그리고 이제 이것은 안에 포장됩니다
+  Original: And now this is packed into a very, very small number of parameters.
+
+
+- 2026-08-19T07:16:53.956Z [en->ko] 이것이 의미하는 것은,
+  Original: What this means is that intelligence is being concentrated in these parameters at a very high rate.
+
+
+- 2026-08-19T07:16:58.070Z [en->ko] 지능의 가격이 하락하고 있다
+  Original: The price of intelligence is falling, and it is approaching zero.
+
+
+- 2026-08-19T07:17:06.886Z [en->ko] 그리고 당신은 놀라운 것을 가지고 있어요
+  Original: And you have an incredible set of different models to choose from, enabling incredibly high levels of intelligence at low amounts of cost.
+
+
+- 2026-08-19T07:17:14.561Z [en->ko] 낮은 비용으로.
+  Original: I'll also note that there are many bad models that are far
+
+
+- 2026-08-19T07:17:17.566Z [en->ko] 그 효율적 프런티어 아래에.
+  Original: It is far below that efficient frontier.
+
+
+- 2026-08-19T07:17:24.612Z [en->ko] 무엇을 선택할 때 사려 깊어지도록 돕다
+  Original: To be thoughtful in choosing which model is going to give you the best performance for your set of criteria.
+
+
+- 2026-08-19T07:17:32.382Z [en->ko] 그리고 이 차트에서 보듯이 우리는 또한
+  Original: And you can see on this chart that we're also getting better at a technique called distillation.
+
+
+- 2026-08-19T07:17:39.641Z [en->ko] 모델 증류.
+  Original: Model distillation allows you to take a very large, very expensive model.
+
+
+- 2026-08-19T07:17:46.361Z [en->ko] 그리고 훈련을 방출한다.
+  Original: and emit training data from it that can be used to train a smaller model.
+
+
+- 2026-08-19T07:17:51.581Z [en->ko] 이것을 통해 더 작게 만들 수 있습니다
+  Original: This allows you to get small models that are almost as capable.
+
+
+- 2026-08-19T07:17:54.367Z [en->ko] 더 큰 교사 모델로서.
+  Original: as the larger teacher model.
+
+
+- 2026-08-19T07:18:08.216Z [en->ko] 그리고 당신은 볼 수 있다
+  Original: And you can see the distillation process results in models that, at much, much smaller form factors, are starting to approach that true frontier level of performance.
+
+
+- 2026-08-19T07:18:12.519Z [en->ko] 우리가 전반에 걸쳐 지능으로 보고 있는 것은 무엇인가요
+  Original: What we're looking at is intelligence across the full set of form factors.
+
+
+- 2026-08-19T07:18:17.912Z [en->] 그리고 우리는 기대할 수 있다.
+  Original: and we can expect that entire Pareto frontier to improve over time.
