@@ -1,10 +1,10 @@
 ﻿# LiveTR 180342 - Afternoon Session
 
 - Source room: 180342
-- Saved at: 2026-08-19T07:28:17Z
+- Saved at: 2026-08-19T07:38:18Z
 - Language: ko
 - Session start: 2026-08-19 15:00 KST
-- Messages: 446
+- Messages: 542
 
 - 2026-08-19T06:00:02.062Z [en->ko] 다음 주는 지금 저희 팀에게 아무런 도움이 되지 않습니다. 🤖
   Original: Next week doesn't help my team now.
@@ -1575,5 +1575,389 @@
   Original: The big shift that's happened here and why we call these agents is that most software was built for humans to run.
 
 
-- 2026-08-19T07:28:13.270Z [en->ko] 하지만 우리가 점점 더 보고 있는 것은 ~와 함께
-  Original: But what we're increasingly seeing is within the correct scoping and security levels, we are giving that agency over to a model. We are letting the model choose what software to run.
+- 2026-08-19T07:28:15.095Z [en->ko] 하지만 우리가 점점 더 보고 있는 것은 ~와 함께
+  Original: But what we're increasingly seeing is that, within the correct scope and security levels, we are giving that agency over to a model. We are letting the model choose what software to run and how.
+
+
+- 2026-08-19T07:28:20.964Z [en->ko] 그리고 그것은 엄청난
+  Original: And that comes with incredible opportunities, but also incredible risks that we need to be very responsible about.
+
+
+- 2026-08-19T07:28:24.517Z [en->ko] 그럼 이 인터페이스는 무엇을 하나요?
+  Original: So, what does this interface need to look like?
+
+
+- 2026-08-19T07:28:31.481Z [en->ko] 오늘날 그것은 기술이다.
+  Original: Today, that is skills. I recommend that just about all of you build agent skills for your company and your team.
+
+
+- 2026-08-19T07:28:40.536Z [en->ko] 그리고 그것은 구조화하고 표현하는 훌륭한 방법입니다
+  Original: And it's a great way to structure and represent your company's organization and knowledge so that it can be used effectively by these agents.
+
+
+- 2026-08-19T07:28:49.280Z [en->ko] MCP는 ~에 탁월합니다
+  Original: MCPs are great for services when you need to retrieve information from databases or need to make writes.
+
+
+- 2026-08-19T07:28:53.916Z [en->ko] 그리고 잘 맞지 않는 것들을 위한 API들.
+  Original: And then APIs for things that don't fit well into either of those two structures.
+
+
+- 2026-08-19T07:29:02.995Z [en->ko] 그렇게.
+  Original: So, if there are any security researchers in the room, you should probably be concerned about how much I just suggested you connect to these agents.
+
+
+- 2026-08-19T07:29:08.828Z [en->ko] 그것은 위험을 수반하기 때문에.
+  Original: Because that comes with risk. So think really hard about how you can bound the downside.
+
+
+- 2026-08-19T07:29:19.737Z [en->ko] 당신은 정말로 제한하고 싶다
+  Original: You want to really limit file access, limit role-based access control.
+
+
+- 2026-08-19T07:29:23.272Z [en->ko] 그들이 달성해야 할 것에 대해 행동하십시오
+  Original: You want to constrain the ability of these agents act to what they need to accomplish their specific task.
+
+
+- 2026-08-19T07:29:28.084Z [en->ko] 최소 권한을 사용하고, 특히
+  Original: Use least privilege, and in particular, you want to sandbox your execution.
+
+
+- 2026-08-19T07:29:41.540Z [en->ko] 샌드박스를 설정할 수 있습니다.
+  Original: You can set up sandboxes easily using commodity hardware. You can also provision them from many vendors, such as Daytona or any of the hyperscalers.
+
+
+- 2026-08-19T07:29:45.944Z [en->ko] 그 후에 에이전트를 설치할 수 있습니다.
+  Original: You can then install your agents and bring the data to them.
+
+
+- 2026-08-19T07:29:50.359Z [en->ko] 모든 사용 사례에 적용되는 것은 아닙니다.
+  Original: work for all use cases, but I recommend it for most use cases if it is
+
+
+- 2026-08-19T07:29:57.529Z [en->ko] 가능하다면, 당신은 나이를 달리고 있어야 합니다
+  Original: If feasible, you should run your agents in sandboxes so that you can track, measure, and protect against their risks.
+
+
+- 2026-08-19T07:30:01.434Z [en->ko] 셋째.
+  Original: The third principle is more subtle.
+
+
+- 2026-08-19T07:30:08.203Z [en->ko] 우리는 너무 익숙해요.
+  Original: We're so used to telling agents how to solve their tasks.
+
+
+- 2026-08-19T07:30:11.684Z [en->ko] 우리는 이전에 베이킹하는 것에 익숙합니다
+  Original: We're used to baking in our priors and our knowledge to give these models an advantage.
+
+
+- 2026-08-19T07:30:20.220Z [en->ko] 그리고.
+  Original: The deeper lesson here is that we've been doing this for a long time.
+
+
+- 2026-08-19T07:30:24.193Z [en->ko] 그리고 변호사인 리처드 서튼.
+  Original: and Richard Sutton, who's a Turing Award winner.
+
+
+- 2026-08-19T07:30:31.956Z [en->ko] 그것을 또한 관찰했다.
+  Original: Observed that, as much as we try to inject our knowledge and our understanding about how a problem should be solved,
+
+
+- 2026-08-19T07:30:40.221Z [en->ko] 거의 항상
+  Original: That almost always inhibits the ability of AI systems to solve those problems.
+
+
+- 2026-08-19T07:30:46.952Z [en->ko] 그러므로,
+  Original: And so I think some of the designs of agents we're observing today
+
+
+- 2026-08-19T07:30:54.423Z [en->ko] 우리가 지나치게 규범적이라면.
+  Original: If we're overly prescriptive, if we build too much scaffolding, it actually gets in the way of the model solving that problem.
+
+
+- 2026-08-19T07:31:00.448Z [en->ko] 그리고 모델이 얼마나 빠르게 발전하고 있는지에 따라,
+  Original: And with how quickly models are improving, you often need to go back and revise your prompts and your agent skills.
+
+
+- 2026-08-19T07:31:06.481Z [en->ko] 최대 성능을 얻기 위해.
+  Original: To get maximal performance, and so thinking about how fast these models are improving.
+
+
+- 2026-08-19T07:31:10.888Z [en->ko] 미래를 향해 디자인을 계속하다.
+  Original: Continue designing toward the future. Really focus your efforts.
+
+
+- 2026-08-19T07:31:16.039Z [en->ko] 정의에 대해, 정의.
+  Original: On defining the what, defining what should be accomplished, and how you measure performance.
+
+
+- 2026-08-19T07:31:22.533Z [en->ko] 그리고 나서 그 혜택을 활용하라
+  Original: And then take advantage of the great capabilities of these models to be able to self-optimize.
+
+
+- 2026-08-19T07:31:28.839Z [en->ko] Anthropic의 놀라운 사례입니다.
+  Original: An incredible example from Anthropic: they built an entire C compiler from scratch.
+
+
+- 2026-08-19T07:31:33.254Z [en->ko] 그건 무척이나 복잡하고 두려운 질문이다.
+  Original: That is a terrifyingly complex engineering project to me.
+
+
+- 2026-08-19T07:31:38.021Z [en->ko] 나는 수십 개가 필요합니다
+  Original: I would need dozens of engineers and probably months to pull that off.
+
+
+- 2026-08-19T07:31:46.407Z [en->ko] 하지만 그들이 정말 엄격한...
+  Original: But if they have a really rigorous specification of what success looks like and they're able to run optimization against it,
+
+
+- 2026-08-19T07:31:48.951Z [en->ko] 그들은 그 과제를 수행할 수 있었다.
+  Original: They were able to accomplish that task.
+
+
+- 2026-08-19T07:31:57.297Z [en->ko] 그렇게 생각하세요. 아주 깊이 생각해.
+  Original: Think in that way. Think very hard about specifying quality, specifying the goal you're trying to obtain.
+
+
+- 2026-08-19T07:32:01.189Z [en->ko] 그리고 시스템이 스스로 최적화하도록 하세요.
+  Original: and let the system optimize itself to be able to obtain that.
+
+
+- 2026-08-19T07:32:04.540Z [en->ko] 이것이 나를 데려온다.
+  Original: This brings me to evaluation.
+
+
+- 2026-08-19T07:32:13.197Z [en->ko] 우리는 실제에 도달했다
+  Original: We've reached a really interesting overhang where the models are often more capable than our ability to measure them.
+
+
+- 2026-08-19T07:32:21.169Z [en->ko] 그리고 어떤 모델인지 알고 싶다면
+  Original: And if you want to know which model you should use, whether you need to change your harness, or whether you need to build a new set of skills,
+
+
+- 2026-08-19T07:32:23.381Z [en->ko] 성과를 측정할 방법이 필요합니다.
+  Original: You need a way to measure performance.
+
+
+- 2026-08-19T07:32:29.034Z [en->ko] 그래서 나는 아주 적극적으로 뭔가를 하고 있어요.
+  Original: So something I'm doing very actively is helping my team build out a rigorous evaluation set.
+
+
+- 2026-08-19T07:32:32.997Z [en->ko] 기업들이 우리에게 와서 말할 때
+  Original: When companies come to us and say, "Hey, we can solve your problem,"
+
+
+- 2026-08-19T07:32:44.681Z [en->ko] 가지고 있으면 정말 도움이 돼요
+  Original: It's so helpful to have an evaluation set where we can run through and say, "Hey, this works great. Where can we sign?" Or, "This does not meet our requirements, and here's why."
+
+
+- 2026-08-19T07:32:47.564Z [en->ko] 덕분에 우리 팀은 훨씬 더 빠르게 반복 작업을 할 수 있습니다.
+  Original: It allows our teams to iterate much more quickly.
+
+
+- 2026-08-19T07:32:50.256Z [en->ko] 천천히 가서 빨리 가는 훌륭한 예.
+  Original: It's a great example of going slow to go fast.
+
+
+- 2026-08-19T07:32:56.985Z [en->ko] 이러한 고품질을 구축한다면
+  Original: If you build out these high-quality evaluation sets, it will enable your team to move so much faster.
+
+
+- 2026-08-19T07:33:01.581Z [en->ko] 그래서 나는 당신이 투자할 것을 강력히 추천합니다
+  Original: So I highly recommend that you invest more in evaluation.
+
+
+- 2026-08-19T07:33:06.047Z [en->ko] 당신은 당신이 어떻게 하는지를 정의하고 있습니다
+  Original: You're defining how you do work well within your organization.
+
+
+- 2026-08-19T07:33:10.047Z [en->ko] 이것은 정말 높은 레버리지의 항목입니다.
+  Original: So this is a really high-leverage piece of advice I'm giving.
+
+
+- 2026-08-19T07:33:13.773Z [en->ko] 다섯 번째 원칙.
+  Original: Principle number five is table stakes.
+
+
+- 2026-08-19T07:33:28.497Z [en->ko] 모든 것을 따라 그리세요.
+  Original: Trace everything. You want traces for what your agent is doing: the requests, the responses, the tool calls, the parameters it's using, the responses it's getting back, and the state.
+
+
+- 2026-08-19T07:33:34.467Z [en->ko] 로켓 과학처럼 들리지만, 사실 그렇지 않다.
+  Original: Sound like rocket science because it isn't, but you'd be amazed how many companies and teams don't do this.
+
+
+- 2026-08-19T07:33:39.657Z [en->ko] 당신은 이 흔적들을 원하고, 원하고 싶다
+  Original: You want these traces and you want to mine them and you want to be able to observe from them.
+
+
+- 2026-08-19T07:33:41.320Z [en->] 조사할 수 있다.
+  Original: You want to be able to investigate.
+
+
+- 2026-08-19T07:33:45.880Z [en->ko] ~할 수 있기를 원한다
+  Original: And you want to be able to really improve your systems over time.
+
+
+- 2026-08-19T07:33:56.407Z [en->ko] 그리고 이런 흔적들을 정확히 파악하는 것이 정말 중요합니다.
+  Original: And getting these traces right is really important. Most of this you can do with good open-source solutions. The OpenTelemetry generative AI specification makes this very easy.
+
+
+- 2026-08-19T07:34:05.236Z [en->ko] 클릭하우스는 매우
+  Original: ClickHouse is a very easy way to get this set up to store and allow you to analyze them, but there are great open-source databases like Pinot that will work for you.
+
+
+- 2026-08-19T07:34:08.786Z [en->ko] 이걸 저렴한 대량 보관소에 둘 수 있어요.
+  Original: You can put this in cheap bulk storage in Amazon S3 on AWS.
+
+
+- 2026-08-19T07:34:18.616Z [en->ko] 하지만 나를 믿어, 안전해.
+  Original: But trust me, save your traces. It's a basic thing, but it's a really important one to get right, and it will enable you to move much faster.
+
+
+- 2026-08-19T07:34:23.287Z [en->ko] 그리고 원칙.
+  Original: And then principle number six is the most ambitious one.
+
+
+- 2026-08-19T07:34:35.157Z [en->ko] 학습의 순환을 완성하세요.
+  Original: Close the learning loop.
+
+
+- 2026-08-19T07:34:39.683Z [en->ko] 직원들이 사용하도록.
+  Original: When you have these traces, when you have your evaluation set, when you have an agent deployed either internally to your employees to use or externally for your customers to use.
+
+
+- 2026-08-19T07:34:42.192Z [en->ko] 당신은 성공과 실패를 목격하게 될 것입니다.
+  Original: You'll observe successes and failures.
+
+
+- 2026-08-19T07:34:53.842Z [en->ko] 그리고 예전에 걸리던 과정
+  Original: And the process that used to take engineering teams months—to look through, run queries, understand what's working and what isn't, and come up with hypotheses.
+
+
+- 2026-08-19T07:35:00.998Z [en->ko] 새 기능을 만들다.
+  Original: Build new features, run A/B tests. This was a long, long-winded process.
+
+
+- 2026-08-19T07:35:04.765Z [en->ko] 하지만 당신은 점점 더 확장할 수 있습니다.
+  Original: But you can increasingly expose your coding agents.
+
+
+- 2026-08-19T07:35:13.804Z [en->ko] 에이전트 기술에 대한 소스 코드.
+  Original: Source code, agent skills, and your traces—cluster those traces and run optimization on them.
+
+
+- 2026-08-19T07:35:17.420Z [en->ko] 그리고 남겨둔 것에 대해 다시 실행하세요.
+  Original: and rerun it against a holdout set of your ground truth.
+
+
+- 2026-08-19T07:35:21.943Z [en->ko] 이것은 압축될 수 있습니다.
+  Original: This can compress months and years of work into literally days.
+
+
+- 2026-08-19T07:35:37.353Z [en->ko] 말 그대로 며칠 안으로.
+  Original: And we're increasingly seeing success internally, but also companies that I'm familiar with are seeing really, really promising results.
+
+
+- 2026-08-19T07:35:41.368Z [en->ko] 이 흔적들을 자동으로 채굴할 때.
+  Original: at mining these traces automatically and suggesting pull requests.
+
+
+- 2026-08-19T07:35:49.592Z [en->ko] 계속 검토하시길 권합니다
+  Original: I do suggest you continue to review that code. Continue to do security checks, as our friend from GitLab suggested earlier.
+
+
+- 2026-08-19T07:35:59.451Z [en->ko] 하지만 인식하다
+  Original: But recognize that you can dramatically increase the pace of innovation, hypothesis generation, and development.
+
+
+- 2026-08-19T07:36:03.476Z [en->ko] 그리고 실험을 실행하다
+  Original: and run experiments more quickly and more concurrently.
+
+
+- 2026-08-19T07:36:07.831Z [en->ko] 움직일 수 있는 간단한 애니메이션 속도
+  Original: simple pace of innovation that you can move at is so much higher today than it was even months ago.
+
+
+- 2026-08-19T07:36:13.279Z [en->ko] 그렇다면 그 시스템을 최적화하는 것은 어떤 모습일까요?
+  Original: And so, what does optimizing that system look like?
+
+
+- 2026-08-19T07:36:17.823Z [en->ko] 제 생각에는, 세 개가 있어요.
+  Original: As I see it, there are three separate tiers.
+
+
+- 2026-08-19T07:36:31.622Z [en->ko] 맥락과 함께 시작하고
+  Original: Start with context engineering. This is low-hanging fruit. It is the easiest thing to do, and it will get you 80% of the benefits. The models that we're working with are so capable now.
+
+
+- 2026-08-19T07:36:38.890Z [en->ko] 그들에게 적절한 것을 제공하는 것
+  Original: That simply providing them with the right context, the right tools, and the right MCPs will get you most of the way there.
+
+
+- 2026-08-19T07:36:43.504Z [en->ko] 그리고는 정말로 책임이 있다.
+  Original: and is really responsible for most of the bottlenecks I've seen.
+
+
+- 2026-08-19T07:36:51.770Z [en->ko] 우리가 내부적으로 구축한 에이전트들을 위해 그리고
+  Original: For agents that we built internally, and for agents that my network has shared with me, we have run into challenges.
+
+
+- 2026-08-19T07:36:57.932Z [en->ko] 그러니 컨텍스트 엔지니어를 확보하는 데 집중하세요.
+  Original: So focus on getting the context engineering right first. Second is optimizing the harness.
+
+
+- 2026-08-19T07:37:03.562Z [en->ko] 예술가들은.
+  Original: Harnesses aren't a lot of code. There's not much to improve.
+
+
+- 2026-08-19T07:37:06.478Z [en->ko] 하지만 상당한 양의 토큰을 소모합니다.
+  Original: But it does consume a significant amount of tokens at long-running sessions.
+
+
+- 2026-08-19T07:37:16.253Z [en->ko] 다짐에는 다양한 측면이 있습니다
+  Original: There are various aspects that have huge implications for the long-term performance of your tasks.
+
+
+- 2026-08-19T07:37:21.762Z [en->ko] 하네스 엔지니어링은 절대적으로
+  Original: Harness engineering is absolutely something to consider and look at.
+
+
+- 2026-08-19T07:37:30.489Z [en->ko] 가중치 최적화 및 미세 조정
+  Original: And then finally optimizing the weights and fine-tuning is expensive and challenging. It's worth doing for highly specialized domains.
+
+
+- 2026-08-19T07:37:33.064Z [en->ko] 하지만 그게 주요 투자자라는 것만 인정하세요.
+  Original: But just recognize it's a major investment.
+
+
+- 2026-08-19T07:37:39.271Z [en->ko] 그리고 당신은 언제나 ~의 위험을 감수합니다
+  Original: And you always run the risk that a better model is going to be released by one of these frontier companies.
+
+
+- 2026-08-19T07:37:44.705Z [en->ko] 이것이 모델이 보여준 최악임을 인식한다.
+  Original: Recognize that this is the worst the models will ever be, and so they're improving at a really rapid pace.
+
+
+- 2026-08-19T07:37:51.158Z [en->ko] 그리고.
+  Original: And this chart is too complex to convey a fairly simple idea.
+
+
+- 2026-08-19T07:37:55.640Z [en->ko] 거기에 정말 있나요
+  Original: which is, there really are two optimization loops.
+
+
+- 2026-08-19T07:37:58.261Z [en->ko] 당신이 흔적들을 살펴보는 곳.
+  Original: One is where you look over the traces
+
+
+- 2026-08-19T07:38:02.153Z [en->ko] 당신은 무엇을 정의하나요
+  Original: And you define what success is.
+
+
+- 2026-08-19T07:38:05.981Z [en->ko] 두 번째 조각.
+  Original: The second piece is the self-improvement loop.
+
+
+- 2026-08-19T07:38:14.134Z [en->ko] 훌륭한 오픈 소스 기법들이 있습니다
+  Original: There's great open source techniques that can do this. Mast for automated agent system error detection.
