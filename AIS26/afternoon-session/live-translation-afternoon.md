@@ -1,10 +1,10 @@
 ﻿# LiveTR 132952 - Afternoon Session
 
 - Source room: 132952
-- Saved at: 2026-08-19T05:38:15Z
+- Saved at: 2026-08-19T05:48:16Z
 - Language: ko
 - Session start: 2026-08-19 13:00 KST
-- Messages: 437
+- Messages: 508
 
 - 2026-08-19T04:26:53.728Z [en->ko] 잠시 후 AI Summit Seoul 2026이 시작될 예정입니다. 참석자 여러분께서는 행사장 안으로 입장하시어 자리에 착석해 주시기 바랍니다. 🤖
   Original: 2026 will begin shortly. We kindly ask all participants to make their way into the hall and take their seats.
@@ -1580,5 +1580,289 @@
   Original: Meaning that it is AI agents who decide what to buy on your behalf and make these purchases.
 
 
-- 2026-08-19T05:38:13.187Z [en->ko] 이것은 이렇게 깊게, 그리고 왜
-  Original: This is how deeply and widely I gently I
+- 2026-08-19T05:38:17.164Z [en->ko] 이것은 이렇게 깊게, 그리고 왜
+  Original: This is how deeply and widely agentic AI is already being adopted by consumers.
+
+
+- 2026-08-19T05:38:23.359Z [en->ko] 사람들, 우리 같은 인간들.
+  Original: People, humans like us. However, what happens with corporations?
+
+
+- 2026-08-19T05:38:26.887Z [en->ko] 상황이 완전합니다.
+  Original: The situation is completely opposite.
+
+
+- 2026-08-19T05:38:48.721Z [en->ko] 많은 보고서가 시작되고 있다
+  Original: Many reports starting last year, including one from MIT, found that 95% of enterprises didn't get any value from the massive investments they were making in AI and agentic AI.
+
+
+- 2026-08-19T05:39:03.366Z [en->ko] 같은 보고서.
+  Original: Same report, similar study, but with different data sets and methodologies, was done by BCG, McKinsey, and other industry players.
+
+
+- 2026-08-19T05:39:06.522Z [en->ko] 그들은 같은 결론에 도달한다
+  Original: And they come to the same conclusion.
+
+
+- 2026-08-19T05:39:19.380Z [en->ko] 95에서.
+  Original: Ninety-five-plus percent of enterprises get no value from adopting AI in their business processes.
+
+
+- 2026-08-19T05:39:22.761Z [en->ko] 경제학은 없다.
+  Original: no Economical value
+
+
+- 2026-08-19T05:39:29.671Z [en->ko] 왜 이런 일이 일어나는가?
+  Original: Why does this happen?
+
+
+- 2026-08-19T05:39:48.332Z [en->ko] 제가 돌아왔을 때...
+  Original: When I was back at McKinsey a decade ago, where I built and was leading the AI transformation practice, we were coming to the leaders of organizations and saying, "Hey, AI is coming, so it's going to be a big thing."
+
+
+- 2026-08-19T05:39:58.064Z [en->ko] 그래서 당신은 가지고 있어야 합니다
+  Original: So you need to have what we called, at that time, AI translators: people who know how to execute AI in your organization.
+
+
+- 2026-08-19T05:40:04.336Z [en->ko] 당신의 사업이 무엇인지 이해하는 사람.
+  Original: who understand what is your business and how it's going to change? because the consumers are adopting AI.
+
+
+- 2026-08-19T05:40:11.127Z [en->ko] 변환은 어떻게 이루어져야 하나요?
+  Original: How does the transformation need to happen? This is what Milind has been touching on in his presentation.
+
+
+- 2026-08-19T05:40:18.537Z [en->ko] 그들이 어떻게 관리하는가
+  Original: How do you manage agents? How do you delegate decisions? How do you change workflows?
+
+
+- 2026-08-19T05:40:24.124Z [en->ko] 마지막으로, 보세요
+  Original: And finally, what should be the right technology to support you on this journey?
+
+
+- 2026-08-19T05:40:30.150Z [en->ko] 불행하게도,
+  Original: Unfortunately, very few organizations were able to build that capability. in-house, even though they had a 10 years lead time.
+
+
+- 2026-08-19T05:40:52.539Z [en->ko] 그럼 오늘은 무슨 일이 일어나나요?
+  Original: And so, what has happened today? Everyone wants to be AI-first. Every enterprise wants to be AI-first. Actually, very, very few enterprises understand what it means to be AI-first.
+
+
+- 2026-08-19T05:40:58.014Z [en->ko] 동시에.
+  Original: At the same time, so what is happening?
+
+
+- 2026-08-19T05:41:20.611Z [en->ko] 왜냐하면...
+  Original: Because customers—consumers, partners, small and medium-sized companies, and adversaries—are adopting AI well ahead of major enterprises, major enterprises are still focused on optimizing their old legacy business models.
+
+
+- 2026-08-19T05:41:24.075Z [en->ko] 정말로.
+  Original: Actually, they're falling behind. because the market is changing.
+
+
+- 2026-08-19T05:41:34.955Z [en->ko] 고객은
+  Original: Clients are using generative AI, for example, to prepare loan applications for banks.
+
+
+- 2026-08-19T05:41:54.526Z [en->ko] 알아내다.
+  Original: To use agents to identify gaps in banks' credit approval processes, then stitch together loan applications in a way that gives them the highest chances of approval.
+
+
+- 2026-08-19T05:42:09.514Z [en->ko] 보험 회사를 위해.
+  Original: For insurance companies, more and more consumers are using AI agents to fill out reimbursement forms for their claims.
+
+
+- 2026-08-19T05:42:21.090Z [en->ko] 그들이 그렇게
+  Original: they use it in such a way that the agent reads the policies and fills out the form to maximize the likelihood of approval for the insurance claims.
+
+
+- 2026-08-19T05:42:32.557Z [en->ko] 항상 창조자.
+  Original: Obviously, criminals are using AI agents heavily to attack enterprises.
+
+
+- 2026-08-19T05:42:45.267Z [en->ko] 중소기업의 파트너.
+  Original: The MSME partners are also using AI agents to identify gaps in the pre-LLM processes used by enterprises.
+
+
+- 2026-08-19T05:43:05.274Z [en->ko] 그래서
+  Original: So the whole ecosystem surrounding those enterprises is actually changing. But guess what enterprises are doing? Ninety-five percent of enterprises are using AI agents to optimize and cut costs in their old business models.
+
+
+- 2026-08-19T05:43:17.862Z [en->ko] 그리고 이것은 근본적입니다.
+  Original: And this is fundamentally the big problem: we're seeing a big trend that is happening across the globe.
+
+
+- 2026-08-19T05:43:21.907Z [en->ko] 그것은 무엇일까요?
+  Original: What implications does it have?
+
+
+- 2026-08-19T05:43:28.295Z [en->ko] 역사를 살펴보면, 우리는
+  Original: If we look at history, we've been in a similar situation. Some companies were in a similar situation.
+
+
+- 2026-08-19T05:43:41.517Z [en->ko] 코닥을 생각해 보세요.
+  Original: Think about Kodak. When digital technologies became mainstream 20 years ago, Kodak was fantastic at using digital technology to optimize its film production.
+
+
+- 2026-08-19T05:43:46.771Z [en->ko] 유일한 문제는
+  Original: The only problem was that customers had changed; they didn't need film anymore.
+
+
+- 2026-08-19T05:43:56.064Z [en->ko] 이것은.
+  Original: This is a very similar situation to what has happened today on a much bigger scale with lots of enterprises.
+
+
+- 2026-08-19T05:44:00.851Z [en->ko] 는 오늘이다. 그들은 그들을 위해 최적화하고 있다
+  Original: They're optimizing for their old value propositions.pre-LLM value proposition,
+
+
+- 2026-08-19T05:44:05.231Z [en->ko] LLM 이전의 가치 제안.
+  Original: where the clients they have already changed, they are different they are equipped with ai with air agents in a way smarter than most of the enterprises
+
+
+- 2026-08-19T05:44:29.032Z [en->ko] 이걸로, 빠르게 살펴보자.
+  Original: With this, let's have a quick look at one of the industries: wealth management. I'll ask to play a quick video so that you can see what agents are really able to do. Can we play a quick video?
+
+
+- 2026-08-19T05:44:39.513Z [en->ko] 이것은 라이브 데모입니다.
+  Original: This is a live demo that I used to do in the past. The OPC is a complex multi-asset strategy where staying ahead requires more than just tracking the market.
+
+
+- 2026-08-19T05:44:48.828Z [en->ko] 그의 과제는 인지 규모이다.
+  Original: His challenge is cognitive scale: synthesizing a flood of disparate intelligence, from macro news to technical charts, to protect his clients from blind spots.
+
+
+- 2026-08-19T05:44:57.363Z [en->ko] 이 도전에 맞서기 위해, 알렉스,
+  Original: To meet this challenge, Alex uses Gemini Live in Vertex AI.
+
+
+- 2026-08-19T05:45:07.038Z [en->ko] 그는 실시간 구글 검색 기반을 가능하게 합니다.
+  Original: He enables Google Search grounding for real-time data. Then, he starts a session and shares his screen, connecting Gemini to his portfolio and live news feeds.
+
+
+- 2026-08-19T05:45:13.387Z [en->ko] 알겠어요, 구글.
+  Original: Okay, Google, read this article from the Financial Times and give me a two-sentence summary of the key takeaways. and its potential market impact.
+
+
+- 2026-08-19T05:45:20.399Z [en->ko] 그리고 그 잠재적인 시장 영향.
+  Original: So this is a human. The male voice is a human, and the female voice is the AI agent.
+
+
+- 2026-08-19T05:45:29.716Z [en->ko] 그래, 에이전트는 그냥.
+  Original: The agent is just reading the whole article while I'm scrolling. Sure, I've analyzed the article.
+
+
+- 2026-08-19T05:45:37.520Z [en->ko] 엄격한 새로운 수출 통제로 이어졌다.
+  Original: Escalating U.S.-China trade tensions have led to strict new export controls on rare-earth materials, threatening to disrupt global supply chains for essential magnets.
+
+
+- 2026-08-19T05:45:44.170Z [en->ko] 이는 ~을 촉진할 것으로 예상된다
+  Original: This is expected to drive up costs and delay production across the automotive and defense sectors.
+
+
+- 2026-08-19T05:45:48.986Z [en->ko] 특히 전기에 영향을 미친다.
+  Original: particularly affecting electric vehicle manufacturers and military contractors.
+
+
+- 2026-08-19T05:45:54.162Z [en->ko] 좋아, 이제 이게 내 거야
+  Original: Great. Now, cross-reference that summary with the My Portfolio spreadsheet.
+
+
+- 2026-08-19T05:46:01.757Z [en->ko] 모든 소장품을 식별하고 나열하세요.
+  Original: Identify and list all holdings that are directly impacted by this news and explain why.
+
+
+- 2026-08-19T05:46:06.751Z [en->ko] 알겠어요, 분석했어요.
+  Original: Okay, I've analyzed the rare earth news against your portfolio.
+
+
+- 2026-08-19T05:46:15.850Z [en->ko] 자동차 보유. 테슬라.
+  Original: Your automotive holdings—Tesla, Ford, GM, and Mercedes-Benz—are directly impacted due to their reliance on magnets for electric vehicle motors.
+
+
+- 2026-08-19T05:46:25.527Z [en->ko] 보고서는 또한 공급망 붕괴에 대해서도 경고하고 있다.
+  Original: The report also warns of broken supply chains for chips, creating significant risk for your semiconductor positions, such as NVIDIA, ASML, and Infineon.
+
+
+- 2026-08-19T05:46:28.829Z [en->ko] 암호화폐 보유, 비트코인 및 이더.
+  Original: Your crypto holdings, Bitcoin and Ether, are not directly affected.
+
+
+- 2026-08-19T05:46:32.721Z [en->ko] 이러한 노출을 고려할 때, 당신은 원할 수도 있습니다
+  Original: Given this exposure, you may want to consider hedging.
+
+
+- 2026-08-19T05:46:39.441Z [en->ko] 이 강조된 공급망을 기반으로
+  Original: Based on this highlighted supply chain risk for Tesla, suggest a few hedging strategies against a potential price drop.
+
+
+- 2026-08-19T05:46:42.381Z [en->ko] 이 상황에는 몇 가지 일반적인 전략이 있습니다.
+  Original: There are several common strategies for this scenario.
+
+
+- 2026-08-19T05:46:47.638Z [en->ko] 예를 들어, 풋 옵션을 살 수 있습니다.
+  Original: For example, you could buy a put option, which provides the right to sell shares at a set price. protecting against a drop below that level.
+
+
+- 2026-08-19T05:46:56.630Z [en->ko] 또 다른 일반적인 전략은 곰이다
+  Original: Another common strategy is a bear put spread, where you buy one put and simultaneously sell another at a lower strike.
+
+
+- 2026-08-19T05:47:01.153Z [en->ko] 이것은 헤지 비용을 낮출 수 있지만, 그것은
+  Original: This can lower the cost of the hedge, but it doesn't fully provide downside protection.
+
+
+- 2026-08-19T05:47:10.351Z [en->ko] 이것들은 표준의 예입니다
+  Original: These are examples of standard strategies to consider. I recommend evaluating specific contracts and their potential impact by analyzing the full options chain.
+
+
+- 2026-08-19T05:47:18.560Z [en->ko] 대단합니다. 그 헤징 전략들에 감사드립니다.
+  Original: That's great. Thank you for those hedging strategies. Now, I'm evaluating increasing my holdings in Alphabet. I'm looking at the stock chart for the last year.
+
+
+- 2026-08-19T05:47:23.465Z [en->ko] 그리고 나는 12월에 주가가 오르내리는 것을 본다.
+  Original: and i see the stock jumping around december 10 2024. can you tell me what happened there
+
+
+- 2026-08-19T05:47:29.361Z [en->ko] 네.
+  Original: Yes, there was significant news about Alphabet on December 10, 2024.
+
+
+- 2026-08-19T05:47:36.349Z [en->ko] 그 회사는 개발에서의 획기적인 성과를 발표했다
+  Original: The company announced a breakthrough in the development of their quantum computing chip, which led to their stock price jumping significantly that day.
+
+
+- 2026-08-19T05:47:39.618Z [en->ko] 이것은 그들을 그 안에서 리더십 위치에 놓이게 했다
+  Original: This put them in a leadership position in the quantum computing field.
+
+
+- 2026-08-19T05:47:43.443Z [en->ko] 네, 감사합니다.
+  Original: Okay, thank you. Let's make a note of that.
+
+
+- 2026-08-19T05:47:48.783Z [en->ko] 시장 변동성이 걱정돼요.
+  Original: I'm worried about market volatility. Can you suggest a few hedging strategies I could use?
+
+
+- 2026-08-19T05:47:52.412Z [en->ko] 광범위한 시장 변동성으로 구조를 만들 수 있습니다
+  Original: broad market volatility, you could structure an options caller.
+
+
+- 2026-08-19T05:47:57.291Z [en->ko] 그리고 포트폴리오 크기를 제공하세요.
+  Original: Given your portfolio size, hedging with index futures is often more cash-efficient.
+
+
+- 2026-08-19T05:48:03.025Z [en->ko] 이는 시장 노출을 상쇄할 수 있게 해줍니다.
+  Original: It allows you to offset your market exposure without the upfront premium costs associated with buying put options.
+
+
+- 2026-08-19T05:48:09.770Z [en->ko] 좋아요.
+  Original: That sounds good. I want to use the CME S&P 500 E-mini futures.
+
+
+- 2026-08-19T05:48:12.238Z [en->ko] 가장자리에 몇 개의 계약을 걸어야 하는지 말해 주세요.
+  Original: Tell me how many contracts I need to put on the edge.
+
+
+- 2026-08-19T05:48:13.976Z [en->ko] 당신의 포트폴리오를 계산해 봤어요
+  Original: I've calculated your portfolios way
