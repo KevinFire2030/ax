@@ -1,10 +1,10 @@
 ﻿# LiveTR 132952 - Afternoon Session
 
 - Source room: 132952
-- Saved at: 2026-08-19T05:08:15Z
+- Saved at: 2026-08-19T05:18:15Z
 - Language: ko
 - Session start: 2026-08-19 13:00 KST
-- Messages: 236
+- Messages: 309
 
 - 2026-08-19T04:26:53.728Z [en->ko] 잠시 후 AI Summit Seoul 2026이 시작될 예정입니다. 참석자 여러분께서는 행사장 안으로 입장하시어 자리에 착석해 주시기 바랍니다. 🤖
   Original: 2026 will begin shortly. We kindly ask all participants to make their way into the hall and take their seats.
@@ -776,5 +776,297 @@
   Original: I will focus on what this is and what I think is valuable, and please ask questions at the end.
 
 
-- 2026-08-19T05:08:14.428Z [en->ko] 네?
-  Original: Yes. 65% of organizations and others are
+- 2026-08-19T05:08:22.305Z [en->ko] 네?
+  Original: Yes. Another survey found that 65% of organizations said that at least one security incident was caused by their AI agent.
+
+
+- 2026-08-19T05:08:26.412Z [en->ko] 그것은 공격이 아니었다.
+  Original: It was not an attack.
+
+
+- 2026-08-19T05:08:35.957Z [en->ko] 그것은 ~인 대리인이었다
+  Original: It was an agent that was asked to do something, and doing it led to a security incident.
+
+
+- 2026-08-19T05:08:43.398Z [en->ko] 그리고 이것은 지난 1년에 불과하고 이것은
+  Original: And this is just the past year. And this is when AI agents are not that common. across organizations.
+
+
+- 2026-08-19T05:08:50.808Z [en->ko] 왜 이런 일이 발생하나요?
+  Original: Why does this happen?
+
+
+- 2026-08-19T05:08:56.034Z [en->ko] 우리가 인간을 대하기 때문에.
+  Original: Because we treat humans and AI agents very similarly.
+
+
+- 2026-08-19T05:09:03.551Z [en->ko] 우리는 ~이라고 믿는다
+  Original: We believe that the process we have set up for humans will also work for AI agents.
+
+
+- 2026-08-19T05:09:12.108Z [en->ko] 그래서 우리는 그들에게 정적인 API를 제공했습니다.
+  Original: So we gave them static API keys, shared accounts, and long-lived tokens.
+
+
+- 2026-08-19T05:09:26.706Z [en->ko] 이것.
+  Original: This agent is not identified within the company as an individual in its own right.
+
+
+- 2026-08-19T05:09:32.910Z [en->ko] 네.
+  Original: Yes, it is working on borrowed identities of humans.
+
+
+- 2026-08-19T05:09:37.244Z [en->ko] 그리고 다른 인간들은
+  Original: And humans work in very different ways, and we'll see how.
+
+
+- 2026-08-19T05:09:44.846Z [en->ko] 몇 명이세요
+  Original: How many of you have heard the story of PocketOS?
+
+
+- 2026-08-19T05:09:49.423Z [en->ko] 아니. 알겠어, 절대 안 돼.
+  Original: No, okay, no one.
+
+
+- 2026-08-19T05:10:06.523Z [en->ko] 이것은 유명한 사례입니다.
+  Original: This is a famous case from April, where an AI was given a task. It was trying to complete a routine coding task, but the credentials it was given failed.
+
+
+- 2026-08-19T05:10:14.503Z [en->ko] 그 환경은 그런 에이전트였다
+  Original: Agent serves the environment it was given access to for an alternative because it has to complete the task.
+
+
+- 2026-08-19T05:10:19.595Z [en->ko] 그것은 대안적인 해결책을 찾고 있었다.
+  Original: It was looking for alternate solutions. This is what AI does.
+
+
+- 2026-08-19T05:10:24.971Z [en->ko] 그들은 보고, 탐험한다.
+  Original: They look; they explore the solution space for alternatives.
+
+
+- 2026-08-19T05:10:32.538Z [en->ko] 그것은 또 다른 토큰을 찾았다.
+  Original: It found another token, a completely unrelated token belonging to the human in the space it had access to.
+
+
+- 2026-08-19T05:10:37.750Z [en->ko] 그래서 기술적으로 우리는 가지고 있습니다
+  Original: So technically, we had given access to that token to that AI. We made one API call.
+
+
+- 2026-08-19T05:10:51.160Z [en->ko] 네는 열려 있다
+  Original: For an operation that the token, and therefore the agent, had access to, it deleted the entire production database and its backup in nine seconds.
+
+
+- 2026-08-19T05:11:00.289Z [en->ko] 네, 이제 언제
+  Original: Yes. Now, when we think of agents as humans, we see this as a mistake.
+
+
+- 2026-08-19T05:11:10.109Z [en->ko] 네?
+  Original: Yes, because we humans have some kind of world model in our minds. This is how the world works, and if you do this, this is the consequence.
+
+
+- 2026-08-19T05:11:26.287Z [en->ko] 하지만 ...의 관점에서 생각하라...
+  Original: But think in terms of an agent. The agent was given an approved task, handled errors, read the permitted space, looked for solutions, and performed an approved operation to achieve a certain goal.
+
+
+- 2026-08-19T05:11:31.574Z [en->ko] 네?
+  Original: Yes. So, from the agent's perspective, everything was correct.
+
+
+- 2026-08-19T05:11:38.167Z [en->ko] 그 실수는 어떻게
+  Original: The mistake is in how we think of agents when we start anthropomorphizing them.
+
+
+- 2026-08-19T05:11:45.376Z [en->ko] 올해 5월에 보고서가 나왔습니다.
+  Original: In May this year, a report came out from five governments. five eyes, and this is their most important recommendation.
+
+
+- 2026-08-19T05:12:00.097Z [en->ko] 모든 대리인은 반드시 가져야 한다.
+  Original: Every agent must have its own individual identity.
+
+
+- 2026-08-19T05:12:07.139Z [en->ko] 네.
+  Original: Yes, I will spend a little more time on this point because it is also important to understand.
+
+
+- 2026-08-19T05:12:14.188Z [en->ko] 그 생각.
+  Original: The identity of an agent is not the same as the identity of a human.
+
+
+- 2026-08-19T05:12:29.083Z [en->ko] 왜요?
+  Original: Why? Because I, as a human, am one entity with one brain and one decision-making framework in my mind.
+
+
+- 2026-08-19T05:12:31.830Z [en->ko] 그리고 나는 책임을 질 수 있다.
+  Original: And I can be held accountable for that.
+
+
+- 2026-08-19T05:12:42.199Z [en->ko] 네.
+  Original: Yes. For an AI agent's identity, you have to know which agent has what capability.
+
+
+- 2026-08-19T05:12:47.159Z [en->ko] 어떤 인간이 그것을 줬나요?
+  Original: Which human gave that, or where did the instruction come from?
+
+
+- 2026-08-19T05:13:02.439Z [en->ko] 네, 에이전트가
+  Original: Yes, if the agent spun out, I cannot have clones, but agents can have clones. If agents spun up other sub-agents where the entire lineage of instructions
+
+
+- 2026-08-19T05:13:05.772Z [en->ko] 그 작업을 위해 어떤 도구를 사용했나요
+  Original: For that task, what tools did it have access to?
+
+
+- 2026-08-19T05:13:11.905Z [en->ko] 네, 이 모든 것입니다.
+  Original: Yes, all of these are going to be part of an AI agent's identity.
+
+
+- 2026-08-19T05:13:19.598Z [en->ko] 누가 그것을 물었나요?
+  Original: Who asked it? What was asked? What context was given? What tools were given?
+
+
+- 2026-08-19T05:13:22.385Z [en->ko] 그리고 그 다음에는 무슨 일이 일어났나요?
+  Original: And what happened next?
+
+
+- 2026-08-19T05:13:32.141Z [en->ko] 작업 중일 수도 있다.
+  Original: Maybe in the middle of a task, more access to tools is granted, and the identity will morph. So this is what I want to point out.
+
+
+- 2026-08-19T05:13:35.778Z [en->ko] 우리가 그들에게 줘야 한다고 말함에도 불구하고
+  Original: Even though we say we have to give them identity, what does that mean?
+
+
+- 2026-08-19T05:13:38.840Z [en->ko] 는 다르게 의미하는데, 왜냐하면 그것이 아니기 때문에
+  Original: It means different things because it is not a human.
+
+
+- 2026-08-19T05:13:49.048Z [en->ko] 그것은 당신이 할 수 있는 일을 할 수 있다
+  Original: It can do things that humans cannot do, and therefore identity mechanisms designed for humans are not suitable for AI agents.
+
+
+- 2026-08-19T05:13:54.742Z [en->ko] 그것이 정체성이었다.
+  Original: That was identity. Second is scope.
+
+
+- 2026-08-19T05:14:02.214Z [en->ko] 다시 보니 우리는 무료이다
+  Original: Again, we will see that treating AI the same way we treat humans will lead to problems.
+
+
+- 2026-08-19T05:14:14.224Z [en->ko] 대부분의 기업들.
+  Original: Most companies cannot enforce scope-limited—sorry, purpose-limited scope.
+
+
+- 2026-08-19T05:14:19.396Z [en->ko] 그래서 AI 에이전트는
+  Original: So either the AI agent has access to it or doesn’t have access to it.
+
+
+- 2026-08-19T05:14:27.520Z [en->ko] 왜? 왜냐하면
+  Original: Why? Because the access-granting infrastructure in the organization was designed for humans, not AI.
+
+
+- 2026-08-19T05:14:33.372Z [en->ko] 그렇게,
+  Original: So, what does that lead to? I'll give you an example.
+
+
+- 2026-08-19T05:14:40.693Z [en->ko] 그러니까 케빈 바필드.
+  Original: So Gavin Barfield, he's the CTO for Salesforce for the region.
+
+
+- 2026-08-19T05:14:50.285Z [en->ko] 음.
+  Original: I also have a podcast. On that podcast, he was saying this.
+
+
+- 2026-08-19T05:15:05.617Z [en->ko] 그는 에이전트를 만든다.
+  Original: That he builds agents for a living, but he will not give an agent at home access to his wallet, et cetera.
+
+
+- 2026-08-19T05:15:11.988Z [en->ko] 일하는 중.
+  Original: At work, this is all fine. Not at home. Why? What's different?
+
+
+- 2026-08-19T05:15:19.235Z [en->ko] 다른 것은...
+  Original: What is different is that at work, there's a whole infrastructure setup. to control the scope, the activities, the data, which is not available on his personal laptop or in his home.
+
+
+- 2026-08-19T05:15:39.225Z [en->ko] 그래, 그래서.
+  Original: Because, yeah, limiting the scope is much easier and much more important. Putting agents to work.
+
+
+- 2026-08-19T05:15:46.429Z [en->ko] 에이전트를 작동시키다. 네가 만약
+  Original: If you can't do that, don't build agents and give them lots of access.
+
+
+- 2026-08-19T05:15:55.799Z [en->ko] 네.
+  Original: Yeah. And as I mentioned during the identity phase,
+
+
+- 2026-08-19T05:16:02.367Z [en->ko] 에이전트가 필요합니다.
+  Original: Agents need—today, we have general-purpose agents, yes?
+
+
+- 2026-08-19T05:16:09.609Z [en->ko] 이 것을 사용하고 있다면 같은 대리인입니다.
+  Original: Same agent—how many of you software engineers are using this for coding with agents?
+
+
+- 2026-08-19T05:16:18.195Z [en->ko] 하나만 될 수 없다.
+  Original: Only one? That cannot be. Two? Raise your hands. Three. Okay, lucky number three.
+
+
+- 2026-08-19T05:16:24.019Z [en->ko] 정도.
+  Original: the same cloud code can do a lot of things.
+
+
+- 2026-08-19T05:16:30.293Z [en->ko] 네, 그리고 다양한 작업을 위해서입니다.
+  Original: Yes, and for different tasks, you need to give it different access.
+
+
+- 2026-08-19T05:16:38.968Z [en->ko] 이것은...
+  Original: An agent gets access for its task, and after the task is over, you must revoke it.
+
+
+- 2026-08-19T05:16:41.841Z [en->ko] 그것이 우리가 살펴본 실패 모델이었습니다.
+  Original: That was the failure mode we looked at in the beginning.
+
+
+- 2026-08-19T05:16:51.130Z [en->ko] 그 인프라
+  Original: The infrastructure that you need to create to limit the scope of agents is different from that of human.
+
+
+- 2026-08-19T05:16:55.519Z [en->ko] 사람마다 당신이 일을 주면 그것이 간다
+  Original: Every human you give a task to, it goes, then you don't change packets, yeah.
+
+
+- 2026-08-19T05:17:02.786Z [en->ko] 음.
+  Original: Scope is not true for agents. Agents must be controlled in this way.
+
+
+- 2026-08-19T05:17:12.779Z [en->ko] 그리고...
+  Original: And, as I was mentioning earlier, what tools it has access to and for what tasks are part of that agent's identity.
+
+
+- 2026-08-19T05:17:20.953Z [en->ko] 네?
+  Original: Yes. Third, very, very, very important.
+
+
+- 2026-08-19T05:17:30.744Z [en->ko] 초능력
+  Original: Supervision: you know which agent, operating under whose instruction, with what toolset, and within what scope. This is good.
+
+
+- 2026-08-19T05:17:37.951Z [en->ko] 하지만 아직...
+  Original: But yet, we still need to monitor what it is doing.
+
+
+- 2026-08-19T05:17:46.379Z [en->ko] 3월부터 다시.
+  Original: Again, from March, Meta. Yeah, we are talking about really big companies here.
+
+
+- 2026-08-19T05:17:50.521Z [en->ko] 그들은 ~이어야 하고, 우리는 그에 도달할 것이다.
+  Original: supposed to be. And we will come to that very famous OpenAI case.
+
+
+- 2026-08-19T05:18:06.099Z [en->ko] 이따가.
+  Original: Severity 1 incident. For two hours, the agent exposed data to developers and other people that was not supposed to be exposed.
+
+
+- 2026-08-19T05:18:13.893Z [en->ko] 네.
+  Original: yes point being that even with all the
