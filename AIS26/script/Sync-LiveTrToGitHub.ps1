@@ -1,7 +1,8 @@
 $ErrorActionPreference = "Stop"
 
 $workspace = Split-Path -Parent $MyInvocation.MyCommand.Path
-$source = Join-Path $workspace "livetr-captures\180342-latest.md"
+$roomCode = "132952"
+$source = Join-Path $workspace "livetr-captures\$roomCode-latest.md"
 $repo = Join-Path $workspace "ax"
 $destDir = Join-Path $repo "AIS26\afternoon-session"
 $chunkDir = Join-Path $destDir "chunks"
@@ -200,9 +201,9 @@ function Write-FilteredTranscript {
   $filtered = @($groups | Where-Object { $_.Timestamp -ge $startUtc })
 
   $content = New-Object System.Collections.Generic.List[string]
-  $content.Add("# LiveTR 180342 - Afternoon Session")
+  $content.Add("# LiveTR $roomCode - Afternoon Session")
   $content.Add("")
-  $content.Add("- Source room: 180342")
+  $content.Add("- Source room: $roomCode")
   $content.Add("- Saved at: $((Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ'))")
   $content.Add("- Language: ko")
   $content.Add("- Session start: $($StartKst.ToString('yyyy-MM-dd HH:mm')) KST")

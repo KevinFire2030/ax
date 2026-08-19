@@ -22,3 +22,12 @@
 | B | 4 |
 | C | 0 |
 | D | 1 |
+
+## LiveTR Channels
+
+| 트랙 | 채널 |
+| --- | --- |
+| A | <https://livetr.flit.to/chat/132952?lang=ko&showOriginalText=false> |
+| B | 추후 입력 |
+| C | 추후 입력 |
+| D | 추후 입력 |
