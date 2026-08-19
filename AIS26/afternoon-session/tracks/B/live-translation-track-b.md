@@ -1,10 +1,10 @@
 ﻿# LiveTR 180342 - Afternoon Session
 
 - Source room: 180342
-- Saved at: 2026-08-19T07:03:52Z
+- Saved at: 2026-08-19T07:08:16Z
 - Language: ko
 - Session start: 2026-08-19 15:00 KST
-- Messages: 287
+- Messages: 295
 
 - 2026-08-19T06:00:02.062Z [en->ko] 다음 주는 지금 저희 팀에게 아무런 도움이 되지 않습니다. 🤖
   Original: Next week doesn't help my team now.
@@ -949,3 +949,31 @@
 
 - 2026-08-19T06:42:14.658Z [en->ko] 그리고 우리는 4시 5분에 다시 볼 거예요.
   Original: And we'll see you again at five past four. Thank you, and see you shortly.
+
+
+- 2026-08-19T07:05:09.166Z [ko] 잠시 후 4시 10분부터 다음 세션이 진행될 예정입니다.
+
+
+- 2026-08-19T07:05:15.706Z [ko] 원활한 세션 진행을 위해 참석자 여러분께서는 모두 입장하시어 자리에 착석해 주시기 바랍니다.
+
+
+- 2026-08-19T07:05:18.180Z [ko] 다시 한번 안내 말씀드리겠습니다.
+
+
+- 2026-08-19T07:05:25.323Z [ko] 잠시 후 4시 10분부터 다음 세션이 진행될 예정이오니 입장하셔서 착석해 주시기 바랍니다.
+
+
+- 2026-08-19T07:05:27.141Z [en->ko] 주목해 주십시오
+  Original: May I have your attention please?
+
+
+- 2026-08-19T07:05:32.533Z [en->ko] 다음 AI 서밋 세션.
+  Original: The next session of AI Summit Seoul 2026 will begin shortly.
+
+
+- 2026-08-19T07:05:37.194Z [en->ko] 그러므로 우리는 모든 참가자들에게 정중히 요청합니다
+  Original: So, we kindly ask all participants to return to the hall and take their seats.
+
+
+- 2026-08-19T07:05:39.567Z [en->ko] 친절한 협조에 감사드립니다.
+  Original: Thank you for your kind cooperation.
