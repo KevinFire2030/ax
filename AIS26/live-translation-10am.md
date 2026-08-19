@@ -1,9 +1,9 @@
 # LiveTR 180342
 
 - Title: Keynote & Track B
-- Saved at: 2026-08-19T02:26:58.491Z
+- Saved at: 2026-08-19T02:28:16.869Z
 - Language: ko
-- Messages: 995
+- Messages: 1003
 - 2026-08-19T00:01:18.394Z [en->ko] AI 서밋 서울 2026에 오신 것을 환영합니다. 🤖
   Original: Welcome to AI Summit Seoul 2026.
 
@@ -2818,16 +2818,16 @@
   Original: Imagine that you have, basically, a simulated community of scientists, and they're working on whatever domain of science you want them to make progress in.
 
 - 2026-08-19T02:22:54.927Z [en->ko] 아니면 그들이 뭘 하려고 하는 걸 수도 있어
-  Original: Or maybe they're trying to conduct scientific tests to see how to improve a business process or you might want different kinds of styles within the community .
+  Original: Or maybe they're trying to conduct scientific tests to see how to improve a business process or you might want different kinds of styles within the community of scientists.
 
 - 2026-08-19T02:23:08.057Z [en->ko] 아니면, 알다시피, 당신은 원할 수도 있어
-  Original: or you might want different kinds of styles within the community of scientists. Maybe some of them are focused on really radical ideas and blue-sky breakthroughs, and some of them are much more interested in
+  Original: Maybe some of them are focused on really radical ideas and blue-sky breakthroughs, and some of them are much more interested in.
 
 - 2026-08-19T02:23:19.084Z [en->ko] 기존 아이디어를 공학적으로 개선하고 가속화하기.
   Original: Engineering and speeding up existing ideas, while others are interested in tuning hyperparameters, and still others like to read literature across the whole community of discoveries and put together ideas.
 
-- 2026-08-19T02:23:30.325Z [en->ko] 있잖아, 과학자였던 사람들은 모두
-  Original: You know, everyone who's been a scientist knows that there are different scientists who have different styles. Some are passionate about neural nets, and some are passionate about SVMs. I'm passionate about open-endedness and biologically inspired AI. It's
+- 2026-08-19T02:23:30.325Z [en->] 있잖아, 과학자였던 사람들은 모두
+  Original: You know, everyone who's been a scientist knows that there are different scientists who have different styles. Some are passionate about neural nets, and some are passionate about SVMs.
 
 - 2026-08-19T02:23:38.845Z [en->ko] 그리고 당신은 찾고 싶을 수도 있습니다
   Original: And you might want to fine tune agents or use prompt, you know, harness optimization or prompts to like create basically a lot of diverse ways of thinking
@@ -2913,5 +2913,29 @@
 - 2026-08-19T02:26:46.331Z [en->ko] 네, 저도 동의해요.
   Original: Yeah, I also agree that it's controversial and worthy of careful consideration.
 
-- 2026-08-19T02:26:54.457Z [en->ko] 내 자신을 대신해 말하는 거야, 아무도 아니야
-  Original: Speaking for myself, not any of the organizations that I work for. I personally think like Andrew that we want to democratize access.
+- 2026-08-19T02:27:02.273Z [en->ko] 내 자신을 대신해 말하는 거야, 아무도 아니야
+  Original: Speaking for myself, not on behalf of any of the organizations I work for, I personally think, like Andrew, that we want to democratize access to AI so that we can make the world better and people can take advantage of intelligence in their lives.
+
+- 2026-08-19T02:27:13.058Z [en->ko] 음, 나는 그렇게 생각해.
+  Original: I do think, though, that you want to be able to shut down the use of extremely powerful AI if people are misusing it.
+
+- 2026-08-19T02:27:30.861Z [en->ko] 그래서 내가 오픈에 대해 가지고 있는 걱정 중 하나는
+  Original: And so, one of the worries I have with openly releasing the weights of the most powerful models is that somebody could use them, could fine-tune those weights to remove safeguards, and make agents that are really good at maybe creating bioweapons or conducting cyber offensive attacks, et cetera.
+
+- 2026-08-19T02:27:49.339Z [en->ko] 그래서 나는 ...라고 생각한다...
+  Original: And so, I think it is totally reasonable, and I personally lean toward a solution in which the most powerful models are provided by companies that have safeguards in place to ensure that their models are not misused.
+
+- 2026-08-19T02:27:52.096Z [en->ko] 실종된 사람들에 대한 접근을 거부할 수 있다.
+  Original: can deny access to people who are misusing the models.
+
+- 2026-08-19T02:27:57.201Z [en->ko] 그리고 그것은 대체로 ~인 세계이다
+  Original: And that tends to be a world in which you don't necessarily release the weights on the open market.
+
+- 2026-08-19T02:27:59.891Z [en->ko] 어쩌면 당신은 이 두 신뢰받는 시장 제공자였을지도 모릅니다.
+  Original: Maybe you release them to trusted providers of the model,
+
+- 2026-08-19T02:28:10.134Z [en->ko] 그런 다음 그들에게 그것을 제공한다
+  Original: Then offer the intelligence of those models to the public at low cost, with some sort of checks to make sure they’re not misusing it.
+
+- 2026-08-19T02:28:11.635Z [en->ko] 그것은 일종의 중간 지점이다
+  Original: So that's kind of a middle ground between
