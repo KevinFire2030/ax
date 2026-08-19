@@ -1,10 +1,10 @@
 ﻿# LiveTR 132952 - Afternoon Session
 
 - Source room: 132952
-- Saved at: 2026-08-19T05:18:15Z
+- Saved at: 2026-08-19T05:28:15Z
 - Language: ko
 - Session start: 2026-08-19 13:00 KST
-- Messages: 309
+- Messages: 376
 
 - 2026-08-19T04:26:53.728Z [en->ko] 잠시 후 AI Summit Seoul 2026이 시작될 예정입니다. 참석자 여러분께서는 행사장 안으로 입장하시어 자리에 착석해 주시기 바랍니다. 🤖
   Original: 2026 will begin shortly. We kindly ask all participants to make their way into the hall and take their seats.
@@ -1068,5 +1068,273 @@
   Original: Severity 1 incident. For two hours, the agent exposed data to developers and other people that was not supposed to be exposed.
 
 
-- 2026-08-19T05:18:13.893Z [en->ko] 네.
-  Original: yes point being that even with all the
+- 2026-08-19T05:18:21.157Z [en->ko] 네.
+  Original: Yes. The point is that even with all the scope and all the identity-related controls, something will go wrong.
+
+
+- 2026-08-19T05:18:25.499Z [en->ko] 그리고 누구?
+  Original: And who is responsible for detecting that?
+
+
+- 2026-08-19T05:18:29.446Z [en->ko] 그리고 얼마나 빠른가
+  Original: And how fast can you detect that?
+
+
+- 2026-08-19T05:18:46.991Z [en->ko] 네.
+  Original: Yes. So very often, people who are building agents say, "This is very smart, and I will put all the controls either in the prompt or in the scope limitation."
+
+
+- 2026-08-19T05:18:51.723Z [en->ko] 너
+  Original: These are the two most popular ways. of trying to supervise, and this is completely incorrect.
+
+
+- 2026-08-19T05:19:04.751Z [en->ko] 동작되지 않습니다.
+  Original: It doesn't work. Anything you put in the prompt to whichever AI you're using is merely a suggestion.
+
+
+- 2026-08-19T05:19:15.079Z [en->ko] 왜죠.
+  Original: Why? Because remember, agents get rewarded for completing their task. That is their sole motivation.
+
+
+- 2026-08-19T05:19:23.229Z [en->ko] 그 동안 가장 큰 동기
+  Original: biggest motivation during that, and we have inbuilt that motivation during model training through reinforcement learning, etc.
+
+
+- 2026-08-19T05:19:28.520Z [en->ko] 그 제안이라면.
+  Original: So, if that suggestion gets in their way, sooner or later it will get ignored. Policy must be enforced from outside.
+
+
+- 2026-08-19T05:19:52.977Z [en->ko] 많은 것이 있습니다...
+  Original: There are many ways of doing this, and we will not get into that. But one of my favorite ways is a paper from Meta Superintelligence Lab from March. They call it LogAct, if any one of you is interested in looking at it.
+
+
+- 2026-08-19T05:20:05.070Z [en->ko] 그리고.
+  Original: And how that worked was that an agent was not allowed to take any action. And so what?
+
+
+- 2026-08-19T05:20:12.503Z [en->ko] 에이전트, 첫 번째 단계.
+  Original: An agent's first step is to write down its intent in a log.
+
+
+- 2026-08-19T05:20:27.925Z [en->ko] 그리고 그것이 해야 할 일은 무엇인가
+  Original: What it needs to do to fulfill that intent. And then there are gates which will now look at the application of intent: this is what I want to do.
+
+
+- 2026-08-19T05:20:36.152Z [en->ko] 그리고 ~에 기반한 규칙
+  Original: and based on rules, based on intelligence, based on other AI, will decide whether this should be allowed or not.
+
+
+- 2026-08-19T05:20:42.601Z [en->ko] 그리고 나서는요?
+  Original: And then, finally, another AI will pick this up and execute it if it is approved.
+
+
+- 2026-08-19T05:20:52.080Z [en->ko] 잘 하는 군요.
+  Original: Supervision is built—and must be built—into the system, and supervision cannot be human.
+
+
+- 2026-08-19T05:21:02.836Z [en->ko] 이것은...
+  Original: This is a free open source MIT license tool that I have built or I'm still building. which encodes some of these principles that we are talking about.
+
+
+- 2026-08-19T05:21:20.192Z [en->ko] 이것은.
+  Original: This is specifically for software development. If you want to white code something, there are always quality-related topics and how to make sure that they don't happen.
+
+
+- 2026-08-19T05:21:37.562Z [en->ko] 그래서 것들 중 하나
+  Original: So one of the failure modes that very, very, very often happens in agents is that agents try to take shortcuts. get their work done,
+
+
+- 2026-08-19T05:21:48.329Z [en->ko] 그거 가져와.
+  Original: and if there's a failure in a tool call, for example, they'll say, "Okay, yeah, the check—maybe it will pass. I did this."
+
+
+- 2026-08-19T05:21:59.401Z [en->ko] 또 다른 매우 인기 있는.
+  Original: Another very popular, very common failure mode is agents will spin up sub-agents.
+
+
+- 2026-08-19T05:22:13.058Z [en->ko] 네, 저는 27개의 안식일을 돌렸어요.
+  Original: I spun up 27 sub-agents, and the failure mode—a very well-documented failure mode—is that policy restrictions placed on your main agent do not get passed on to the sub-agents.
+
+
+- 2026-08-19T05:22:27.387Z [en->ko] 이것은 해야 한다
+  Original: This has to be enforced. So, some of these things I have already enforced in this code. In case you're interested, please feel free to use this.
+
+
+- 2026-08-19T05:22:33.075Z [en->ko] 또는 기여하고 싶다면.
+  Original: Or if you want to contribute to further development, we'd be more than happy to work with you.
+
+
+- 2026-08-19T05:22:39.352Z [en->ko] 하지만 이 슈퍼를 기억하세요
+  Original: But remember this, supervision is extremely important and a check that did not pass. is not a pass, yes?
+
+
+- 2026-08-19T05:22:53.890Z [en->ko] 실행되지 않은 체크도 아니다
+  Original: A check that did not run is also not a pass. And evidence is at the heart of successful AI deployment.
+
+
+- 2026-08-19T05:23:00.331Z [en->ko] AI 에이전트 배포.
+  Original: AI agent deployment. Evidence must be sacrosanct. not an opinion, yes?
+
+
+- 2026-08-19T05:23:10.227Z [en->ko] 시간이 다 떨어질 것이므로 나는 ... 할 것이다...
+  Original: I will run out of time, so I will go through the other slides faster.
+
+
+- 2026-08-19T05:23:20.700Z [en->ko] 네 번째 기록.
+  Original: Fourth, record. We have identity, we have scope, we have supervision. Now, everything must be recorded.
+
+
+- 2026-08-19T05:23:26.488Z [en->ko] 알겠어?
+  Original: This is also required by law.
+
+
+- 2026-08-19T05:23:44.393Z [en->ko] 그리고 무엇
+  Original: And what seems to happen in most cases is when something goes wrong. Yeah, let me try and see. Maybe there's a story. Okay, I will come to this. I'll tell you the story in words.
+
+
+- 2026-08-19T05:23:53.430Z [en->ko] 무슨 일이 일어나나요?
+  Original: What happens? PocketOS—we saw it delete the entire database in nine seconds.
+
+
+- 2026-08-19T05:24:00.164Z [en->ko] 그들이 이것을 조사하고 있을 때,
+  Original: And when they were investigating this, they asked the agent, "What did you do?" And it told them in detail what it did.
+
+
+- 2026-08-19T05:24:04.971Z [en->ko] 네, 이것은 기록이 아닙니다.
+  Original: this is not a record.
+
+
+- 2026-08-19T05:24:13.023Z [en->ko] 왜? 왜냐하면
+  Original: Why? Because the entity under investigation cannot be the source of record.
+
+
+- 2026-08-19T05:24:23.139Z [en->ko] 당신이 그랬다면, 응.
+  Original: If you were interrogating me for embezzlement, my view of what I did is not the record of what happened.
+
+
+- 2026-08-19T05:24:27.296Z [en->ko] 이것은 더
+  Original: This is how most companies are keeping record today. when they are deploying agents. Yes?
+
+
+- 2026-08-19T05:24:40.101Z [en->ko] 이것은 완전히 틀렸습니다.
+  Original: This is completely incorrect. This is why I mentioned Logact as one, because logging is part of the process and immutable records are created.
+
+
+- 2026-08-19T05:24:44.703Z [en->ko] 안녕.
+  Original: But there are many ways to implement this.
+
+
+- 2026-08-19T05:25:01.477Z [en->ko] 가장 중요한 것은
+  Original: Most importantly, the record of who asked, which agent planned it, which one decided, which identity executed it, and what was done must be immutable and stored in a place where the agent cannot change it.
+
+
+- 2026-08-19T05:25:05.936Z [en->ko] 정말 중요해요.
+  Original: super important.
+
+
+- 2026-08-19T05:25:11.608Z [en->ko] 네, 왜냐하면 당신이 ...라면
+  Original: Yes, because if you allow the agent to change it, it will change it one day.
+
+
+- 2026-08-19T05:25:22.114Z [en->ko] 네.
+  Original: Yes. And we've had enough stories where the agent said, "Oh, yeah, they're probably going to do something to me. Maybe I can lie to the human."
+
+
+- 2026-08-19T05:25:24.876Z [en->ko] 너희는 모두 그 이야기들을 들어봤어.
+  Original: We've all heard those stories, right? They're real.
+
+
+- 2026-08-19T05:25:28.994Z [en->ko] 그들은 실제예요.
+  Original: And last, and extremely important,
+
+
+- 2026-08-19T05:25:42.589Z [en->ko] 우리는 그들에게 정체성을 부여했다.
+  Original: We gave them identity. We limited their scope. The scope limitation was dynamic. We supervised them. Yes, and we have a full record, but
+
+
+- 2026-08-19T05:25:47.197Z [en->ko] 지금이다.
+  Original: Now, we need to be able to stop them.
+
+
+- 2026-08-19T05:25:52.452Z [en->ko] 네?
+  Original: Yes, let's say the supervisor said, "Oh, this is going wrong."
+
+
+- 2026-08-19T05:25:58.353Z [en->ko] 나는 그들을 막을 수 있어야 한다.
+  Original: I must be able to stop them or the task is now finished. What do I do with this agent? I must be able to afford them.
+
+
+- 2026-08-19T05:26:07.080Z [en->ko] 그들은 인간이 아니지, 그렇지?
+  Original: They are not human. They will get fired at the end of every task.
+
+
+- 2026-08-19T05:26:15.344Z [en->ko] 그것은 매우 중요합니다.
+  Original: It is very important because they are sitting there with those identities, credentials, and access that are no longer required.
+
+
+- 2026-08-19T05:26:22.647Z [en->ko] 우리는 이것을 어떻게 해 나가나요?
+  Original: How do we go about doing this? And this is the funniest statistic in my entire presentation.
+
+
+- 2026-08-19T05:26:31.869Z [en->ko] 2% 기업.
+  Original: 62% of companies—and we are talking about large companies—said that they found agents they didn't know existed in their systems.
+
+
+- 2026-08-19T05:26:44.679Z [en->ko] 왜? 왜냐하면...
+  Original: Why? Because companies are racing to become AI-native and empower employees with AI.
+
+
+- 2026-08-19T05:26:48.538Z [en->ko] 그리고 마이크로소프트 코파일럿 덕분에.
+  Original: And thanks to Microsoft Copilot Studio, everybody is building agents.
+
+
+- 2026-08-19T05:26:53.638Z [en->ko] 그리고 아무도 사실은...
+  Original: And nobody really is able to control them or know what is there.
+
+
+- 2026-08-19T05:27:01.201Z [en->ko] 지금이다.
+  Original: Now, this will probably be the most interesting part.
+
+
+- 2026-08-19T05:27:12.234Z [en->ko] 여러분 모두가 부었습니다.
+  Original: All of you have heard the story about how Astra from OpenAI went out and hacked Hugging Face.
+
+
+- 2026-08-19T05:27:15.075Z [en->ko] 이 이야기를 들어본 적 있나요?
+  Original: Have you heard this story? Yes?
+
+
+- 2026-08-19T05:27:18.097Z [en->ko] 이 이야기를 생각해 낸 사람은 단 한 명뿐이다.
+  Original: Only one person has heard this story.
+
+
+- 2026-08-19T05:27:22.491Z [en->ko] 알겠어요. 네.
+  Original: Okay. Yeah. And how did it do it?
+
+
+- 2026-08-19T05:27:27.424Z [en->ko] 세부 사항이 정말 웃겨요.
+  Original: The details are super funny. It had access to a package registry proxy.
+
+
+- 2026-08-19T05:27:30.286Z [en->ko] 그게 다야. 그것은 다른 접근이 없었다.
+  Original: That is all. It had no other access.
+
+
+- 2026-08-19T05:27:41.538Z [en->ko] 그리고 그럴 것이다.
+  Original: And it was a permitted thing. It figured out that it could create—I'll shortcut the story; there are many parts.
+
+
+- 2026-08-19T05:27:54.437Z [en->ko] 그곳에서 그것은 알아냈다
+  Original: There, it figured out that it could create packages with instructions in the name, which other AI systems would read, allowing them to communicate.
+
+
+- 2026-08-19T05:28:02.053Z [en->ko] 그것은 무언가가 아니었다
+  Original: was not something that it did not have access to, and it was—yeah, it was trying to maliciously do something
+
+
+- 2026-08-19T05:28:10.676Z [en->ko] 우리는 그것에 접근 권한을 부여했다.
+  Original: We gave it access to that. We told it, "Use this." We said, "Find the answers to these questions by any means necessary."
+
+
+- 2026-08-19T05:28:14.274Z [en->ko] 그것은 어떠한 것도 위반하지 않았습니다...
+  Original: It did not violate any instruction.
