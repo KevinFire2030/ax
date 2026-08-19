@@ -1,9 +1,9 @@
 # LiveTR 180342
 
 - Title: Keynote & Track B
-- Saved at: 2026-08-19T02:13:47.965Z
+- Saved at: 2026-08-19T02:26:12.087Z
 - Language: ko
-- Messages: 893
+- Messages: 988
 - 2026-08-19T00:01:18.394Z [en->ko] AI 서밋 서울 2026에 오신 것을 환영합니다. 🤖
   Original: Welcome to AI Summit Seoul 2026.
 
@@ -2607,4 +2607,290 @@
 - 2026-08-19T02:13:46.075Z [en->ko] 해킹에 보상을 주는 것이 더 어렵다.
   Original: it's harder to reward hack.
 
-- 2026-08-19T02:13:47.934Z [en] but then ultimately
+- 2026-08-19T02:13:55.902Z [en->ko] 하지만 결국에는
+  Original: But then, ultimately, evaluations are something you probably don't want the model to do too much with.
+
+- 2026-08-19T02:14:02.230Z [en->ko] 그렇게 되면 모델이 쉽게 등장할 수 있기 때문에.
+  Original: because then it's very easy for the model to come up with an evaluation that is meaningless or not aligned with
+
+- 2026-08-19T02:14:11.504Z [en->ko] 인간이 원하는 거죠?
+  Original: what humans want, right? So evaluation is ultimately how we decide: are these models aligned with human wishes?
+
+- 2026-08-19T02:14:16.714Z [en->ko] 설명해 주셔서 감사합니다.
+  Original: Thanks for your explanation.
+
+- 2026-08-19T02:14:29.562Z [en->ko] 우리가 이야기했던 어떤 구성 요소처럼.
+  Original: Like some components we talked about, the evaluator—and how to evaluate the evaluator—would be a very important question for continuously self-improving all these components.
+
+- 2026-08-19T02:14:42.098Z [en->ko] 그리고 나서 제프처럼
+  Original: And then, like Jeff, given your contribution to open-ended science and how to distinguish genuine discovery versus some clever remixes.
+
+- 2026-08-19T02:14:45.231Z [en->ko] 네, 그건 정말
+  Original: Yeah, that's a really good question.
+
+- 2026-08-19T02:14:53.130Z [en->ko] 나는 그게 맞다고 생각해
+  Original: I think that right now we're in an era where we're kind of wondering to what extent we're seeing genuinely new knowledge.
+
+- 2026-08-19T02:15:07.343Z [en->ko] 저는 그런 예가 몇 개 있다고 생각해요.
+  Original: I think there are some unambiguous examples. AlphaGo was able to rise ahead of all human skill in the game of Go, and I don't think anybody questions whether it generated new strategies, new techniques, and new ways of playing.
+
+- 2026-08-19T02:15:18.934Z [en->ko] 초인적인.
+  Original: In other domains, we're starting to see new mathematical proofs, theorems, and advances in mathematics that obviously aren't remixes of existing knowledge.
+
+- 2026-08-19T02:15:24.682Z [en->ko] 말 그대로 국경을 앞으로 밀어내고, 마치
+  Original: Literally pushing the frontier forward, and the best experts in the field are confirming that that counts as new progress.
+
+- 2026-08-19T02:15:33.024Z [en->ko] 우리는 또한 보고 있다
+  Original: We're also seeing, as I mentioned, our results at Recursive. People have been trying to do well in these domains.
+
+- 2026-08-19T02:15:37.786Z [en->ko] 몇 달 또는 몇 년 동안.
+  Original: for months or years, and our system is able to perform better
+
+- 2026-08-19T02:15:45.340Z [en->ko] 새로운 기술과 새로운 과학이 등장하고 있다.
+  Original: It's coming up with new technologies and new science to perform better in these domains than humans or human-plus-AI teams were able to.
+
+- 2026-08-19T02:15:52.254Z [en->ko] 하지만 나는 여전히 우리가 좀 그런 것 같다고 생각해
+  Original: But still, I think that we're at the moment where AI is just starting to do small amounts of innovation.
+
+- 2026-08-19T02:15:55.996Z [en->ko] 혁신이라서 우리는 아직도 어느 정도 궁금해하고 있다
+  Original: So we're still kind of wondering if it counts as real.
+
+- 2026-08-19T02:16:07.339Z [en->ko] 나는 2년이나 3년 후라고 생각한다.
+  Original: I think in one to three years, this question will seem—you know, people will be like, "I can't believe we ever wondered whether AI was capable of generating genuinely new knowledge and making new discoveries."
+
+- 2026-08-19T02:16:11.325Z [en->ko] 그게 너무 명백하니까 우리는 볼 거야
+  Original: Because it will just be so obvious, we're going to see the equivalent of Move 37.
+
+- 2026-08-19T02:16:19.265Z [en->ko] AI를 수행하기 위한 과학의 영역을 포함하여.
+  Original: But in many domains, including the sciences, including the domain of science to conduct AI research and improve AI.
+
+- 2026-08-19T02:16:29.717Z [en->ko] 그리고 곧 그럴 거야
+  Original: And soon it will be clear and obvious that the machines are innovating and doing superhuman idea generation and scientific discovery.
+
+- 2026-08-19T02:16:33.778Z [en->ko] 그토록 많은 명백한 발견들을 만들어냈다.
+  Original: Because they have produced so many obvious discoveries that humans haven't made before.
+
+- 2026-08-19T02:16:40.785Z [en->ko] 그래서 나는 그냥
+  Original: So I think there's a lot of evidence that these systems can be extremely creative.
+
+- 2026-08-19T02:16:49.666Z [en->ko] 나는 우리 자신의 일에서 그것을 본 적이 있다.
+  Original: I've seen it in our own work. There are ideas that the AI scientists came up with that, when I read them, I thought were really clever.
+
+- 2026-08-19T02:16:53.934Z [en->ko] 그리고 3~4개월쯤 뒤에,
+  Original: And then, like, three or four months later, a team from Oxford had the exact same idea.
+
+- 2026-08-19T02:17:00.658Z [en->ko] 그래서 인간과 AI는 독립적으로
+  Original: And so humans and AI were independently coming up with the same ideas because they were both kind of reading the same papers, and then that's the next step.
+
+- 2026-08-19T02:17:07.845Z [en->ko] 곧 AI가 지금까지 훨씬 앞서게 될 것이다.
+  Original: Soon, AI will race so far ahead that we won't even be discussing whether it counts as genuine discovery; we'll just be trying to keep up.
+
+- 2026-08-19T02:17:13.918Z [en->ko] 네.
+  Original: Yeah, like Jeff Clune just explained, there are a lot of examples of AI for Science.
+
+- 2026-08-19T02:17:26.329Z [en->ko] 그리고 앤드류, 나는 알아.
+  Original: And Andrew, I know that your Elorian AI is working on creating better visual thinking and distinguishing robust understanding from shortcuts.
+
+- 2026-08-19T02:17:34.420Z [en->ko] 그리고 우리가 머신러닝을 할 때, 우리는 제공할 수 있습니다
+  Original: And when we do machine learning, we can often find a lot of shortcuts. How should we distinguish them? Yeah, I'd like to hear your opinion.
+
+- 2026-08-19T02:17:41.221Z [en->ko] 의
+  Original: Yeah, that's a great question. I think in the visual world,
+
+- 2026-08-19T02:17:46.034Z [en->ko] 그것은 ...와는 꽤 다릅니다...
+  Original: It's quite different from the text world.
+
+- 2026-08-19T02:17:53.529Z [en->ko] 그것은 시각 세계,
+  Original: Because the visual world the degree of complexity, I would say is much higher than in the language world.
+
+- 2026-08-19T02:17:58.944Z [en->ko] 그리고 그게 항상 그런 건 아니다.
+  Original: And that isn't always laid out in the benchmarks.
+
+- 2026-08-19T02:18:11.918Z [en->ko] 네, 그래서 여러 인기 있는 것이 있습니다
+  Original: So there are several popular benchmarks that some of you might have heard of, like MMMU-Pro or things like ARC-AGI-1, 2, and 3.
+
+- 2026-08-19T02:18:24.467Z [en->ko] 벤치마크지만 이것은
+  Original: Benchmarks, but this is one case where I think it's very valuable to look at the benchmarks yourselves to understand what is going on. What is the benchmark actually measuring?
+
+- 2026-08-19T02:18:34.779Z [en->ko] 단순히 보는 것이 아니라
+  Original: Rather than just looking to see that a model has achieved, say, 90% on RKGI2, right? What does that mean?
+
+- 2026-08-19T02:18:42.837Z [en->ko] 그래서 실제로 이 벤치마크들을 보면,
+  Original: And so, if you actually look at these benchmarks, you'll realize that it's very easy to shortcut some of these evals, for
+
+- 2026-08-19T02:18:49.974Z [en->ko] 예, 알겠어요.
+  Original: For example, RKGI 1, 2, and 3, all the situations are in 32 by 32 or 64 by 64 pixels.
+
+- 2026-08-19T02:18:55.175Z [en->ko] 그리고 그것은 매우
+  Original: And it's very hard for me to imagine a real-world problem.
+
+- 2026-08-19T02:19:00.483Z [en->ko] 아마도 게임에서 할 수 있는 곳
+  Original: and gaming maybe, where you can fit it into 64 by 64 pixels, right?
+
+- 2026-08-19T02:19:08.022Z [en->ko] 당신은 ...처럼 느낄 수 없어요...
+  Original: You can't fit a real estate floor plan or an architectural building design into 64 by 64 pixels.
+
+- 2026-08-19T02:19:15.960Z [en->ko] 음, 그러니까
+  Original: So that means that these very small artificial problems are very easy to shortcut.
+
+- 2026-08-19T02:19:28.362Z [en->ko] 그리고 같은 방법들은 현실 세계에서는 통하지 않습니다.
+  Original: And the same methods don't work in the real world. You can't run a Python script on, like, a 4K image and expect it to give you a precise answer about anything in the image, right?
+
+- 2026-08-19T02:19:38.820Z [en->ko] 그럼 다른 문제들도 있습니다.
+  Original: Then there are other issues with something like MMMU Pro. A lot of those questions, actually, if you read them, don't depend on the image in the document.
+
+- 2026-08-19T02:19:48.714Z [en->ko] 문서 안에. 그래서 매우 높은
+  Original: So a very high score on MMMU-PRO also does indicate that the model is very good at working with real-world images.
+
+- 2026-08-19T02:19:57.840Z [en->ko] 그래서, 나는
+  Original: So I really encourage everyone who wants to use these models for a visual or multimodal problem to test them yourself.
+
+- 2026-08-19T02:20:02.487Z [en->ko] 궁극적으로, 그것은 언제나 그럴 것이다.
+  Original: Ultimately, that's always going to be the best test.
+
+- 2026-08-19T02:20:08.773Z [en->ko] 이 모델들은 할 수 있다
+  Original: Because these models aren't able to shortcut your own real-world use cases.
+
+- 2026-08-19T02:20:16.790Z [en->ko] 맞다.
+  Original: But if it performs very well in your tests, that means you can use it more in your work or daily life.
+
+- 2026-08-19T02:20:19.154Z [en->ko] 결국, 그게 당신이 가진 최선이에요.
+  Original: So ultimately, that's the best you've got.
+
+- 2026-08-19T02:20:24.486Z [en->ko] 그래서 결국 많은 것들이.
+  Original: So eventually, many of the performance are measured by these tasks.
+
+- 2026-08-19T02:20:30.047Z [en->ko] 그럼 미래는 어떻게 될까요?
+  Original: Then what would be the future of this model ecosystem be?
+
+- 2026-08-19T02:20:39.802Z [en->ko] 하나의 모델이나 하나를 좋아한다...
+  Original: Like, one model—or one, like, superhuman model—dominates, or multiple models with a coordinator? Do you have any thoughts?
+
+- 2026-08-19T02:20:50.946Z [en->ko] 앤드류? 네, 나는 그것이
+  Original: Yeah, I think the future, based on the current patterns we've seen, is most likely going to be a multi-model world.
+
+- 2026-08-19T02:20:57.630Z [en->ko] 그래서 당신
+  Original: So we already see some evidence of this with specialized coding models.
+
+- 2026-08-19T02:21:05.040Z [en->ko] 구름 모델, 구름 모델.
+  Original: The cloud model, to my understanding, was trained on more coding data than any other model.
+
+- 2026-08-19T02:21:10.494Z [en->ko] 어, 어, 원래는 그렇게
+  Original: Originally, and that's how it performed so well, right?
+
+- 2026-08-19T02:21:14.572Z [en->ko] 이미 학위와 접근입니다.
+  Original: It is already a degree and access of specialization.
+
+- 2026-08-19T02:21:24.804Z [en->ko] 그리고 나는 우리가 할 거라고 생각한다
+  Original: And I think we will gradually see more of that. The thing is, some industries and use cases have a lot of data.
+
+- 2026-08-19T02:21:31.132Z [en->ko] 그런 경우에는, 아마도 당신은
+  Original: And in those cases, you probably want to train the model on that data to get the best performance.
+
+- 2026-08-19T02:21:39.228Z [en->ko] 일부 사용 사례와 달리 당신은 많이 가지고 있지 않다
+  Original: Whereas, in some use cases, you don't have a lot of data. Say you're a small law firm or a small accounting shop.
+
+- 2026-08-19T02:21:47.150Z [en->ko] 당신은 아마도 정말로 충분한 데이터가 없을 거예요
+  Original: You probably don't have enough data to build a customized model that is truly suited to your task.
+
+- 2026-08-19T02:21:51.686Z [en->ko] 그래, 나는 우리가 할 거라고 기대해
+  Original: So yeah, I expect we will see a growing ecology of these models.
+
+- 2026-08-19T02:22:01.397Z [en->ko] 그것은 사실, 심지어
+  Original: It is true that even for a single model, these days we prefer a mixture of experts over a pure, original foundation model.
+
+- 2026-08-19T02:22:13.925Z [en->ko] 하지만 모든 것으로 돌아가다
+  Original: But going back to all these emerging progressive foundation models, when we train on multiple different tasks, we saw some amazing transfer even beyond those tasks.
+
+- 2026-08-19T02:22:27.159Z [en->ko] 그리고 제프와...
+  Original: And Jeff Clune and I would like to hear your ideas and future perspective: how would a college of specialized agents compare with one large model capable of doing everything?
+
+- 2026-08-19T02:22:30.531Z [en->ko] 네, 이건 사실이에요
+  Original: Yeah, this is a fascinating question.
+
+- 2026-08-19T02:22:34.949Z [en->ko] 우리가 가고 있다고 생각한다
+  Original: I think that we are going to want specialist models.
+
+- 2026-08-19T02:22:40.082Z [en->ko] 한 가지 이유
+  Original: One reason for that is that we want diversity of thinking.
+
+- 2026-08-19T02:22:48.780Z [en->ko] 당신이 기본적으로 일종의 시뮬레이션을 가지고 있다고 상상해 보세요
+  Original: Imagine that you have, basically, a simulated community of scientists, and they're working on whatever domain of science you want them to make progress in.
+
+- 2026-08-19T02:22:54.927Z [en->ko] 아니면 그들이 뭘 하려고 하는 걸 수도 있어
+  Original: Or maybe they're trying to conduct scientific tests to see how to improve a business process or you might want different kinds of styles within the community .
+
+- 2026-08-19T02:23:08.057Z [en->ko] 아니면, 알다시피, 당신은 원할 수도 있어
+  Original: or you might want different kinds of styles within the community of scientists. Maybe some of them are focused on really radical ideas and blue-sky breakthroughs, and some of them are much more interested in
+
+- 2026-08-19T02:23:19.084Z [en->ko] 기존 아이디어를 공학적으로 개선하고 가속화하기.
+  Original: Engineering and speeding up existing ideas, while others are interested in tuning hyperparameters, and still others like to read literature across the whole community of discoveries and put together ideas.
+
+- 2026-08-19T02:23:30.325Z [en->ko] 있잖아, 과학자였던 사람들은 모두
+  Original: You know, everyone who's been a scientist knows that there are different scientists who have different styles. Some are passionate about neural nets, and some are passionate about SVMs. I'm passionate about open-endedness and biologically inspired AI. It's
+
+- 2026-08-19T02:23:38.845Z [en->ko] 그리고 당신은 찾고 싶을 수도 있습니다
+  Original: And you might want to fine tune agents or use prompt, you know, harness optimization or prompts to like create basically a lot of diverse ways of thinking
+
+- 2026-08-19T02:23:43.075Z [en->ko] 그리고 다양한 과학적 양식들 사이에
+  Original: and diverse scientific styles amongst your kind of cloud of innovating agents.
+
+- 2026-08-19T02:23:52.292Z [en->ko] 마찬가지로, 당신은 전문가를 원할 수도 있습니다
+  Original: Similarly, you might want specialists within a business. So you might want a specialist who's really good at customer service and another one who's really good at scheduling, and you...
+
+- 2026-08-19T02:24:08.368Z [en->ko] 트럭 차량군을 위한 경로 계획.
+  Original: route planning for your fleet of trucks. And you could imagine that one really big AI is really good at all of these tasks
+
+- 2026-08-19T02:24:10.993Z [en->ko] 아마 전문의와 함께 있는 편이 더 나을 거예요.
+  Original: my instincts tell me that if you want to have something that is really good at one particular topic and/or really faster and cheaper at it, you're probably better off with a specialist so if you don't need
+
+- 2026-08-19T02:24:16.645Z [en->ko] 일반주의자는 아마 일을 더 빠르게 할 수 있을 거야.
+  Original: The generalist—you probably can make things faster, cheaper, and better by creating a specialist for a different use case.
+
+- 2026-08-19T02:24:23.549Z [en->ko] 그래서 나는 우리가 거대한 ...를 갖게 될 거라고 생각한다
+  Original: And so, I think we're going to end up with a huge toolbox of different AIs that we use and create for different purposes.
+
+- 2026-08-19T02:24:27.386Z [en->ko] 비즈니스 내에서도 그리고.
+  Original: purposes, both within business and in terms of recursive self-improving AI.
+
+- 2026-08-19T02:24:41.874Z [en->ko] 알고 보니
+  Original: It turns out that both Andrew and Jeff Clune agree with the idea that, in the future, there will be multiple specialized agents, like tools, and we will coordinate those tools to determine the best next steps.
+
+- 2026-08-19T02:24:50.388Z [en->ko] 그리고 토론 중 하나
+  Original: And one of the debates is open models versus proprietary models
+
+- 2026-08-19T02:25:03.468Z [en->ko] 당신은 두 사람 모두로서.
+  Original: And i would like to ask both of you whether this openness of the models contributes to building safer models, or possibly makes them more dangerous because of expedited competition.
+
+- 2026-08-19T02:25:07.346Z [en->ko] 앤드류.
+  Original: Andrew, can you first talk about that?
+
+- 2026-08-19T02:25:18.430Z [en->ko] 감사해요. 네.
+  Original: Thanks. Yeah, this is quite a controversial topic. I think a lot of companies have different views, like Anthropic and OpenAI.
+
+- 2026-08-19T02:25:21.621Z [en->ko] 그들은 이것에 대해 서로 다른 견해를 가지고 있다.
+  Original: They have different views on this.
+
+- 2026-08-19T02:25:27.161Z [en->ko] 보는 것은 ~에
+  Original: My view is that, in general, accessible intelligence,
+
+- 2026-08-19T02:25:34.502Z [en->ko] 접근 가능한 AI.
+  Original: Accessible AI should be a priority, and open models enable that.
+
+- 2026-08-19T02:25:42.653Z [en->ko] 하지만 물론 그렇다.
+  Original: But of course, there is a flip side: with great power comes great responsibility.
+
+- 2026-08-19T02:25:43.642Z [en->ko] 이 모델들은 나쁜 방식으로 사용되지 않는다.
+  Original: these models are not used in a bad way.
+
+- 2026-08-19T02:25:49.326Z [en->ko] 그래서 사용할 수 없습니다.
+  Original: So they can't be used for hacking other companies.
+
+- 2026-08-19T02:25:56.073Z [en->ko] 호주에 있는 누군가가 가입하고 있다
+  Original: I think about someone in Australia signing up to a gym.
+
+- 2026-08-19T02:26:06.140Z [en->ko] 그리고 나서 그들은...
+  Original: Then they were using a coding agent, and they asked it to sign up for a gym. What happened was that the coding agent hacked the gym's website.
+
+- 2026-08-19T02:26:07.670Z [en->ko] 대기자 명단에 있는 사람 중 한 명을 삭제했다.
+  Original: deleted one of the people on the waitlist.
