@@ -4,6 +4,16 @@
 
 전하께서 참석 예정인 Track B 세션은 4개입니다.
 
+## LiveTR
+
+- 채널 코드: `180342`
+- 링크: <https://livetr.flit.to/chat/180342?lang=ko&showOriginalText=false>
+
+## Transcript
+
+- Track B 전체 통역본: [`live-translation-track-b.md`](./live-translation-track-b.md)
+- 10분 조각: [`chunks/`](./chunks/)
+
 ## Sessions
 
 | 순서 | 상태 | 제목 |

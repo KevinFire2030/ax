@@ -30,6 +30,6 @@
 | 트랙 | 채널 |
 | --- | --- |
 | A | <https://livetr.flit.to/chat/132952?lang=ko&showOriginalText=false> |
-| B | 추후 입력 |
+| B | <https://livetr.flit.to/chat/180342?lang=ko&showOriginalText=false> |
 | C | 추후 입력 |
 | D | <https://livetr.flit.to/chat/376896?lang=ko&showOriginalText=false> |

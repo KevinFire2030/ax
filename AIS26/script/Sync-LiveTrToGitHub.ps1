@@ -1,15 +1,15 @@
 $ErrorActionPreference = "Stop"
 
 $workspace = Split-Path -Parent $MyInvocation.MyCommand.Path
-$roomCode = "376896"
+$roomCode = "180342"
 $source = Join-Path $workspace "livetr-captures\$roomCode-latest.md"
 $repo = Join-Path $workspace "ax"
-$destDir = Join-Path $repo "AIS26\afternoon-session\tracks\D"
+$destDir = Join-Path $repo "AIS26\afternoon-session\tracks\B"
 $chunkDir = Join-Path $destDir "chunks"
-$fileName = "live-translation-track-d.md"
-$relativePath = "AIS26/afternoon-session/tracks/D/$fileName"
+$fileName = "live-translation-track-b.md"
+$relativePath = "AIS26/afternoon-session/tracks/B/$fileName"
 $dest = Join-Path $destDir $fileName
-$sessionStartKst = [DateTimeOffset]::Parse("2026-08-19T14:30:00+09:00")
+$sessionStartKst = [DateTimeOffset]::Parse("2026-08-19T15:00:00+09:00")
 
 if (!(Test-Path -LiteralPath $source)) {
   throw "Source transcript not found: $source"
@@ -228,7 +228,7 @@ Write-FilteredTranscript -SourcePath $source -OutputPath $dest -StartKst $sessio
 Write-LiveTrChunks -TranscriptPath $dest -OutputDir $chunkDir
 
 git add -- $relativePath
-git add -- "AIS26/afternoon-session/tracks/D/chunks"
+git add -- "AIS26/afternoon-session/tracks/B/chunks"
 
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) {
