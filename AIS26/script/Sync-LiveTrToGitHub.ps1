@@ -3,10 +3,10 @@ $ErrorActionPreference = "Stop"
 $workspace = Split-Path -Parent $MyInvocation.MyCommand.Path
 $source = Join-Path $workspace "livetr-captures\180342-latest.md"
 $repo = Join-Path $workspace "ax"
-$destDir = Join-Path $repo "AIS26"
-$chunkDir = Join-Path $destDir "chunks-afternoon"
+$destDir = Join-Path $repo "AIS26\afternoon-session"
+$chunkDir = Join-Path $destDir "chunks"
 $fileName = "live-translation-afternoon.md"
-$relativePath = "AIS26/$fileName"
+$relativePath = "AIS26/afternoon-session/$fileName"
 $dest = Join-Path $destDir $fileName
 $sessionStartKst = [DateTimeOffset]::Parse("2026-08-19T13:00:00+09:00")
 
@@ -227,7 +227,7 @@ Write-FilteredTranscript -SourcePath $source -OutputPath $dest -StartKst $sessio
 Write-LiveTrChunks -TranscriptPath $dest -OutputDir $chunkDir
 
 git add -- $relativePath
-git add -- "AIS26/chunks-afternoon"
+git add -- "AIS26/afternoon-session/chunks"
 
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) {

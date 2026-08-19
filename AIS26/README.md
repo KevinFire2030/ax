@@ -12,7 +12,7 @@ AI Summit Seoul 2026 컨퍼런스 기록 저장소입니다.
 | [`morning-session-summary_ko.md`](./morning-session-summary_ko.md) | 오전 세션 통합 요약 한글본 |
 | [`morning-session-summary_en.md`](./morning-session-summary_en.md) | 오전 세션 통합 요약 영문본 |
 | [`live-translation-10am.md`](./live-translation-10am.md) | 오전 실시간 통역 전체본 |
-| [`live-translation-afternoon.md`](./live-translation-afternoon.md) | 오후 실시간 통역 전체본 |
+| [`afternoon-session/live-translation-afternoon.md`](./afternoon-session/live-translation-afternoon.md) | 오후 실시간 통역 전체본 |
 
 ## 요약 파일
 
@@ -32,9 +32,10 @@ AI Summit Seoul 2026 컨퍼런스 기록 저장소입니다.
 | [`live-translation-10am.md`](./live-translation-10am.md) | 오전 세션 실시간 통역 전체 누적본 |
 | [`chunks/`](./chunks/) | 오전 통역 내용을 10분 단위로 나눈 조각 파일 |
 | [`chunks/latest-10min.md`](./chunks/latest-10min.md) | 오전 기준 마지막 10분 구간 |
-| [`live-translation-afternoon.md`](./live-translation-afternoon.md) | 오후 세션 실시간 통역 전체 누적본 |
-| [`chunks-afternoon/`](./chunks-afternoon/) | 오후 통역 내용을 10분 단위로 나눌 조각 파일 |
-| [`chunks-afternoon/latest-10min.md`](./chunks-afternoon/latest-10min.md) | 오후 기준 최신 10분 구간 |
+| [`afternoon-session/`](./afternoon-session/) | 오전 자료와 분리한 오후 세션 전용 폴더 |
+| [`afternoon-session/live-translation-afternoon.md`](./afternoon-session/live-translation-afternoon.md) | 오후 세션 실시간 통역 전체 누적본 |
+| [`afternoon-session/chunks/`](./afternoon-session/chunks/) | 오후 통역 내용을 10분 단위로 나눌 조각 파일 |
+| [`afternoon-session/chunks/latest-10min.md`](./afternoon-session/chunks/latest-10min.md) | 오후 기준 최신 10분 구간 |
 
 ## 스크립트
 
@@ -48,7 +49,7 @@ AI Summit Seoul 2026 컨퍼런스 기록 저장소입니다.
 
 - LiveTR 원본 채팅방을 캡처해 실시간 통역본을 유지합니다.
 - 오전 세션은 `live-translation-10am.md`와 `chunks/`에 저장했습니다.
-- 오후 세션은 13:00 KST 이후 내용만 `live-translation-afternoon.md`와 `chunks-afternoon/`에 저장합니다.
+- 오후 세션은 13:00 KST 이후 내용만 `afternoon-session/live-translation-afternoon.md`와 `afternoon-session/chunks/`에 저장합니다.
 - 10분마다 최신 전체본과 10분 단위 조각 파일을 GitHub에 자동 푸시합니다.
 - 발표 내용을 빠르게 파악하려면 요약본을 먼저 보고, 세부 발언 흐름은 실시간 통역본을 확인하면 됩니다.
 
@@ -59,4 +60,5 @@ AI Summit Seoul 2026 컨퍼런스 기록 저장소입니다.
 - 오전 세션 통합본 한글: <https://github.com/KevinFire2030/ax/blob/main/AIS26/morning-session-summary_ko.md>
 - 오전 세션 통합본 영문: <https://github.com/KevinFire2030/ax/blob/main/AIS26/morning-session-summary_en.md>
 - 오전 실시간 통역본: <https://github.com/KevinFire2030/ax/blob/main/AIS26/live-translation-10am.md>
-- 오후 실시간 통역본: <https://github.com/KevinFire2030/ax/blob/main/AIS26/live-translation-afternoon.md>
+- 오후 세션 폴더: <https://github.com/KevinFire2030/ax/tree/main/AIS26/afternoon-session>
+- 오후 실시간 통역본: <https://github.com/KevinFire2030/ax/blob/main/AIS26/afternoon-session/live-translation-afternoon.md>
