@@ -1,6 +1,6 @@
 ﻿# LiveTR 1050-1100
 
-- Source: 10시_실시간 통역.md
+- Source: live-translation-10am.md
 - Window: 2026-08-19 10:50-11:00 KST
 - Messages: 8
 

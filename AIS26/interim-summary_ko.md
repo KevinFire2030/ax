@@ -1,7 +1,7 @@
-# AI Summit Seoul 2026 중간요약
+﻿# AI Summit Seoul 2026 중간요약
 
 - 기준 시각: 2026-08-19 10:38 KST
-- 원본: `AIS26/10시_실시간 통역.md`
+- 원본: `AIS26/live-translation-10am.md`
 - 최근 보기: `AIS26/chunks/latest-10min.md`
 
 ## 전체 흐름

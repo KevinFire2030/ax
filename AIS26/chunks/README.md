@@ -1,6 +1,6 @@
 ﻿# LiveTR chunks
 
-- Full transcript: ../10시_실시간 통역.md
+- Full transcript: ../live-translation-10am.md
 - Latest 10 minutes: ./latest-10min.md
 
 ## Windows

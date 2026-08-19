@@ -1,7 +1,7 @@
-# AI Summit Seoul 2026 Interim Summary
+﻿# AI Summit Seoul 2026 Interim Summary
 
 - Reference time: 2026-08-19 10:38 KST
-- Source: `AIS26/10시_실시간 통역.md`
+- Source: `AIS26/live-translation-10am.md`
 - Latest view: `AIS26/chunks/latest-10min.md`
 
 ## Overall Flow
