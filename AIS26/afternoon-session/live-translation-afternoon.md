@@ -1,10 +1,10 @@
 ﻿# LiveTR 132952 - Afternoon Session
 
 - Source room: 132952
-- Saved at: 2026-08-19T05:29:58Z
+- Saved at: 2026-08-19T05:38:15Z
 - Language: ko
 - Session start: 2026-08-19 13:00 KST
-- Messages: 389
+- Messages: 437
 
 - 2026-08-19T04:26:53.728Z [en->ko] 잠시 후 AI Summit Seoul 2026이 시작될 예정입니다. 참석자 여러분께서는 행사장 안으로 입장하시어 자리에 착석해 주시기 바랍니다. 🤖
   Original: 2026 will begin shortly. We kindly ask all participants to make their way into the hall and take their seats.
@@ -1388,5 +1388,197 @@
   Original: These are the questions you must keep in mind. This is the slide to take a picture of, not my disclaimer slide.
 
 
-- 2026-08-19T05:29:56.384Z [en->ko] 청중에게 가지고 있는 대리인들을 나열할 수 있나요?
-  Original: Can you list the agents that you have in the audience?
+- 2026-08-19T05:30:01.879Z [en->ko] 청중에게 가지고 있는 대리인들을 나열할 수 있나요?
+  Original: Can you list the AI agents in your organization? What happens to an AI agent's access when its task ends?
+
+
+- 2026-08-19T05:30:04.837Z [en->ko] 당신이 도입한 프로세스는 무엇인가요?
+  Original: What is the process that you have put in place? It must be automated.
+
+
+- 2026-08-19T05:30:09.720Z [en->ko] 요원들은 기계 속도로 일한다.
+  Original: Agents work at machine speed. Control cannot operate at human speed.
+
+
+- 2026-08-19T05:30:15.052Z [en->ko] 어떤 종류의 소송이 요구되는가
+  Original: Which class of actions requires a signature? Who is supervising? Yes?
+
+
+- 2026-08-19T05:30:21.301Z [en->ko] 무엇을 할 수 있고 기록할 수 있나요.
+  Original: What can I record? And of course, how do you off-board them?
+
+
+- 2026-08-19T05:30:32.564Z [en->ko] 네.
+  Original: Yes, this is me. You can connect with me on LinkedIn. I love discussing AI.
+
+
+- 2026-08-19T05:30:39.075Z [en->ko] 궁금한 점이 있으면 언제든지 연락 주세요
+  Original: If you have any questions, I'd love to work through them with you.
+
+
+- 2026-08-19T05:30:45.203Z [en->ko] 이것은 제 팟캐스트입니다.
+  Original: This is my podcast, in case you're interested. A lot of business leaders come on it. and share their experiences.
+
+
+- 2026-08-19T05:30:56.977Z [en->ko] 그리고 그들의 경험을 나누세요.
+  Original: And if you are interested as a software developer in trying out the federated harness, it is a work in progress. If you want to contribute, that's also great.
+
+
+- 2026-08-19T05:31:08.312Z [en->ko] 하지만 나는 이것들을 구현하려고 하고 있어
+  Original: But I'm trying to implement these principles internally. And if you just want to have a look at it and see how they're implemented, you're more than welcome to do so. Yes, that's all from me.
+
+
+- 2026-08-19T05:31:13.377Z [en->ko] 감사해요.
+  Original: Thank you. Thank you, Milind. That was a truly insightful presentation.
+
+
+- 2026-08-19T05:31:29.795Z [ko->] 감사해요.
+  Original: 뜻깊은 강연 잘 들었습니다. 진심으로 감사드립니다. 계속해서 ‘선진 기업들의 비즈니스 혁신을 위한 AI 전략’이라는 주제로, 구글 클라우드의 APAC 및 Japan FSI 총괄인 막심 아파나시예프님을 큰 박수로 모시겠습니다.
+
+
+- 2026-08-19T05:31:35.110Z [en->ko] 연사님을 따뜻한 박수갈채로 환영해 주세요.
+  Original: Please welcome our speaker with a warm round of applause.
+
+
+- 2026-08-19T05:31:56.286Z [en->ko] 정말 감사합니다.
+  Original: Hi, everyone.
+
+
+- 2026-08-19T05:31:59.569Z [en->ko] 나는 ~가 되어서 정말 신나요
+  Original: I'm super excited to be here.
+
+
+- 2026-08-19T05:32:05.988Z [en->ko] 사실, 나는...
+  Original: Actually, I first came to Korea exactly 25 years ago.
+
+
+- 2026-08-19T05:32:17.290Z [en->ko] 나는 거기 학생이었어요.
+  Original: I was a student there, focusing on AI, and I was invited by Samsung to meet with AI leaders.
+
+
+- 2026-08-19T05:32:31.037Z [en->ko] 그리고 내가 처음 여기 올 때,
+  Original: And when I first came here 25 years ago, I was wowed by how far advanced Korea was in terms of technology adoption.
+
+
+- 2026-08-19T05:32:46.734Z [en->ko] 기억 나.
+  Original: I remember one of the guides who had been accompanying me; she was already using smartphones. And guess what? The next month, I was flying in the U.S., and smartphones were only just starting to appear there.
+
+
+- 2026-08-19T05:32:58.200Z [en->ko] 그리고 그 25년 전부터.
+  Original: And since then, 25 years ago, I've always loved coming to Korea, and I'm always excited to see how many new innovations are emerging here.
+
+
+- 2026-08-19T05:33:10.387Z [en->ko] 그리고 이것에 감사드립니다.
+  Original: And thank you for this opportunity to share a little about what is happening in AI globally and across Asia.
+
+
+- 2026-08-19T05:33:16.098Z [en->ko] 제 역할에서 저는 끝났습니다
+  Original: In my role, I had a financial services industry for Google Cloud in Asia Pacific and Japan. Australia, New Zealand, India, Southeast Asia, Greater China, Korea, Japan
+
+
+- 2026-08-19T05:33:36.187Z [en->ko] 일본은 이렇게
+  Original: So this is my time zone, but I'm also part of the global team with my peers in EMEA and the Americas. I'm able to see what happens across industries globally.
+
+
+- 2026-08-19T05:33:48.897Z [en->ko] 결국 일어나다.
+  Original: And it happened that I also hold a PhD from Stanford, and I have a second hat, being a professor at NUS doing research on AI in AI adoption as well.
+
+
+- 2026-08-19T05:34:04.822Z [en->ko] 나는 위대해.
+  Original: And I'm grateful that I can share with you today what is really happening in terms of AI adoption and transformation, and how it is changing industries.
+
+
+- 2026-08-19T05:34:24.673Z [en->ko] 끝
+  Original: And more and more people speak today, and it is indeed the case that AI, generative AI in particular, actually becomes the next level of transformation, adoption, and technological change.
+
+
+- 2026-08-19T05:34:34.196Z [en->ko] 70년대에 메인 프레임과 함께.
+  Original: It started in the '70s with the mainframes. Then I remember client-server technologies. Then we had private cloud, public cloud,
+
+
+- 2026-08-19T05:34:39.174Z [en->ko] 우리는 새로운...에 있습니다...
+  Original: but now... where in the new way how the technology operates with the .
+
+
+- 2026-08-19T05:34:55.226Z [en->ko] 그리고 나는
+  Original: What I noticed is that, if we compare this with operating systems like Microsoft Windows, macOS, or the Linux family of systems, actually.
+
+
+- 2026-08-19T05:35:11.355Z [en->ko] 여기서는 그에 해당하는
+  Original: Actually, their equivalent is foundational models. And similar to how we have applications running on top of systems, we'll have AI agents running on top of those foundational models.
+
+
+- 2026-08-19T05:35:21.316Z [en->ko] 그래서 이것은
+  Original: So this is a big thing. The whole way technology functions, and how we interact with it, is going to change.
+
+
+- 2026-08-19T05:35:24.594Z [en->ko] 그리고 실제로 최종 사용자에 관해서는.
+  Original: And actually, when it comes to the end users, of agentic AI, there are two kinds of such users.
+
+
+- 2026-08-19T05:35:36.635Z [en->ko] 소비자들.
+  Original: Consumers, humans like all of us, and organizations.
+
+
+- 2026-08-19T05:35:50.805Z [en->ko] 그리고 처음으로,
+  Original: And for the first time in modern history, consumers are adopting innovation ahead of enterprises.
+
+
+- 2026-08-19T05:35:56.322Z [en->ko] 그리고 이것은 거대해진다...
+  Original: And this has huge implications.
+
+
+- 2026-08-19T05:36:12.110Z [en->ko] 그러니 우리가 뒤를 돌아본다면.
+  Original: So if we look back into the previous technologies, steam engine, electricity, computers, internet, it was enterprises who were first to adopt the technology.
+
+
+- 2026-08-19T05:36:17.611Z [en->ko] 그리고 나서
+  Original: And then, only the people have been catching up.
+
+
+- 2026-08-19T05:36:22.935Z [en->ko] 예를 들어, 무슨 일이 일어났는지 말해 봅시다
+  Original: Let's say, for example, what has been happening with computers?
+
+
+- 2026-08-19T05:36:33.338Z [en->ko] 20년이 걸렸다.
+  Original: It took 20 years for the adoption of computers at home to be on par with the adoption of computers by enterprises.
+
+
+- 2026-08-19T05:36:38.894Z [en->ko] 와 함께.
+  Original: With AI, the situation is completely different.
+
+
+- 2026-08-19T05:36:54.664Z [en->ko] 첫날부터.
+  Original: From day one, consumers have been far ahead of enterprises in adopting this innovation, for the first time in modern history.
+
+
+- 2026-08-19T05:37:01.954Z [en->ko] 그리고 이것은 정말
+  Original: And this really changes the whole dynamic of what the industries mean.
+
+
+- 2026-08-19T05:37:08.255Z [en->ko] 그 선택은 소비자에 의해 이루어집니다.
+  Original: And consumer adoption is massive.
+
+
+- 2026-08-19T05:37:22.595Z [en->ko] 사실, 충분해.
+  Original: Actually, funny enough, I think that in this part of the world, in Asia, consumer adoption of AI is far ahead of the rest of the world.
+
+
+- 2026-08-19T05:37:34.048Z [en->ko] 예를 들어 싱가포르에서는
+  Original: For instance, in Singapore, where I'm normally based, 61% of the population is already widely using AI.
+
+
+- 2026-08-19T05:37:46.159Z [en->ko] 이것은 ~에서 온다
+  Original: This comes from a report published by Stanford, my alma mater, and Korea is also very highly ranked there.
+
+
+- 2026-08-19T05:38:02.941Z [en->ko] 우리가 말한다면
+  Original: If we speak about China, just recently it has been announced that Alipay is processing 120 million agentic transactions per week there.
+
+
+- 2026-08-19T05:38:09.911Z [en->ko] 즉, 이러한 AI 에이전트들은
+  Original: Meaning that it is AI agents who decide what to buy on your behalf and make these purchases.
+
+
+- 2026-08-19T05:38:13.187Z [en->ko] 이것은 이렇게 깊게, 그리고 왜
+  Original: This is how deeply and widely I gently I
