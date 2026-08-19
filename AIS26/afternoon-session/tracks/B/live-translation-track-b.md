@@ -1,10 +1,10 @@
 ﻿# LiveTR 180342 - Afternoon Session
 
 - Source room: 180342
-- Saved at: 2026-08-19T07:18:19Z
+- Saved at: 2026-08-19T07:28:17Z
 - Language: ko
 - Session start: 2026-08-19 15:00 KST
-- Messages: 365
+- Messages: 446
 
 - 2026-08-19T06:00:02.062Z [en->ko] 다음 주는 지금 저희 팀에게 아무런 도움이 되지 않습니다. 🤖
   Original: Next week doesn't help my team now.
@@ -1236,11 +1236,7 @@
 
 
 - 2026-08-19T07:17:51.581Z [en->ko] 이것을 통해 더 작게 만들 수 있습니다
-  Original: This allows you to get small models that are almost as capable.
-
-
-- 2026-08-19T07:17:54.367Z [en->ko] 더 큰 교사 모델로서.
-  Original: as the larger teacher model.
+  Original: This allows you to get small models that are almost as capable as the larger teacher model.
 
 
 - 2026-08-19T07:18:08.216Z [en->ko] 그리고 당신은 볼 수 있다
@@ -1251,5 +1247,333 @@
   Original: What we're looking at is intelligence across the full set of form factors.
 
 
-- 2026-08-19T07:18:17.912Z [en->] 그리고 우리는 기대할 수 있다.
-  Original: and we can expect that entire Pareto frontier to improve over time.
+- 2026-08-19T07:18:17.912Z [en->ko] 그리고 우리는 기대할 수 있다.
+  Original: And we can expect that entire Pareto frontier to improve over time.
+
+
+- 2026-08-19T07:18:20.981Z [en->ko] 각각마다 더 많은 지능.
+  Original: more intelligence at every single form factor.
+
+
+- 2026-08-19T07:18:26.376Z [en->ko] 이 모든 것.
+  Original: All of this is built on the scaling laws.
+
+
+- 2026-08-19T07:18:32.289Z [en->ko] 이것은 연구 논문이었습니다.
+  Original: This was a research paper from OpenAI in 2020 that has stood the test of time.
+
+
+- 2026-08-19T07:18:34.977Z [en->ko] 카플란이라는 연구원이 이끌었다.
+  Original: led by a researcher named Kaplan.
+
+
+- 2026-08-19T07:18:42.476Z [en->ko] 이 팀과 함께 발견되었다.
+  Original: And what this team discovered was that the more data they pushed through the model,
+
+
+- 2026-08-19T07:18:50.671Z [en->ko] 테스트 손실이 낮을수록.
+  Original: The lower the test loss went, the bigger they made the model in terms of parameters, the lower the test loss went and the more compute they used.
+
+
+- 2026-08-19T07:18:55.384Z [en->ko] 그리고 그들이 사용한 컴퓨팅이 더 많을수록.
+  Original: These are called the scaling laws.
+
+
+- 2026-08-19T07:19:02.334Z [en->ko] 그 요인들 중 하나.
+  Original: Any one of those factors can limit the overall performance of your model.
+
+
+- 2026-08-19T07:19:13.671Z [en->ko] 하지만 그들 중 어느 누구도 열려 있지 않은 한.
+  Original: But so long as none of them is open to the binding constraint, you can keep adding more compute, more data, and larger models.
+
+
+- 2026-08-19T07:19:17.569Z [en->ko] 그리고 당신의 테스트 손실이 감소합니다.
+  Original: And your test loss goes down in a very predictable manner.
+
+
+- 2026-08-19T07:19:24.837Z [en->ko] 이것이 나에게 영감을 준다.
+  Original: This is what inspired the OpenAI team to keep betting more and more.
+
+
+- 2026-08-19T07:19:32.831Z [en->ko] 더 많은 연산은 더 많은 것을 수집한다
+  Original: more compute, collect more and more data, and push more and more parameters into the model.
+
+
+- 2026-08-19T07:19:43.870Z [en->ko] 그것은 정말로.
+  Original: And that is really what unlocked that initial version of ChatGPT. And what's incredible is that these scaling laws continue to hold.
+
+
+- 2026-08-19T07:19:51.205Z [en->ko] 더 최근의 논문에서
+  Original: A more recent paper from Meta, just two years ago, shared exactly this dynamic
+
+
+- 2026-08-19T07:20:04.246Z [en->ko] 그들은 세트에 맞습니다.
+  Original: Fit a set of models and then, based on that, predicted what the performance would be as they scaled up across the number of parameters, the dataset size, and the amount of compute.
+
+
+- 2026-08-19T07:20:06.668Z [en->ko] 그것은 거의 완벽하게 일치했다.
+  Original: And it lined up almost perfectly.
+
+
+- 2026-08-19T07:20:14.927Z [en->ko] 이 스케일링 법칙들.
+  Original: These scaling laws are enabling frontier teams to make bigger and bigger investments.
+
+
+- 2026-08-19T07:20:18.351Z [en->ko] 추가 레벨을 계속 진행하기 위해.
+  Original: to keep driving additional levels of frontier intelligence.
+
+
+- 2026-08-19T07:20:21.962Z [en->ko] ~에 대한 나쁜 소식
+  Original: bad news about the scaling loss.
+
+
+- 2026-08-19T07:20:26.577Z [en->ko] 그것은 지수를 필요로 하나요
+  Original: Does it require exponentially more investment for linear improvements in intelligence?
+
+
+- 2026-08-19T07:20:34.157Z [en->ko] 그거 비싸다.
+  Original: That's expensive.
+
+
+- 2026-08-19T07:20:37.799Z [en->ko] 안타깝게도, 우리는 더 많이 가지고 있습니다
+  Original: Fortunately, we have Moore's Law to the rescue.
+
+
+- 2026-08-19T07:20:46.662Z [en->ko] 그래서 여러분 중에
+  Original: For those of you who haven't heard of Moore's Law before, "law" is too strong a word. It's
+
+
+- 2026-08-19T07:20:56.183Z [en->ko] 저자에 대한 관찰
+  Original: observation that the optimal number of transistors on a chip roughly doubles every two years.
+
+
+- 2026-08-19T07:20:59.174Z [en->ko] 이것은 놀라울 정도로 유지되고 있다.
+  Original: This has held up remarkably well over 50 years.
+
+
+- 2026-08-19T07:21:05.834Z [en->ko] 50년 이상.
+  Original: we've started seeing the limits of that with single-threaded computation.
+
+
+- 2026-08-19T07:21:12.593Z [en->ko] 하지만 오른쪽 위에서 볼 수 있어요.
+  Original: But you can see, in the upper-right-hand corner, the shift toward more parallel computation.
+
+
+- 2026-08-19T07:21:19.109Z [en->ko] 멀티코어 CPU로.
+  Original: to multicore CPUs and increasingly to accelerated computation.
+
+
+- 2026-08-19T07:21:24.661Z [en->ko] 나는 NVIDIA와 AMD라고 생각한다
+  Original: Think NVIDIA and AMD GPUs. Think Intel XPUs and Google TPUs.
+
+
+- 2026-08-19T07:21:35.542Z [en->ko] 이것은 ~로 밀어내고 있다
+  Original: This is pushing us toward massively parallelized computation, allowing us to drive far more computation through the same chip size at lower power.
+
+
+- 2026-08-19T07:21:42.781Z [en->ko] 더 낮은 출력에서 그리고 당신은 할 수 있다
+  Original: And you can see this rule actually extends all the way back to 1900 when projected out.
+
+
+- 2026-08-19T07:21:47.132Z [en->ko] 이것은 경험적으로 유지된다.
+  Original: This has held up empirically incredibly well.
+
+
+- 2026-08-19T07:21:54.316Z [en->ko] 우리에 의해 점점 더 어려워지는
+  Original: Harder and harder, as our chip transistor density has gotten so low, we are pushing up against the laws of physics.
+
+
+- 2026-08-19T07:22:04.260Z [en->ko] 우리는 양자 에너지와 마주하고 있다.
+  Original: We are hitting up against quantum entanglement, and we and our competitors are exploring other techniques to continue to maintain the same trend line.
+
+
+- 2026-08-19T07:22:10.066Z [en->ko] 이것이 촉진하는 것 중 일부는 매우 흥미로운 것입니다.
+  Original: Part of what this is driving is something fascinating called Jevons Paradox.
+
+
+- 2026-08-19T07:22:18.932Z [en->ko] 1865, 무언가를 관찰하다
+  Original: Jevons was a British economist 1865 observed something very strange about steam engines.
+
+
+- 2026-08-19T07:22:35.312Z [en->ko] 그는 인식했다.
+  Original: He recognized that as the steam engines used in textile mills became more efficient and produced more joules of output per kilogram of coal, he expected coal use to decline.
+
+
+- 2026-08-19T07:22:42.735Z [en->ko] 기계가 더 효율적으로 변하면서 들렸다.
+  Original: As the machines became more efficient, plant operators ran them for longer hours.
+
+
+- 2026-08-19T07:22:46.663Z [en->ko] 그들은 그것들을 더 샀다.
+  Original: They bought more of them. The return on investment was higher.
+
+
+- 2026-08-19T07:22:51.375Z [en->ko] 그래서 소비가 증가했다.
+  Original: And so consumption went up, and production went up even more.
+
+
+- 2026-08-19T07:22:56.214Z [en->ko] 우리는 같은 역학을 관찰하고 있습니다.
+  Original: We're observing the same dynamic happening with these large language models.
+
+
+- 2026-08-19T07:23:05.565Z [en->ko] 그들이 얻는 것이 더 좋다.
+  Original: The better they get, the more value people get out of them, and the more value companies see in running these expensive models.
+
+
+- 2026-08-19T07:23:10.181Z [en->ko] 그들이 긍정적인 ROI를 보게 될 때.
+  Original: When they see a positive ROI, they consume more.
+
+
+- 2026-08-19T07:23:18.045Z [en->ko] 그것을 상상할 수 있다면
+  Original: And if you can imagine that each token was economically productive, you could imagine demand approaching infinity.
+
+
+- 2026-08-19T07:23:25.154Z [en->ko] 이것이 일정을 추진하고 있다.
+  Original: This is driving a staggering amount of capital investment.
+
+
+- 2026-08-19T07:23:27.956Z [en->ko] 당신은 이에 대해 읽었군요.
+  Original: I'm sure you've read about this.
+
+
+- 2026-08-19T07:23:34.882Z [en->ko] 이 차트는 그냥
+  Original: This chart is just awe-inspiring.
+
+
+- 2026-08-19T07:23:42.575Z [en->ko] 6천억 달러의 자본.
+  Original: $600 billion in capital expenditures across the five leading hyperscalers.
+
+
+- 2026-08-19T07:23:51.128Z [en->ko] 이것은 거대합니다.
+  Original: This dwarfs the Apollo Project and the Manhattan Project in the American context.
+
+
+- 2026-08-19T07:23:57.402Z [en->ko] 은 건물에 이어 정말 두 번째이다.
+  Original: And it is really second only to the build-out of the railroads relative to the size of the economy at the time.
+
+
+- 2026-08-19T07:24:01.037Z [en->ko] 이것은 채널입니다.
+  Original: This is a generational investment.
+
+
+- 2026-08-19T07:24:12.854Z [en->ko] 그것을 보는 건 솔직히 믿을 수 없을 정도로 놀라워요
+  Original: And it's honestly incredible to see that our society is flexible enough that we can marshal the capital, the talent, the commodities, and the resources to go after a project this big.
+
+
+- 2026-08-19T07:24:23.740Z [en->ko] 이렇게 큰 프로젝트를 추적하러 가다.
+  Original: The right-hand graph also shows a really fascinating transition that's happened in the tech industry.
+
+
+- 2026-08-19T07:24:31.602Z [en->ko] 2022년까지 볼 수 있습니다.
+  Original: You can see that up until 2022, the hyperscalers produced a tremendous amount of free cash flow.
+
+
+- 2026-08-19T07:24:38.288Z [en->ko] 그들은 돈을 찍어냈다.
+  Original: They printed money. In 2022, it was about $250 billion in free cash flow per year.
+
+
+- 2026-08-19T07:24:44.052Z [en->ko] 그리고 반접촉.
+  Original: And the semiconductor companies produced a measly $40 billion.
+
+
+- 2026-08-19T07:24:54.571Z [en->ko] 지난 4년 동안.
+  Original: In the last four years, we've seen this flip. You can see the hyperscalers' free cash flow has cratered and actually dropped into negative territory.
+
+
+- 2026-08-19T07:25:02.785Z [en->ko] 예전에 사용하던 기업들.
+  Original: Those companies that used to print money are now having to borrow billions of dollars to fund these capital expenditures.
+
+
+- 2026-08-19T07:25:12.274Z [en->ko] 한편, 반도체
+  Original: Meanwhile, semiconductor companies have seen their free cash flow
+
+
+- 2026-08-19T07:25:15.599Z [en->ko] 그들이 상상도 못할 수준으로 끌어올려졌다.
+  Original: raised to levels they could not have imagined five years ago.
+
+
+- 2026-08-19T07:25:23.182Z [en->ko] 그것은 엄청난 양을 열어주고 있다.
+  Original: That's opening up a tremendous amount of additional investment. Hardware is suddenly an incredibly exciting place to work.
+
+
+- 2026-08-19T07:25:29.924Z [en->ko] 그리고 그것은 추가적인 것을 계속해서 해제할 것이다
+  Original: And it's going to continue to unlock additional levels of investment and technical innovation.
+
+
+- 2026-08-19T07:25:42.068Z [en->ko] 다행히도, 그를 위해,
+  Original: Fortunately, for that incredible amount of investment, we are seeing really significant returns in the amount of computational capacity we have available.
+
+
+- 2026-08-19T07:25:51.202Z [en->ko] 우리가 측정하고 있다면
+  Original: If we're measuring accelerated AI computational capacity as an NVIDIA H100-equivalent chip,
+
+
+- 2026-08-19T07:25:57.918Z [en->ko] 우리는 현재 살펴보고 있습니다.
+  Original: We're currently looking at 3.4× growth year over year.
+
+
+- 2026-08-19T07:26:07.464Z [en->ko] 믿을 수 없을 정도로 빠른 속도
+  Original: An incredible pace of new computational capacity is coming online, distributed across a wide range of different types of chips.
+
+
+- 2026-08-19T07:26:11.591Z [en->ko] 이는 더 큰 것을 모두 잠금 해제하기 위한 것입니다
+  Original: This is to unlock both larger-scale training and more inference.
+
+
+- 2026-08-19T07:26:21.187Z [en->ko] 상상할 수 있듯이.
+  Original: As you can imagine, cost is becoming an increasingly important factor, and there is a wide distribution across price points.
+
+
+- 2026-08-19T07:26:30.084Z [en->ko] 가장 유능한.
+  Original: The most capable models currently command a real and significant premium, but you can also access very high levels of intelligence for much less.
+
+
+- 2026-08-19T07:26:46.048Z [en->ko] 훨씬 훨씬 적은 금액으로.
+  Original: So when you are building systems that use a significant amount of tokens, think very hard about how you can get the most performance for your relative level of cost. You probably don't need the premium at all times.
+
+
+- 2026-08-19T07:26:50.760Z [en->ko] 아마 가장 낮은 것을 찾게 될 거야.
+  Original: You probably will find the lowest end insufficient for your use case
+
+
+- 2026-08-19T07:27:00.697Z [en->ko] 그 사이에 많은 좋은 지점들이 있다.
+  Original: But there's a lot of sweet spots in between, and typically try to avoid anything further down below that doesn't give you that level of performance for your cost.
+
+
+- 2026-08-19T07:27:04.414Z [en->ko] 그러니까, 이제,
+  Original: So now I'll move on to the second part of my talk.
+
+
+- 2026-08-19T07:27:09.098Z [en->ko] 당신은 사물이 매우 변하고 있다는 것을 볼 수 있습니다
+  Original: You can see that things are changing very quickly.
+
+
+- 2026-08-19T07:27:12.047Z [en->ko] 우리가 따라 건설할 수 있는 원칙들
+  Original: So what are some principles we can follow to build more effectively.
+
+
+- 2026-08-19T07:27:16.774Z [en->ko] 내가 가진 첫 번째 원칙.
+  Original: The first principle I have is to give intelligence an interface.
+
+
+- 2026-08-19T07:27:23.389Z [en->ko] 이러한 모델들 중 많은 수가 운영됩니다
+  Original: Many of these models operate as intelligence in a box, but they can't see anything or do anything.
+
+
+- 2026-08-19T07:27:26.595Z [en->ko] 그래서 우리의 책임은
+  Original: And so our responsibility as engineers is to connect that intelligence with the eyes and the arms it needs to make observations about the world, to see, and then to take actions.
+
+
+- 2026-08-19T07:27:43.471Z [en->ko] 우리가 근본적으로 해야 할 일은 가능하게 하는 것이다
+  Original: What we fundamentally need to do is enable this agentic loop to take place.
+
+
+- 2026-08-19T07:27:53.444Z [en->ko] 그 모델이 반복할 수 있는 곳
+  Original: where the model can repeatedly make tool calls, retrieve information, take actions, measure its performance, and continue to improve.
+
+
+- 2026-08-19T07:28:01.347Z [en->ko] 여기서 일어난 큰 변화는 왜인가요
+  Original: The big shift that's happened here and why we call these agents is that most software was built for humans to run.
+
+
+- 2026-08-19T07:28:13.270Z [en->ko] 하지만 우리가 점점 더 보고 있는 것은 ~와 함께
+  Original: But what we're increasingly seeing is within the correct scoping and security levels, we are giving that agency over to a model. We are letting the model choose what software to run.
