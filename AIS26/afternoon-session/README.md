@@ -13,8 +13,10 @@ AI Summit Seoul 2026 오후 세션 기록 폴더입니다.
 | [`chunks/latest-10min.md`](./chunks/latest-10min.md) | 오후 기준 최신 10분 구간 |
 | [`tracks/`](./tracks/) | 오후 세션 트랙 A/B/C/D별 정리 폴더 |
 | [`selected-tracks.md`](./selected-tracks.md) | 전하 참석 예정 트랙 순서와 트랙별 집계 |
-| [`track-a-session-1-summary_ko.md`](./track-a-session-1-summary_ko.md) | 13:00-14:00 Track A 세션 요약 한글본 |
-| [`track-a-session-1-summary_en.md`](./track-a-session-1-summary_en.md) | 13:00-14:00 Track A 세션 요약 영문본 |
+| [`track-a-session-1-summary_ko.md`](./track-a-session-1-summary_ko.md) | 13:30-14:00 Track A 세션 요약 한글본 |
+| [`track-a-session-1-summary_en.md`](./track-a-session-1-summary_en.md) | 13:30-14:00 Track A 세션 요약 영문본 |
+| [`track-a-session-2-summary_ko.md`](./track-a-session-2-summary_ko.md) | 14:00-14:30 Track A 세션 요약 한글본 |
+| [`track-a-session-2-summary_en.md`](./track-a-session-2-summary_en.md) | 14:00-14:30 Track A 세션 요약 영문본 |
 
 ## Tracks
 
@@ -26,7 +28,7 @@ AI Summit Seoul 2026 오후 세션 기록 폴더입니다.
 
 | 트랙 | 폴더 | 설명 |
 | --- | --- | --- |
-| A | [`tracks/A/`](./tracks/A/) | 참석 예정 2개 세션, 1차 세션 요약 완료 |
+| A | [`tracks/A/`](./tracks/A/) | 참석 예정 2개 세션, 1-2차 세션 요약 완료 |
 | B | [`tracks/B/`](./tracks/B/) | 참석 예정 4개 세션 |
 | C | [`tracks/C/`](./tracks/C/) | 참석 예정 없음 |
 | D | [`tracks/D/`](./tracks/D/) | 참석 예정 1개 세션 |
