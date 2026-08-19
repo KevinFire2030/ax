@@ -1,0 +1,47 @@
+﻿# LiveTR 1030-1040
+
+- Source: 10시_실시간 통역.md
+- Window: 2026-08-19 10:30-10:40 KST
+- Messages: 12
+
+- 2026-08-19T01:30:03.173Z [en->ko] 그리고 아마도 몇 개
+  Original: And maybe someday, when we have all these AI agents, that's a completely different ball game will argue over whether or not they're life.
+
+
+- 2026-08-19T01:30:08.253Z [en->ko] 그들이 생명인지 아닌지에 대해 논쟁할 것이다.
+  Original: With that, thank you very much for your time and attention.
+
+
+- 2026-08-19T01:30:11.141Z [ko->] 뒤로.
+  Original: 네, 고맙습니다.
+
+
+- 2026-08-19T01:30:15.007Z [en->ko] 각 단계를 차근차근 안내해 주셔서 정말 감사합니다
+  Original: Thank you so much for walking us through agentic AI in space.
+
+
+- 2026-08-19T01:30:19.478Z [ko] 우주 분야의 AI까지 깊이 있는 강연 잘 들어보았습니다.
+
+
+- 2026-08-19T01:30:24.562Z [ko] 그럼 지금부터 약 30분간 휴식 시간을 갖도록 하겠습니다.
+
+
+- 2026-08-19T01:30:32.331Z [ko] AI 서밋 서울 2016에서는 다양한 이벤트와 전시 부스를 코엑스 B홀에서 만나보실 수 있습니다.
+
+
+- 2026-08-19T01:30:38.136Z [ko] 직접 체험해 보시고, 최신 AI 기술의 흐름도 느껴보시기를 바랍니다.
+
+
+- 2026-08-19T01:30:46.141Z [ko] 아울러 휴식 시간 동안 그랜드 볼룸 앞에서 진행되는 저자 사인회에도 많은 관심과 참여를 부탁드리겠습니다.
+
+
+- 2026-08-19T01:30:50.257Z [ko] 그럼 푹 쉬시고 잠시 후 10시 55분에 다시 뵙겠습니다.
+
+
+- 2026-08-19T01:30:55.289Z [en->ko] 이제 잠깐 쉬겠습니다. 쉬는 시간 잘 보내고 10에 다시 봐요.
+  Original: We will now take a short break. Enjoy your break, and we will see you again at 10:55.
+
+
+- 2026-08-19T01:30:57.824Z [en->ko] 정말 감사합니다.
+  Original: Thank you very much.
+
