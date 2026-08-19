@@ -18,4 +18,11 @@
 
 | 순서 | 상태 | 제목 |
 | --- | --- | --- |
-| 3, 14:30-15:00 | 참석 예정 | 추후 입력 |
+| 3, 14:30-15:00 | 요약 완료 | 데이터에서 실행까지, AI 기반 운영 최적화 전략 |
+
+## Summaries
+
+| 세션 | 파일 |
+| --- | --- |
+| 14:30-15:00 한글 요약 | [`../../track-d-session-3-summary_ko.md`](../../track-d-session-3-summary_ko.md) |
+| 14:30-15:00 영문 요약 | [`../../track-d-session-3-summary_en.md`](../../track-d-session-3-summary_en.md) |
