@@ -1,10 +1,10 @@
 ﻿# LiveTR 180342 - Afternoon Session
 
 - Source room: 180342
-- Saved at: 2026-08-19T07:38:18Z
+- Saved at: 2026-08-19T07:45:24Z
 - Language: ko
 - Session start: 2026-08-19 15:00 KST
-- Messages: 542
+- Messages: 608
 
 - 2026-08-19T06:00:02.062Z [en->ko] 다음 주는 지금 저희 팀에게 아무런 도움이 되지 않습니다. 🤖
   Original: Next week doesn't help my team now.
@@ -1888,7 +1888,7 @@
 
 
 - 2026-08-19T07:36:31.622Z [en->ko] 맥락과 함께 시작하고
-  Original: Start with context engineering. This is low-hanging fruit. It is the easiest thing to do, and it will get you 80% of the benefits. The models that we're working with are so capable now.
+  Original: It is the easiest thing to do, and it will get you 80% of the benefits. The models that we're working with are so capable now.
 
 
 - 2026-08-19T07:36:38.890Z [en->ko] 그들에게 적절한 것을 제공하는 것
@@ -1959,5 +1959,229 @@
   Original: The second piece is the self-improvement loop.
 
 
-- 2026-08-19T07:38:14.134Z [en->ko] 훌륭한 오픈 소스 기법들이 있습니다
-  Original: There's great open source techniques that can do this. Mast for automated agent system error detection.
+- 2026-08-19T07:38:16.901Z [en->ko] 훌륭한 오픈 소스 기법들이 있습니다
+  Original: There are great open-source techniques that can do this: MAST for automated agent-system error detection, DSPy, and Trace.
+
+
+- 2026-08-19T07:38:24.748Z [en->ko] 솔직히 말해서,
+  Original: And frankly, the coding agents themselves would probably do pretty well even without these open-source solutions.
+
+
+- 2026-08-19T07:38:32.349Z [en->ko] 그렇게,
+  Original: So, conceptually, separate out your task, which is defining quality.
+
+
+- 2026-08-19T07:38:38.713Z [en->ko] 그리고 에이전트의 작업은
+  Original: And the agent's task is to achieve maximum performance against that high bar of measurement.
+
+
+- 2026-08-19T07:38:46.220Z [en->ko] 이것은 엄청난 변화입니다.
+  Original: This is a huge amount of change for individuals, teams, and organizations to absorb.
+
+
+- 2026-08-19T07:38:50.568Z [en->ko] 흡수하고 유용한
+  Original: And a useful framing to share with you.
+
+
+- 2026-08-19T07:38:54.857Z [en->ko] 이것이 몸에 대한 생각인가요.
+  Original: Is this idea of the bottleneck moving?
+
+
+- 2026-08-19T07:39:01.148Z [en->ko] 이것은 제조 시절부터 이어져 온 교훈입니다.
+  Original: This is a lesson dating all the way back to manufacturing. They recognized that if you have a bottleneck, you need to find a way to fix it.
+
+
+- 2026-08-19T07:39:04.164Z [en->ko] 당신은 갑자기 무한대로 이동하지 않는다.
+  Original: You do not suddenly move to infinite output.
+
+
+- 2026-08-19T07:39:06.962Z [en->ko] 다음은 방금 다른 곳으로 옮겨졌어요.
+  Original: The bottleneck just moves somewhere else in the system.
+
+
+- 2026-08-19T07:39:14.779Z [en->ko] 그리고 나는 제안한다
+  Original: And I suggest that the arrival of this level of intelligence,
+
+
+- 2026-08-19T07:39:18.966Z [en->ko] 우리는 그 병목 현상을 해결할 것이다.
+  Original: This capability of models will move that bottleneck more rapidly than before.
+
+
+- 2026-08-19T07:39:26.375Z [en->ko] 그래서 새로운 병목에 부딪힐 때마다,
+  Original: And so every time you hit a new bottleneck, go and apply your tools, your structure, your context engineering to that.
+
+
+- 2026-08-19T07:39:36.656Z [en->ko] 그것은 매우 자주 멀어졌다
+  Original: And very often, it has moved away from software development and toward planning, organization, forecasting, and measurement.
+
+
+- 2026-08-19T07:39:42.512Z [en->ko] 그래서 요약하자면.
+  Original: So, to summarize, six principles for your production agents.
+
+
+- 2026-08-19T07:39:46.229Z [en->ko] 당신의 지능을 주세요.
+  Original: Give your intelligence an interface?
+
+
+- 2026-08-19T07:39:54.602Z [en->ko] 하방에 묶여 있다.
+  Original: Bound the downside, delegate the how, and focus on defining the what.
+
+
+- 2026-08-19T07:39:59.417Z [en->ko] 전체 시스템을 평가하십시오.
+  Original: Evaluate the whole system, observe and replay everything, and close the learning loop.
+
+
+- 2026-08-19T07:40:05.505Z [en->ko] 그 모든 것을 가지고 나는 닫겠습니다.
+  Original: And with all of that, I will close with one final passage by the economist Paul Krugman.
+
+
+- 2026-08-19T07:40:09.917Z [en->ko] 내 생각에는 반영한다.
+  Original: Which I think reflects what an incredible moment we stand in human history.
+
+
+- 2026-08-19T07:40:15.365Z [en->ko] 그는 썼다, 생산성은 아니다
+  Original: He wrote, "Productivity isn't everything, but in the long run, it is almost everything."
+
+
+- 2026-08-19T07:40:23.719Z [en->ko] 한 나라가 향상시킬 수 있는 능력.
+  Original: A country's ability to improve its standard of living over time depends almost entirely on its ability to raise its output per worker.
+
+
+- 2026-08-19T07:40:32.316Z [en->ko] 우리는 지금 이 한가운데에 있다.
+  Original: We are in the middle of a wave that is about to dramatically increase the amount of output per worker, with incredible implications.
+
+
+- 2026-08-19T07:40:38.269Z [en->ko] 그리고 나는 항해하는 것을 기대한다.
+  Original: I look forward to navigating this exciting and high-stakes moment in human history with you all.
+
+
+- 2026-08-19T07:40:44.876Z [en->ko] 다양한 관점과 함께 당신의 능력을 나눠 주셔서 감사합니다.
+  Original: Thank you for sharing your valuable perspectives with us.
+
+
+- 2026-08-19T07:40:51.837Z [ko->] 네, 우리는 거기에 갈 거예요.
+  Original: 네, 저희가 이 거대한 변화의 중심에 있다는 연사님의 말씀이 굉장히 인상 깊게 와닿았던 것 같습니다.
+
+
+- 2026-08-19T07:40:58.047Z [ko->] 정말 감사합니다.
+  Original: 고맙습니다. 곧바로 다음 세션으로 넘어가 보겠습니다.
+
+
+- 2026-08-19T07:41:08.972Z [ko] 이번에는 AI를 잘 쓰는 기업의 조건, 정보보호 가드레일이라는 주제로 포스코 E&C의 이근형 상무보님께서 강연해 주시겠습니다.
+
+
+- 2026-08-19T07:41:11.800Z [ko] 여러분, 상무보님을 따뜻한 박수로 환영해 주시기 바랍니다.
+
+
+- 2026-08-19T07:41:26.935Z [ko] 안녕하십니까. 포스코 E&C의 이근형입니다.
+
+
+- 2026-08-19T07:41:32.873Z [ko] 오늘 AI를 잘 쓰는 기업의 조건과 정보보호 가드레일에 대해 말씀드리겠습니다.
+
+
+- 2026-08-19T07:41:38.938Z [ko] 저는 포스코 E&C에서 CISO를 맡고 있습니다.
+
+
+- 2026-08-19T07:41:43.059Z [ko] 그전에는 LG CNS에서 컨설팅을 했었고요.
+
+
+- 2026-08-19T07:41:47.891Z [ko] AI 쪽 IT 혁신, 뭐 이런 게 있었습니다.
+
+
+- 2026-08-19T07:41:54.572Z [ko] 저희 회사는 포스코건설이었다가 포스코E&C로 이름이 바뀌었습니다.
+
+
+- 2026-08-19T07:41:58.581Z [ko] 그리고 AI 회사라든지 하이테크 회사가 아닙니다.
+
+
+- 2026-08-19T07:42:00.924Z [ko] 건설 회사고요.
+
+
+- 2026-08-19T07:42:06.025Z [ko] 오늘 말씀드릴 것도 아주 최신의 트렌드, 이런 것들을 말씀드릴 건 아니고요.
+
+
+- 2026-08-19T07:42:16.799Z [ko] 일반 기업, 일반 대기업에서 제가 CISO, 즉 최고정보보호책임자로서 가지고 있는 고민들을 여러분께 좀 말씀드리겠습니다.
+
+
+- 2026-08-19T07:42:27.147Z [ko] 저희 회사에서 하고 있는 것들과 계획하고 있는 것들을 함께 나누면서, 여러분과 그런 고민을 같이 하려고 합니다.
+
+
+- 2026-08-19T07:42:31.140Z [ko] 제가 작년에 낸 책이 표지에 나와 있는데요.
+
+
+- 2026-08-19T07:42:34.048Z [ko] 우리 회사 AI 전환은 어떻게 시작할까?라는 책인데
+
+
+- 2026-08-19T07:42:38.146Z [ko] 저는 엔지니어 출신도 아니고, 또 최고경영자도 아닙니다.
+
+
+- 2026-08-19T07:42:40.714Z [ko] 그래서 딱 그 중간 어딘가에 있는 사람이고요.
+
+
+- 2026-08-19T07:42:51.547Z [ko] 그래서 엔지니어링이라든지 테크놀로지에 대한 이해를 바탕으로 실제 기업 경영이나 기업 운영의 비즈니스 측면에서 어떻게 하면 좋을지를 고민하는 사람입니다.
+
+
+- 2026-08-19T07:42:55.864Z [ko] 그래서 그 사이에 있는 언어로 오늘 좀 설명드리도록 하겠습니다.
+
+
+- 2026-08-19T07:42:59.267Z [ko] 오늘 세 가지를 좀 말씀드리려고 합니다.
+
+
+- 2026-08-19T07:43:02.807Z [ko] 왜 지금 가드레일이라는 용어가 나오고 있는가
+
+
+- 2026-08-19T07:43:05.696Z [ko] 그리고 가드레일은 어떻게 구성되는가?
+
+
+- 2026-08-19T07:43:08.599Z [ko] 무엇을 해야 하는가? 이 세 가지를 말씀드리려고 합니다.
+
+
+- 2026-08-19T07:43:12.772Z [ko] 여기서의 가드레일은 약간 가드레일이라고 생각하시면 될 것 같습니다.
+
+
+- 2026-08-19T07:43:28.057Z [ko] AI 회사가 제공하는 서비스에 적용하는 기술적 가드레일이 아니라, 회사 전반에서 AI를 활용할 때 적용할 수 있는 개념적 측면의 용어라고 이해하시면 될 것 같습니다.
+
+
+- 2026-08-19T07:43:30.455Z [ko] 첫 번째 사례입니다.
+
+
+- 2026-08-19T07:43:35.104Z [ko] 충분히 가능한 시나리오인데요.
+
+
+- 2026-08-19T07:43:39.248Z [ko] 다 아시는 내용이시겠지만 메일 접속만 막는다고 해서 메일이 차단되지는 않습니다.
+
+
+- 2026-08-19T07:43:56.764Z [ko] 옛날에는 웹페이지, 접속하는 페이지만 막으면 됐지만 이제는 AI를 써서, API를 써서 SMTP로 다 직접 보낼 수 있는 그런 환경이 됐는데도 아직도 여전히 접속 페이지만 막으면 되는 것으로 통념상 알고 있는 경우가 많이 있습니다.
+
+
+- 2026-08-19T07:43:59.383Z [ko] 실제로 여러 가지 사고들이 많이 발생하고 있죠.
+
+
+- 2026-08-19T07:44:08.109Z [ko] 우리가 몇 년 전에 겪었던 한 대기업에서는 20일 동안 정보보호 사고가 세 건이나 동시에 발생했습니다.
+
+
+- 2026-08-19T07:44:17.064Z [ko] 어떤 엔지니어가 자신의 오류를 고치기 위해 소스 코드를 통째로 붙였다가, 그것이 나중에 AI에서 검색되는 일도 있었고
+
+
+- 2026-08-19T07:44:19.746Z [ko] 회의록이 그대로 유출되는 그런 사고들도 있었습니다.
+
+
+- 2026-08-19T07:44:38.613Z [ko] 최근에는 해외의 한 회사에서 분명히 코드 프리징을 하라고 명령했음에도 불구하고, AI가 스스로 판단해 프리징한 것들을 모두 없애고 이를 무시한 채 데이터베이스에 있던 임원들의 데이터를 모두 삭제하는 일도 있었죠.
+
+
+- 2026-08-19T07:44:52.596Z [ko] 실제로 그런데 그 행위를 AI 에이전트가 자기가 하지 않은 것처럼 보이기 위해 가상의 데이터를 다시 입력하는 실행까지 했었다는 것이 확인이 됐습니다.
+
+
+- 2026-08-19T07:44:55.415Z [ko] 그렇기 때문에 더 놀라운 그런 사례가 되겠습니다.
+
+
+- 2026-08-19T07:44:58.489Z [ko] 실제로 기사가 되었던 내용입니다.
+
+
+- 2026-08-19T07:45:13.006Z [ko] 그래서 이제 이런 것들을 막다 보면, 또 요즘에 여기 오늘 오셔서 대부분의 세션을 제가 보니까 어떻게 하면 AI를 잘 쓸 수 있을까? 에이전트를 좀 더 빨리 도입해서 더 많은 에이전트를 쓸 수 있을까?
+
+
+- 2026-08-19T07:45:15.356Z [ko] 이런 내용인데
+
+
+- 2026-08-19T07:45:21.275Z [ko] 오늘 제가 하는 내용은 그렇게 하다가 보면 어떤 딜레마가 생기는지 정보보호 측면에서의
