@@ -20,10 +20,13 @@ AI Summit Seoul 2026 오후 전체 세션을 정리하기 위한 폴더입니다
 
 | 트랙 | 폴더 | LiveTR |
 | --- | --- | --- |
+| A | [`tracks/A/`](./tracks/A/) | [`132952`](https://livetr.flit.to/chat/132952?lang=ko&showOriginalText=false) |
+| B | [`tracks/B/`](./tracks/B/) | [`180342`](https://livetr.flit.to/chat/180342?lang=ko&showOriginalText=false) |
 | C | [`tracks/C/`](./tracks/C/) | [`110951`](https://livetr.flit.to/chat/110951?lang=ko&showOriginalText=false) |
+| D | [`tracks/D/`](./tracks/D/) | [`376896`](https://livetr.flit.to/chat/376896?lang=ko&showOriginalText=false) |
 
 ## Status
 
 - 생성일: 2026-08-19
-- 현재 상태: Track C 실시간 통역 채널 추가
+- 현재 상태: 16:00 이후 Track A/B/C/D 실시간 통역 채널 추가
 - 다음 작업: 오후 전체 세션 일정표와 트랙별 목차 확장

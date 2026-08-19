@@ -1,15 +1,15 @@
-# Track C
+# Track D
 
-AI Summit Seoul 2026 오후 전체 세션 중 Track C 실시간 통역 자료를 정리하는 폴더입니다.
+AI Summit Seoul 2026 오후 전체 세션 중 Track D 실시간 통역 자료를 정리하는 폴더입니다.
 
 ## LiveTR
 
-- 채널 코드: `110951`
-- 링크: <https://livetr.flit.to/chat/110951?lang=ko&showOriginalText=false>
+- 채널 코드: `376896`
+- 링크: <https://livetr.flit.to/chat/376896?lang=ko&showOriginalText=false>
 
 ## Transcript
 
-- Track C 전체 통역본: `live-translation-track-c.md`
+- Track D 전체 통역본: `live-translation-track-d.md`
 - 10분 조각: `chunks/`
 - 최신 10분 조각: `chunks/latest-10min.md`
 
