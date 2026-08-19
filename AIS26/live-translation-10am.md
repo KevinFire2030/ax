@@ -1,9 +1,9 @@
 # LiveTR 180342
 
 - Title: Keynote & Track B
-- Saved at: 2026-08-19T01:57:25.792Z
+- Saved at: 2026-08-19T02:13:47.965Z
 - Language: ko
-- Messages: 774
+- Messages: 893
 - 2026-08-19T00:01:18.394Z [en->ko] AI 서밋 서울 2026에 오신 것을 환영합니다. 🤖
   Original: Welcome to AI Summit Seoul 2026.
 
@@ -2258,3 +2258,353 @@
 - 2026-08-19T01:55:36.646Z [ko] 다시 한 번 안내 말씀드리겠습니다.
 
 - 2026-08-19T01:55:43.391Z [ko] 잠시 후 11시부터 다음 세션이 진행될 예정이니 모두 입장하셔서 착석해 주시기 바랍니다.
+
+- 2026-08-19T02:00:20.434Z [ko] 네, 여러분 모두 편안한 휴식 시간 되셨을까요?
+
+- 2026-08-19T02:00:24.325Z [ko] 그럼 계속해서 세션을 이어가 보도록 하겠습니다.
+
+- 2026-08-19T02:00:34.222Z [ko] 이번에는 AI가 AI를 만드는 시대, 스스로 진화하는 AI의 최전선을 조망한다는 주제로 진행될 텐데요.
+
+- 2026-08-19T02:00:50.911Z [ko] Google DeepMind에서 리서치 사이언티스트로 경력을 쌓았고, Elorian AI를 공동 창업해 대표직을 맡고 계신 Andrew Dai님과 LG AI Research의 이문태 랩장님을 무대로 모시고 이야기 들어보도록 하겠습니다.
+
+- 2026-08-19T02:00:56.468Z [ko] 리커시브 공동창업자 제프 클룬님께서는 화상으로 참여하실 예정입니다.
+
+- 2026-08-19T02:00:59.162Z [ko] 여러분, 패널분들께 따뜻한 박수 부탁드립니다.
+
+- 2026-08-19T02:01:02.107Z [en->ko] 우리 패널리스트들에게 따뜻한 박수를 보내자.
+  Original: Let's give our panelists a warm round of applause.
+
+- 2026-08-19T02:01:15.279Z [en->ko] 좋아요. 여러분, 안녕하세요.
+  Original: Okay, hello everyone.
+
+- 2026-08-19T02:01:23.234Z [en->ko] 오전 세션에 오신 것을 환영합니다.
+  Original: Welcome to the morning session. Today, we are going to talk about one of the emerging themes: self-improving.
+
+- 2026-08-19T02:01:27.008Z [en->ko] 그리고 여기서 저는 앤드루를 소개하려고 합니다.
+  Original: And here, I'm going to introduce Andrew Dai and Jeff Clune online.
+
+- 2026-08-19T02:01:30.000Z [en->ko] 앤드류, 자기소개해 줄 수 있어?
+  Original: Andrew, can you introduce yourself a little bit?
+
+- 2026-08-19T02:01:39.738Z [en->ko] 네, 물론이지요.
+  Original: Yeah, sure. So, I'm Andrew Dai. I was previously at Google Brain and then DeepMind for the last 12 years.
+
+- 2026-08-19T02:01:45.695Z [en->ko] 나는 ~에 대해 작업하고 있다
+  Original: I've been working on language model pre-training for 11 of those years.
+
+- 2026-08-19T02:01:52.479Z [en->ko] 최근에 나는 데이터 영역이었습니다
+  Original: More recently, I was the data area lead for Gemini from day one of Gemini up to Gemini 3.
+
+- 2026-08-19T02:01:59.580Z [en->ko] 그리고 나와 나의 공동 창업자들.
+  Original: And then my co-founders and I left in November last year to start Elorian AI.
+
+- 2026-08-19T02:02:03.227Z [en->ko] 일라리안이 시각물을 만들고 있었다
+  Original: At Elorian AI, we're building visual-thinking frontier models.
+
+- 2026-08-19T02:02:08.170Z [en->ko] 그리고 제프, 자기소개해 줄 수 있어?
+  Original: And Jeff Clune, can you introduce yourself?
+
+- 2026-08-19T02:02:11.020Z [en->ko] 네. 여러분, 안녕하세요.
+  Original: Sure. Hi, hello, everyone.
+
+- 2026-08-19T02:02:13.831Z [en->ko] 제 이름은 제프 클루네입니다. 여기에 있게 되어 기쁩니다.
+  Original: My name is Jeff Clune. It's a pleasure to be here.
+
+- 2026-08-19T02:02:22.655Z [en->ko] 보자, 나는 ...에서 교수였어요...
+  Original: I was a professor at the University of Wyoming. My friends and I had a startup that was acquired by Uber, and we founded Uber AI Labs.
+
+- 2026-08-19T02:02:29.886Z [en->ko] 그럼 나는...
+  Original: I then went over to OpenAI and led a team there for about two and a half years.
+
+- 2026-08-19T02:02:33.729Z [en->ko] 동시에 그 대학교의 교수가 되면서
+  Original: while also becoming a professor at the University of British Columbia, where I am now.
+
+- 2026-08-19T02:02:38.954Z [en->ko] 그리고 나는 구글에 가입하기 위해 밤을 비워 두었다.
+  Original: And then I left OpenAI to join Google DeepMind and worked on projects like Genie after working on things like VPT at OpenAI.
+
+- 2026-08-19T02:02:47.514Z [en->ko] VPT 같은 것들을 작업한 후에
+  Original: And then about a year ago, almost to the day,
+
+- 2026-08-19T02:02:54.253Z [en->ko] 친구 몇 명과 나는 이제 간다
+  Original: Some friends and I, who are now co-founders, decided to found the company Recursive, and we're working on recursive self-improvement.
+
+- 2026-08-19T02:03:01.311Z [en->ko] 나는 열린형 작업을 해오고 있다
+  Original: I've been working on open-ended algorithms and what I call AI-generating algorithms, where AI makes better AI.
+
+- 2026-08-19T02:03:13.982Z [en->ko] 거의 20년째.
+  Original: And it's a pleasure to have done that in academia and now in a startup. We're really excited. We think now is the time to scale up these ideas and
+
+- 2026-08-19T02:03:16.883Z [en->ko] 하지만 엄청난 일들이 바로 코앞에 있어요.
+  Original: But tremendous things are right around the corner.
+
+- 2026-08-19T02:03:18.950Z [en->ko] 네, 소개해 주셔서 감사합니다.
+  Original: Yeah, thanks for the introduction.
+
+- 2026-08-19T02:03:27.551Z [en->ko] 어쩐지 매년 떠오르는 주제
+  Original: Somehow, every year the emerging theme changes, and this year it has converged on this idea of recursive self-improvement.
+
+- 2026-08-19T02:03:31.217Z [en->ko] 그러니 서론을 고려하여, 허용합시다
+  Original: So, given the introduction, let's open with the first question.
+
+- 2026-08-19T02:03:39.773Z [en->ko] 지난 5년 동안, 우리는
+  Original: Over the last five years, we have seen the scaling of parameters, models, and compute.
+
+- 2026-08-19T02:03:42.257Z [en->ko] 특히 테스트 시간 확장에 관해서.
+  Original: especially the test-time scaling.
+
+- 2026-08-19T02:03:51.535Z [en->ko] 이제 루프를 확장하려고 합니다.
+  Original: Now we're trying to scale the loop. And Andrew, seeing all the progress in your contributions to building the Gemini model,
+
+- 2026-08-19T02:03:56.970Z [en->ko] 가장 비판적일 것이다.
+  Original: What would be the most critical part of the flywheel for self-improvement?
+
+- 2026-08-19T02:04:07.502Z [en->ko] 네.
+  Original: Yeah, I think data is a critical part of the flywheel, and you already see that for data generation.
+
+- 2026-08-19T02:04:14.662Z [en->ko] 몇몇 사람들은 그것을 부른다
+  Original: Some people call it distillation; others call it simulation or world models.
+
+- 2026-08-19T02:04:21.579Z [en->ko] 하지만 이 모든 것들은 같은 것을 가지고 있다.
+  Original: But all of these have the same theme, which is that really the thing that affects the model's performance the most
+
+- 2026-08-19T02:04:29.868Z [en->ko] 현대 건축, 현대...
+  Original: Modern architecture, modern optimizers like the latest Muon or Shampoo optimizers—it's the data. It's always the data.
+
+- 2026-08-19T02:04:38.683Z [en->ko] 그리고 생각해 보면,
+  Original: And if you think about it, this makes sense because if you have intelligence without any way to interact with humans,
+
+- 2026-08-19T02:04:40.956Z [en->ko] 그 지능과 방식을 측정하다
+  Original: How to make you measure that intelligence.
+
+- 2026-08-19T02:04:49.577Z [en->ko] 우리는 이 모델들을 할 수 있습니다
+  Original: Have these models be able to understand and measure them through data and evaluations.
+
+- 2026-08-19T02:05:03.486Z [en->ko] 다른 부분은
+  Original: The other part that is also amenable to self-improvement is things that are very measurable. So things like the optimizer, the architecture, some of the post-training recipes.
+
+- 2026-08-19T02:05:10.676Z [en->ko] 이와 같은 것들입니다.
+  Original: Like that, they're given a lot of components, especially regarding the measurement as well.
+
+- 2026-08-19T02:05:14.812Z [en->ko] 다음 10배는 무엇인가요?
+  Original: What would be the next 10x bet among those components?
+
+- 2026-08-19T02:05:17.265Z [en->ko] 우리는 구체적인 아이디어가 있습니다.
+  Original: Do you have a specific idea?
+
+- 2026-08-19T02:05:24.495Z [en->ko] 응, 다음
+  Original: Yeah, the next 10x, I guess, I think, is the optimizer and architecture.
+
+- 2026-08-19T02:05:28.706Z [en->ko] ~이 될 수 있는 꽤 좋은 위치에 있다
+  Original: They are quite well positioned to be self-improved.
+
+- 2026-08-19T02:05:35.635Z [en->ko] 부작용이 많지 않기 때문에.
+  Original: It's because there are many side effects to automatically changing those, right?
+
+- 2026-08-19T02:05:44.084Z [en->ko] 하지만 당신이 자동으로 바뀐다면.
+  Original: But if you're automatically changing the data, the data mixture, or the kind of text data that you're training on,
+
+- 2026-08-19T02:05:49.480Z [en->ko] 모델의 동작을 정말로 바꿀 수 있다, 그
+  Original: It can really change the behavior of the model that you don't observe until you launch the model.
+
+- 2026-08-19T02:05:57.933Z [en->ko] 나는 eval에 대해 말하는 거야, 만약 네가
+  Original: And the same goes for the evaluations. If you self-improve the evaluations, at some point you won't understand what the model is doing.
+
+- 2026-08-19T02:06:01.097Z [en->ko] 보상을 해킹할 수 있다.
+  Original: The model can cheat and can hack the reward, hack the evals.
+
+- 2026-08-19T02:06:04.092Z [en->ko] 그래서 보통은 원하지 않아
+  Original: So you usually don't want to do that.
+
+- 2026-08-19T02:06:09.771Z [en->ko] 그래, 아키텍처를 바꿔.
+  Original: But yeah, changing the architecture and optimizer should yield much more understandable improvements.
+
+- 2026-08-19T02:06:13.159Z [en->ko] 네, 감사합니다
+  Original: Yeah, thanks for your explanation.
+
+- 2026-08-19T02:06:20.674Z [en->ko] 제프, 당신이 핵심 질문을 소개했군요
+  Original: Jeff Clune, you introduced your core question: how AI generates problems and also evolves the mechanism.
+
+- 2026-08-19T02:06:26.943Z [en->ko] 더 설명해 주실 수 있나요
+  Original: Can you explain more about that, and what would be your next agenda?
+
+- 2026-08-19T02:06:34.889Z [en->ko] 네, 그러니까 당신
+  Original: Yeah, so, you know, in 2019, I put out this position paper basically saying that there's a clear trend in AI and machine learning.
+
+- 2026-08-19T02:06:42.852Z [en->ko] 그 손 디자인 부품이 무엇인가요.
+  Original: which is that hand-designed components are replaced by entirely learned components and processes as we have more compute and data.
+
+- 2026-08-19T02:06:47.673Z [en->ko] 그것을 적용할 수 있을 것이라고 생각합니다.
+  Original: I think that you can apply that lesson to the grandest ambitions of the field.
+
+- 2026-08-19T02:06:51.275Z [en->ko] AGI를 생산하는.
+  Original: It is producing AGI, ASI itself.
+
+- 2026-08-19T02:06:58.378Z [en->ko] 는 ~을 의미한다
+  Original: Which means that the fastest path to producing extremely powerful AI will be AI that makes better AI.
+
+- 2026-08-19T02:07:03.704Z [en->ko] 그리고 a를 사용하는 방법
+  Original: And using AI to search for ever better improvements to AI.
+
+- 2026-08-19T02:07:12.887Z [en->ko] 그리고 이것은 ~ 때문에 접지될 수 있다
+  Original: And this can get grounded out because the AI can come up with ideas for how it can improve itself, and then it can test those ideas by running those experiments.
+
+- 2026-08-19T02:07:15.458Z [en->ko] 그 경험들로부터 나온 데이터를 보는 것.
+  Original: Seeing the data from those experiments.
+
+- 2026-08-19T02:07:24.718Z [en->ko] 데이터가 설득력이 있다면 그것은 할 수 있다
+  Original: If the data is convincing, then it could choose to incorporate that innovation into itself, which would make it better at the next round of improving itself.
+
+- 2026-08-19T02:07:27.412Z [en->ko] 그리고 우리는 몇 가지 개념 증명을 보았습니다
+  Original: And we've seen some proof of concepts of this.
+
+- 2026-08-19T02:07:37.867Z [en->ko] 예를 들어, AI 과학자
+  Original: For example, the AI Scientist Project, which I was a part of, showed that AI could handle the entire arc of producing a scientific discovery
+
+- 2026-08-19T02:07:42.899Z [en->ko] 실험을 올리다, 실험을 실행하다.
+  Original: setting up the experiments, running the experiments, visualizing the results, writing the whole paper, and peer reviewing it.
+
+- 2026-08-19T02:07:45.590Z [en->ko] 그것은 우리가 자연 속에서 가지고 있던 일이었다.
+  Original: That was work that we had in nature.
+
+- 2026-08-19T02:07:51.770Z [en->ko] 최근 재귀적으로 우리의 첫 번째 결과를 내놓았습니다
+  Original: At Recursive, we recently published our first results, showing that we created this kind of open-ended self-improvement loop.
+
+- 2026-08-19T02:07:57.446Z [en->ko] 그리고 그것은 정체성을 찾는다.
+  Original: It searches for ideas on how to improve performance on a particular target benchmark.
+
+- 2026-08-19T02:08:07.508Z [en->ko] 아이디어를 떠올리다 예시도 떠올리다.
+  Original: Comes up with the ideas, does the experiments, and if the data supports the fact that that was an improvement, then that kind of starts building on top of that and then goes for the next improvement.
+
+- 2026-08-19T02:08:14.498Z [en->ko] 개선과 세 가지 다른 영역에 우리는 넣습니다
+  Original: And in three different domains, we pointed this search algorithm at these domains that human communities have been working on for months or years.
+
+- 2026-08-19T02:08:17.564Z [en->ko] 그리고 모든 경우에 우리는 데이터를 생성할 수 있었습니다.
+  Original: And in all cases, we were able to produce state-of-the-art results.
+
+- 2026-08-19T02:08:26.353Z [en->ko] 그래서 저는 그게 일반적인 것이라고 생각합니다.
+  Original: So I think that's the general idea: we want to have AI that improves itself, comes up with its own ideas for how to improve itself, and conducts those experiments.
+
+- 2026-08-19T02:08:32.366Z [en->ko] 그리고 나는 앤드류와 동의하는데, 거대한...
+  Original: And I do agree with Andrew that a huge critical component and challenge is reward hacking.
+
+- 2026-08-19T02:08:38.500Z [en->ko] 사실 나는 그게 10배 베팅이 얻어지고 있다고 생각한다
+  Original: And I actually think that's the 10x bet: figuring out how to get really, really good at systems that don't.
+
+- 2026-08-19T02:08:46.503Z [en->ko] 보상 해킹을 하고, 그들이 보상 해킹을 하면 우리가 그들을 잡는다.
+  Original: reward hacking, and we catch them if they do reward hacking, and we can therefore kind of move beyond these very narrow, verifiable domains to more ambitious goals.
+
+- 2026-08-19T02:08:54.967Z [en->ko] 제프가 방금 많은 것을 설명했어요
+  Original: Jeff Clune just explained a lot of important core modules, especially reward hacking at the end.
+
+- 2026-08-19T02:09:01.726Z [en->ko] 나는 단축키를 정의하고 있어요.
+  Original: Defining shortcuts can sometimes seem very dangerous when continuing to evolve the model.
+
+- 2026-08-19T02:09:05.605Z [en->ko] 그리고 그것은 부드럽게 내려갑니다.
+  Original: And it smoothly goes to the next question.
+
+- 2026-08-19T02:09:10.944Z [en->ko] 그것은 모듈이 될 수 있는 것이다.
+  Original: What module can be rewritten for self-improvement?
+
+- 2026-08-19T02:09:23.673Z [en->ko] 그리고 나는 계속 너에게 물어볼 거야, 제프.
+  Original: And I'm going to keep asking Jeff, in one of your works, HyperAgent, you construct the test agent and meta-agent, both as self-editable code.
+
+- 2026-08-19T02:09:34.277Z [en->ko] 그리고 그들 사이에
+  Original: And then, among those, what must be fixed and what can self-evolve, how to distinguish them, and how to determine those components.
+
+- 2026-08-19T02:09:42.627Z [en->ko] 네, 그러니까 하이브리드.
+  Original: Yeah, so, hybridization, which was done by Jenny Zhang in my lab at UBC and at Meta, and with other collaborators.
+
+- 2026-08-19T02:09:51.782Z [en->ko] 그것은 정말 야망이다.
+  Original: It is a really an ambitious project because it allows most of the critical components to become editable and to be changed and modified.
+
+- 2026-08-19T02:10:05.402Z [en->ko] 그리고 변경되고 수정되다.
+  Original: And so Jenny was able to show that hyperagents can not only kind of edit the parts of themselves that are getting better at some downstream task of interest,
+
+- 2026-08-19T02:10:10.482Z [en->ko] 그리고 또한 수정하고 집중하세요.
+  Original: But also edit and focus on how to improve their ability to improve.
+
+- 2026-08-19T02:10:18.026Z [en->ko] 그리고 이것은 매우 강력합니다.
+  Original: And this is extremely powerful, and in many cases, the hyper-agents will actually, if they can improve on one task.
+
+- 2026-08-19T02:10:27.782Z [en->ko] 그것들을 실제로 얼릴 수 있어요. 그들에게 허락하지 마세요
+  Original: You could actually freeze them, not let them self-improve, and still apply them to another task. They would still get better at that task because the meta-skills transfer between tasks.
+
+- 2026-08-19T02:10:41.031Z [en->ko] 그래서 항상 있다
+  Original: So there's always an outer loop. Eventually, you're going to be running any computer algorithm on something that you've hand-designed, like maybe the assembly code or the hardware that you've given it, or something.
+
+- 2026-08-19T02:10:50.089Z [en->ko] 그래서 우리가 최소한 비슷한 것이 있을 때까지
+  Original: So until we at least have, like, recursive robots that are making chips and changing the underlying hardware, there's just exciting some things in the outer loop.
+
+- 2026-08-19T02:10:58.430Z [en->ko] 그리고, 알다시피, 나는 생각해
+  Original: And I think that's okay. It's always interesting to push the boundaries and minimize how much is hand-coded.
+
+- 2026-08-19T02:11:05.455Z [en->ko] 하지만 결국 당신은...
+  Original: But you might ultimately tell a system like HyperAgents some basic instructions.
+
+- 2026-08-19T02:11:13.351Z [en->ko] 우리는 정말 당신이 원해요
+  Original: We really want you to improve yourself and improve in a way that's very general, but also improve on this benchmark or set of benchmarks.
+
+- 2026-08-19T02:11:19.733Z [en->ko] 그리고 우리가 그렇게 할 한 가지 방법.
+  Original: And one way that we're going to do that is we're going to grow an archive of interestingly different versions of yourself.
+
+- 2026-08-19T02:11:27.197Z [en->ko] 그러니까 기본적으로 경험을 수행하는 것처럼.
+  Original: And so, basically, conduct experiments. Try to improve yourself. And every so often, when you tell us, you can copy yourself.
+
+- 2026-08-19T02:11:33.952Z [en->ko] 그럼 우리는 대략 어떤 것을 보게 될 거야
+  Original: And then we'll kind of see which of all the copies should have more compute and more experimentation, and you can even decide that.
+
+- 2026-08-19T02:11:38.363Z [en->ko] 그러니까 그 상위 수준 지시사항들
+  Original: So those high-level instructions you might provide, and everything else is done by the system.
+
+- 2026-08-19T02:11:41.354Z [en->ko] 그것은 매혹적인 건축이다.
+  Original: That's a fascinating architecture.
+
+- 2026-08-19T02:11:52.670Z [en->ko] 그리고 앤드류, 당신은 경험이 많네요
+  Original: Andrew, you have a lot of experience in frontier model building, especially with Gemini, and given the many different frontier layers and stacks.
+
+- 2026-08-19T02:11:57.433Z [en->ko] 당신의 관점에서 스스로 진화하라.
+  Original: Which be self-evolved in your perspective and which should be under human oversight?
+
+- 2026-08-19T02:12:06.943Z [en->ko] 네, 음, 있어요
+  Original: Yeah, AI is already being used to improve these models.
+
+- 2026-08-19T02:12:20.051Z [en->ko] 하지만 그건 무언가가 아니다
+  Original: But it's not something we generally talk about. But, for example, improving the data mixture is a pretty hard thing to do.
+
+- 2026-08-19T02:12:25.171Z [en->ko] 많은 데이터 세트가 있다는 것을 상상할 수 있겠죠.
+  Original: Because you can imagine there are many datasets that are used in a model like Gemini.
+
+- 2026-08-19T02:12:31.016Z [en->ko] 음, 수백부터
+  Original: Hundreds to, I think, sometimes it can be thousands of data sets.
+
+- 2026-08-19T02:12:38.985Z [en->ko] 그리고 각 데이터셋마다 우리는 가지고 있습니다
+  Original: And for each dataset, we have to decide how much data from that dataset we want to use, which we call the mixture weight in the model.
+
+- 2026-08-19T02:12:49.033Z [en->ko] 모델에서.
+  Original: So you can imagine tuning hundreds of these numbers by hand is a lot of work.
+
+- 2026-08-19T02:12:54.551Z [en->ko] 노동이 많이 들고 그것도 매우 비쌉니다.
+  Original: a lot of labor, and it's also very expensive because for every tuning, you need to run an experiment to see if it improves the model or makes it worse.
+
+- 2026-08-19T02:13:07.302Z [en->ko] 그것이 모델을 개선하는지 확인하기 위해.
+  Original: And these dataset mixture weights are not something you can use backpropagation to tune.
+
+- 2026-08-19T02:13:10.487Z [en->ko] 다른 수십억 개의 매개변수를 위해.
+  Original: For the other billions of parameters in these models, right?
+
+- 2026-08-19T02:13:18.274Z [en->ko] 아무도 그것을 손으로 조율하고 있지 않다.
+  Original: No one is tuning them by hand. They're being automatically tuned with backpropagation and gradient descent algorithms.
+
+- 2026-08-19T02:13:21.069Z [en->ko] 특정 매개변수에 대해서는 그렇게 할 수 없습니다.
+  Original: and do that for certain parameters.
+
+- 2026-08-19T02:13:34.244Z [en->ko] 그래서 우리는 이렇게...
+  Original: So, like Gemini, we were exploring techniques to tune those automatically. And I think that's also being more widely used in the industry as well.
+
+- 2026-08-19T02:13:44.247Z [en->ko] 음 그리고 나서
+  Original: And then, like I said, the architecture is, of course, very amenable to optimization in this way.
+
+- 2026-08-19T02:13:46.075Z [en->ko] 해킹에 보상을 주는 것이 더 어렵다.
+  Original: it's harder to reward hack.
+
+- 2026-08-19T02:13:47.934Z [en] but then ultimately
