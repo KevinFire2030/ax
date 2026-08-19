@@ -6,8 +6,13 @@
 
 ## LiveTR
 
-- 채널 코드: `132952`
-- 링크: <https://livetr.flit.to/chat/132952?lang=ko&showOriginalText=false>
+- 채널 코드: `376896`
+- 링크: <https://livetr.flit.to/chat/376896?lang=ko&showOriginalText=false>
+
+## Transcript
+
+- Track D 전체 통역본: [`live-translation-track-d.md`](./live-translation-track-d.md)
+- 10분 조각: [`chunks/`](./chunks/)
 
 ## Sessions
 

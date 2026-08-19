@@ -32,4 +32,4 @@
 | A | <https://livetr.flit.to/chat/132952?lang=ko&showOriginalText=false> |
 | B | 추후 입력 |
 | C | 추후 입력 |
-| D | <https://livetr.flit.to/chat/132952?lang=ko&showOriginalText=false> |
+| D | <https://livetr.flit.to/chat/376896?lang=ko&showOriginalText=false> |
