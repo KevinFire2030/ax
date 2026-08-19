@@ -1,10 +1,10 @@
 ﻿# LiveTR 376896 - Afternoon Session
 
 - Source room: 376896
-- Saved at: 2026-08-19T07:21:19Z
+- Saved at: 2026-08-19T07:32:52Z
 - Language: ko
 - Session start: 2026-08-19 16:00 KST
-- Messages: 68
+- Messages: 136
 
 - 2026-08-19T07:05:27.218Z [ko] 잠시 후 5분 뒤 4시 10분부터 트랙 D 세션이 이어질 예정입니다.
 
@@ -267,5 +267,275 @@
   Original: And how we found those issues was through LLM-as-a-Judge scoring. So we essentially use other LLMs to keep the main LLM in check.
 
 
-- 2026-08-19T07:21:17.815Z [en->ko] 그리고 우리는 이것을 여러 번 했습니다.
-  Original: And we did this multiple times to make sure that we were able to catch these issues. And it's sort of a way to iterate and just make sure that your core LLM is kind of doing the right thing. We'll have another slide in this as well.
+- 2026-08-19T07:21:20.209Z [en->ko] 그리고 우리는 이것을 여러 번 했습니다.
+  Original: And, you know, we did this multiple times to make sure that we were able to catch these issues, and, you know, it's sort of a way to iterate and just make sure that your core LM is kind of doing the right thing. We'll have another slide on this as well. So really...
+
+
+- 2026-08-19T07:21:32.843Z [en->ko] 합성 단계에서 중요한 부분은 허용 목록입니다.
+  Original: An important part of the synthesis step is an allowlist. My co-founder is a clinician, and he went through all the different resources available for diagnosing cancer.
+
+
+- 2026-08-19T07:21:41.968Z [en->ko] 그래서 우리는 그것들을 1단계, 2단계, 3단계로 나누었습니다.
+  Original: So we broke them up into Tier 1, Tier 2, and Tier 3. The government and public health resources, like NCI, NIH, and ClinicalTrials.gov, are sort of the gold standard.
+
+
+- 2026-08-19T07:21:48.143Z [en->ko] 그리고 나서 2단계로 내려갑니다.
+  Original: And then it goes down to tier two, which is the academic and peer-reviewed sources, and then tier three would be reputable nonprofits, so.
+
+
+- 2026-08-19T07:21:54.669Z [en->ko] 우리는 대략적으로 LLM이 ...임을 확인했다
+  Original: We sort of made sure that the LLM was only able to retrieve information from these kinds of gold-standard sources.
+
+
+- 2026-08-19T07:22:04.775Z [en->ko] 그리고 이것은 정말 중요합니다.
+  Original: And this is a really important slide. So essentially, what we discovered—and, you know, we're kind of moving in this direction as well—
+
+
+- 2026-08-19T07:22:09.936Z [en->ko] 그게 LLM이 만들 수 있도록 허용하는 건가요
+  Original: Is that allowing the LLMs to make claims? So generating the claims didn't work.
+
+
+- 2026-08-19T07:22:20.289Z [en->ko] 그래서 우리는 우리 버전을 선호했습니다
+  Original: And so we preferred our version two, which first curates the source and then synthesizes, so we prevent the LLM from generating treatment options altogether.
+
+
+- 2026-08-19T07:22:28.323Z [en->ko] 그리고 이렇게 함으로써,
+  Original: And so, by doing this, we found that, for the cancer types we tested, it produced more clinically sound standards of care.
+
+
+- 2026-08-19T07:22:37.288Z [en->ko] 그리고 그것은 또한 제공할 수 있었다
+  Original: And it was also able to provide, you know, a pretty complete set of options—five to 12 options—for every treatment that we had.
+
+
+- 2026-08-19T07:22:56.002Z [en->ko] 그리고 다시,
+  Original: And again, we are a little bit less sort of dangerous than other clinical AI because our product has clinician review baked in, right? So before any patient sees a treatment map, we always make sure that a clinician or a clinician navigator reads through the options as well.
+
+
+- 2026-08-19T07:23:10.405Z [en->ko] 그래, 다시.
+  Original: So yeah, again, the major issues with our first version were that there were a lot of hallucinations. A lot of the options went away because of the dinner citations, and yeah, we kind of decided to move more strongly toward the curation route.
+
+
+- 2026-08-19T07:23:20.270Z [en->ko] 그리고 내가 방금 이야기한 이 아이디어들 중 일부는
+  Original: And some of these ideas that I just talked about, they're not new.
+
+
+- 2026-08-19T07:23:28.526Z [en->ko] 그들은 연구 문헌에 한동안 등장해 왔다.
+  Original: They've been in the research literature for some time, and they've helped us improve the LLM, the OpenAI LLM, out of the box.
+
+
+- 2026-08-19T07:23:37.418Z [en->ko] 그래서 첫 번째이자 가장 중요한 것은 RAG입니다.
+  Original: And so the first and most important one is RAG, the source-restricted RAG. So basically providing that context to OpenAI, but kind of restricting where that context comes from.
+
+
+- 2026-08-19T07:23:44.886Z [en->ko] 인용 벤치마킹은 정말 중요합니다.
+  Original: Citation benchmarking is really important. So we also make sure that every single option that comes from the LM has a citation.
+
+
+- 2026-08-19T07:23:49.653Z [en->ko] LLMS가 판단하겠어요. 잠시 후에 이야기할게요.
+  Original: And then preference optimization is actually fine-tuning, so...
+
+
+- 2026-08-19T07:24:06.112Z [en->ko] 우리는 인간을 포함시킬 수 있습니다
+  Original: We're able to include human-in-the-loop feedback loops because, by passing accept/reject options to the LLM, we're able to fine-tune it and make sure that, for example, the output coming from GPT Nano meets empathy requirements.
+
+
+- 2026-08-19T07:24:12.687Z [en->ko] 그것은 다소 쉬운 언어에 맞습니다.
+  Original: It fits kind of plain language. And so we're actually able to score based on various preferences and pass it back for fine-tuning.
+
+
+- 2026-08-19T07:24:18.278Z [en->ko] 그래서 다시 말하지만, 이건 전부예요.
+  Original: So again, these are all kind of standard ideas in the literature.
+
+
+- 2026-08-19T07:24:33.415Z [en->ko] 그냥 여러분에게 여행이 어떤 건지 보여주려고요.
+  Original: So, just to show you guys what a treatment map looks like, the patient data looks exactly like what you'd expect: what type of cancer, what's the staging of the tumor, is it high-grade or low-grade, the age band, and then...
+
+
+- 2026-08-19T07:24:42.261Z [en->ko] 우리는 캠프라고 불리는 기준을 통과한다.
+  Original: We pass through into what's called a standard of care. So this is basically what the doctor or the oncologist would prescribe based on the available kind of knowledge about the disease.
+
+
+- 2026-08-19T07:24:52.454Z [en->ko] 그래서 우리 아버지의 경우, 이것은
+  Original: So in the case of my father, this was neoadjuvant cisplatin, which would then be followed by a radical nephroureterectomy, which is essential for removing the kidney and the ureter.
+
+
+- 2026-08-19T07:25:05.390Z [en->ko] 그리고 나서.
+  Original: And then one important thing as well is that when we do intake, we also have a clinical question bank because every cancer type has different questions that need to be asked for the patient, and so...
+
+
+- 2026-08-19T07:25:11.887Z [en->ko] 우리는 문제 은행을 만들었습니다.
+  Original: We built a question bank and a separate ontology so that we knew precisely which questions to ask for every patient.
+
+
+- 2026-08-19T07:25:15.535Z [en->ko] 그래서 우리는 그것을 별도의 프로세스에서 했습니다.
+  Original: And so we did that in a separate process, but I'll talk about it in a second.
+
+
+- 2026-08-19T07:25:25.913Z [en->ko] 그리고 이것들이 대안입니다.
+  Original: And then these are the alternatives. So, on top of the standard of care, we also want the patient to know what other drug, surgical, or off-label alternatives there are.
+
+
+- 2026-08-19T07:25:38.122Z [en->ko] 그래서 임상 시험도 이 과정의 일부가 될 것입니다.
+  Original: And so clinical trials would also be part of this. But, you know, the alternative would be to take immunotherapy plus chemotherapy, or another alternative might be to do radical surgery versus kidney-sparing surgery. So maybe there's an
+
+
+- 2026-08-19T07:25:46.387Z [en->ko] 아버지의 신장을 보존하는 방안.
+  Original: option to save my father's kidney. And so, you know, the doctor—the reason I built Valent is because the doctor doesn't necessarily tell you about all these things, right?
+
+
+- 2026-08-19T07:25:54.733Z [en->ko] 그래서 당신은 일종의 필요했어요.
+  Original: So you're kind of required to do the research yourself and make sure that you're advocating for your own care. And we're trying to make that as easy as possible for patients.
+
+
+- 2026-08-19T07:26:08.637Z [en->ko] 그래서.
+  Original: And so, talking about LLM-as-a-Judge scoring, it was pretty clear that some aspects of the AI that we built were pretty good, and some aspects were not so good.
+
+
+- 2026-08-19T07:26:17.522Z [en->ko] 그리고 오늘 우리가 있는 곳은 바로 그곳이다
+  Original: And so, where we are today is that we know basically all of our treatment maps include a standard of care, so we never miss the standard of care in treatment.
+
+
+- 2026-08-19T07:26:26.441Z [en->ko] 그 위에, 우리는 0%를 발견했다
+  Original: And on top of that, we found that 0% of our treatment maps are rated as severe harm. Right. So we're not severely harming the patient with our recommendations.
+
+
+- 2026-08-19T07:26:35.662Z [en->ko] 오늘날의 현재 격차가 완전히
+  Original: The current gaps today lie in completeness, and so the LLM-as-a-Judge rated our maps at 3.7 out of 5 in terms of average completeness.
+
+
+- 2026-08-19T07:26:41.029Z [en->ko] 우리가 ...의 기준을 제공하고 있었음에도 불구하고...
+  Original: Even though we were providing the standard of care, we weren't providing every single option.
+
+
+- 2026-08-19T07:26:52.561Z [en->ko] 그리고 이것은 우리가 우리의 제한하고 있기 때문에 이해가 됩니다
+  Original: And this makes sense because we're limiting our corpus. We're limiting the RAG to only certain sources. So, naturally, we're not getting all the possible alternatives.
+
+
+- 2026-08-19T07:27:04.604Z [en->ko] 그리고 그 순서도 완전히 아니다
+  Original: And then the ordering is also not completely correct. So, you know, based on human-in-the-loop scoring and LM scoring, we are about half the time correct in ordering the different options in terms of importance.
+
+
+- 2026-08-19T07:27:13.220Z [en->ko] 그리고 우리가 사용하는 방법은
+  Original: And the method that we use to score our LLM was using open-source LLMs as a judge. So we use all seven in OpenEvidence.
+
+
+- 2026-08-19T07:27:22.490Z [en->ko] 그리고 나서 우리는 그것을 합성 물질에도 시험해 보았습니다.
+  Original: And then we also tested it on synthetic maps. So we generated about 500 synthetic maps for 10 cancer subtypes to produce these metrics.
+
+
+- 2026-08-19T07:27:32.164Z [en->ko] 그래서 추론 설계로 넘어갑니다.
+  Original: And so, moving into the inference design, this is going to be a fairly technical part.
+
+
+- 2026-08-19T07:27:37.672Z [en->ko] 알다시피, 두 가지 종류의 추론이 있어요
+  Original: You know, there are two types of reasoning that we do for clinical AI. The first is
+
+
+- 2026-08-19T07:27:46.479Z [en->ko] 일종의 최전선 추론.
+  Original: of the frontier reasoning, and I would consider this to be the more on-demand and complex medical reasoning that the open-source models would not be able to support.
+
+
+- 2026-08-19T07:27:58.122Z [en->ko] 그래서 이것들은 치료를 합성하는 것과 같은 것들입니다
+  Original: So these are things like synthesizing the treatment map, you know, summarizing all the different options, making sure the citations are correct, and reinterpreting the actual treatment options to be more patient-friendly.
+
+
+- 2026-08-19T07:28:05.261Z [en->ko] 그러니까, 아시다시피, 이것들은,
+  Original: So these are, you know, natural language tasks that we didn't want the open-source model to kind of handle.
+
+
+- 2026-08-19T07:28:17.537Z [en->ko] 하지만 그 밖에도 많은 것들이 있습니다.
+  Original: But there's also a lot of other things that the open-source models are perfectly capable of handling. So obviously, we use them for LLM-as-a-Judge scoring. Probably the most important thing we did was question bank generation, so...
+
+
+- 2026-08-19T07:28:27.258Z [en->ko] 우리는 질문을 생성했습니다.
+  Original: We generated the question bank in batch outside of real time. So this is essentially determining the relevant questions for every cancer type.
+
+
+- 2026-08-19T07:28:37.203Z [en->ko] 그리고 또 많은 것이 있다
+  Original: And then there's a whole bunch of natural language tasks and corpus pipelining that we did with the models as well. That doesn't necessarily require, you know, cutting-edge frontier models.
+
+
+- 2026-08-19T07:28:47.046Z [en->ko] 하지만 기본적으로 당신이 이것을 하는 이유는
+  Original: But basically, the reason you do this is because there's a whole bunch of non-latency-critical tasks and workflows that don't require frontier accuracy.
+
+
+- 2026-08-19T07:28:51.462Z [en->ko] 그것은 지역 모델에 어느 정도 완벽하게 맞습니다.
+  Original: It's sort of a perfect fit for the local models.
+
+
+- 2026-08-19T07:29:03.089Z [en->ko] 그래서 나는
+  Original: And so I'm an early-stage startup. You know, we're a small company, so every dollar matters. What I did was buy this hardware myself, which was about $10,000 upfront.
+
+
+- 2026-08-19T07:29:10.366Z [en->ko] 그리고 기본적으로 돈을 쓰는 것으로
+  Original: And basically, by spending money on four GPUs and installing my own local models on the rig,
+
+
+- 2026-08-19T07:29:16.552Z [en->ko] 우리는 연간 약 2만을 절약할 수 있습니다.
+  Original: We're able to save about $20K per year compared with using AWS.
+
+
+- 2026-08-19T07:29:25.759Z [en->ko] 그것은 어느 정도 합리적이다.
+  Original: And it's somewhat reasonable. We're able to process about 1,400 tokens per second. At full concurrency, we're able to run these batch workflows pretty well.
+
+
+- 2026-08-19T07:29:40.152Z [en->ko] 그리고 다시, 사용하여
+  Original: And again, using these non-frontier open-source models, you don't require perfect accuracy, as you know, with GPT-5 or whatnot. So we save a lot of money using them as well.
+
+
+- 2026-08-19T07:29:47.717Z [en->ko] 우리가 지금 사용하는 것은 ~라고 불립니다
+  Original: The one we use right now is called Qwen 2.5 Aloe Beta. It's a 7-billion-parameter model, and we run it off of VLM.
+
+
+- 2026-08-19T07:29:54.391Z [en->ko] 특히 콘텐츠에서요.
+  Original: And, you know, especially in context, which is our use case, it actually does pretty well compared to MedPalm and GPT-4.
+
+
+- 2026-08-19T07:29:59.100Z [en->ko] 너희는 익숙하지 않아. 메트 팜은 아쥬르이다.
+  Original: Guys who aren't familiar, Med-PaLM is the Azure model that's kind of closed-source.
+
+
+- 2026-08-19T07:30:05.761Z [en->ko] 그리고 GPT-4에서는, Met Prompt도 또한...
+  Original: And GPT-4 MedPrompt is also the GPT-4 version that's fine-tuned for medical Q&A.
+
+
+- 2026-08-19T07:30:14.017Z [en->ko] 제가 강조한 줄을 보면.
+  Original: So if you look at the line that I highlighted, Qwen 2.5 7B has comparable results to those two models. So that's why we selected it.
+
+
+- 2026-08-19T07:30:21.905Z [en->ko] 그리고 일곱 개의 B 같은.
+  Original: And the 7B sort of model was a perfect fit for my rig, so it fits kind of roughly across four GPUs.
+
+
+- 2026-08-19T07:30:30.833Z [en->ko] 제 생각엔 8비트 양자화된 것 같아요.
+  Original: You know, downsampled versus the real model. But, but, yeah, but it works for what we need to do. And there are other options as well. But I think it's a bit quantized, so it's somewhat...
+
+
+- 2026-08-19T07:30:40.087Z [en->ko] 뿐만 아니라. 메트가마가 있고, 구글 모델도 있어요.
+  Original: As well, there's this MedGemma. There's a Google model, you know. There's Llama, the Llama-tuned models as well. So there's a lot of different options out here for running your own local...
+
+
+- 2026-08-19T07:30:54.953Z [en->ko] 워크플로우.
+  Original: And so, yeah, I think that's everything. Hopefully, this was useful for anyone trying to build their own LMS and make frontier models a bit more reliable for their use case.
+
+
+- 2026-08-19T07:31:00.985Z [en->ko] 나는 실제로 내가 사용하는 기법들에 대해 생각한다
+  Original: I actually think that the techniques that I used here are applicable in areas outside of healthcare as well.
+
+
+- 2026-08-19T07:31:09.156Z [en->ko] 네, 언제든지 기꺼이 이야기 나눌게요.
+  Original: But yeah, I'm happy to chat anytime with anyone building something similar, or you can email me as well. But yeah, I appreciate the time, and thanks. Thanks for having me.
+
+
+- 2026-08-19T07:31:17.975Z [en->ko] 감사해요.
+  Original: Thank you very much, Mr. Jack Chua, for your wonderful and insightful presentation.
+
+
+- 2026-08-19T07:31:30.196Z [en->ko] 배우는 것이 흥미로웠다.
+  Original: It was fascinating to learn about AI in healthcare and hear the story behind why you started your company. Thank you again for sharing your insights with us.
+
+
+- 2026-08-19T07:31:40.134Z [ko] 마지막 섹션은 4시 40분에 마치도록 하겠습니다. 그러면 4시 40분에 다시 인사드리도록 하겠습니다.
+
+
+- 2026-08-19T07:31:42.898Z [ko] 감사합니다.
