@@ -1,7 +1,7 @@
 # LiveTR 180342
 
 - Title: Keynote & Track B
-- Saved at: 2026-08-19T03:05:40.098Z
+- Saved at: 2026-08-19T03:57:24.259Z
 - Language: ko
 - Messages: 1291
 - 2026-08-19T00:01:18.394Z [en->ko] AI 서밋 서울 2026에 오신 것을 환영합니다. 🤖
