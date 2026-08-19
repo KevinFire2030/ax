@@ -1,10 +1,10 @@
 ﻿# LiveTR 110951 - Afternoon Session
 
 - Source room: 110951
-- Saved at: 2026-08-19T07:16:03Z
+- Saved at: 2026-08-19T07:21:11Z
 - Language: ko
-- Session start: 2026-08-19 13:00 KST
-- Messages: 55
+- Session start: 2026-08-19 16:00 KST
+- Messages: 92
 
 - 2026-08-19T07:05:17.195Z [en->ko] 오후 4시 10분에 곧 시작하도록 하겠습니다. 🤖
   Original: We will begin shortly at 4:10 p.m.
@@ -190,4 +190,127 @@
 - 2026-08-19T07:15:56.490Z [ko] 그다음에 AI에게 브랜드를 어떻게 이해시킬지 생각해 보고
 
 
-- 2026-08-19T07:16:02.303Z [ko] 여전히 사람이 루프 안에 있는 게 중요하죠. 어떻게 사람이 고품질의 컨텐츠를 만들어낼까.
+- 2026-08-19T07:16:03.344Z [ko] 여전히 사람이 루프 안에 있는 것이 중요하죠. 어떻게 하면 사람이 고품질의 콘텐츠를 만들어낼 수 있을까.
+
+
+- 2026-08-19T07:16:07.781Z [ko] 또 네 번째는 사람이 만든 좋은 창작 방법을 어떻게 확장할 수 있을까?
+
+
+- 2026-08-19T07:16:14.722Z [ko] 또 콘텐츠를 만들면 시장에 내보내기 전에 검증을 해야 되는데, 어떻게 브랜드다움을 검증할까?
+
+
+- 2026-08-19T07:16:21.358Z [ko] 이 다섯 가지를 Adobe가 어떻게 바라보고 있는지 간략하게 설명드리려고 합니다.
+
+
+- 2026-08-19T07:16:25.216Z [ko] 브랜드가 뭐냐고 물어보면 이거 실제로 어도비의 브랜드 가이드라인이거든요.
+
+
+- 2026-08-19T07:16:35.904Z [ko] 네. 브랜드가 뭐냐면, 브랜드 가이드라인을 통해서 이런 색깔이 있고 이런 템플릿이 있고 이런 폰트를 쓰게 돼요, 라고 얘기하지만.
+
+
+- 2026-08-19T07:16:45.161Z [ko] 이런 브랜드 가이드라인에 따라서 콘텐츠를 만들어도 경험이 많은 브랜드 디렉터는 "이 콘텐츠는 좀 우리 것과 안 맞는데?"라고 얘기할 수 있습니다.
+
+
+- 2026-08-19T07:16:55.926Z [ko] 사실 브랜드를 빙산에 비유하자면, 브랜드 가이드라인은 굉장히 일부에 불과하고 그 수면 아래에는 명문화되지 않은 것들이 대부분입니다.
+
+
+- 2026-08-19T07:17:10.110Z [ko] 우리라면 이렇게 제품을 크게 보여주지 않았을 텐데, 이 카피는 틀리지는 않았지만 우리가 할 법한 말이 아니다. 수년 동안 사람들이 승인하고 반려하고 또 수정하면서 쌓아올린, 명문화되지는 않은 부분들이 많이 있게 되는데요.
+
+
+- 2026-08-19T07:17:16.852Z [ko] AI 시대의 브랜드를 정의할 때는 사실 이 부분도 브랜드 자산과 지식으로 정의가 돼야 되겠죠.
+
+
+- 2026-08-19T07:17:32.906Z [ko] 자산도 사실 저희가 뭐 데미라든가 얘기해서 에셋을 많이 정의하는데, 콘텐츠가 자산이라고 하면 히어로 비주얼을 하나 만들고 다음 캠페인을 하려면 다시 시작을 해야 되겠죠.
+
+
+- 2026-08-19T07:17:41.603Z [ko] 그래서 생성형 AI 시대에는 모델 자체가 자산이어야 하고, 이 콘텐츠를 만들어낸 워크플로우 자체가 자산이 되어야지만
+
+
+- 2026-08-19T07:17:48.416Z [ko] 콘텐츠를 하나 만들어내는 게 아니라, 이 콘텐츠를 언제든 다시 만들어낼 수 있는 시스템을 가져갈 수 있습니다.
+
+
+- 2026-08-19T07:17:55.203Z [ko] 두 번째는 AI에게 어떻게 브랜드를 이해시킬까라는 건데요.
+
+
+- 2026-08-19T07:18:03.290Z [ko] 사실 범용 AI 모델이 정말 좋아져서 우리 브랜드도 잘 이해하고 있습니다. 한 번 써보시면 알겠지만, 깊이 이해하고 있지는 못해요.
+
+
+- 2026-08-19T07:18:22.567Z [ko] 어도비 로고도 이렇게 좀 다르게 풀어주는데, 왜냐하면 생성형 AI한테 결국 우리 브랜드를 프롬프트로 써서 설명하거나 레퍼런스를 던져줘야만 되는데, 프롬프트가 바뀌거나 레퍼런스가 바뀌면 다시 시작해야 되겠죠. 그래서 조직 내에서 브랜드의 일관성을 유지하는 게 좀 어렵다고 얘기합니다.
+
+
+- 2026-08-19T07:18:25.942Z [ko] 얘기할 수 있습니다. 그래서 어도비는 이거를 범용에
+
+
+- 2026-08-19T07:18:30.134Z [ko] AI 모델을 다양하게 커스터마이징할 수 있는 방법을 제공하는데요.
+
+
+- 2026-08-19T07:18:46.471Z [ko] 레퍼런스를 던져줘서 일회성으로 우리 브랜드답게 할 수도 있고요. 파이어플라이 커스텀 모델이라고 해서 하나의 스타일이라든가 캐릭터를 10장에서 한 30장 정도 학습시켜 놓고 조직에서 사용하는 방법도 있습니다.
+
+
+- 2026-08-19T07:19:05.769Z [ko] 그리고 베이스 모델 자체를 기업이 가지고 있는 콘텐츠라든가 IP로 딥하게 튜닝할 수가 있는데요. 사실 브랜드라는 건, 특히 큰 브랜드는 하나의 캐릭터나 하나의 스타일이 아니잖아요. 그 안에 여러 가지 캐릭터, 여러 가지 스타일, 또 공간감, 둘 사이의 상관관계가 있다고 하면
+
+
+- 2026-08-19T07:19:13.019Z [ko] 그걸 파운드리 안에서 이 모든 것을 교육시켜서, 또 멀티모달 출력물로 얻어낼 수 있는 방법도 있는 것 같습니다.
+
+
+- 2026-08-19T07:19:18.064Z [ko] 이거는 커스텀 모델의 예시인데요. 캠페인을 하려고 이렇게 사진을 찍어놨습니다.
+
+
+- 2026-08-19T07:19:23.136Z [ko] 그리고 이거를 커스텀 모델로 학습시키면 아웃풋이 이렇게 나와요.
+
+
+- 2026-08-19T07:19:27.821Z [ko] 그전에 없었던 고향이라든가 여러 가지 사람들이 나오는데
+
+
+- 2026-08-19T07:19:40.503Z [ko] 스타일은 그대로 유지하면서 다른 객체들을 생산해낼 수 있습니다. 그래서 실제로 이 커스텀 모델을 활용하면서 콘텐츠 제작 속도라든가 콘텐츠 제작 비용을 낮추고 있는데요.
+
+
+- 2026-08-19T07:19:47.323Z [ko] 그래서 가장 딥하게 튜닝할 수 있는 파운드리 모델은 화면을 보면서 말씀드리도록 하겠습니다.
+
+
+- 2026-08-19T07:19:56.589Z [en->ko] 새로운 영상과 몰입형 콘텐츠에 대한 수요가 폭발적으로 증가하고 있습니다.
+  Original: The demand for fresh video and immersive content is exploding. Studios and creatives need faster, smarter ways to bring bold stories to life.
+
+
+- 2026-08-19T07:20:00.856Z [en->ko] 미디어 프랜차이즈는 끊임없는 스트림이 필요하다
+  Original: Media franchises need a constant stream of fresh content to reach global audiences.
+
+
+- 2026-08-19T07:20:06.341Z [en->ko] 생성형 AI이 잠금 해제되었습니다
+  Original: Generative AI is unlocking new opportunities in complex media creation workflows.
+
+
+- 2026-08-19T07:20:11.839Z [en->ko] 어도비 파이어플라이.
+  Original: Adobe Firefly Foundry begins with Firefly's commercially safe base models trained on hundreds of millions of licensed assets.
+
+
+- 2026-08-19T07:20:24.085Z [en->ko] 그럼 그것은 당신의 것을 통합합니다
+  Original: Then, it incorporates your own IP—images, video, 3D, and audio—to create a custom Foundry model just for you.
+
+
+- 2026-08-19T07:20:30.410Z [en->ko] 어도비는 당신의 IP를 다른 곳에서 절대 사용하지 않습니다.
+  Original: Adobe never uses your IP anywhere else. All outputs and models stay exclusively within your organization for your use.
+
+
+- 2026-08-19T07:20:40.125Z [en->ko] 거버넌스와 접근 제어는
+  Original: Governance and access control are managed by you. With your Foundry models, you can generate new content based on your IP and align it with your brand IP or series.
+
+
+- 2026-08-19T07:20:43.801Z [en->ko] 이는 프랜차이즈를 확장할 수 있다는 뜻입니다
+  Original: This means you can extend franchises with short-form content.
+
+
+- 2026-08-19T07:20:48.189Z [en->ko] 다양한 플랫폼을 위해 장면을 리믹스했습니다.
+  Original: Remix scenes for different platforms and react to cultural moments in real time.
+
+
+- 2026-08-19T07:20:53.379Z [en->ko] 정적인 이미지부터 전체 스토리까지.
+  Original: From static images to full storyboards, from animatics to the final frame.
+
+
+- 2026-08-19T07:21:07.616Z [en->ko] 팀이 만든 것을 곱할 수 있습니다.
+  Original: You can multiply what your team creates while staying true to the franchise. Foundation models work seamlessly in Adobe apps and workflows and with your existing production tools, so your brands and franchises can scale with speed and consistency.
+
+
+- 2026-08-19T07:21:11.073Z [en->ko] 어도비 파이어플라이 파운드리.
+  Original: Adobe Firefly Foundry, bringing Adobe's unique expertise
