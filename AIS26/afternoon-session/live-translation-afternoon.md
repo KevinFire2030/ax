@@ -1,10 +1,10 @@
 ﻿# LiveTR 132952 - Afternoon Session
 
 - Source room: 132952
-- Saved at: 2026-08-19T05:28:15Z
+- Saved at: 2026-08-19T05:29:58Z
 - Language: ko
 - Session start: 2026-08-19 13:00 KST
-- Messages: 376
+- Messages: 389
 
 - 2026-08-19T04:26:53.728Z [en->ko] 잠시 후 AI Summit Seoul 2026이 시작될 예정입니다. 참석자 여러분께서는 행사장 안으로 입장하시어 자리에 착석해 주시기 바랍니다. 🤖
   Original: 2026 will begin shortly. We kindly ask all participants to make their way into the hall and take their seats.
@@ -1336,5 +1336,57 @@
   Original: We gave it access to that. We told it, "Use this." We said, "Find the answers to these questions by any means necessary."
 
 
-- 2026-08-19T05:28:14.274Z [en->ko] 그것은 어떠한 것도 위반하지 않았습니다...
-  Original: It did not violate any instruction.
+- 2026-08-19T05:28:15.962Z [en->ko] 그것은 어떠한 것도 위반하지 않았습니다...
+  Original: It did not violate any instruction or any boundary.
+
+
+- 2026-08-19T05:28:22.901Z [en->ko] 그래, 그랬다.
+  Original: Yes, it was just more creative than humans.
+
+
+- 2026-08-19T05:28:32.028Z [en->ko] 네, 그리고 이것이 제가 계속 말하는 이유예요
+  Original: Yes? And this is why I keep saying, even though the five steps are what we follow for humans, they are not humans.
+
+
+- 2026-08-19T05:28:35.683Z [en->ko] 그리고 우리는 생각해야 합니다.
+  Original: And we have to think in their terms.
+
+
+- 2026-08-19T05:28:46.984Z [en->ko] 네, 그것은 70번 실행했습니다
+  Original: Yes, it executed 17,600 steps. Yeah, Hugging Face and got the answers.
+
+
+- 2026-08-19T05:28:54.640Z [en->ko] 완료되었습니다.
+  Original: It completed the task it was given within the bounds of the instructions and access it was given.
+
+
+- 2026-08-19T05:29:01.591Z [en->ko] 너
+  Original: Mean time to revoke is extremely important.
+
+
+- 2026-08-19T05:29:14.709Z [en->ko] 하자마자
+  Original: So supervision failed in that case, yes. But as soon as you find out that something is going wrong or the task is complete, how quickly are you able to offboard them?
+
+
+- 2026-08-19T05:29:27.037Z [en->ko] 는 매우 중요합니다.
+  Original: is extremely important. And in most companies, if you cannot tell which or how many agents are in the organization and what credentials they hold, you cannot afford them.
+
+
+- 2026-08-19T05:29:33.349Z [en->ko] 네, 나 나갔어요.
+  Original: Yes, I'm out of time, so I'll be very, very quick.
+
+
+- 2026-08-19T05:29:39.795Z [en->ko] 여기부터. 이것이 다섯 단계입니다.
+  Original: these are the five steps. Same as humans—same same, but different.
+
+
+- 2026-08-19T05:29:46.519Z [en->ko] 아.
+  Original: And I'll skip through because I'm over time.
+
+
+- 2026-08-19T05:29:52.590Z [en->ko] 이것들이 질문들입니다.
+  Original: These are the questions you must keep in mind. This is the slide to take a picture of, not my disclaimer slide.
+
+
+- 2026-08-19T05:29:56.384Z [en->ko] 청중에게 가지고 있는 대리인들을 나열할 수 있나요?
+  Original: Can you list the agents that you have in the audience?
