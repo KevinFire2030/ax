@@ -10,3 +10,14 @@
 | Track D | [`D/`](./D/) | Track D 세션 자료 |
 
 전하께서 실제로 들은 세션은 해당 트랙 폴더에 요약본과 참고 자료를 추가합니다.
+
+## Selected Track Order
+
+전하 참석 예정 트랙 순서: A -> A -> D -> B -> B -> B -> B
+
+| 트랙 | 참석 예정 수 |
+| --- | ---: |
+| Track A | 2 |
+| Track B | 4 |
+| Track C | 0 |
+| Track D | 1 |
