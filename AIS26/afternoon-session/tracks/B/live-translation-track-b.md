@@ -1,10 +1,10 @@
 ﻿# LiveTR 180342 - Afternoon Session
 
 - Source room: 180342
-- Saved at: 2026-08-19T06:08:48Z
+- Saved at: 2026-08-19T06:18:15Z
 - Language: ko
 - Session start: 2026-08-19 15:00 KST
-- Messages: 70
+- Messages: 92
 
 - 2026-08-19T06:00:02.062Z [en->ko] 다음 주는 지금 저희 팀에게 아무런 도움이 되지 않습니다. 🤖
   Original: Next week doesn't help my team now.
@@ -270,16 +270,95 @@
   Original: Again, entertainment is a big part of our lives.
 
 
-- 2026-08-19T06:07:43.762Z [en->ko] 이 에이전트들이 컨텍스트와 함께 베이크될 수 있는 시나리오가 될 수 있습니다.
+- 2026-08-19T06:07:43.762Z [en->ko] 이러한 에이전트들이 컨텍스트와 함께 구축될 수 있는 시나리오들이 존재합니다. 🤖
   Original: There can be scenarios where these agents can be baked with context.
 
 
-- 2026-08-19T06:07:52.180Z [en->ko] 그리고 당신은 영화에 등장인물이 있습니다.
+- 2026-08-19T06:07:52.180Z [en->ko] 영화 속 캐릭터가 단순히 고정된 시점의 내용을 관람하는 것을 넘어, 여러분 자신만의 개인화된 여정으로 안내할 때를 생각해 보십시오. 🤖
   Original: When you have characters in a movie take you on your own personalized journey, versus just watching something that's fixed at points in time.
 
 
-- 2026-08-19T06:07:58.168Z [en->] 우리가
+- 2026-08-19T06:07:58.168Z [en->ko] 저희는 실시간 AI를 위한 매우 흥미로운 새로운 시대에 살고 있습니다. 🤖
   Original: We are in a new era, a very, very exciting era for real-time AI.
 
 
-- 2026-08-19T06:07:59.832Z [en] Like text was the first unlock.
+- 2026-08-19T06:08:03.985Z [en->ko] 텍스트가 첫 번째 혁신을 이끌어냈고, 이후 음성이 도입되면서 AI는 더욱 인간적으로 느껴지게 되었습니다. 🤖
+  Original: Like text was the first unlock, and then voice made AI feel more human.
+
+
+- 2026-08-19T06:08:08.357Z [en->ko] 그리고 비디오는 몰입과 참여의 마지막 단계입니다. 🤖
+  Original: And video is this final layer of immersion and engagement.
+
+
+- 2026-08-19T06:08:13.099Z [en->ko] 그것이 우리 모두에게 AI를 더욱 개인화된 것처럼 느끼게 합니다. 🤖
+  Original: That makes AI feel more personalized to all of us.
+
+
+- 2026-08-19T06:08:15.933Z [en->ko] 경청해 주셔서 감사합니다. 🤖
+  Original: Thank you for listening to this.
+
+
+- 2026-08-19T06:08:22.154Z [en->ko] Synthesia에 대해 더 자세히 알고 싶으시면 엑스포에 마련된 저희 부스를 방문해 주시기 바랍니다. 부스를 둘러보시면서 저희를 찾으실 수 있습니다. 🤖
+  Original: If you want to learn more about Synthesia, we have a booth at the expo. You can walk around and find us there.
+
+
+- 2026-08-19T06:08:25.783Z [en->ko] 네, 시간을 내어 제 이야기를 들어주셔서 감사합니다. 🤖
+  Original: And yeah, thanks for taking the time to listen to me.
+
+
+- 2026-08-19T06:08:32.207Z [en->ko] Joshua Oluwagbemiga 님, 정말 감사합니다. 질문 몇 가지를 받도록 하겠습니다. 🤖
+  Original: Thank you so much, Joshua Oluwagbemiga. I'm happy to take a few questions.
+
+
+- 2026-08-19T06:08:39.170Z [ko] 저희가 간단하게 현장에서 질의응답 시간을 가져보도록 하겠습니다.
+
+
+- 2026-08-19T06:08:45.540Z [ko] 아까처럼 질문이 있으시다면 거수해 주시면 저희가 마이크를 전달해 드리도록 하겠습니다.
+
+
+- 2026-08-19T06:08:48.031Z [ko] 혹시 질문이 있으실까요?
+
+
+- 2026-08-19T06:08:51.105Z [en->ko] 질문 있으십니까? 🤖
+  Original: Do you have any questions?
+
+
+- 2026-08-19T06:09:04.364Z [en->ko] 발표는 여전히 완벽했다고 생각합니다, 그렇지 않나요? 🤖
+  Original: I think your presentation was still perfect, right?
+
+
+- 2026-08-19T06:09:07.144Z [en->ko] 모두 명확하게 이해하셨으리라 생각합니다. 감사합니다. 🤖
+  Original: Everyone understood so clearly. Thank you.
+
+
+- 2026-08-19T06:09:13.298Z [en->ko] 네, 더 이상 질문이 없으신 것으로 보여 이만 질의응답을 마무리하도록 하겠습니다. 🤖
+  Original: Okay, so it looks like we don't have any more questions, so we'll wrap up the Q&A here just like that.
+
+
+- 2026-08-19T06:09:17.828Z [ko] 네, 그럼 이것으로 조슈아님의 발표와 강연을 마치도록 하겠습니다.
+
+
+- 2026-08-19T06:09:20.353Z [ko] 네, 감사합니다.
+
+
+- 2026-08-19T06:09:28.995Z [ko] 저희는 잠시 10분간 휴식 시간을 가진 뒤, 다음 강연을 3시 20분부터 바로 이어서 시작하겠습니다.
+
+
+- 2026-08-19T06:09:38.464Z [ko] 간단하게 화장실 갔다 오시고 휴식 시간을 가지신 뒤, 저희가 3시 20분에 다시 세션을 재개하도록 하겠습니다.
+
+
+- 2026-08-19T06:09:40.980Z [ko] 그럼 잠시 후에 뵙겠습니다.
+
+
+- 2026-08-19T06:14:56.466Z [ko] 잠시 후 3시 20분에 다음 세션 재개될 예정입니다.
+
+
+- 2026-08-19T06:14:59.207Z [ko] 모두 입장하셔서 착석해 주시기 바랍니다.
+
+
+- 2026-08-19T06:15:05.579Z [en->ko] 다음 세션이 곧 시작됩니다.
+  Original: The next session will begin shortly at 3:20, so please make your way into the hall and take your seat.
+
+
+- 2026-08-19T06:15:08.045Z [en->ko] 친절한 협조에 감사드립니다.
+  Original: Thank you for your kind cooperation.
