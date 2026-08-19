@@ -1,9 +1,9 @@
 # LiveTR 180342
 
 - Title: Keynote & Track B
-- Saved at: 2026-08-19T02:28:16.869Z
+- Saved at: 2026-08-19T02:38:18.503Z
 - Language: ko
-- Messages: 1003
+- Messages: 1090
 - 2026-08-19T00:01:18.394Z [en->ko] AI 서밋 서울 2026에 오신 것을 환영합니다. 🤖
   Original: Welcome to AI Summit Seoul 2026.
 
@@ -2826,7 +2826,7 @@
 - 2026-08-19T02:23:19.084Z [en->ko] 기존 아이디어를 공학적으로 개선하고 가속화하기.
   Original: Engineering and speeding up existing ideas, while others are interested in tuning hyperparameters, and still others like to read literature across the whole community of discoveries and put together ideas.
 
-- 2026-08-19T02:23:30.325Z [en->] 있잖아, 과학자였던 사람들은 모두
+- 2026-08-19T02:23:30.325Z [en->ko] 있잖아, 과학자였던 사람들은 모두
   Original: You know, everyone who's been a scientist knows that there are different scientists who have different styles. Some are passionate about neural nets, and some are passionate about SVMs.
 
 - 2026-08-19T02:23:38.845Z [en->ko] 그리고 당신은 찾고 싶을 수도 있습니다
@@ -2836,10 +2836,10 @@
   Original: and diverse scientific styles amongst your kind of cloud of innovating agents.
 
 - 2026-08-19T02:23:52.292Z [en->ko] 마찬가지로, 당신은 전문가를 원할 수도 있습니다
-  Original: Similarly, you might want specialists within a business. So you might want a specialist who's really good at customer service and another one who's really good at scheduling, and you...
+  Original: Similarly, you might want specialists within a business. So you might want a specialist who's really good at customer service and another one who's really good at scheduling
 
 - 2026-08-19T02:24:08.368Z [en->ko] 트럭 차량군을 위한 경로 계획.
-  Original: route planning for your fleet of trucks. And you could imagine that one really big AI is really good at all of these tasks
+  Original: And you could imagine that one really big AI is really good at all of these tasks
 
 - 2026-08-19T02:24:10.993Z [en->ko] 아마 전문의와 함께 있는 편이 더 나을 거예요.
   Original: my instincts tell me that if you want to have something that is really good at one particular topic and/or really faster and cheaper at it, you're probably better off with a specialist so if you don't need
@@ -2849,9 +2849,6 @@
 
 - 2026-08-19T02:24:23.549Z [en->ko] 그래서 나는 우리가 거대한 ...를 갖게 될 거라고 생각한다
   Original: And so, I think we're going to end up with a huge toolbox of different AIs that we use and create for different purposes.
-
-- 2026-08-19T02:24:27.386Z [en->ko] 비즈니스 내에서도 그리고.
-  Original: purposes, both within business and in terms of recursive self-improving AI.
 
 - 2026-08-19T02:24:41.874Z [en->ko] 알고 보니
   Original: It turns out that both Andrew and Jeff Clune agree with the idea that, in the future, there will be multiple specialized agents, like tools, and we will coordinate those tools to determine the best next steps.
@@ -2937,5 +2934,210 @@
 - 2026-08-19T02:28:10.134Z [en->ko] 그런 다음 그들에게 그것을 제공한다
   Original: Then offer the intelligence of those models to the public at low cost, with some sort of checks to make sure they’re not misusing it.
 
-- 2026-08-19T02:28:11.635Z [en->ko] 그것은 일종의 중간 지점이다
-  Original: So that's kind of a middle ground between
+- 2026-08-19T02:28:19.110Z [en->ko] 그것은 일종의 중간 지점이다
+  Original: So that's kind of a middle ground between just one or two companies owning all of the intelligence in the world and simply giving the weights away.
+
+- 2026-08-19T02:28:25.352Z [en->ko] 그들 사이에는 정말 큰 차이가 있다
+  Original: There's a really big difference between the security benefits that we're familiar with with open-source code,
+
+- 2026-08-19T02:28:29.089Z [en->ko] 많은 눈처럼 더 안전하게 만든다.
+  Original: Like Linux software, many eyes make it more secure.
+
+- 2026-08-19T02:28:35.918Z [en->ko] AI에서
+  Original: And AI, where it's not necessarily the case that more eyes make the AI safer
+
+- 2026-08-19T02:28:40.997Z [en->ko] 당신이 보고 그 AI를 약간 구부리는 경우
+  Original: the case that people can then kind of bend that AI to more nefarious purposes and you'll lose the ability to shut it down.
+
+- 2026-08-19T02:28:49.777Z [en->ko] 그래서 나는 우리가 다시 생각해야 한다고 생각한다
+  Original: And so I think we need to rethink the question of which version of openness is safest and best for society in AI
+
+- 2026-08-19T02:28:53.598Z [en->ko] 질문보다는 open에 대해 말하라
+  Original: which is a different question than, say, typically for open-source software.
+
+- 2026-08-19T02:29:06.610Z [en->ko] 네, 앤드루와 제프 둘 다요.
+  Original: Yeah, both Andrew and Jeff reframed the question in a way that isn't just about open versus proprietary. We need very careful thought and control.
+
+- 2026-08-19T02:29:14.663Z [en->ko] 또는 이렇게 개방성 대
+  Original: For openness versus how to better use these very powerful models carefully.
+
+- 2026-08-19T02:29:23.662Z [en->ko] 그리고 거의 끝에
+  Original: And then, almost at the end of the session, I'd like to ask: What would be your industry mode for the next two years?
+
+- 2026-08-19T02:29:29.188Z [en->ko] 앤드류와 제프, 당신들은 모두
+  Original: So both Andrew and Jeff, you're going to be back at this AI Summit two years later.
+
+- 2026-08-19T02:29:35.497Z [en->ko] 그 2년을 되돌아보는 것처럼.
+  Original: Reflecting on those two years, what would be the most important industry moment, briefly?
+
+- 2026-08-19T02:29:49.238Z [en->ko] 그럼요.
+  Original: Sure, yeah. I think data will continue to be an important—did you say moat? Industry moat.
+
+- 2026-08-19T02:29:58.948Z [en->ko] 네, 데이터는 정말 그렇습니다
+  Original: Yeah, data is very important, especially data on real-world use cases and real-world tasks.
+
+- 2026-08-19T02:30:10.544Z [en->ko] 예를 들어, 적절한 데이터가 있으면, 당신은 가질 수 있습니다
+  Original: the right data. For example, you can have a very smooth SFT-RL process. You can really build intelligence, but with the wrong data, you just can't do that. It just doesn't work. Um, so...
+
+- 2026-08-19T02:30:17.677Z [en->ko] 그래서 이 모델들은, 더 많이 얻을수록
+  Original: So these models, as they become more powerful, need cleaner, higher-quality, and more diverse data.
+
+- 2026-08-19T02:30:23.032Z [en->ko] 올바른 것을 가지고...
+  Original: Having the right things is going to be critical for building a great model.
+
+- 2026-08-19T02:30:29.358Z [en->ko] 제프, 당신은 가지고 있어
+  Original: Jeff, do you have any vision in industry mode for the next two years?
+
+- 2026-08-19T02:30:38.337Z [en->ko] 네, 나는 그것을 믿어요
+  Original: Yeah, I believe that for us, the moat will be doing a very good job of automating the scientific method.
+
+- 2026-08-19T02:30:46.814Z [en->ko] 그래서 창조하기
+  Original: So, creating AI agents that are extremely good at the entire arc of innovation—coming up with ideas,
+
+- 2026-08-19T02:30:50.297Z [en->ko] 그 아이디어들을 구현하고, 검증하기
+  Original: Implementing those ideas, validating that those ideas are good.
+
+- 2026-08-19T02:30:54.181Z [en->ko] 그리고 그 발견들을 바탕으로 생산하여
+  Original: And then building on those discoveries to produce the next wave of discoveries.
+
+- 2026-08-19T02:30:58.729Z [en->ko] 그리고 우리가 만들면서 나는 생각한다
+  Original: And I think that as we make— the agents can already do these things
+
+- 2026-08-19T02:31:03.759Z [en->ko] 있잖아, 그렇게 대단하게 잘 아는 건 아니야.
+  Original: But know not amazingly well, and so I think the model is to make them do each of these things extremely well.
+
+- 2026-08-19T02:31:10.718Z [en->ko] 그렇게 하고 나면, 이제 경주를 시작하는 거야.
+  Original: And once you do that, then you're off to the races, with the system being able to do tremendous amounts of science, including the science of improving itself.
+
+- 2026-08-19T02:31:13.949Z [en->ko] 당신에게 감사드립니다
+  Original: Thanks for your final remarks.
+
+- 2026-08-19T02:31:20.285Z [en->ko] 이 세션을 보면 우리는 할 수 있습니다
+  Original: Seeing this session, we were able to anticipate what would come next year and two years from now.
+
+- 2026-08-19T02:31:22.838Z [en->ko] 참여해 주셔서 감사합니다.
+  Original: And thanks for joining.
+
+- 2026-08-19T02:31:26.058Z [ko] 네, 고맙습니다.
+
+- 2026-08-19T02:31:28.871Z [en->] 그러한 귀중한 통찰을 공유해 주셔서.
+  Original: Thank you for sharing such valuable insights with us.
+
+- 2026-08-19T02:31:34.533Z [ko->] 좋아, 그럼.
+  Original: 네, 그럼 곧바로 저희 오전 세션의 마지막 순서로 넘어가 보도록 하겠습니다.
+
+- 2026-08-19T02:31:42.085Z [ko] 이번 세션은 'LLM은 정말 기업 생산성에 도움을 주고 있을까'라는 주제로 진행될 텐데요.
+
+- 2026-08-19T02:31:45.951Z [ko] 이번에도 역시 패널 형태로 진행이 되겠습니다.
+
+- 2026-08-19T02:31:56.497Z [ko] HD현대의 김영옥 CIO님, 롯데쇼핑의 김종환 상무님, KB국민은행의 이경종 상무님을 무대로 모셔보겠습니다.
+
+- 2026-08-19T02:32:01.260Z [ko] 진행은 연세대학교 이준기 교수님께서 맡아주시겠습니다.
+
+- 2026-08-19T02:32:04.195Z [ko] 큰 박수로 환영해 주십시오.
+
+- 2026-08-19T02:32:14.377Z [ko] 안녕하십니까. 연세대학교 이준기입니다.
+
+- 2026-08-19T02:32:19.366Z [ko] 오늘 오전의 마지막 세션은 생산성에 관한 문제입니다.
+
+- 2026-08-19T02:32:28.745Z [ko] 어저께 우리 네 명이 카톡방에 있었는데, 김용옥 상무님께서 드레스 코드를 양복으로 맞추자고 하시더라고요.
+
+- 2026-08-19T02:32:35.097Z [ko] 올라와 보니까 네 명의 아저씨가 갑자기 양복을 입고 올라와서 좀 경직됐네요.
+
+- 2026-08-19T02:32:43.722Z [ko] 여기 보통 AI 세션에서는 다들 기술과 AI 최첨단에 계신 분들이어서 굉장히 자유롭게 하셨는데,
+
+- 2026-08-19T02:32:46.134Z [ko] 우리는 딱 양복을 입고 왔네요.
+
+- 2026-08-19T02:32:50.275Z [ko] 스픽도 우리는 기술적인 얘기가 아니고 비즈니스에 관한 겁니다.
+
+- 2026-08-19T02:32:57.968Z [ko] 오늘 아침에 혹시 모르시는 분은 괜히 이 얘기를 듣고 기분 나쁘실지 모르겠지만, 코스피가 또 사이드카를 발동했는데요.
+
+- 2026-08-19T02:33:10.341Z [ko] 결국은 이제 그, 뭐 물론 금리 얘기도 있지만 지금 AI 투자에 대해서 사람들이 과연 이게 효과가 있는 것이냐.
+
+- 2026-08-19T02:33:16.777Z [ko] 지금 업스트림 AI 분야에서는 분명히 칩과 데이터센터에 대한 수요가 굉장히 많고, 관련 투자가 활발히 진행되고 있잖아요. 그렇죠?
+
+- 2026-08-19T02:33:27.967Z [ko] 그렇지만 결국 문제는 뭐냐 하면 다운스트림입니다. 그러니까 이게 기업에 갔을 때, 기업들이 AI를 써서 정말로 눈에 보이는 생산성을 올릴 수 있을 것인지에 대한 것이 가장 큰 이슈가 되겠죠.
+
+- 2026-08-19T02:33:33.275Z [ko] 그래서 오늘 저희와 함께 패널로 참여하신 분들은 사실 우리나라를 대표하는 기업의 임원분들입니다.
+
+- 2026-08-19T02:33:55.537Z [ko] 김영옥 HD현대 상무님, 김종환 롯데쇼핑 상무님, 이경종 KB국민은행 상무님. 이분들은 우리나라의 대표적인 제조, 유통, 물류, 금융 기업에 계시고요.
+
+- 2026-08-19T02:34:01.391Z [ko] 그리고 다들 지금 막 AI를 기업에 도입해서 이 일을 총괄하고 계신 분들입니다.
+
+- 2026-08-19T02:34:12.279Z [ko] 그래서 이분들을 통해 기업에서 AI를 어떤 식으로 진행하고 있는지, 이에 대해 이분들이 어떻게 생각하고 있는지 알아보는 시간을 가져보도록 하겠습니다.
+
+- 2026-08-19T02:34:20.851Z [ko] 그래서 간단하게 말씀드리면, 사실 저는 학계에 있으니까 AI에 대한 Google Trends 같은 걸 보면 약간 떨어지고 있어요.
+
+- 2026-08-19T02:34:29.909Z [ko] 그런데 그게 어떤 거냐면, 막상 기업에 이게 들어갔을 때 생각만큼 잘 안 나오고 있다, 이런 결과들이 많이 나오고 있거든요.
+
+- 2026-08-19T02:34:39.959Z [ko] 몇 분들은 많이 보셨겠지만, 가장 최근에 나온 맥킨지 스터디를 보면 글로벌 대기업의 C레벨을 대상으로 서베이를 했는데
+
+- 2026-08-19T02:34:48.134Z [ko] 여러분은 AI 프로젝트를 하고 계신가요? 80% 이상이 이미 여러 개의 프로젝트를 진행하고 있습니다. 당연히 하고 계시겠죠.
+
+- 2026-08-19T02:34:50.469Z [ko] 근데 효과가 어떻게 되냐
+
+- 2026-08-19T02:34:57.148Z [ko] 혹시 2% 정도 이상에서 순이익에 영향을 미친다고 생각하냐?
+
+- 2026-08-19T02:35:00.123Z [ko] 얘기했더니 6%만 그렇다고 얘기했습니다.
+
+- 2026-08-19T02:35:02.576Z [ko] 나머지 94%는 그렇지 않다고 얘기한 거죠.
+
+- 2026-08-19T02:35:06.432Z [ko] 직접 숫자로 와닿지는 않는다는 거죠.
+
+- 2026-08-19T02:35:14.924Z [ko] 그리고 또 최근에 나온 가트너 스터디인데, 가트너 스터디에서 보면 굉장히 많은 그룹들이 AI 프로젝트를 하고 있는데
+
+- 2026-08-19T02:35:19.346Z [ko] 50% 이상을 POC 레벨에서 모두 중단시켜 버렸어요.
+
+- 2026-08-19T02:35:21.665Z [ko] 지금 그런 결과들이 나오고 있습니다.
+
+- 2026-08-19T02:35:31.242Z [ko] 우리나라도 마찬가지입니다. 이거 얼마 전에 우리나라 한국은행하고 니아 정보사회진흥원에서 같이 서베이를 한 건데
+
+- 2026-08-19T02:35:36.468Z [ko] 여러 기업을 조사했을 때 60~70%가 이미 AI 도입을 진행하고 있다고 답했습니다.
+
+- 2026-08-19T02:35:39.853Z [ko] 그런데 성과가 있냐고 얘기했을 때 10% 미만이었거든요.
+
+- 2026-08-19T02:35:56.344Z [ko] 그러니까 우리가 이런 사실을 알고 있을 때, 일단 시간이 많지 않으니까 세 분이 올라오셨으니 우리 김용옥 상무님께서, 그렇죠. 김용옥 상무님께서 일단 제가 크게 세 가지, 네 가지 질문을 할 건데.
+
+- 2026-08-19T02:35:59.233Z [ko] 첫 번째는 현재 어떤 방식으로 프로젝트를 진행하고 있는가?
+
+- 2026-08-19T02:36:05.632Z [ko] 두 번째는 프로젝트를 진행해 보니 원래 생각했던 것과 무엇이 달라졌는가.
+
+- 2026-08-19T02:36:14.512Z [ko] 세 번째는 ROE에 대해서 어떻게 생각하냐.
+
+- 2026-08-19T02:36:17.608Z [ko] 네 번째는 이 조직에서 우리가 뒤돌아봤을 때 우리 조직 문화나 이런 걸 생각했을 때 어떻게 했으면 좋겠다는 자기네 생각.
+
+- 2026-08-19T02:36:19.972Z [ko] 이렇게 네 가지를 크게 질문할 겁니다.
+
+- 2026-08-19T02:36:29.701Z [ko] 간단하게 세 분이 오셨으니까, 우리 김영옥 선배님께서 현재 HD현대에서 AI 프로젝트가 어떻게 진행되고 있는지 간단하게 말씀해 주십시오.
+
+- 2026-08-19T02:36:34.672Z [ko] 반갑습니다. HD현대에서 AI 총괄을 맡고 있는 김영옥입니다.
+
+- 2026-08-19T02:36:39.612Z [ko] 교수님, 방금 말씀 주신 대로 저희 HD현대는 제조 기업입니다.
+
+- 2026-08-19T02:36:42.393Z [ko] 기본적으로 조선이라고 하는 배를 만드는 부분이 있고
+
+- 2026-08-19T02:36:53.081Z [ko] 건설기계라고 하는 중후장대 건설기계를 만들고 있고, 또 오일 앤 가스 관련해서는 오일뱅크와 일렉트릭에서 변압기를 만드는 등 여러 가지 프로덕트를 만드는데.
+
+- 2026-08-19T02:36:58.108Z [ko] 저희가 AI에 접근하는 방식은 두 가지 큰 축으로 진행하고 있습니다.
+
+- 2026-08-19T02:37:02.944Z [ko] 아주 쉽게 생각하면 탑다운 방식과 보텀업 방식이라고 표현할 수 있을 것 같은데.
+
+- 2026-08-19T02:37:19.793Z [ko] 기본적으로 비즈니스의 핵심적인 프로덕트를 만드는 관점에서, 생산과 설계에 대한 리드타임을 어떻게 감축시키고 전반적인 제품의 라이프사이클을 AI를 통해 혁신할 수 있을지에 대한 여러 가지 탑다운 주제를 가지고 진행하고 있는 부분이 있고
+
+- 2026-08-19T02:37:30.011Z [ko] 두 번째는 전반적인 직원의 업무 생산성 향상을 위해서 벡터 기반으로, 앞에서 LLM 관련된 여러 가지 모델들에 대한 얘기를 했는데
+
+- 2026-08-19T02:37:39.168Z [ko] 기본적으로 모델들을 통해서 사무 생산성을 어떻게 올릴 것인가에 대한 AI 통합 관점의 두 가지 축으로 진행하고 있습니다.
+
+- 2026-08-19T02:37:41.189Z [ko] 간략하게 말씀드렸습니다.
+
+- 2026-08-19T02:37:47.730Z [ko] 자세한 상황은 나중에 말씀해 주시고, 그다음에 김종환 상무님께서 우리 KB국문위원회에서 말씀 부탁드립니다.
+
+- 2026-08-19T02:37:51.998Z [ko] 안녕하세요. 롯데쇼핑 이커머스 사업부의 김종환입니다.
+
+- 2026-08-19T02:37:59.562Z [ko] 저희 롯데쇼핑은 잘 아시는 것처럼 백화점, 마트, 온라인 이커머스 사업을 하고 있는데요.
+
+- 2026-08-19T02:38:03.669Z [ko] 제가 맡고 있는 부분은 이커머스 사업입니다.
+
+- 2026-08-19T02:38:08.742Z [ko] 저희가 지금 중점적으로 AI 쪽 관련 프로젝트는 크게 두 가지 정도로 보시면 될 것 같습니다.
+
+- 2026-08-19T02:38:14.467Z [ko] 우선 고객 서비스 측면에서 AI로 활용해서 어떤 서비스를 고객한테 어필하면서 제공
