@@ -1,6 +1,6 @@
 # Track A Session 1 Summary (English)
 
-- Time: 2026-08-19 13:00-14:00 KST
+- Time: 2026-08-19 13:30-14:00 KST
 - Captured talk window: approximately 13:30-13:57 KST
 - Track: A
 - Session title: Connecting Consumer Lifestyle Data and AI Wisely
@@ -51,4 +51,4 @@ For that, a robot needs an understanding of life context. The speaker framed Beh
 
 ## Note
 
-This summary is based on the Track A LiveTR channel `132952` for the 2026-08-19 13:00-14:00 KST session. The captured presentation content begins around 13:30 KST.
+This summary is based on the Track A LiveTR channel `132952` for the 2026-08-19 13:30-14:00 KST session.

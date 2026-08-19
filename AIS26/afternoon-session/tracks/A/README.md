@@ -13,12 +13,12 @@
 
 | 순서 | 상태 | 제목 |
 | --- | --- | --- |
-| 1 | 요약 완료 | 소비자의 라이프스타일 데이터와 AI의 현명한 연결 |
-| 2 | 참석 예정 | 추후 입력 |
+| 1, 13:30-14:00 | 요약 완료 | 소비자의 라이프스타일 데이터와 AI의 현명한 연결 |
+| 2, 14:00-14:30 | 참석 예정 | 추후 입력 |
 
 ## Summaries
 
 | 세션 | 파일 |
 | --- | --- |
-| 13:00-14:00 한글 요약 | [`../../track-a-session-1-summary_ko.md`](../../track-a-session-1-summary_ko.md) |
-| 13:00-14:00 영문 요약 | [`../../track-a-session-1-summary_en.md`](../../track-a-session-1-summary_en.md) |
+| 13:30-14:00 한글 요약 | [`../../track-a-session-1-summary_ko.md`](../../track-a-session-1-summary_ko.md) |
+| 13:30-14:00 영문 요약 | [`../../track-a-session-1-summary_en.md`](../../track-a-session-1-summary_en.md) |
