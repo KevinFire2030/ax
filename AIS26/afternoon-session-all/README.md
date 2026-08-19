@@ -16,8 +16,14 @@ AI Summit Seoul 2026 오후 전체 세션을 정리하기 위한 폴더입니다
 - 전하 참석 세션 정리: [`../afternoon-session/`](../afternoon-session/)
 - 오전 및 공통 자료: [`../`](../)
 
+## Tracks
+
+| 트랙 | 폴더 | LiveTR |
+| --- | --- | --- |
+| C | [`tracks/C/`](./tracks/C/) | [`110951`](https://livetr.flit.to/chat/110951?lang=ko&showOriginalText=false) |
+
 ## Status
 
 - 생성일: 2026-08-19
-- 현재 상태: 폴더 구조 준비
-- 다음 작업: 오후 전체 세션 일정표와 트랙별 목차 추가
+- 현재 상태: Track C 실시간 통역 채널 추가
+- 다음 작업: 오후 전체 세션 일정표와 트랙별 목차 확장
