@@ -1,10 +1,10 @@
 ﻿# LiveTR 180342 - Afternoon Session
 
 - Source room: 180342
-- Saved at: 2026-08-19T07:32:47Z
+- Saved at: 2026-08-19T07:42:56Z
 - Language: ko
 - Session start: 2026-08-19 16:00 KST
-- Messages: 202
+- Messages: 300
 
 - 2026-08-19T07:05:09.166Z [ko] 잠시 후 4시 10분부터 다음 세션이 진행될 예정입니다.
 
@@ -802,5 +802,378 @@
   Original: When companies come to us and say, "Hey, we can solve your problem,"
 
 
-- 2026-08-19T07:32:44.681Z [en->] 가지고 있으면 정말 도움이 돼요
-  Original: It's so helpful to have an evaluation set where we can run through and say, hey, this works great. Where can we sign? Or this does not meet our requirements, and here's why.
+- 2026-08-19T07:32:44.681Z [en->ko] 가지고 있으면 정말 도움이 돼요
+  Original: It's so helpful to have an evaluation set where we can run through and say, "Hey, this works great. Where can we sign?" Or, "This does not meet our requirements, and here's why."
+
+
+- 2026-08-19T07:32:47.564Z [en->ko] 덕분에 우리 팀은 훨씬 더 빠르게 반복 작업을 할 수 있습니다.
+  Original: It allows our teams to iterate much more quickly.
+
+
+- 2026-08-19T07:32:50.256Z [en->ko] 천천히 가서 빨리 가는 훌륭한 예.
+  Original: It's a great example of going slow to go fast.
+
+
+- 2026-08-19T07:32:56.985Z [en->ko] 이러한 고품질을 구축한다면
+  Original: If you build out these high-quality evaluation sets, it will enable your team to move so much faster.
+
+
+- 2026-08-19T07:33:01.581Z [en->ko] 그래서 나는 당신이 투자할 것을 강력히 추천합니다
+  Original: So I highly recommend that you invest more in evaluation.
+
+
+- 2026-08-19T07:33:06.047Z [en->ko] 당신은 당신이 어떻게 하는지를 정의하고 있습니다
+  Original: You're defining how you do work well within your organization.
+
+
+- 2026-08-19T07:33:10.047Z [en->ko] 이것은 정말 높은 레버리지의 항목입니다.
+  Original: So this is a really high-leverage piece of advice I'm giving.
+
+
+- 2026-08-19T07:33:13.773Z [en->ko] 다섯 번째 원칙.
+  Original: Principle number five is table stakes.
+
+
+- 2026-08-19T07:33:28.497Z [en->ko] 모든 것을 따라 그리세요.
+  Original: Trace everything. You want traces for what your agent is doing: the requests, the responses, the tool calls, the parameters it's using, the responses it's getting back, and the state.
+
+
+- 2026-08-19T07:33:34.467Z [en->ko] 로켓 과학처럼 들리지만, 사실 그렇지 않다.
+  Original: Sound like rocket science because it isn't, but you'd be amazed how many companies and teams don't do this.
+
+
+- 2026-08-19T07:33:39.657Z [en->ko] 당신은 이 흔적들을 원하고, 원하고 싶다
+  Original: You want these traces and you want to mine them and you want to be able to observe from them.
+
+
+- 2026-08-19T07:33:41.320Z [en->] 조사할 수 있다.
+  Original: You want to be able to investigate.
+
+
+- 2026-08-19T07:33:45.880Z [en->ko] ~할 수 있기를 원한다
+  Original: And you want to be able to really improve your systems over time.
+
+
+- 2026-08-19T07:33:56.407Z [en->ko] 그리고 이런 흔적들을 정확히 파악하는 것이 정말 중요합니다.
+  Original: And getting these traces right is really important. Most of this you can do with good open-source solutions. The OpenTelemetry generative AI specification makes this very easy.
+
+
+- 2026-08-19T07:34:05.236Z [en->ko] 클릭하우스는 매우
+  Original: ClickHouse is a very easy way to get this set up to store and allow you to analyze them, but there are great open-source databases like Pinot that will work for you.
+
+
+- 2026-08-19T07:34:08.786Z [en->ko] 이걸 저렴한 대량 보관소에 둘 수 있어요.
+  Original: You can put this in cheap bulk storage in Amazon S3 on AWS.
+
+
+- 2026-08-19T07:34:18.616Z [en->ko] 하지만 나를 믿어, 안전해.
+  Original: But trust me, save your traces. It's a basic thing, but it's a really important one to get right, and it will enable you to move much faster.
+
+
+- 2026-08-19T07:34:23.287Z [en->ko] 그리고 원칙.
+  Original: And then principle number six is the most ambitious one.
+
+
+- 2026-08-19T07:34:35.157Z [en->ko] 학습의 순환을 완성하세요.
+  Original: Close the learning loop.
+
+
+- 2026-08-19T07:34:39.683Z [en->ko] 직원들이 사용하도록.
+  Original: When you have these traces, when you have your evaluation set, when you have an agent deployed either internally to your employees to use or externally for your customers to use.
+
+
+- 2026-08-19T07:34:42.192Z [en->ko] 당신은 성공과 실패를 목격하게 될 것입니다.
+  Original: You'll observe successes and failures.
+
+
+- 2026-08-19T07:34:53.842Z [en->ko] 그리고 예전에 걸리던 과정
+  Original: And the process that used to take engineering teams months—to look through, run queries, understand what's working and what isn't, and come up with hypotheses.
+
+
+- 2026-08-19T07:35:00.998Z [en->ko] 새 기능을 만들다.
+  Original: Build new features, run A/B tests. This was a long, long-winded process.
+
+
+- 2026-08-19T07:35:04.765Z [en->ko] 하지만 당신은 점점 더 확장할 수 있습니다.
+  Original: But you can increasingly expose your coding agents.
+
+
+- 2026-08-19T07:35:13.804Z [en->ko] 에이전트 기술에 대한 소스 코드.
+  Original: Source code, agent skills, and your traces—cluster those traces and run optimization on them.
+
+
+- 2026-08-19T07:35:17.420Z [en->ko] 그리고 남겨둔 것에 대해 다시 실행하세요.
+  Original: and rerun it against a holdout set of your ground truth.
+
+
+- 2026-08-19T07:35:21.943Z [en->ko] 이것은 압축될 수 있습니다.
+  Original: This can compress months and years of work into literally days.
+
+
+- 2026-08-19T07:35:37.353Z [en->ko] 말 그대로 며칠 안으로.
+  Original: And we're increasingly seeing success internally, but also companies that I'm familiar with are seeing really, really promising results.
+
+
+- 2026-08-19T07:35:41.368Z [en->ko] 이 흔적들을 자동으로 채굴할 때.
+  Original: at mining these traces automatically and suggesting pull requests.
+
+
+- 2026-08-19T07:35:49.592Z [en->ko] 계속 검토하시길 권합니다
+  Original: I do suggest you continue to review that code. Continue to do security checks, as our friend from GitLab suggested earlier.
+
+
+- 2026-08-19T07:35:59.451Z [en->ko] 하지만 인식하다
+  Original: But recognize that you can dramatically increase the pace of innovation, hypothesis generation, and development.
+
+
+- 2026-08-19T07:36:03.476Z [en->ko] 그리고 실험을 실행하다
+  Original: and run experiments more quickly and more concurrently.
+
+
+- 2026-08-19T07:36:07.831Z [en->ko] 움직일 수 있는 간단한 애니메이션 속도
+  Original: simple pace of innovation that you can move at is so much higher today than it was even months ago.
+
+
+- 2026-08-19T07:36:13.279Z [en->ko] 그렇다면 그 시스템을 최적화하는 것은 어떤 모습일까요?
+  Original: And so, what does optimizing that system look like?
+
+
+- 2026-08-19T07:36:17.823Z [en->ko] 제 생각에는, 세 개가 있어요.
+  Original: As I see it, there are three separate tiers.
+
+
+- 2026-08-19T07:36:31.622Z [en->ko] 맥락과 함께 시작하고
+  Original: It is the easiest thing to do, and it will get you 80% of the benefits. The models that we're working with are so capable now.
+
+
+- 2026-08-19T07:36:38.890Z [en->ko] 그들에게 적절한 것을 제공하는 것
+  Original: That simply providing them with the right context, the right tools, and the right MCPs will get you most of the way there.
+
+
+- 2026-08-19T07:36:43.504Z [en->ko] 그리고는 정말로 책임이 있다.
+  Original: and is really responsible for most of the bottlenecks I've seen.
+
+
+- 2026-08-19T07:36:51.770Z [en->ko] 우리가 내부적으로 구축한 에이전트들을 위해 그리고
+  Original: For agents that we built internally, and for agents that my network has shared with me, we have run into challenges.
+
+
+- 2026-08-19T07:36:57.932Z [en->ko] 그러니 컨텍스트 엔지니어를 확보하는 데 집중하세요.
+  Original: So focus on getting the context engineering right first. Second is optimizing the harness.
+
+
+- 2026-08-19T07:37:03.562Z [en->ko] 예술가들은.
+  Original: Harnesses aren't a lot of code. There's not much to improve.
+
+
+- 2026-08-19T07:37:06.478Z [en->ko] 하지만 상당한 양의 토큰을 소모합니다.
+  Original: But it does consume a significant amount of tokens at long-running sessions.
+
+
+- 2026-08-19T07:37:16.253Z [en->ko] 다짐에는 다양한 측면이 있습니다
+  Original: There are various aspects that have huge implications for the long-term performance of your tasks.
+
+
+- 2026-08-19T07:37:21.762Z [en->ko] 하네스 엔지니어링은 절대적으로
+  Original: Harness engineering is absolutely something to consider and look at.
+
+
+- 2026-08-19T07:37:30.489Z [en->ko] 가중치 최적화 및 미세 조정
+  Original: And then finally optimizing the weights and fine-tuning is expensive and challenging. It's worth doing for highly specialized domains.
+
+
+- 2026-08-19T07:37:33.064Z [en->ko] 하지만 그게 주요 투자자라는 것만 인정하세요.
+  Original: But just recognize it's a major investment.
+
+
+- 2026-08-19T07:37:39.271Z [en->ko] 그리고 당신은 언제나 ~의 위험을 감수합니다
+  Original: And you always run the risk that a better model is going to be released by one of these frontier companies.
+
+
+- 2026-08-19T07:37:44.705Z [en->ko] 이것이 모델이 보여준 최악임을 인식한다.
+  Original: Recognize that this is the worst the models will ever be, and so they're improving at a really rapid pace.
+
+
+- 2026-08-19T07:37:51.158Z [en->ko] 그리고.
+  Original: And this chart is too complex to convey a fairly simple idea.
+
+
+- 2026-08-19T07:37:55.640Z [en->ko] 거기에 정말 있나요
+  Original: which is, there really are two optimization loops.
+
+
+- 2026-08-19T07:37:58.261Z [en->ko] 당신이 흔적들을 살펴보는 곳.
+  Original: One is where you look over the traces
+
+
+- 2026-08-19T07:38:02.153Z [en->ko] 당신은 무엇을 정의하나요
+  Original: And you define what success is.
+
+
+- 2026-08-19T07:38:05.981Z [en->ko] 두 번째 조각.
+  Original: The second piece is the self-improvement loop.
+
+
+- 2026-08-19T07:38:16.901Z [en->ko] 훌륭한 오픈 소스 기법들이 있습니다
+  Original: There are great open-source techniques that can do this: MAST for automated agent-system error detection, DSPy, and Trace.
+
+
+- 2026-08-19T07:38:24.748Z [en->ko] 솔직히 말해서,
+  Original: And frankly, the coding agents themselves would probably do pretty well even without these open-source solutions.
+
+
+- 2026-08-19T07:38:32.349Z [en->ko] 그렇게,
+  Original: So, conceptually, separate out your task, which is defining quality.
+
+
+- 2026-08-19T07:38:38.713Z [en->ko] 그리고 에이전트의 작업은
+  Original: And the agent's task is to achieve maximum performance against that high bar of measurement.
+
+
+- 2026-08-19T07:38:46.220Z [en->ko] 이것은 엄청난 변화입니다.
+  Original: This is a huge amount of change for individuals, teams, and organizations to absorb.
+
+
+- 2026-08-19T07:38:50.568Z [en->ko] 흡수하고 유용한
+  Original: And a useful framing to share with you.
+
+
+- 2026-08-19T07:38:54.857Z [en->ko] 이것이 몸에 대한 생각인가요.
+  Original: Is this idea of the bottleneck moving?
+
+
+- 2026-08-19T07:39:01.148Z [en->ko] 이것은 제조 시절부터 이어져 온 교훈입니다.
+  Original: This is a lesson dating all the way back to manufacturing. They recognized that if you have a bottleneck, you need to find a way to fix it.
+
+
+- 2026-08-19T07:39:04.164Z [en->ko] 당신은 갑자기 무한대로 이동하지 않는다.
+  Original: You do not suddenly move to infinite output.
+
+
+- 2026-08-19T07:39:06.962Z [en->ko] 다음은 방금 다른 곳으로 옮겨졌어요.
+  Original: The bottleneck just moves somewhere else in the system.
+
+
+- 2026-08-19T07:39:14.779Z [en->ko] 그리고 나는 제안한다
+  Original: And I suggest that the arrival of this level of intelligence,
+
+
+- 2026-08-19T07:39:18.966Z [en->ko] 우리는 그 병목 현상을 해결할 것이다.
+  Original: This capability of models will move that bottleneck more rapidly than before.
+
+
+- 2026-08-19T07:39:26.375Z [en->ko] 그래서 새로운 병목에 부딪힐 때마다,
+  Original: And so every time you hit a new bottleneck, go and apply your tools, your structure, your context engineering to that.
+
+
+- 2026-08-19T07:39:36.656Z [en->ko] 그것은 매우 자주 멀어졌다
+  Original: And very often, it has moved away from software development and toward planning, organization, forecasting, and measurement.
+
+
+- 2026-08-19T07:39:42.512Z [en->ko] 그래서 요약하자면.
+  Original: So, to summarize, six principles for your production agents.
+
+
+- 2026-08-19T07:39:46.229Z [en->ko] 당신의 지능을 주세요.
+  Original: Give your intelligence an interface?
+
+
+- 2026-08-19T07:39:54.602Z [en->ko] 하방에 묶여 있다.
+  Original: Bound the downside, delegate the how, and focus on defining the what.
+
+
+- 2026-08-19T07:39:59.417Z [en->ko] 전체 시스템을 평가하십시오.
+  Original: Evaluate the whole system, observe and replay everything, and close the learning loop.
+
+
+- 2026-08-19T07:40:05.505Z [en->ko] 그 모든 것을 가지고 나는 닫겠습니다.
+  Original: And with all of that, I will close with one final passage by the economist Paul Krugman.
+
+
+- 2026-08-19T07:40:09.917Z [en->ko] 내 생각에는 반영한다.
+  Original: Which I think reflects what an incredible moment we stand in human history.
+
+
+- 2026-08-19T07:40:15.365Z [en->ko] 그는 썼다, 생산성은 아니다
+  Original: He wrote, "Productivity isn't everything, but in the long run, it is almost everything."
+
+
+- 2026-08-19T07:40:23.719Z [en->ko] 한 나라가 향상시킬 수 있는 능력.
+  Original: A country's ability to improve its standard of living over time depends almost entirely on its ability to raise its output per worker.
+
+
+- 2026-08-19T07:40:32.316Z [en->ko] 우리는 지금 이 한가운데에 있다.
+  Original: We are in the middle of a wave that is about to dramatically increase the amount of output per worker, with incredible implications.
+
+
+- 2026-08-19T07:40:38.269Z [en->ko] 그리고 나는 항해하는 것을 기대한다.
+  Original: I look forward to navigating this exciting and high-stakes moment in human history with you all.
+
+
+- 2026-08-19T07:40:44.876Z [en->ko] 다양한 관점과 함께 당신의 능력을 나눠 주셔서 감사합니다.
+  Original: Thank you for sharing your valuable perspectives with us.
+
+
+- 2026-08-19T07:40:51.837Z [ko->] 네, 우리는 거기에 갈 거예요.
+  Original: 네, 저희가 이 거대한 변화의 중심에 있다는 연사님의 말씀이 굉장히 인상 깊게 와닿았던 것 같습니다.
+
+
+- 2026-08-19T07:40:58.047Z [ko->] 정말 감사합니다.
+  Original: 고맙습니다. 곧바로 다음 세션으로 넘어가 보겠습니다.
+
+
+- 2026-08-19T07:41:08.972Z [ko] 이번에는 AI를 잘 쓰는 기업의 조건, 정보보호 가드레일이라는 주제로 포스코 E&C의 이근형 상무보님께서 강연해 주시겠습니다.
+
+
+- 2026-08-19T07:41:11.800Z [ko] 여러분, 상무보님을 따뜻한 박수로 환영해 주시기 바랍니다.
+
+
+- 2026-08-19T07:41:26.935Z [ko] 안녕하십니까. 포스코 E&C의 이근형입니다.
+
+
+- 2026-08-19T07:41:32.873Z [ko] 오늘 AI를 잘 쓰는 기업의 조건과 정보보호 가드레일에 대해 말씀드리겠습니다.
+
+
+- 2026-08-19T07:41:38.938Z [ko] 저는 포스코 E&C에서 CISO를 맡고 있습니다.
+
+
+- 2026-08-19T07:41:43.059Z [ko] 그전에는 LG CNS에서 컨설팅을 했었고요.
+
+
+- 2026-08-19T07:41:47.891Z [ko] AI 쪽 IT 혁신, 뭐 이런 게 있었습니다.
+
+
+- 2026-08-19T07:41:54.572Z [ko] 저희 회사는 포스코건설이었다가 포스코E&C로 이름이 바뀌었습니다.
+
+
+- 2026-08-19T07:41:58.581Z [ko] 그리고 AI 회사라든지 하이테크 회사가 아닙니다.
+
+
+- 2026-08-19T07:42:00.924Z [ko] 건설 회사고요.
+
+
+- 2026-08-19T07:42:06.025Z [ko] 오늘 말씀드릴 것도 아주 최신의 트렌드, 이런 것들을 말씀드릴 건 아니고요.
+
+
+- 2026-08-19T07:42:16.799Z [ko] 일반 기업, 일반 대기업에서 제가 CISO, 즉 최고정보보호책임자로서 가지고 있는 고민들을 여러분께 좀 말씀드리겠습니다.
+
+
+- 2026-08-19T07:42:27.147Z [ko] 저희 회사에서 하고 있는 것들과 계획하고 있는 것들을 함께 나누면서, 여러분과 그런 고민을 같이 하려고 합니다.
+
+
+- 2026-08-19T07:42:31.140Z [ko] 제가 작년에 낸 책이 표지에 나와 있는데요.
+
+
+- 2026-08-19T07:42:34.048Z [ko] 우리 회사 AI 전환은 어떻게 시작할까?라는 책인데
+
+
+- 2026-08-19T07:42:38.146Z [ko] 저는 엔지니어 출신도 아니고, 또 최고경영자도 아닙니다.
+
+
+- 2026-08-19T07:42:40.714Z [ko] 그래서 딱 그 중간 어딘가에 있는 사람이고요.
+
+
+- 2026-08-19T07:42:51.547Z [ko] 그래서 엔지니어링이라든지 테크놀로지에 대한 이해를 바탕으로 실제 기업 경영이나 기업 운영의 비즈니스 측면에서 어떻게 하면 좋을지를 고민하는 사람입니다.
+
+
+- 2026-08-19T07:42:52.855Z [ko] 그리고 사이에 있는 랭기지로
