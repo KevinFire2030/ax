@@ -1,10 +1,10 @@
 ﻿# LiveTR 132952 - Afternoon Session
 
 - Source room: 132952
-- Saved at: 2026-08-19T04:59:49Z
+- Saved at: 2026-08-19T05:08:15Z
 - Language: ko
 - Session start: 2026-08-19 13:00 KST
-- Messages: 170
+- Messages: 236
 
 - 2026-08-19T04:26:53.728Z [en->ko] 잠시 후 AI Summit Seoul 2026이 시작될 예정입니다. 참석자 여러분께서는 행사장 안으로 입장하시어 자리에 착석해 주시기 바랍니다. 🤖
   Original: 2026 will begin shortly. We kindly ask all participants to make their way into the hall and take their seats.
@@ -515,3 +515,266 @@
 
 
 - 2026-08-19T04:57:13.700Z [ko] 저희 다음 세션은 2시에 진행됩니다. 곧 이어질 예정이니 자리에 착석해 주시면 감사하겠습니다.
+
+
+- 2026-08-19T05:00:15.443Z [ko] 이제 메르세데스-벤츠의 수석 AI 사이언티스트 빌 랜드님을 모시고, ‘1,000개의 AI 에이전트를 온보딩하는 법’을 주제로 강연을 들어보도록 하겠습니다.
+
+
+- 2026-08-19T05:00:29.289Z [en->ko] 밀란을 무대로 맞이합시다. 큰 손을 내밀어 주세요.
+  Original: Let's welcome Milind to the stage. Please give him a big hand.
+
+
+- 2026-08-19T05:00:33.901Z [en->ko] 안녕하세요 여러분.
+  Original: Hello, everyone.
+
+
+- 2026-08-19T05:00:36.680Z [en->ko] 좋은 오후예요.
+  Original: Good afternoon.
+
+
+- 2026-08-19T05:00:41.222Z [en->ko] 매우...
+  Original: Very quiet crowd we have.
+
+
+- 2026-08-19T05:00:49.110Z [en->ko] 여기 계신 분들 중 몇 분이 사용하시나요
+  Original: How many of you here use AI or some kind of AI agent in your work?
+
+
+- 2026-08-19T05:00:53.986Z [en->ko] 그게 너라면, 될 수 없어.
+  Original: That few? cannot be.
+
+
+- 2026-08-19T05:01:11.186Z [en->ko] 훌륭합니다. 네.
+  Original: Excellent. Yes. As most of you know, AI agents are relatively new. They came into existence quite recently.
+
+
+- 2026-08-19T05:01:16.520Z [en->ko] 그리고 약
+  Original: And only in the last seven or eight months have they become extremely helpful.
+
+
+- 2026-08-19T05:01:20.700Z [en->ko] 뭐라고?
+  Original: what we will explore today. is how to deploy them in an organization in a safe, controlled way.
+
+
+- 2026-08-19T05:01:39.884Z [en->ko] 그리고 나의 초점.
+  Original: My focus over the next 25-odd minutes will be to show you lots of numbers and ask you a quiz at the end.
+
+
+- 2026-08-19T05:01:53.608Z [en->ko] 네?
+  Original: Yes. No, what I will try and do is give you some mental framework on thinking about onboarding and offboarding these agents.
+
+
+- 2026-08-19T05:01:58.974Z [en->ko] 나는 천천히 말할게요.
+  Original: I will speak slowly, and if I am fast, stop me. because unfortunately, I still can't speak Korean.
+
+
+- 2026-08-19T05:02:19.307Z [en->ko] 그리고...
+  Original: And I will try to tell you that even though the process might look similar to what we do with humans, it is different in very important ways.
+
+
+- 2026-08-19T05:02:23.835Z [en->ko] 네.
+  Original: Yes. Okay, so let's get started.
+
+
+- 2026-08-19T05:02:27.214Z [en->ko] 이것이 가장 중요합니다.
+  Original: This is the most important slide. of my presentation.
+
+
+- 2026-08-19T05:02:35.259Z [en->ko] 사진 찍지 말아 주세요.
+  Original: Please don't take pictures. This is a disclaimer slide for myself.
+
+
+- 2026-08-19T05:02:42.384Z [en->ko] 하하하.
+  Original: that all opinions expressed are mine my company has got nothing to do with it Otherwise, my legal team will come after my job.
+
+
+- 2026-08-19T05:02:53.402Z [en->ko] 알았어요.
+  Original: Okay, now that my job is secure, this is me and why you should be listening to me.
+
+
+- 2026-08-19T05:02:56.207Z [en->ko] 또는 내가 이 용어에 대해 뭔가를 아는 이유는 무엇인가.
+  Original: or why I know something about this topic.
+
+
+- 2026-08-19T05:03:01.565Z [en->ko] 그래서 나는 경력을 시작했다.
+  Original: So I started my career in business consulting 20 years ago.
+
+
+- 2026-08-19T05:03:06.683Z [en->ko] 의
+  Original: then was a core team member of a successful startup,
+
+
+- 2026-08-19T05:03:12.682Z [en->ko] 그것은 그 파트에서 실행되었습니다.
+  Original: was which exited at about 2 billion valuation private equity funds made a lot of money
+
+
+- 2026-08-19T05:03:20.543Z [en->ko] 나는 ~을 이끌었다
+  Original: I led a freight-forwarding business that had been loss-making for 11 years and turned it around.
+
+
+- 2026-08-19T05:03:26.434Z [en->ko] 그리고 나는 세 번째 석사 학위를 했어, 응
+  Original: and did my third master's in AI around 2020 because I thought AI was going to change the world
+
+
+- 2026-08-19T05:03:31.853Z [en->ko] 그러면 지금은?
+  Original: And now, I work as a Principal AI Scientist at Mercedes-Benz.
+
+
+- 2026-08-19T05:03:48.750Z [en->ko] 그래서
+  Original: So, agents, this is a number: 109. I promised you lots of numbers, and I will deliver on that promise.
+
+
+- 2026-08-19T05:03:59.455Z [en->ko] 109.
+  Original: One hundred and nine. That is how many non-human identities exist in a large average organization.
+
+
+- 2026-08-19T05:04:03.887Z [en->ko] 그것은 ~에 의해 조사됩니다
+  Original: Surveyed by Palo Alto Networks, one of the security companies.
+
+
+- 2026-08-19T05:04:12.788Z [en->ko] 그리고 큰
+  Original: And large enterprises, out of these 109, claim that 79 are some kind of agents.
+
+
+- 2026-08-19T05:04:24.382Z [en->ko] 는 모든 인간을 위한 것이다.
+  Original: If for every human—sorry, if I was not clear—109 for every human, 109 non-human identities,
+
+
+- 2026-08-19T05:04:33.385Z [en->ko] 네, 그것은 ~을 의미합니다
+  Original: Yes, that means a large organization with 13 humans has 1,000 agents.
+
+
+- 2026-08-19T05:04:38.790Z [en->ko] 이 숫자를 ...와 함께 받아...
+  Original: Take this number with a grain of salt. Yes, and I mean a large grain of salt.
+
+
+- 2026-08-19T05:04:45.750Z [en->ko] 왜냐면
+  Original: Because I seriously doubt these numbers are accurate.
+
+
+- 2026-08-19T05:04:51.131Z [en->ko] 내가 너에게 말하고 싶은 것은.
+  Original: but What I want to tell you is the direction.
+
+
+- 2026-08-19T05:04:58.049Z [en->ko] 모든 인간 직원.
+  Original: For every human employee, there are many machine employees working.
+
+
+- 2026-08-19T05:05:05.773Z [en->ko] 지금까지,
+  Original: Until now, most of these machine identities have not had intelligence.
+
+
+- 2026-08-19T05:05:08.903Z [en->ko] 하지만 그것은 매우 빠르게 변하고 있습니다.
+  Original: But that is changing very fast.
+
+
+- 2026-08-19T05:05:15.383Z [en->ko] 그래서 우리는 배워야 합니다.
+  Original: So we will have to learn how to safely deploy these machine entities.
+
+
+- 2026-08-19T05:05:22.576Z [en->ko] 하나.
+  Original: One case from Samsung.
+
+
+- 2026-08-19T05:05:32.480Z [en->ko] 여러분 모두는 2000년에 알고 있다
+  Original: All of you know, in 2023—yes, this is a very famous case—somebody put some code into ChatGPT.
+
+
+- 2026-08-19T05:05:38.716Z [en->ko] 유출됐어, 그럴 거야
+  Original: It was leaked. It will now become part of ChatGPT's knowledge.
+
+
+- 2026-08-19T05:05:42.748Z [en->ko] 그리고 즉시 삼성.
+  Original: And immediately, Samsung said, “No more access to AI.”
+
+
+- 2026-08-19T05:05:51.016Z [en->ko] 그것은 올해 6월에 일어났다.
+  Original: And in June this year, it is now rolling out AI agents to all of its employees.
+
+
+- 2026-08-19T05:05:53.780Z [en->ko] 무엇이 바뀌었나요?
+  Original: What has changed?
+
+
+- 2026-08-19T05:05:59.280Z [en->ko] 가장 큰 변화는
+  Original: The biggest change is that, in 2023, this was a chatbot.
+
+
+- 2026-08-19T05:06:09.926Z [en->ko] 당신은 그것과 대화하고 있었고, 그 다음에 당신은...
+  Original: You were talking to it, and then you were... The value it could deliver to the organization was severely limited by what you would do with that knowledge.
+
+
+- 2026-08-19T05:06:14.107Z [en->ko] 이제 대리인들.
+  Original: Now, agents work in the organization.
+
+
+- 2026-08-19T05:06:17.481Z [en->ko] 그래서 뭐
+  Original: So, what is an agent?
+
+
+- 2026-08-19T05:06:27.141Z [en->ko] 우리의 논의를 위해.
+  Original: For our discussion purposes, an agent is something that holds credentials and takes actions on live systems.
+
+
+- 2026-08-19T05:06:29.797Z [en->ko] 그리고 완료에 대해 보상이 주어진다.
+  Original: and is rewarded for finishing.
+
+
+- 2026-08-19T05:06:34.326Z [en->ko] 대리인.
+  Original: Agent is the new employee layer.
+
+
+- 2026-08-19T05:06:42.601Z [en->ko] 사실 모터와 같은 기업들
+  Original: In fact, companies like Moderna, the vaccine company, merged their HR and IT departments a year ago.
+
+
+- 2026-08-19T05:06:44.904Z [en->ko] 이것이 점점 더 많이 일어나고 있습니다.
+  Original: And this is happening more and more.
+
+
+- 2026-08-19T05:06:58.647Z [en->ko] 에이전트는 새로운 직원이다.
+  Original: Agent is the new employee layer. So what I want to tell you is that even though we have started thinking about AI in human terms, yes,
+
+
+- 2026-08-19T05:07:01.646Z [en->ko] 그들은 여전히 뚜렷하게 다릅니다.
+  Original: They are still distinctly different from humans.
+
+
+- 2026-08-19T05:07:07.079Z [en->ko] 너
+  Original: There are five steps.
+
+
+- 2026-08-19T05:07:10.133Z [en->ko] 꼭 명심해야 할 다섯 가지
+  Original: Five things that you must keep in mind.
+
+
+- 2026-08-19T05:07:18.695Z [en->ko] 첫 번째 약속, 정신적 틀.
+  Original: My first promise: a mental framework for thinking about how to get these agents into your organization.
+
+
+- 2026-08-19T05:07:21.323Z [en->ko] 생각해야 할 다섯 가지.
+  Original: five things that you will have to think about.
+
+
+- 2026-08-19T05:07:28.508Z [en->ko] 신원. 네.
+  Original: Identity? Yes. Who is this agent? Which agent is it? How do you identify the agent?
+
+
+- 2026-08-19T05:07:35.932Z [en->ko] 범위.
+  Original: Scope. What is the agent allowed to do? What can they reach? Supervision. How am I monitoring this? Yes, record and how do we afford this now or exit?
+
+
+- 2026-08-19T05:07:53.840Z [en->ko] 너
+  Original: For each, I will tell you a story. And then we will see how they are similar and dissimilar to humans.
+
+
+- 2026-08-19T05:08:02.587Z [en->ko] 응, 왜냐하면 우리는
+  Original: Yeah, because we only have about 20, 21 minutes, I will not spend equal time on each one.
+
+
+- 2026-08-19T05:08:08.652Z [en->ko] 나는 ~에 집중할 것이다
+  Original: I will focus on what this is and what I think is valuable, and please ask questions at the end.
+
+
+- 2026-08-19T05:08:14.428Z [en->ko] 네?
+  Original: Yes. 65% of organizations and others are
