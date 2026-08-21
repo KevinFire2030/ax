@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사외 교육 결과보고서 · AI Summit Seoul 2026</title>
+<style>
+:root{
+  --bg:#F6F6FB; --card:#FFFFFF; --vio:#6D5CE7; --vio-soft:#EDEAFC; --mint:#12B5A0; --mint-soft:#E2F7F3;
+  --ink:#211F33; --sub:#75718C; --line:#E7E5F2; --red:#E24C6A; --red-soft:#FBE9ED; --amber:#E8963C;
+  --amber-soft:#FDF1E3; --blue:#3B6FE0; --blue-soft:#EAF0FD;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Segoe UI','Malgun Gothic','맑은 고딕',Arial,sans-serif;padding:0 32px 60px;line-height:1.58}
+.wrap{max-width:1120px;margin:0 auto}
+.qnav{position:sticky;top:0;z-index:50;background:rgba(246,246,251,.92);backdrop-filter:blur(6px);padding:14px 0 10px;margin-bottom:8px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.qnav a{text-decoration:none;background:var(--card);border:1px solid var(--line);color:var(--sub);border-radius:999px;padding:6px 16px;font-size:12px;font-weight:600;transition:.15s}
+.qnav a:hover{border-color:var(--vio);color:var(--vio);background:var(--vio-soft)}
+.qnav .home{background:var(--vio);border-color:var(--vio);color:#fff}
+header{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:18px 0 8px}
+h1{font-size:22px;font-weight:700;letter-spacing:-.3px}
+h1 small{display:block;font-size:12px;color:var(--sub);font-weight:500;margin-top:5px}
+.chips{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.chip{background:var(--vio-soft);color:var(--vio);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:600}
+.chip.mint{background:var(--mint-soft);color:var(--mint)}
+.chip.plain{background:#EFEEF6;color:var(--sub)}
+.chip.blue{background:var(--blue-soft);color:var(--blue)}
+.sec{display:flex;align-items:center;gap:10px;margin:30px 0 12px;scroll-margin-top:64px}
+.sec .rn{width:26px;height:26px;border-radius:8px;background:var(--vio);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+.sec h2{font-size:15px;font-weight:700}
+.sec .en{font-size:12px;color:var(--sub);font-weight:500}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;box-shadow:0 1px 2px rgba(33,31,51,.04)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.kpi .lb{font-size:12px;color:var(--sub);font-weight:600}
+.kpi .v{font-size:20px;font-weight:700;margin:6px 0;letter-spacing:-.4px}
+.kpi .v small{font-size:12px;color:var(--sub);font-weight:500}
+.kpi .d{font-size:11px;color:var(--sub)}
+.pill{display:inline-block;border-radius:999px;padding:3px 10px;font-size:11px;font-weight:700;margin-right:6px}
+.pill.up{background:var(--mint-soft);color:var(--mint)}
+.pill.nt{background:#EFEEF6;color:var(--sub)}
+.pill.wt{background:var(--amber-soft);color:var(--amber)}
+.pill.vio{background:var(--vio-soft);color:var(--vio)}
+.pill.blue{background:var(--blue-soft);color:var(--blue)}
+.strip{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--vio);border-radius:16px;padding:14px 18px;margin-bottom:14px}
+.strip .tag{background:var(--vio-soft);color:var(--vio);border-radius:8px;padding:4px 10px;font-size:11px;font-weight:700;white-space:nowrap}
+.strip p{font-size:13px}
+.strip.mint{border-left-color:var(--mint)}
+.strip.mint .tag{background:var(--mint-soft);color:var(--mint)}
+h3.blk{font-size:13px;font-weight:700;margin-bottom:10px}
+ul.ls{list-style:none}
+ul.ls li{position:relative;padding:6px 0 6px 18px;font-size:12.5px;border-top:1px solid var(--line)}
+ul.ls li:first-child{border-top:0}
+ul.ls li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--vio);position:absolute;left:2px;top:14px}
+ul.ls li.hl::before{background:var(--mint)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{width:22%;color:var(--sub);font-weight:600;text-align:left;padding:10px;border-bottom:1px solid var(--line);background:#FAFAFE}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:0}
+.program{position:relative;overflow:hidden}
+.program::after{content:'';position:absolute;right:-28px;top:-34px;width:90px;height:90px;border-radius:50%;background:var(--vio-soft);opacity:.55}
+.program.mint::after{background:var(--mint-soft)}
+.program.blue::after{background:var(--blue-soft)}
+.program .head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px;position:relative;z-index:1}
+.program .time{font-size:11px;font-weight:700;color:var(--vio);white-space:nowrap}
+.program.mint .time{color:var(--mint)}
+.program.blue .time{color:var(--blue)}
+.program h3{font-size:14px;line-height:1.35;margin:7px 0 4px;letter-spacing:-.15px}
+.program .speaker{font-size:11px;color:var(--sub)}
+.program .takeaway{margin-top:9px;padding:9px 11px;background:#FAFAFE;border-radius:10px;font-size:11.5px}
+.insight{min-height:190px}
+.insight .no{width:28px;height:28px;border-radius:9px;background:var(--vio-soft);color:var(--vio);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;margin-bottom:10px}
+.insight h3{font-size:14px;margin-bottom:8px}
+.action{background:#FAFAFE;border:1px solid var(--line);border-radius:12px;padding:11px 13px}
+.action .lb{font-size:10.5px;font-weight:700;color:var(--vio);margin-bottom:4px}
+.action p{font-size:12px}
+.source{font-size:11.5px;color:var(--sub)}
+code{font-family:Consolas,'Courier New',monospace;background:#F0EFF7;border-radius:5px;padding:1px 5px;color:#514B76}
+footer{margin-top:26px;font-size:11px;color:var(--sub);text-align:center}
+@media(max-width:900px){.grid4,.grid3{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}
+@media(max-width:620px){body{padding:0 16px 40px}.grid4,.grid3{grid-template-columns:1fr}.qnav{position:static}.program .head{display:block}.program .time{display:inline-block;margin-top:5px}}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{background:#fff;padding:0}.qnav{display:none}.card,.strip{break-inside:avoid}.wrap{max-width:none}.sec{margin-top:22px}a{color:inherit;text-decoration:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="qnav" aria-label="빠른 이동">
+  <a class="home" href="#top">사외 교육 결과보고서</a>
+  <a href="#sec1">1 교육 정보</a>
+  <a href="#sec2">2 프로그램</a>
+  <a href="#sec3">3 주요 인사이트</a>
+  <a href="#sec4">4 전파계획</a>
+  <a href="#sec5">5 첨부·근거</a>
+</nav>
+
+<header id="top">
+  <h1>사외 교육 결과보고서
+    <small>AI Summit Seoul 2026 · Day 1 · 프로그램별 학습 내용 및 현업 적용 시사점</small>
+  </h1>
+  <div class="chips">
+    <span class="chip">2026.08.19</span>
+    <span class="chip mint">09:00–17:40</span>
+    <span class="chip blue">Off-Line</span>
+    <span class="chip plain">고용보험 비대상</span>
+  </div>
+</header>
+
+<div class="strip">
+  <span class="tag">교육 개요</span>
+  <p><b>AI 에이전트가 실제 업무를 수행하는 단계로 진화하는 흐름</b>을 중심으로, 멀티모달·자기개선 AI의 기술 방향과 제조·유통·금융·광고·개발 현장의 적용 사례를 학습했다. 공통 결론은 모델 성능만으로는 현업 성과를 만들 수 없으며, <b>업무 맥락·평가 기준·권한 통제·변화관리</b>를 함께 설계해야 한다는 것이다.</p>
+</div>
+
+<div class="sec" id="sec1"><div class="rn">1</div><h2>결과보고 입력</h2><span class="en">Education profile</span></div>
+
+<div class="grid4" style="margin-bottom:14px">
+  <div class="card kpi"><div class="lb">교육 일정</div><div class="v">2026.08.19</div><div class="d">AI Summit Seoul 2026 · Day 1</div></div>
+  <div class="card kpi"><div class="lb">교육 시간</div><div class="v">09:00–17:40</div><div class="d">교육 주관처 프로그램 기준</div></div>
+  <div class="card kpi"><div class="lb">교육 형태</div><div class="v">Off-Line</div><div class="d">서울 현장 참석</div></div>
+  <div class="card kpi"><div class="lb">교육 참석자</div><div class="v">본인</div><div class="d">사외 교육 결과보고</div></div>
+</div>
+
+<div class="card">
+  <table aria-label="사외 교육 결과보고 입력 정보">
+    <tr><th>교육명</th><td><b>AI Summit Seoul 2026 (Day 1)</b></td></tr>
+    <tr><th>교육 내용</th><td>AI 에이전트의 실무 적용, 멀티모달·피지컬 AI, 자기개선 AI와 안전성, 기업의 대규모 언어 모델(Large Language Model, LLM) 도입 및 생산성 혁신 사례 학습</td></tr>
+    <tr><th>교육 기간</th><td>2026-08-19 (Day 1)</td></tr>
+    <tr><th>교육 시간<br>(휴일 제외)</th><td>09:00–17:40</td></tr>
+    <tr><th>교육 형태</th><td>Off-Line</td></tr>
+    <tr><th>교육 기관명</th><td>AI Summit Seoul 2026</td></tr>
+    <tr><th>고용보험 환급 교육 여부</th><td>비대상</td></tr>
+    <tr><th>교육 참석자</th><td>본인</td></tr>
+  </table>
+</div>
+
+<div class="sec" id="sec2"><div class="rn">2</div><h2>교육 내용 — 프로그램별 정리</h2><span class="en">Sessions &amp; learnings</span></div>
+
+<div class="strip mint">
+  <span class="tag">오전</span>
+  <p>기술 진화와 기업 생산성의 연결을 다룬 메인 컨퍼런스 세션이다. 단일 벤치마크보다 <b>실제 업무 성공률·비용·사용 맥락</b>을 함께 평가해야 한다는 관점이 반복적으로 제시됐다.</p>
+</div>
+
+<div class="grid2">
+  <article class="card program">
+    <div class="head"><div><span class="pill vio">Agentic AI</span><h3>AI 어시스턴트에서 에이전틱 AI의 시대로</h3><div class="speaker">Larry Heck · Georgia Institute of Technology</div></div><span class="time">09:05–09:30</span></div>
+    <ul class="ls"><li>사용자의 요청은 본질적으로 모호하고 대화 중 변하므로, 한 번의 지시만으로 완전한 자율 수행을 기대하는 방식에는 한계가 있다.</li><li>단일 턴 벤치마크 대신 업무 완료율, 결과 품질, 컨텍스트 전환 대응력과 성공 결과 1건당 비용을 함께 평가해야 한다.</li><li>음성·시선·행동 등 멀티모달 신호는 사용자가 말로 표현하지 않은 의도를 파악하는 핵심 수단이다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 에이전트 과제 정의 시 확인 질문, 실패 복구, 인간 승인 지점을 포함하고 성공 결과 단위의 비용을 측정한다.</div>
+  </article>
+
+  <article class="card program mint">
+    <div class="head"><div><span class="pill up">Panel</span><h3>국내 AI 에이전트, 어떻게 진화할까?</h3><div class="speaker">산업 전문가 패널</div></div><span class="time">09:30–10:00</span></div>
+    <ul class="ls"><li>AI 에이전트는 답변 도구에서 계획·도구 호출·업무 실행을 담당하는 운영 주체로 이동하고 있다.</li><li>도입 속도보다 현업 데이터 연결, 평가 기준, 책임 주체와 통제 가능한 실행 범위를 먼저 정의해야 한다.</li><li>기술 도입과 함께 조직 역할, 업무 절차, 사용자의 신뢰 형성을 설계해야 실제 확산이 가능하다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 반복 업무를 대상으로 작은 범위에서 시작하고, 사람의 최종 판단과 감사 가능한 실행 기록을 유지한다.</div>
+  </article>
+
+  <article class="card program blue">
+    <div class="head"><div><span class="pill blue">Autonomous AI</span><h3>지구 밖의 자율 AI: 스스로 생각하고 협력하는 우주 비행</h3><div class="speaker">Autonomous Space AI Session</div></div><span class="time">10:00–10:30</span></div>
+    <ul class="ls"><li>통신 지연과 제한된 자원이 존재하는 우주·위성 환경에서는 현장 판단, 협업, 장애 대응을 수행하는 자율 AI가 필요하다.</li><li>위성·해양 관측, 공공 인프라, 행성 탐사와 자율 과학처럼 고위험·고복잡도 환경에서 멀티모달 인식의 가능성을 확인했다.</li><li>자율성이 높아질수록 안전 경계, 예외 처리, 임무 우선순위와 인간 개입 조건이 더 중요해진다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 실시간 연결이 불완전한 상황을 가정해 로컬 판단, 안전한 중단, 사후 동기화 절차를 함께 설계한다.</div>
+  </article>
+
+  <article class="card program">
+    <div class="head"><div><span class="pill vio">Foundation Model</span><h3>AI가 AI를 만드는 시대: 스스로 진화하는 AI</h3><div class="speaker">Andrew Dai · Jeff Clune</div></div><span class="time">11:00–11:30</span></div>
+    <ul class="ls"><li>데이터 생성·시뮬레이션·증류가 모델 개선의 핵심 플라이휠이며, 모델이 아이디어 도출부터 실험·검증까지 수행하는 과학 자동화가 진전되고 있다.</li><li>최적화 방식·구조·사후 학습은 자기개선에 활용할 수 있지만, 평가 기준까지 모델이 바꾸면 보상 편법과 결과 왜곡이 발생할 수 있다.</li><li>하나의 초거대 모델보다 산업·업무별 전문 모델과 전문 에이전트가 협업하는 생태계가 현실적인 방향으로 제시됐다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 생성 모델과 평가 모델을 분리하고, 실제 업무 데이터·독립 검증·사람의 승인으로 결과를 교차 확인한다.</div>
+  </article>
+
+  <article class="card program mint" style="grid-column:1/-1">
+    <div class="head"><div><span class="pill up">LLM &amp; Productivity</span><h3>LLM은 정말 기업 생산성 도우미일까?</h3><div class="speaker">HD현대 · 롯데쇼핑 · KB국민은행 사례</div></div><span class="time">11:30–12:00</span></div>
+    <div class="grid3">
+      <div><h3 class="blk">HD현대 · 제조</h3><ul class="ls"><li>설계·생산 리드타임 단축과 현장 암묵지 데이터화를 병행해야 제조 특화 AI가 지속 가능하다.</li><li>단위 과제 성과를 조직 문화와 전사 AI 전환으로 연결하는 확산 체계가 필요하다.</li></ul></div>
+      <div><h3 class="blk">롯데쇼핑 · 유통</h3><ul class="ls"><li>최종 매출만으로 AI 성과를 설명하기 어려우므로 클릭률(Click-Through Rate, CTR), 전환율(Conversion Rate, CVR) 등 중간 지표를 관리해야 한다.</li><li>고객 데이터와 상품 맥락을 연결하고 사용 편의성을 확보해야 서비스 이용으로 이어진다.</li></ul></div>
+      <div><h3 class="blk">KB국민은행 · 금융</h3><ul class="ls"><li>영업점 에이전트에서 심사·리스크·컴플라이언스까지 적용 범위를 확장하고 있다.</li><li>중앙 플랫폼 조직과 현업 AI 전담조직의 역할 분담, 변화관리가 전사 확산의 핵심이다.</li></ul></div>
+    </div>
+    <div class="takeaway"><b>공통 결론:</b> 개념검증 성공만으로 전사 확산이 보장되지 않는다. 실제 업무 흐름, 핵심성과지표(Key Performance Indicator, KPI), 사용자 경험과 조직 변화관리를 함께 설계해야 한다.</div>
+  </article>
+</div>
+
+<div class="strip mint" style="margin-top:18px">
+  <span class="tag">오후</span>
+  <p>고객 행동 데이터, 대규모 에이전트 운영, 광고 세일즈, 실시간 비디오 학습, DevSecOps 등 <b>구체적인 기업 적용 사례</b>를 통해 운영 가능한 AI의 조건을 확인했다.</p>
+</div>
+
+<div class="grid2">
+  <article class="card program mint">
+    <div class="head"><div><span class="pill up">Track A</span><h3>소비자의 라이프스타일 데이터와 AI의 현명한 연결</h3><div class="speaker">신정은 상무 · LG전자</div></div><span class="time">13:30–14:00</span></div>
+    <ul class="ls"><li>가전·모빌리티·콘텐츠·커머스에 흩어진 행동 이벤트를 공통 행동 언어로 변환해 고객의 맥락과 의도를 추론하는 행동 지능 접근을 소개했다.</li><li>개별 이벤트보다 시간 속 행동 순서, 반복 패턴, 습관과 상황을 종합해야 다음 행동과 니즈를 예측할 수 있다.</li><li>피지컬 AI가 안전하게 행동하려면 물리 인식뿐 아니라 고객이 원하는 개입 시점과 금지 행동을 이해해야 한다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 고객을 식별하는 데이터보다 여정 속 행동 맥락을 연결하고, 필요한 순간에만 개입하는 경험을 설계한다.</div>
+  </article>
+
+  <article class="card program">
+    <div class="head"><div><span class="pill vio">Track A</span><h3>1,000개의 AI 에이전트를 온보딩하는 법</h3><div class="speaker">Mercedes-Benz · Principal AI Scientist</div></div><span class="time">14:00–14:30</span></div>
+    <ul class="ls"><li>AI 에이전트는 실제 시스템에서 행동하는 새로운 운영 주체이므로 인간 계정과 다른 정체성·권한·감독 체계가 필요하다.</li><li>Identity, Scope, Supervision, Record, Offboarding의 다섯 단계로 개별 신원, 최소 권한, 외부 감시, 변경 불가능한 기록과 즉시 회수를 관리해야 한다.</li><li>프롬프트의 금지 문구는 정책 강제가 아니며, 실행 전 게이트와 작업별·시간별 권한 제한이 필요하다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 에이전트별 소유자·권한·사용 도구·종료 조건을 등록하고, 평균 권한 회수 시간을 운영 지표로 관리한다.</div>
+  </article>
+
+  <article class="card program blue">
+    <div class="head"><div><span class="pill blue">Track D</span><h3>데이터에서 실행까지, AI 기반 운영 최적화 전략</h3><div class="speaker">쿠팡 애즈 · AI 광고 컨설턴트 사례</div></div><span class="time">14:30–15:00</span></div>
+    <ul class="ls"><li>여러 도구의 광고 데이터를 통합하고 진단 플레이북, 우선순위, 맞춤 피칭을 연결해 세일즈 컨설팅의 범위와 일관성을 높였다.</li><li>파이프라인 순서와 숫자 계산은 코드가 통제하고, LLM은 원인 분석·요약·행동 제안에 집중하도록 역할을 분리했다.</li><li>기존 머신러닝 추천을 재사용하고 별도 검증 단계를 두어 환각을 낮췄으며, 비용 62% 절감과 지연 시간 단축을 달성했다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 모델이 모든 분기와 계산을 맡지 않도록 하고, 규칙·정량 데이터·검증 루프와 생성형 설명을 조합한다.</div>
+  </article>
+
+  <article class="card program mint">
+    <div class="head"><div><span class="pill up">Track B</span><h3>실시간 AI 비디오 에이전트와 롤플레이 기반 학습</h3><div class="speaker">Joshua Oluwagbemiga · Synthesia</div></div><span class="time">15:00–15:20</span></div>
+    <ul class="ls"><li>AI 아바타가 고객·면접관·코치 역할을 수행하고, 사용자는 실제 상황처럼 어려운 대화를 반복 연습할 수 있다.</li><li>대화 기록을 분석해 공감, 책임감, 표현과 개선 문장을 구체적으로 피드백하는 루프가 학습 효과를 만든다.</li><li>영업, 고객 응대, 면접, 매니저 피드백, 현장 교육과 웹 컨시어지로 적용 범위를 확장할 수 있다.</li></ul>
+    <div class="takeaway"><b>현업 적용:</b> 일방향 교육자료를 직무별 상황 시뮬레이션과 로그 기반 코칭으로 전환해 반복 훈련 효과를 측정한다.</div>
+  </article>
+
+  <article class="card program" style="grid-column:1/-1">
+    <div class="head"><div><span class="pill vio">Track B</span><h3>에이전틱 AI를 활용한 완전한 DevSecOps 인프라 구성</h3><div class="speaker">감정한 솔루션 아키텍트 · GitLab</div></div><span class="time">15:20–15:40</span></div>
+    <div class="grid2">
+      <ul class="ls"><li>AI 코드 생성뿐 아니라 이슈, 코드, 파이프라인, 취약점, 정책과 감사 로그를 연결한 전체 개발 생명주기 맥락이 필요하다.</li><li>이슈에서 코드·머지 요청 생성, 실패 파이프라인 수정, 취약점 보완까지 에이전트 흐름으로 연결할 수 있다.</li></ul>
+      <ul class="ls"><li>조직별 에이전트가 수행할 수 있는 행동을 정책에 따라 제한하고, 온프레미스·격리 환경을 포함한 배포 선택지를 제공해야 한다.</li><li>지식 그래프와 통합 감사 기록은 맥락 정확도, 속도, 보안·컴플라이언스를 동시에 지원한다.</li></ul>
+    </div>
+    <div class="takeaway"><b>현업 적용:</b> 개발 에이전트를 도입할 때 코드 생성 속도뿐 아니라 승인 정책, 보안 검사, 변경 이력과 감사 가능성을 동일한 품질 기준으로 둔다.</div>
+  </article>
+</div>
+
+<div class="sec" id="sec3"><div class="rn">3</div><h2>주요 인사이트 및 적용 제안</h2><span class="en">What matters</span></div>
+
+<div class="grid3">
+  <div class="card insight"><div class="no">01</div><h3>성능보다 업무 성공을 측정</h3><ul class="ls"><li>벤치마크 점수보다 업무 완료율, 결과 품질, 사용률과 성공 결과 1건당 비용을 본다.</li><li>최종 재무성과만 기다리지 않고 처리시간·오류율·채택률 등 중간 KPI를 합의한다.</li></ul></div>
+  <div class="card insight"><div class="no">02</div><h3>자율성과 통제를 함께 설계</h3><ul class="ls"><li>에이전트별 신원, 소유자, 최소 권한, 실행 범위와 종료 조건을 명시한다.</li><li>숫자·분기·승인은 통제 가능한 시스템이 맡고 생성형 AI는 분석과 설명에 집중시킨다.</li></ul></div>
+  <div class="card insight"><div class="no">03</div><h3>확산은 조직 변화 과제</h3><ul class="ls"><li>현업 흐름 안에서 쉽게 사용할 수 있어야 개념검증 이후 확산이 가능하다.</li><li>중앙 플랫폼 조직과 현업 전문가가 역할을 나누고 교육·피드백·운영 책임을 지속한다.</li></ul></div>
+</div>
+
+<div class="card" style="margin-top:14px">
+  <h3 class="blk">현업 적용 우선순위</h3>
+  <div class="grid3">
+    <div class="action"><div class="lb">STEP 1 · 후보 선정</div><p>반복 빈도가 높고 입력·출력 기준이 명확하며, 사람의 최종 승인으로 위험을 통제할 수 있는 업무를 선정한다.</p></div>
+    <div class="action"><div class="lb">STEP 2 · 평가 설계</div><p>처리시간, 결과 품질, 오류율, 사용률, 성공 결과당 비용을 사전에 정의하고 기존 방식의 기준값을 확보한다.</p></div>
+    <div class="action"><div class="lb">STEP 3 · 제한 검증</div><p>데이터·도구 권한을 최소화한 범위에서 검증하고, 실행 로그·사용자 피드백·회수 절차를 함께 점검한다.</p></div>
+  </div>
+</div>
+
+<div class="sec" id="sec4"><div class="rn">4</div><h2>전파계획</h2><span class="en">Knowledge sharing</span></div>
+
+<div class="grid2">
+  <div class="card">
+    <table aria-label="교육 전파계획">
+      <tr><th>대상</th><td>소속 조직 및 AI·디지털 전환 관련 실무자</td></tr>
+      <tr><th>방식</th><td>팀 정기회의 또는 사내 공유 세션에서 15~20분 핵심 내용 발표 및 요약본 배포</td></tr>
+      <tr><th>예정 시점</th><td>결과보고 승인 후 2주 이내</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3 class="blk">전파 핵심 메시지</h3>
+    <ul class="ls"><li>AI 에이전트 도입 시 업무 맥락과 성공 기준을 먼저 정의하는 방법</li><li>개념검증에서 현업 확산으로 전환하기 위한 데이터·프로세스·변화관리 조건</li><li>권한 통제, 외부 감독, 감사 기록과 운영 비용 관리 원칙</li><li>현업 반복 업무를 대상으로 한 제한적 검증 과제 제안</li></ul>
+  </div>
+</div>
+
+<div class="sec" id="sec5"><div class="rn">5</div><h2>첨부 자료 및 작성 근거</h2><span class="en">Attachments &amp; sources</span></div>
+
+<div class="grid2">
+  <div class="card">
+    <h3 class="blk">결과보고 첨부 자료</h3>
+    <ul class="ls"><li class="hl"><b>본 결과보고서</b></li><li>사전신청 결재본</li><li>수료증 또는 교육 참석 확인서</li><li>교육비 영수증 및 출장비 정산 증빙</li><li>고용보험 대상 과정인 경우 위탁훈련계약서·세금계산서·수료증 추가</li></ul>
+  </div>
+  <div class="card source">
+    <h3 class="blk" style="color:var(--ink)">보고서 작성 근거</h3>
+    <ul class="ls"><li><code>program.md</code> — Day 1 오전 일정</li><li><code>morning-session-summary_ko.md</code> — 오전 통합 요약</li><li><code>afternoon-session/selected-tracks.md</code> — 오후 참석 트랙</li><li><code>afternoon-session/*-summary_ko.md</code> — 오후 세션별 요약</li></ul>
+    <p style="margin-top:10px">실시간 번역 원문과 시간 단위 기록은 저장소의 행사 아카이브에 별도 보관되어 있다. 본문은 세션 요약이 확인된 프로그램을 기준으로 작성했다.</p>
+  </div>
+</div>
+
+<footer>AI Summit Seoul 2026 · 사외 교육 결과보고서 · 작성일 2026-08-21</footer>
+
+</div>
+</body>
+</html>
